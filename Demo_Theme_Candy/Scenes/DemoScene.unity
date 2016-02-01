@@ -127,7 +127,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11424994, guid: d786dead44590e943860d8527730886b, type: 2}
+    - {fileID: 11426140, guid: d786dead44590e943860d8527730886b, type: 2}
+    - {fileID: 11424562, guid: d786dead44590e943860d8527730886b, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d786dead44590e943860d8527730886b, type: 2}
   m_IsPrefabParent: 0
 --- !u!114 &579158329
@@ -163,7 +166,7 @@ GameObject:
   - 114: {fileID: 579158338}
   m_Layer: 0
   m_Name: DungeonGrid
-  m_TagString: Dungeon
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -276,7 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa559a52eac3b3d4895f08f568de6a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Seed: 1195202432
+  Seed: 1091470208
   GridCellSize: {x: 4, y: 2, z: 4}
   NumCells: 150
   MinCellSize: 2
