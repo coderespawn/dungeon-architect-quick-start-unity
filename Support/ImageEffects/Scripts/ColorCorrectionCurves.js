@@ -51,7 +51,9 @@ class ColorCorrectionCurves extends PostEffectsBase
 		updateTexturesOnStartup = true;
 	}
 	
-	function Awake () {	}
+	function Awake () {	
+    	
+	}
 	
 	function CheckResources () : boolean {		
 		CheckSupport (mode == ColorCorrectionMode.Advanced);
@@ -160,4 +162,5 @@ class ColorCorrectionCurves extends PostEffectsBase
 			RenderTexture.ReleaseTemporary (renderTarget2Use);
 		}
 	}
+	/* Silence MonoBehaviour Warnings*/ private function SilenceWarnings2() : void { var al : ArrayList; if(al == null); var ae : AccelerationEvent; if(ae == 0); var dcm : DrawCameraMode; if(dcm == 10) SilenceWarnings2(); }
 }

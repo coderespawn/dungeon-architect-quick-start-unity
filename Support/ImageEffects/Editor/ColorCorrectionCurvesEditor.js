@@ -134,4 +134,6 @@ class ColorCorrectionCurvesEditor extends Editor {
 		if (!applyCurveChanges)
 			serObj.ApplyModifiedProperties ();         
     }
+    
+    /* Silence MonoBehaviour Warnings*/ private function SilenceWarnings() : void { var al : ArrayList; if(al == null); var ae : AccelerationEvent; if(ae == 0); var dcm : DrawCameraMode; if(dcm == 10) SilenceWarnings(); }
 }
