@@ -11,6 +11,7 @@ namespace DAShooter
 		public GameObject waypointTemplate;
 		public GameObject waypointParent;
 		public Vector3 waypointOffset = Vector3.up;
+		public bool mode2D = false;
 
 		public override void OnPostDungeonBuild (Dungeon dungeon, DungeonModel model)
 		{
@@ -33,6 +34,9 @@ namespace DAShooter
 	        {
 	            var worldPos = MathUtils.GridToWorld(gridModel.Config.GridCellSize, cell.CenterF);
 				worldPos += waypointOffset;
+				if (mode2D) {
+					worldPos = FlipYZ(worldPos);
+				}
 				var waypointObject = Instantiate(waypointTemplate, worldPos, Quaternion.identity) as GameObject;
 				waypointObject.tag = GameTags.Waypoint;
 				waypointObject.transform.parent = waypointParent.transform;
@@ -91,6 +95,10 @@ namespace DAShooter
 					DestroyImmediate(waypoint);
 				}
 			}
+		}
+
+		Vector3 FlipYZ(Vector3 v) {
+			return new Vector3(v.x, v.z, v.y);
 		}
 	}
 }

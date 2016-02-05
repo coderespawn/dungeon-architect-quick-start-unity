@@ -19,5 +19,13 @@ namespace DAShooter
 				adjacentWaypoints = value;
 			}
 		}
+
+		public override string ToString ()
+		{
+			if (gameObject == null) {
+				return base.ToString();
+			}
+			return gameObject.transform.position.ToString();
+		}
 	}
 }

@@ -27,7 +27,7 @@ namespace DAShooter
             if(enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0)
             {
                 // ... set the destination of the nav mesh agent to the player.
-				navAgent.SetDestination (player.position);
+				navAgent.Destination = player.position;
             }
             // Otherwise...
             else

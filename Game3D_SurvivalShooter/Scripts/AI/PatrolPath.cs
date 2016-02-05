@@ -8,6 +8,13 @@ namespace DAShooter
 	public class PatrolPath : MonoBehaviour {
 		public int minPathLength = 5;
 		public int maxPathLength = 10;
+		public float randomOffset = 2;
+
+		/// <summary>
+		/// The distance the agent has to come close to this waypoint to consider it as arrived
+		/// </summary>
+		public float proximityThreshold = 1.0f;
+
 		Waypoint[] patrolPoints = new Waypoint[0];
 		bool looped = false;
 
@@ -34,9 +41,9 @@ namespace DAShooter
 
 		public void Build(Vector3 nearestStartingPoint) {
 			// Find all the waypoints in the map
-			var waypointObjects = GameObject.FindGameObjectsWithTag(GameTags.Waypoint);
-			var nearestWaypointObject = FindNearest(waypointObjects, gameObject.transform.position);
-			if (nearestWaypointObject == null) {
+			var waypoints = GameObject.FindObjectsOfType<Waypoint>();
+			var nearestWaypoint = FindNearest(waypoints, gameObject.transform.position);
+			if (nearestWaypoint == null) {
 				// No waypoints found
 				Debug.LogWarning("No waypoints found in map for generating patrol path");
 				return;
@@ -44,11 +51,10 @@ namespace DAShooter
 
 			// Build the waypoint lookup
 			var waypointLookup = new Dictionary<int, Waypoint>();
-			foreach (var go in waypointObjects) {
-				var waypoint = go.GetComponent<Waypoint>();
+			foreach (var waypoint in waypoints) {
 				waypointLookup.Add (waypoint.id, waypoint);
 			}
-			var startingWaypoint = nearestWaypointObject.GetComponent<Waypoint>();
+			var startingWaypoint = nearestWaypoint;
 
 			patrolPoints = FindLoopedPath(startingWaypoint);
 			if (patrolPoints != null) {
@@ -157,14 +163,14 @@ namespace DAShooter
 			return data;
 		}
 
-		GameObject FindNearest(GameObject[] gameObjects, Vector3 startingPoint) {
+		Waypoint FindNearest(Waypoint[] waypoints, Vector3 startingPoint) {
 			float nearestDistance = float.MaxValue;
-			GameObject bestMatch = null;
+			Waypoint bestMatch = null;
 
-			foreach (var go in gameObjects) {
-				var distanceSq = (go.transform.position - startingPoint).sqrMagnitude;
+			foreach (var waypoint in waypoints) {
+				var distanceSq = (waypoint.gameObject.transform.position - startingPoint).sqrMagnitude;
 				if (nearestDistance > distanceSq) {
-					bestMatch = go;
+					bestMatch = waypoint;
 					nearestDistance = distanceSq;
 				}
 			}
@@ -187,8 +193,28 @@ namespace DAShooter
 				var endPoint = patrolPoints[(i + 1) % patrolPoints.Length];
 				var start = startPoint.gameObject.transform.position;
 				var end = endPoint.gameObject.transform.position;
-				Gizmos.DrawLine(start, end);
+				DrawLine(start, end, false);
 			}
+		}
+		void DrawLine(Vector3 a, Vector3 b, bool mode2D) {
+			if (mode2D) {
+				Gizmos.DrawLine(FlipYZ(a), FlipYZ(b));
+			}
+			else {
+				Gizmos.DrawLine(a, b);
+			}
+		}
+		
+		void DrawPoint(Vector3 p, bool mode2D) {
+			if (mode2D) {
+				Gizmos.DrawWireSphere(FlipYZ(p), 0.1f);
+			} else {
+				Gizmos.DrawWireSphere(p, 0.1f);
+			}
+		}
+		
+		Vector3 FlipYZ(Vector3 v) {
+			return new Vector3(v.x, v.z, v.y);
 		}
 	}
 }

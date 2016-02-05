@@ -43,6 +43,79 @@ namespace DAShooter
 		}
 
 		protected bool IsPlayerVisible() {
+			if (controller.mode2D) {
+				return IsPlayerVisible2D();
+			} else {
+				return IsPlayerVisible3D();
+			}
+		}
+
+		protected bool IsPlayerVisible2D() {
+			var source = controller.gameObject.transform.position;
+			var colliders = Physics2D.OverlapCircleAll(source, controller.maxViewSight);
+			
+			Collider2D player = null;
+			foreach (var collider in colliders) {
+				if (collider.isTrigger) continue;
+				if (collider.gameObject.tag == GameTags.Player) {
+					player = collider;
+					break;
+				}
+			}
+			
+			if (player == null) {
+				return false;
+			}
+			
+			var target = player.gameObject.transform.position;
+			
+			// Check if the player is too close the npc
+			var distanceSq = (source - target).sqrMagnitude;
+			if (distanceSq <= controller.playerCloseByDistance * controller.playerCloseByDistance) {
+				// Player is too close to the npc and will be detected, regardless of whether it sees it or not
+				return true;
+			}
+			
+			// Check if the player is within the NPC's field of vision
+			{
+				var forward3D = controller.Agent.Velocity.normalized;
+				var forward = new Vector2(forward3D.x, forward3D.z);
+				var toPlayer = (target - controller.gameObject.transform.position).normalized;
+				var angle = Vector3.Angle(forward, toPlayer);
+				if (angle > controller.fieldOfView / 2.0f) {
+					// Not within the field of vision
+					return false;
+				}
+			}
+			
+			
+			// The player is within the vision cone.  
+			// Make a raycast and check if any objects are obstructing the vision (e.g. walls)
+			var offset = Vector3.zero;
+			var direction = (target - source).normalized;
+			var hits = Physics2D.RaycastAll(source + offset, direction, controller.maxViewSight);
+			
+			// Sort the hits based on distance
+			System.Array.Sort(hits, delegate(RaycastHit2D x, RaycastHit2D y) {
+				if (x.distance == y.distance) return 0;
+				return x.distance < y.distance ? -1 : 1;
+			});
+			
+			var hitPlayer = false;
+			foreach (var hit in hits) {
+				if (hit.collider.isTrigger) continue;
+				if (hit.collider.gameObject.tag.ToLower() == GameTags.Enemy.ToLower()) continue;
+				
+				if (hit.collider == player) {
+					hitPlayer = true;
+				}
+				break;
+			}
+			
+			return hitPlayer;
+		}
+
+		protected bool IsPlayerVisible3D() {
 			var source = controller.gameObject.transform.position;
 			var colliders = Physics.OverlapSphere(source, controller.maxViewSight);
 
@@ -144,7 +217,7 @@ namespace DAShooter
 	        }
 
 			// Check if we are near the last sighting position;
-			if (controller.Agent.GetRemainingDistance() < 1) {
+			if (controller.Agent.GetRemainingDistance() < controller.destinationArriveProximity) {
 				// We have reached the last sighting position and still haven't found the player
 				// Stand here and wait for a bit before returing to patrolling
 				var waitAndSearch = new AIStateWaitAndSearch(controller);
@@ -259,7 +332,7 @@ namespace DAShooter
 				var offsets = new List<Vector3>();
 				var waypoints = controller.Patrol.PatrolPoints;
 				for(int i = 0; i < waypoints.Length; i++) {
-					var offset = Random.insideUnitSphere * 2;
+					var offset = Random.insideUnitSphere * controller.Patrol.randomOffset;
 					offset.y = 0;
 					offsets.Add (offset);
 				}
@@ -301,7 +374,7 @@ namespace DAShooter
 
 			var agent = controller.Agent;
 
-			if (agent.GetRemainingDistance() < 1) {
+			if (agent.GetRemainingDistance() < controller.destinationArriveProximity) {
 				currentWaypointIndex++;
 			}
 			MoveToCurrentPoint();
@@ -362,7 +435,6 @@ namespace DAShooter
 
 
 	public class AIController : CharacterControlScript {
-		public float playerProximityRadius = 3.0f;
 		DungeonNavAgent agent;
 		PatrolPath patrol;
 		CapsuleCollider capsule;
@@ -373,6 +445,9 @@ namespace DAShooter
 		public float maxViewSight = 12;
 		public float searchWaitTime = 3;
 		public float playerCloseByDistance = 4;	// if the player is too close, the npc should detect it even if not facing the player
+		public float destinationArriveProximity = 1;	// How close should the agent be to the destination to consider it arrived
+		public float playerProximityRadius = 3.0f;
+		public bool mode2D = false;
 
 		public DungeonNavAgent Agent {
 			get {

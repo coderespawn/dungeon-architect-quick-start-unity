@@ -5,7 +5,7 @@ using DungeonArchitect.Navigation;
 
 namespace JackRabbit {
 	public class GameControllerJackRabbit : MonoBehaviour {
-		
+		public Dungeon dungeon;
 		public DungeonNavMesh navMesh;
 
 		void Awake() {
@@ -13,7 +13,31 @@ namespace JackRabbit {
 		}
 
 		void CreateNewLevel() {
+			dungeon.Config.Seed = (uint)(Random.value * int.MaxValue);
+			StartCoroutine(RebuildLevelRoutine());
+		}
+
+		IEnumerator RebuildLevelRoutine() {
+			dungeon.DestroyDungeon();
+			yield return 0;
+
+			dungeon.Build();
+
+			RebuildNavigation();
+
+			yield return null;
+		}
+
+		void Update() {
+			if (Input.GetKeyDown(KeyCode.Space)) {
+				CreateNewLevel();
+			}
+		}
+
+		void RebuildNavigation() {
 			navMesh.Build();
 		}
+
+
 	}
 }

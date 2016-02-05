@@ -7,6 +7,7 @@ namespace JackRabbit {
 		public float attackMoveSpeedMultiplier = 0.1f;
 		public float sprintMultiplier = 1.5f;
 		public float movementSensitivity = 0.1f;
+		public float attackStength = 40;
 
 		bool facingRight = true;
 		Rigidbody2D rigidBody2D;
@@ -52,6 +53,23 @@ namespace JackRabbit {
 			}
 
 			animator.SetFloat("Speed", rigidBody2D.velocity.magnitude);
+		}
+
+		void OnAttack() {
+			var offset = new Vector3(0.3f, 0.7f, 0);
+			offset.x *= Mathf.Sign (transform.localScale.x);
+			var radius = 0.7f;
+			var colliders = Physics2D.OverlapCircleAll(gameObject.transform.position + offset, radius);
+			foreach (var collider in colliders) {
+				if (collider.gameObject.tag == DAShooter.GameTags.Enemy) {
+					// Apply damage to the enemy
+					var enemy = collider.gameObject.GetComponent<EnemyController>();
+					if (enemy != null) {
+						enemy.ApplyDamage(attackStength);
+					}
+
+				}
+			}
 		}
 
 		void Update() {
