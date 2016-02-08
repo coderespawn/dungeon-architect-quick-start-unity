@@ -14,6 +14,10 @@ namespace DAShooter
 
 		public override void OnPostDungeonBuild (Dungeon dungeon, DungeonModel model)
 		{
+			RebuildNPCs();
+		}
+
+		public void RebuildNPCs() {
 			DestroyOldNpcs();
 			if (npcTemplates.Length == 0) return;
 
