@@ -21,6 +21,7 @@ namespace JackRabbit {
 
 
 		void Awake() {
+			Physics2D.gravity = Vector2.zero;
 			instance = this;
 			npcSpawner = GetComponent<DAShooter.LevelNpcSpawner>();
 			CreateNewLevel();
