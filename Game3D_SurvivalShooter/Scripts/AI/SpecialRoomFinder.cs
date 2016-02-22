@@ -44,19 +44,31 @@ namespace DAShooter {
 		void SetEndingCell(GridDungeonModel model, Cell cell) {
 			var roomCenter = MathUtils.GridToWorld(model.Config.GridCellSize, cell.CenterF);
 
-			// Destroy old level end goal
-			var oldGoal = GameObject.FindGameObjectWithTag(GameTags.LevelGoal);
-			if (oldGoal != null) {
-				if (Application.isPlaying) {
-					Destroy (oldGoal);
-				} else {
-					DestroyImmediate(oldGoal);
-				}
-			}
+            // Destroy all old level goal objects
+            var oldGoals = GameObject.FindObjectsOfType<DAShooter.LevelGoal>();
+            foreach (var oldGoal in oldGoals)
+            {
+                var oldGoalObj = oldGoal.gameObject;
+                if (oldGoalObj != null)
+                {
+                    if (Application.isPlaying)
+                    {
+                        Destroy(oldGoalObj);
+                    }
+                    else
+                    {
+                        DestroyImmediate(oldGoalObj);
+                    }
+                }
+            }
 
 			var goal = Instantiate(levelEndGoalTemplate) as GameObject;
-			goal.tag = GameTags.LevelGoal;
-			goal.transform.position = roomCenter;
+            goal.transform.position = roomCenter;
+
+            if (goal.GetComponent<DAShooter.LevelGoal>() == null)
+            {
+                Debug.LogWarning("No LevelGoal component attached to the Level goal prefab.  cleanup will not be proper");
+            }
 		}
 	}
 }

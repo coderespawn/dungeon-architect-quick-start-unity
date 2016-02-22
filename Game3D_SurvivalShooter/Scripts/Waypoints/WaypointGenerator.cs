@@ -38,7 +38,6 @@ namespace DAShooter
 					worldPos = FlipYZ(worldPos);
 				}
 				var waypointObject = Instantiate(waypointTemplate, worldPos, Quaternion.identity) as GameObject;
-				waypointObject.tag = GameTags.Waypoint;
 				waypointObject.transform.parent = waypointParent.transform;
 
 				var waypoint = waypointObject.GetComponent<Waypoint>();
@@ -87,12 +86,12 @@ namespace DAShooter
 		}
 
 		void DestroyAllWaypoints() {
-			var oldWaypoints = GameObject.FindGameObjectsWithTag(GameTags.Waypoint);
+			var oldWaypoints = GameObject.FindObjectsOfType<Waypoint>();
 			foreach (var waypoint in oldWaypoints) {
 				if (Application.isPlaying) {
-					Destroy(waypoint);
+					Destroy(waypoint.gameObject);
 				} else {
-					DestroyImmediate(waypoint);
+                    DestroyImmediate(waypoint.gameObject);
 				}
 			}
 		}

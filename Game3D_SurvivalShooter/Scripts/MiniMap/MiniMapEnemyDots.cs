@@ -19,14 +19,15 @@ namespace DAShooter {
 		
 		// Update is called once per frame
 		void Update () {
-			var enemies = GameObject.FindGameObjectsWithTag(GameTags.Enemy);
+			var enemyControllers = GameObject.FindObjectsOfType<AIController>();
 			var currentDots = new Queue<GameObject>();
-			foreach (var enemy in enemies) {
-				EnemyHealth health = enemy.GetComponent<EnemyHealth>();
+			foreach (var enemyController in enemyControllers) {
+                var enemyObject = enemyController.gameObject;
+                EnemyHealth health = enemyObject.GetComponent<EnemyHealth>();
 				if (health == null) continue;
 				if (health.currentHealth > 0) {
-					var dot = BuildDot(enemy);
-					currentDots.Enqueue (dot);
+                    var dot = BuildDot(enemyObject);
+                    currentDots.Enqueue(dot);
 				}
 			}
 
@@ -40,7 +41,7 @@ namespace DAShooter {
 		GameObject BuildDot(GameObject enemy) {
 			GameObject dot = null;
 			if (dots.Count == 0) {
-				// Dot pool exausted. Build a new one
+				// Dot pool exhausted. Build a new one
 				dot = Instantiate(enemyDotTemplate) as GameObject;
 				dot.transform.parent = gameObject.transform;
 			}

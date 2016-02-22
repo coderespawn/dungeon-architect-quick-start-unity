@@ -6,11 +6,10 @@ using DungeonArchitect;
 using DungeonArchitect.Utils;
 
 namespace DAShooter {
-	public class LevelCompletionHandler : MonoBehaviour {
-
+    public class LevelGoal : MonoBehaviour {
 		void OnTriggerEnter(Collider other) {
 			// Create a new level
-			if (other.gameObject.tag == GameTags.Player) {
+			if (other.gameObject.CompareTag(GameTags.Player)) {
 				GameController.Instance.CreateNewLevel();
 			}
 		}
@@ -20,6 +19,5 @@ namespace DAShooter {
 				GameController.Instance.CreateNewLevel();
 			}
 		}
-
 	}
 }

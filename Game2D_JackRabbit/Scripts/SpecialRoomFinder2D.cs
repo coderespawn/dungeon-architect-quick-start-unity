@@ -42,19 +42,31 @@ namespace JackRabbit {
 		void SetEndingCell(GridDungeonModel model, Cell cell) {
 			var roomCenter = MathUtils.GridToWorld(model.Config.GridCellSize, cell.CenterF);
 			
-			// Destroy old level end goal
-			var oldGoal = GameObject.FindGameObjectWithTag(DAShooter.GameTags.LevelGoal);
-			if (oldGoal != null) {
-				if (Application.isPlaying) {
-					Destroy (oldGoal);
-				} else {
-					DestroyImmediate(oldGoal);
-				}
-			}
+            // Destroy all old level goal objects
+            var oldGoals = GameObject.FindObjectsOfType<DAShooter.LevelGoal>();
+            foreach (var oldGoal in oldGoals)
+            {
+                var oldGoalObj = oldGoal.gameObject;
+                if (oldGoalObj != null)
+                {
+                    if (Application.isPlaying)
+                    {
+                        Destroy(oldGoalObj);
+                    }
+                    else
+                    {
+                        DestroyImmediate(oldGoalObj);
+                    }
+                }
+            }
 			
 			var goal = Instantiate(levelEndGoalTemplate) as GameObject;
-			goal.tag = DAShooter.GameTags.LevelGoal;
 			goal.transform.position = FlipYZ(roomCenter);
+
+            if (goal.GetComponent<DAShooter.LevelGoal>() == null)
+            {
+                Debug.LogWarning("No LevelGoal component attached to the Level goal prefab.  cleanup will not be proper");
+            }
 		}
 
 		Vector3 FlipYZ(Vector3 v) {

@@ -10,7 +10,7 @@ public class Pickup : MonoBehaviour {
 	
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.isTrigger) return;
-		if (other.gameObject.tag == DAShooter.GameTags.Player) {
+		if (other.gameObject.CompareTag(DAShooter.GameTags.Player)) {
 			// Destroy on pickup
 			Destroy (gameObject);
 		}

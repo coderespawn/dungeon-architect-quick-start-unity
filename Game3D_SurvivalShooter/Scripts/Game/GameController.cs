@@ -84,9 +84,11 @@ namespace DAShooter {
 			}
 
 			// Destroy any npc too close to the player
-			var enemies = GameObject.FindGameObjectsWithTag(GameTags.Enemy);
+			var enemyControllers = GameObject.FindObjectsOfType<AIController>();
 			var playerPosition = player.transform.position;
-			foreach (var enemy in enemies) {
+            foreach (var enemyController in enemyControllers)
+            {
+                var enemy = enemyController.gameObject;
 				var distance = (playerPosition - enemy.transform.position).magnitude;
 				if (distance < 1) {
 					Destroy (enemy);

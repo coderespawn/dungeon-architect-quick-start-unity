@@ -16,9 +16,8 @@ namespace DAShooter
 		void DrawWaypointPaths() {
 			Gizmos.color = pathColor;
 			// Draw the connection of waypoints
-			var waypointObjects = GameObject.FindGameObjectsWithTag(GameTags.Waypoint);
-			foreach (var waypointObject in waypointObjects) {
-				var waypoint = waypointObject.GetComponent<Waypoint>();
+			var waypoints = GameObject.FindObjectsOfType<Waypoint>();
+			foreach (var waypoint in waypoints) {
 				if (waypoint == null) continue;
 				var startPosition = waypoint.gameObject.transform.position;
 				DrawPoint(startPosition);

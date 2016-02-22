@@ -57,7 +57,7 @@ namespace DAShooter
 			Collider2D player = null;
 			foreach (var collider in colliders) {
 				if (collider.isTrigger) continue;
-				if (collider.gameObject.tag == GameTags.Player) {
+				if (collider.gameObject.CompareTag(GameTags.Player)) {
 					player = collider;
 					break;
 				}
@@ -104,7 +104,7 @@ namespace DAShooter
 			var hitPlayer = false;
 			foreach (var hit in hits) {
 				if (hit.collider.isTrigger) continue;
-				if (hit.collider.gameObject.tag.ToLower() == GameTags.Enemy.ToLower()) continue;
+				//if (hit.collider.gameObject.CompareTag(GameTags.Enemy)) continue;
 				
 				if (hit.collider == player) {
 					hitPlayer = true;
@@ -122,7 +122,7 @@ namespace DAShooter
 			Collider player = null;
 			foreach (var collider in colliders) {
 				if (collider.isTrigger) continue;
-				if (collider.gameObject.tag == GameTags.Player) {
+				if (collider.gameObject.CompareTag(GameTags.Player)) {
 					player = collider;
 					break;
 				}
@@ -168,7 +168,7 @@ namespace DAShooter
 			var hitPlayer = false;
 			foreach (var hit in hits) {
 				if (hit.collider.isTrigger) continue;
-				if (hit.collider.gameObject.tag.ToLower() == GameTags.Enemy.ToLower()) continue;
+				//if (hit.collider.gameObject.CompareTag(GameTags.Enemy.ToLower())) continue;
 
 				if (hit.collider == player) {
 					hitPlayer = true;

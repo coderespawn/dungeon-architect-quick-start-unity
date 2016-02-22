@@ -11,9 +11,7 @@ namespace DAShooter.Editors
 	{
 		static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
 		{
-			DungeonEditorHelper.CreateEditorTag(GameTags.Waypoint);
-			DungeonEditorHelper.CreateEditorTag(GameTags.Enemy);
-			DungeonEditorHelper.CreateEditorTag(GameTags.LevelGoal);
+			//DungeonEditorHelper.CreateEditorTag(GameTags.Enemy);
 		}
 	}
 }

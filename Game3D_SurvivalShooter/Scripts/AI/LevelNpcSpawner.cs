@@ -21,7 +21,7 @@ namespace DAShooter
 			DestroyOldNpcs();
 			if (npcTemplates.Length == 0) return;
 
-			var waypoints = GameObject.FindGameObjectsWithTag(GameTags.Waypoint);
+			var waypoints = GameObject.FindObjectsOfType<Waypoint>();
 
 			// Spawn an npc in each waypoint
 			foreach (var waypoint in waypoints) {
