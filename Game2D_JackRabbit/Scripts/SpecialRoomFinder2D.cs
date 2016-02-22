@@ -43,7 +43,7 @@ namespace JackRabbit {
 			var roomCenter = MathUtils.GridToWorld(model.Config.GridCellSize, cell.CenterF);
 			
             // Destroy all old level goal objects
-            var oldGoals = GameObject.FindObjectsOfType<DAShooter.LevelGoal>();
+            var oldGoals = GameObject.FindObjectsOfType<LevelEndGoal2D>();
             foreach (var oldGoal in oldGoals)
             {
                 var oldGoalObj = oldGoal.gameObject;
@@ -63,7 +63,7 @@ namespace JackRabbit {
 			var goal = Instantiate(levelEndGoalTemplate) as GameObject;
 			goal.transform.position = FlipYZ(roomCenter);
 
-            if (goal.GetComponent<DAShooter.LevelGoal>() == null)
+            if (goal.GetComponent<LevelEndGoal2D>() == null)
             {
                 Debug.LogWarning("No LevelGoal component attached to the Level goal prefab.  cleanup will not be proper");
             }
