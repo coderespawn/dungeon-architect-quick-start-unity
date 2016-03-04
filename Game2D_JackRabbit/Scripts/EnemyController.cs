@@ -54,7 +54,7 @@ namespace JackRabbit {
 		void OnDead() {
 			animator.SetTrigger("Dead");
 			rigidBody2D.velocity = Vector2.zero;
-			rigidBody2D.collisionDetectionMode = CollisionDetectionMode2D.None;
+			rigidBody2D.collisionDetectionMode = CollisionDetectionMode2D.Discrete;
 			var colliders = GetComponents<Collider2D>();
 			foreach (var collider in colliders) {
 				collider.enabled = false;

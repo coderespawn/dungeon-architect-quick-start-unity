@@ -11,14 +11,15 @@ public class ClampToGroundTransformRule : TransformationRule {
 		base.GetTransform(socket, model, propTransform, random, out outPosition, out outRotation, out outScale);
 
 		// Get the ground location at this position
-		if (model is GridDungeonModel) {
+        if (model is GridDungeonModel)
+        {
 			var gridModel = model as GridDungeonModel;
-			var positionWorld = Matrix.GetTranslation(ref propTransform);
-			var gridCoord = MathUtils.WorldToGrid(positionWorld, gridModel.Config.GridCellSize);
+            var config = gridModel.Config as GridDungeonConfig;
+            var positionWorld = Matrix.GetTranslation(ref propTransform);
+			var gridCoord = MathUtils.WorldToGrid(positionWorld, config.GridCellSize);
 			var cellInfo = gridModel.GetGridCellLookup(gridCoord.x, gridCoord.z);
 			if (cellInfo.CellType != CellType.Unknown) {
 				var cell = gridModel.GetCell(socket.cellId);
-				var config = gridModel.Config as GridDungeonConfig;
 				var cellY = cell.Bounds.Location.y * config.GridCellSize.y;
 				var markerY = Matrix.GetTranslation(ref propTransform).y;
 				var deltaY = cellY - markerY;

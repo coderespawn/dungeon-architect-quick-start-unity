@@ -15,7 +15,6 @@ public class NonStairTileSelectorRule : NonViewBlockingSelectionRule
         if (model is GridDungeonModel)
         {
             var gridModel = model as GridDungeonModel;
-            
             var position = Matrix.GetTranslation(ref propTransform);
             var gridSize = gridModel.Config.GridCellSize;
             var x = Mathf.FloorToInt(position.x / gridSize.x);
