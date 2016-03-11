@@ -11,7 +11,6 @@ public class NonStairTileSelectorRule : NonViewBlockingSelectionRule
         if (!selected) return false;
 
         // Further filter near the door positions
-        var cellId = socket.cellId;
         if (model is GridDungeonModel)
         {
             var gridModel = model as GridDungeonModel;

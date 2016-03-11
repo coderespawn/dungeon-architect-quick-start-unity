@@ -103,7 +103,9 @@ namespace DAShooter
         public void RestartLevel ()
         {
             // Reload the level that is currently loaded.
-            Application.LoadLevel (Application.loadedLevel);
+            //Application.LoadLevel (Application.loadedLevel);
+            var activeScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+            UnityEngine.SceneManagement.SceneManager.LoadScene(activeScene.buildIndex);
         }
     }
 }

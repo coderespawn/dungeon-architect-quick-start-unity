@@ -51,13 +51,12 @@ namespace DAShooter {
 			Time.captureFramerate = frameRate;
 			numFrames = duration * frameRate;
 
-			var sceneName = System.IO.Path.GetFileNameWithoutExtension( EditorApplication.currentScene );
-			var path = "BeautyShots/{0}/{1}";
+			var path = "BeautyShots/scene/{1}";
 
 			//	"640 k ought to be enough for anybody."
 			for( var count = 0; count < 640000; count++ )
 			{
-				_folder = string.Format( path, sceneName, count );
+				_folder = string.Format( path, count );
 				if( !System.IO.Directory.Exists( _folder ) )
 					break;
 			}
