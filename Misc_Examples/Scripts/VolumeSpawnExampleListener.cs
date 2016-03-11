@@ -7,7 +7,7 @@ using DungeonArchitect.Utils;
 /// <summary>
 /// This example spawns various theme override volumes around rooms 
 /// This is done by hooking into the build events of DA and adding 
-/// volumes right after the layout is built, but the theme engine executes
+/// volumes right after the layout is built, but before the theme engine executes
 /// </summary>
 public class VolumeSpawnExampleListener : DungeonEventListener {
 
