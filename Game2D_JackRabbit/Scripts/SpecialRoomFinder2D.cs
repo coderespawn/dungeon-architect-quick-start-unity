@@ -11,7 +11,13 @@ namespace JackRabbit {
 		/// Called after the dungeon is completely built
 		/// </summary>
 		/// <param name="model">The dungeon model</param>
-		public override void OnPostDungeonBuild(Dungeon dungeon, DungeonModel model) {
+        public override void OnPostDungeonLayoutBuild(Dungeon dungeon, DungeonModel model)
+        {
+            FindSpecialRooms(model);
+        }
+
+        public void FindSpecialRooms(DungeonModel model)
+        {
 			var gridModel = model as GridDungeonModel;
 			if (gridModel == null) return;
 			
