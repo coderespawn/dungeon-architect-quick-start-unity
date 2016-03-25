@@ -4115,7 +4115,6 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
   greenChannel:
     serializedVersion: 2
     m_Curve:
@@ -4131,7 +4130,6 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
   blueChannel:
     serializedVersion: 2
     m_Curve:
@@ -4147,7 +4145,6 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
   useDepthCorrection: 0
   zCurve:
     serializedVersion: 2
@@ -4164,7 +4161,6 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
   depthRedChannel:
     serializedVersion: 2
     m_Curve:
@@ -4180,7 +4176,6 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
   depthGreenChannel:
     serializedVersion: 2
     m_Curve:
@@ -4196,7 +4191,6 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
   depthBlueChannel:
     serializedVersion: 2
     m_Curve:
@@ -4212,7 +4206,6 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
   saturation: 1
   selectiveCc: 0
   selectiveFromColor: {r: 1, g: 1, b: 1, a: 1}
@@ -4237,12 +4230,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mode: 0
-  intensity: 0.129
+  intensity: .128999993
   chromaticAberration: 1.5
-  axialAberration: 0.5
+  axialAberration: .5
   blur: 0
-  blurSpread: 0.75
-  luminanceDependency: 0.25
+  blurSpread: .75
+  luminanceDependency: .25
   blurDistance: 2.5
   vignetteShader: {fileID: 4800000, guid: 627943dc7a9a74286b70a4f694a0acd5, type: 3}
   separableBlurShader: {fileID: 4800000, guid: e97c14fbb5ea04c3a902cc533d7fc5d1, type: 3}
@@ -4261,8 +4254,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mode: 0
   quality: 1
-  blurArea: 2.13
-  maxBlurSize: 2.59
+  blurArea: 2.13000011
+  maxBlurSize: 2.58999991
   downsample: 0
   tiltShiftShader: {fileID: 4800000, guid: bf34d2a25450349699e8ae6456fa7ca9, type: 3}
 --- !u!114 &1851598987
@@ -4278,9 +4271,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualizeFocus: 0
   focalLength: 10
-  focalSize: 0.46
-  aperture: 0.724
-  focalTransform: {fileID: 0}
+  focalSize: .460000008
+  aperture: .723999977
+  focalTransform: {fileID: 2023876510}
   maxBlurSize: 2
   highResolution: 0
   blurType: 0
@@ -4289,10 +4282,10 @@ MonoBehaviour:
   foregroundOverlap: 1
   dofHdrShader: {fileID: 4800000, guid: acd613035ff3e455e8abf23fdc8c8c24, type: 3}
   dx11BokehShader: {fileID: 4800000, guid: d8e82664aa8686642a424c88ab10164a, type: 3}
-  dx11BokehThreshold: 0.5
-  dx11SpawnHeuristic: 0.0875
+  dx11BokehThreshold: .5
+  dx11SpawnHeuristic: .0874999985
   dx11BokehTexture: {fileID: 2800000, guid: a4cdca73d61814d33ac1587f6c163bca, type: 3}
-  dx11BokehScale: 1.2
+  dx11BokehScale: 1.20000005
   dx11BokehIntensity: 2.5
 --- !u!114 &1851598988
 MonoBehaviour:
@@ -4307,10 +4300,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mode: 1
   showGeneratedNormals: 0
-  offsetScale: 0.2
+  offsetScale: .200000003
   blurRadius: 18
-  edgeThresholdMin: 0.05
-  edgeThreshold: 0.2
+  edgeThresholdMin: .0500000007
+  edgeThreshold: .200000003
   edgeSharpness: 4
   dlaaSharp: 0
   ssaaShader: {fileID: 4800000, guid: b3728d1488b02490cbd196c7941bf1f8, type: 3}
@@ -4348,8 +4341,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75febd242c999f04d9654522a10c006b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensity: 0.5
-  radius: 0.2
+  intensity: .5
+  radius: .200000003
   blurIterations: 1
   blurFilterDistance: 1.25
   downsample: 0
@@ -4371,8 +4364,8 @@ MonoBehaviour:
   hdr: 0
   sepBlurSpread: 2.5
   quality: 1
-  bloomIntensity: 0.5
-  bloomThreshold: 0.5
+  bloomIntensity: .5
+  bloomThreshold: .5
   bloomThresholdColor: {r: 1, g: 1, b: 1, a: 1}
   bloomBlurIterations: 2
   hollywoodFlareBlurIterations: 2
@@ -4380,12 +4373,12 @@ MonoBehaviour:
   lensflareMode: 1
   hollyStretchWidth: 2.5
   lensflareIntensity: 0
-  lensflareThreshold: 0.3
-  lensFlareSaturation: 0.75
-  flareColorA: {r: 0.4, g: 0.4, b: 0.8, a: 0.75}
-  flareColorB: {r: 0.4, g: 0.8, b: 0.8, a: 0.75}
-  flareColorC: {r: 0.8, g: 0.4, b: 0.8, a: 0.75}
-  flareColorD: {r: 0.8, g: 0.4, b: 0, a: 0.75}
+  lensflareThreshold: .300000012
+  lensFlareSaturation: .75
+  flareColorA: {r: .400000006, g: .400000006, b: .800000012, a: .75}
+  flareColorB: {r: .400000006, g: .800000012, b: .800000012, a: .75}
+  flareColorC: {r: .800000012, g: .400000006, b: .800000012, a: .75}
+  flareColorD: {r: .800000012, g: .400000006, b: 0, a: .75}
   lensFlareVignetteMask: {fileID: 2800000, guid: 95ef4804fe0be4c999ddaa383536cde8,
     type: 3}
   lensFlareShader: {fileID: 4800000, guid: 459fe69d2f6d74ddb92f04dbf45a866b, type: 3}
