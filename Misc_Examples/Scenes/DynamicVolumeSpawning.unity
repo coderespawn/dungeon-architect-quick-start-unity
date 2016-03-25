@@ -65,7 +65,6 @@ LightmapSettings:
     m_TextureCompression: 1
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
-    m_ReflectionCompression: 2
   m_LightmapSnapshot: {fileID: 112000001, guid: 87f62925b7ee75f4da3008fa6597335d,
     type: 2}
   m_RuntimeCPUUsage: 25
@@ -86,6 +85,9 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!127 &5
+LevelGameManager:
+  m_ObjectHideFlags: 0
 --- !u!1001 &327256010
 Prefab:
   m_ObjectHideFlags: 0
@@ -376,8 +378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee3e4ad20d0b3ea459ef49ec19094e3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ToolData:
-    paintedCells: []
+  ToolData: {fileID: 0}
   DoorManager:
     doors: []
   State: 0
@@ -408,6 +409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Seed: 0
+  Mode2D: 0
   GridCellSize: {x: 4, y: 2, z: 4}
   NumCells: 100
   MinCellSize: 3
@@ -422,7 +424,6 @@ MonoBehaviour:
   StairConnectionTollerance: 10
   NormalMean: 0
   NormalStd: .300000012
-  Mode2D: 0
   InitialRoomRadius: 20
   FloorHeight: 0
 --- !u!4 &1615662172
