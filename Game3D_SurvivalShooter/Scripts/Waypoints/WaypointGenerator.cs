@@ -11,16 +11,21 @@ namespace DAShooter
 		public GameObject waypointTemplate;
 		public GameObject waypointParent;
 		public Vector3 waypointOffset = Vector3.up;
-		public bool mode2D = false;
+		bool mode2D = false;
 
-		public override void OnPostDungeonBuild (Dungeon dungeon, DungeonModel model)
+        public override void OnDungeonMarkersEmitted(Dungeon dungeon, DungeonModel model, List<PropSocket> markers) 
 		{
+            BuildWaypoints(model, markers);
+        }
+
+        public void BuildWaypoints(DungeonModel model, List<PropSocket> markers)
+        {
 	        if (!(model is GridDungeonModel)) {
 	            Debug.LogWarning("Waypoint generator not supported model of type: " + model.GetType());
 	            return;
 	        }
-
-	        var gridModel = model as GridDungeonModel;
+            var gridModel = model as GridDungeonModel;
+            mode2D = gridModel.Config.Mode2D;
 
 			// Destroy all existing waypoints
 			DestroyAllWaypoints();
@@ -29,9 +34,29 @@ namespace DAShooter
 
 			int idCounter = 1;
 
+            var wall2DPositions = new HashSet<IntVector>();
+            if (mode2D)
+            {
+                foreach (var marker in markers)
+                {
+                    if (marker.SocketType == DungeonConstants.ST_WALL2D)
+                    {
+                        wall2DPositions.Add(marker.gridPosition);
+                    }
+                }
+            }
+
 			// Create a waypoint on each cell
 	        foreach (var cell in gridModel.Cells)
 	        {
+                if (mode2D)
+                {
+                    if (wall2DPositions.Contains(cell.Bounds.Location))
+                    {
+                        // Don't want to create a waypoint on a wall tile
+                        continue;
+                    }
+                }
 	            var worldPos = MathUtils.GridToWorld(gridModel.Config.GridCellSize, cell.CenterF);
 				worldPos += waypointOffset;
 				if (mode2D) {
@@ -50,21 +75,30 @@ namespace DAShooter
 				var waypoint = cellToWaypoint[cellId];
 	            var cell = gridModel.GetCell(cellId);
 				var adjacentWaypoints = new List<Waypoint>();
+                var visited = new HashSet<int>();
 				foreach (var adjacentCellId in cell.AdjacentCells) {
+                    if (visited.Contains(GetHash(cellId, adjacentCellId))) continue;
+
 	                var adjacentCell = gridModel.GetCell(adjacentCellId);
 					// add only if there is a direct path to it (through a door or stair or open space)
 	                bool directPath = HasDirectPath(gridModel, cell, adjacentCell);
 					if (directPath) {
 						if (cellToWaypoint.ContainsKey(adjacentCellId)) {
 							var adjacentWaypoint = cellToWaypoint[adjacentCellId];
-							adjacentWaypoints.Add(adjacentWaypoint);
-
+                            adjacentWaypoints.Add(adjacentWaypoint);
+                            visited.Add(GetHash(cellId, adjacentCellId));
+                            visited.Add(GetHash(adjacentCellId, cellId));
 						}
 					}
 				}
 				waypoint.AdjacentWaypoints = adjacentWaypoints.ToArray();
 			}
 		}
+
+        int GetHash(int a, int b)
+        {
+            return a << 16 | b;
+        }
 
 	    bool HasDirectPath(GridDungeonModel gridModel, Cell cellA, Cell cellB)
 	    {

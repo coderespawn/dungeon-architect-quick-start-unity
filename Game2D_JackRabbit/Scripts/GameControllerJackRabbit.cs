@@ -11,7 +11,9 @@ namespace JackRabbit {
 		public Text loadingText;
 		private static GameControllerJackRabbit instance;
 
-		DAShooter.LevelNpcSpawner npcSpawner;
+        DAShooter.LevelNpcSpawner npcSpawner;
+        DAShooter.WaypointGenerator waypointGenerator;
+        SpecialRoomFinder2D specialRoomFinder;
 		
 		public static GameControllerJackRabbit Instance {
 			get {
@@ -22,8 +24,10 @@ namespace JackRabbit {
 
 		void Awake() {
 			Physics2D.gravity = Vector2.zero;
-			instance = this;
-			npcSpawner = GetComponent<DAShooter.LevelNpcSpawner>();
+            instance = this;
+            npcSpawner = GetComponent<DAShooter.LevelNpcSpawner>();
+            waypointGenerator = GetComponent<DAShooter.WaypointGenerator>();
+            specialRoomFinder = GetComponent<SpecialRoomFinder2D>();
 			CreateNewLevel();
 		}
 
@@ -37,14 +41,29 @@ namespace JackRabbit {
 			container.SetActive(visible);
 		}
 
+        void NotifyBuild()
+        {
+            waypointGenerator.BuildWaypoints(dungeon.ActiveModel, dungeon.Markers);
+            specialRoomFinder.FindSpecialRooms(dungeon.ActiveModel);
+        }
+
+        void NotifyDestroyed() {
+            waypointGenerator.OnDungeonDestroyed(dungeon);
+            specialRoomFinder.OnDungeonDestroyed(dungeon);
+        }
+
 		IEnumerator RebuildLevelRoutine() {
 			SetLoadingTextVisible(true);
 			loadingText.text = "";
 			AppendLoadingText("Generating Level... ");
 			dungeon.DestroyDungeon();
+            NotifyDestroyed();
 			yield return 0;	
 
 			dungeon.Build();
+			yield return 0;
+            NotifyBuild();
+			yield return 0;	
 			AppendLoadingText("DONE!\n");
 			AppendLoadingText("Building Navigation... ");
 			yield return 0;		// Wait for a frame to show our loading text
