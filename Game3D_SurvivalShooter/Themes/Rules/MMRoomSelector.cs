@@ -3,6 +3,7 @@
 using UnityEngine;
 using System.Collections;
 using DungeonArchitect;
+using DungeonArchitect.Builders.Grid;
 
 namespace DAShooter {
 	public class MMRoomSelector : SelectorRule {

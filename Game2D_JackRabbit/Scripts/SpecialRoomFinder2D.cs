@@ -2,6 +2,7 @@
 using System.Collections;
 using DungeonArchitect;
 using DungeonArchitect.Utils;
+using DungeonArchitect.Builders.Grid;
 
 namespace JackRabbit {
 	public class SpecialRoomFinder2D : DungeonEventListener {

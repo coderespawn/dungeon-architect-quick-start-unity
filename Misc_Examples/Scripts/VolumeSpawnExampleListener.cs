@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DungeonArchitect;
 using DungeonArchitect.Graphs;
 using DungeonArchitect.Utils;
+using DungeonArchitect.Builders.Grid;
 
 /// <summary>
 /// This example spawns various theme override volumes around rooms 

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using DungeonArchitect;
+using DungeonArchitect.Builders.Grid;
 
 public class AdjacentCorridorTracker : MonoBehaviour {
 
