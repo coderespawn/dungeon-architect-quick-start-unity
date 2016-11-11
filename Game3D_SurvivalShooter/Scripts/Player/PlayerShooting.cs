@@ -10,7 +10,7 @@ namespace DAShooter
 
 
         float timer;                                    // A timer to determine when to fire.
-        Ray shootRay;                                   // A ray from the gun end forwards.
+        public Ray shootRay;                                   // A ray from the gun end forwards.
         RaycastHit shootHit;                            // A raycast hit to get information about what was hit.
         ParticleSystem gunParticles;                    // Reference to the particle system.
         LineRenderer gunLine;                           // Reference to the line renderer.
