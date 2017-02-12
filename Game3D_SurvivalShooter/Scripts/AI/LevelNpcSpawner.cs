@@ -42,8 +42,8 @@ namespace DAShooter
 		}
 
 		Vector3 GetValidPointOnNavMesh(Vector3 position) {
-			NavMeshHit hit;
-			if (NavMesh.SamplePosition(position, out hit, 4.0f, NavMesh.AllAreas)) {
+			UnityEngine.AI.NavMeshHit hit;
+			if (UnityEngine.AI.NavMesh.SamplePosition(position, out hit, 4.0f, UnityEngine.AI.NavMesh.AllAreas)) {
 				return hit.position;
 			}
 			return position;
