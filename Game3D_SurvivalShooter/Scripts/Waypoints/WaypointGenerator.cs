@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using DungeonArchitect;
 using DungeonArchitect.Utils;
 using DungeonArchitect.Builders.Grid;
+using DungeonArchitect.Builders.SimpleCity;
 
 namespace DAShooter
 {
@@ -21,11 +22,26 @@ namespace DAShooter
 
         public void BuildWaypoints(DungeonModel model, List<PropSocket> markers)
         {
-	        if (!(model is GridDungeonModel)) {
-	            Debug.LogWarning("Waypoint generator not supported model of type: " + model.GetType());
-	            return;
-	        }
-            var gridModel = model as GridDungeonModel;
+            // Destroy all existing waypoints
+            DestroyAllWaypoints();
+
+            if (model is GridDungeonModel)
+            {
+                BuildGridWaypoints(model as GridDungeonModel, markers);
+            }
+            else if (model is SimpleCityDungeonModel)
+            {
+                BuildCityWaypoints(model as SimpleCityDungeonModel);
+            }
+            else
+            {
+                Debug.LogWarning("Waypoint generator does not support model of type: " + model.GetType());
+                return;
+            }
+        }
+
+        void BuildGridWaypoints(GridDungeonModel gridModel, List<PropSocket> markers)
+        {
             mode2D = gridModel.Config.Mode2D;
 
 			// Destroy all existing waypoints
@@ -95,6 +111,72 @@ namespace DAShooter
 				waypoint.AdjacentWaypoints = adjacentWaypoints.ToArray();
 			}
 		}
+
+        void BuildCityWaypoints(SimpleCityDungeonModel model)
+        {
+            var cells = model.Cells;
+            var width = cells.GetLength(0);
+            var height = cells.GetLength(1);
+            var cellSize = new Vector3(model.Config.CellSize.x, 0, model.Config.CellSize.y);
+            int idCounter = 1;
+            var cellToWaypoint = new Dictionary<SimpleCityCell, Waypoint>();
+            var adjacentWaypoints = new Dictionary<Waypoint, List<Waypoint>>();
+
+            for (int x = 0; x < width; x++)
+            {
+                for (int z = 0; z < height; z++)
+                {
+                    var cell = cells[x, z];
+                    if (cell.CellType == SimpleCityCellType.Road)
+                    {
+                        // Create a waypoint here
+                        var worldPos = Vector3.Scale(cellSize, new Vector3(x, 0, z));
+                        worldPos += waypointOffset;
+                        var waypointObject = Instantiate(waypointTemplate, worldPos, Quaternion.identity) as GameObject;
+                        waypointObject.transform.parent = waypointParent.transform;
+
+                        var waypoint = waypointObject.GetComponent<Waypoint>();
+                        adjacentWaypoints.Add(waypoint, new List<Waypoint>());
+                        waypoint.id = idCounter++;
+                        cellToWaypoint.Add(cell, waypoint);
+                    }
+                }
+            }
+
+            for (int x = 0; x < width; x++)
+            {
+                for (int z = 0; z < height; z++)
+                {
+                    var cell = cells[x, z];
+                    // connect to adjacent road tiles
+                    ConnectAdjacentRoadTiles(model, cell, 0, -1, cellToWaypoint, adjacentWaypoints);
+                    ConnectAdjacentRoadTiles(model, cell, -1, 0, cellToWaypoint, adjacentWaypoints);
+                }
+            }
+
+            foreach (var waypoint in cellToWaypoint.Values)
+            {
+                waypoint.AdjacentWaypoints = adjacentWaypoints[waypoint].ToArray();
+            }
+        }
+
+        void ConnectAdjacentRoadTiles(SimpleCityDungeonModel model, SimpleCityCell cell, int dx, int dz,
+            Dictionary<SimpleCityCell, Waypoint> cellToWaypoint, Dictionary<Waypoint, List<Waypoint>> adjacentWaypoints)
+        {
+            int adjacentX = cell.Position.x + dx;
+            int adjacentZ = cell.Position.z + dz;
+            if (adjacentX < 0 || adjacentZ < 0) return;
+            var adjacentCell = model.Cells[adjacentX, adjacentZ];
+            if (cell.CellType == SimpleCityCellType.Road && adjacentCell.CellType == SimpleCityCellType.Road)
+            {
+                // Connect the two cells
+                var waypoint1 = cellToWaypoint[cell];
+                var waypoint2 = cellToWaypoint[adjacentCell];
+
+                adjacentWaypoints[waypoint1].Add(waypoint2);
+                adjacentWaypoints[waypoint2].Add(waypoint1);
+            }
+        }
 
         int GetHash(int a, int b)
         {

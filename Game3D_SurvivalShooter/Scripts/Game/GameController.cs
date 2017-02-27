@@ -46,12 +46,15 @@ namespace DAShooter {
 			StartCoroutine(RebuildLevel(dungeon));
 		}
 
-		IEnumerator RebuildLevel(Dungeon dungeon) {
-			textBuildingNavMesh.gameObject.SetActive(false);
-			levelLoadingScreen.SetActive(true);
-			minimap.SetActive(false);
+        IEnumerator RebuildLevel(Dungeon dungeon) {
+            textBuildingNavMesh.gameObject.SetActive(false);
+            levelLoadingScreen.SetActive(true);
+            if (minimap != null)
+            {
+                minimap.SetActive(false);
+            }
 
-			textBuildingLayout.text = labelBuildingLayout;
+            textBuildingLayout.text = labelBuildingLayout;
 			textBuildingLayout.gameObject.SetActive(true);
 			yield return 0;
             
@@ -72,7 +75,10 @@ namespace DAShooter {
 			npcSpawner.OnPostDungeonBuild(dungeon, dungeon.ActiveModel);
 
 			levelLoadingScreen.SetActive(false);
-			minimap.SetActive(true);
+            if (minimap != null)
+            {
+                minimap.SetActive(true);
+            }
 
 			// reset player health
 			var player = GameObject.FindGameObjectWithTag(GameTags.Player);
