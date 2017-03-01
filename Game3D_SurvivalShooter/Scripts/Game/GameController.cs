@@ -11,7 +11,6 @@ namespace DAShooter {
 	public class GameController : MonoBehaviour {
 		private static GameController instance;
 		public Dungeon dungeon;
-		public DungeonNavMesh navMesh;
 		public GameObject minimap;
 
 		public GameObject levelLoadingScreen;
@@ -69,9 +68,6 @@ namespace DAShooter {
 			textBuildingNavMesh.gameObject.SetActive(true);
 			yield return 0;
             
-
-			RebuildNavigation();
-
 			npcSpawner.OnPostDungeonBuild(dungeon, dungeon.ActiveModel);
 
 			levelLoadingScreen.SetActive(false);
@@ -100,10 +96,6 @@ namespace DAShooter {
 					Destroy (enemy);
 				}
 			}
-	    }
-
-		public void RebuildNavigation() {
-	      navMesh.Build();
 	    }
 	}
 }

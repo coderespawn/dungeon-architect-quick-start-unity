@@ -1,6 +1,7 @@
 ﻿//$ Copyright 2016, Code Respawn Technologies Pvt Ltd - All Rights Reserved $//
 
 using UnityEngine;
+using UnityEngine.AI;
 using System.Collections;
 using System.Collections.Generic;
 using DungeonArchitect;
@@ -18,21 +19,24 @@ namespace DAShooter
 		
 		protected virtual void HandleFrameUpdate (float elapsedTime) {
 		}
-		
-		public override void Update() {
 
-			// if we are not already dead, then check for the player health
-			var isInDeathState = (this is AIStateDead);
-			if (!isInDeathState) {
-				if (!controller.enabled) {
-					// Player is no longer alive. Move to the dead state
-					var deadState = new AIStateDead(controller);
-					stateMachine.MoveTo(deadState);
-				}
-			}
+        public override void Update() {
 
-			HandleFrameUpdate(Time.deltaTime);
-		}
+            // if we are not already dead, then check for the player health
+            var isInDeathState = (this is AIStateDead);
+            if (!isInDeathState) {
+                if (!controller.enabled) {
+                    // Player is no longer alive. Move to the dead state
+                    var deadState = new AIStateDead(controller);
+                    stateMachine.MoveTo(deadState);
+                }
+            }
+
+            if (controller.Agent.isActiveAndEnabled)
+            {
+                HandleFrameUpdate(Time.deltaTime);
+            }
+        }
 		
 		protected bool IsWithinPlayerProximity(ref Collider outCollider, float radius) {
 			return false;
@@ -78,7 +82,7 @@ namespace DAShooter
 			
 			// Check if the player is within the NPC's field of vision
 			{
-				var forward3D = controller.Agent.Velocity.normalized;
+				var forward3D = controller.Agent.velocity.normalized;
 				var forward = new Vector2(forward3D.x, forward3D.z);
 				var toPlayer = (target - controller.gameObject.transform.position).normalized;
 				var angle = Vector3.Angle(forward, toPlayer);
@@ -188,9 +192,9 @@ namespace DAShooter
 		public override void OnEnter() {
 			var hasSighting = controller.LastSighting.HasSighting();
 			if (hasSighting) {
-				// Start moving to the last know sighting of the player
-				controller.Agent.Resume();
-				controller.Agent.Destination = controller.LastSighting.Position;
+                // Start moving to the last know sighting of the player
+                controller.Agent.isStopped = false;
+				controller.Agent.destination = controller.LastSighting.Position;
 			} 
 			else {
 				// Should not happen
@@ -217,7 +221,7 @@ namespace DAShooter
 	        }
 
 			// Check if we are near the last sighting position;
-			if (controller.Agent.GetRemainingDistance() < controller.destinationArriveProximity) {
+			if (controller.Agent.remainingDistance < controller.destinationArriveProximity) {
 				// We have reached the last sighting position and still haven't found the player
 				// Stand here and wait for a bit before returing to patrolling
 				var waitAndSearch = new AIStateWaitAndSearch(controller);
@@ -232,7 +236,7 @@ namespace DAShooter
 		public float timeSinceStart = 0;
 		public override void OnEnter() {
 			base.OnEnter();
-			controller.Agent.Stop();
+            controller.Agent.isStopped = true;
 	    }
 		
 		protected override void HandleFrameUpdate (float elapsedTime)
@@ -270,11 +274,11 @@ namespace DAShooter
 				followTarget = playerObject.transform;
 			}
 
-			controller.Agent.Resume();
+            controller.Agent.isStopped = false;
 		}
 		
 		public override void OnExit() {
-			controller.Agent.Stop();
+			controller.Agent.isStopped = true;
 		}
 		
 		public override void Update() {
@@ -285,13 +289,13 @@ namespace DAShooter
 		protected override void HandleFrameUpdate (float elapsedTime)
 		{
 			base.HandleFrameUpdate(elapsedTime);
-
-			Collider playerCollider = null;
+            
+            Collider playerCollider = null;
 			if (IsWithinPlayerProximity(ref playerCollider, controller.playerProximityRadius)) {
 				// close to the player.  Move to the attack state
 			} else {
 				// Move to the player
-				controller.Agent.Destination = followTarget.position;
+				controller.Agent.destination = followTarget.position;
 			}
 
 			if (!IsPlayerVisible()) {
@@ -323,7 +327,7 @@ namespace DAShooter
 		public AIStatePatrol(AIController controller) : base(controller, 0.1f) {}
 		
 		public override void OnEnter() {
-			controller.Agent.Resume();
+            controller.Agent.isStopped = false;
 
 			// Since we entered the patrol state, the player is not visible
 			controller.LastSighting.ClearSighting();
@@ -349,7 +353,7 @@ namespace DAShooter
 			if (point == null) return;
 			var offset = waypointOffsets[currentWaypointIndex % waypointOffsets.Length];
 
-			controller.Agent.Destination = point.gameObject.transform.position + offset;
+			controller.Agent.destination = point.gameObject.transform.position + offset;
 		}
 
 		public override void OnExit() {
@@ -374,7 +378,7 @@ namespace DAShooter
 
 			var agent = controller.Agent;
 
-			if (agent.GetRemainingDistance() < controller.destinationArriveProximity) {
+			if (agent.remainingDistance < controller.destinationArriveProximity) {
 				currentWaypointIndex++;
 			}
 			MoveToCurrentPoint();
@@ -394,7 +398,7 @@ namespace DAShooter
 
 		public override void OnEnter() {
 			base.OnEnter();
-			controller.Agent.Stop();
+            controller.Agent.isStopped = true;
 			controller.Agent.enabled = false;
 			controller.Capsule.enabled = false;
 		}
@@ -411,7 +415,7 @@ namespace DAShooter
 		public override void OnEnter() {
 			base.OnEnter();
 
-			controller.Agent.Stop();
+            controller.Agent.isStopped = true;
 
 			controller.LastSighting.ClearSighting();
 		}
@@ -435,7 +439,7 @@ namespace DAShooter
 
 
 	public class AIController : CharacterControlScript {
-		DungeonNavAgent agent;
+		NavMeshAgent agent;
 		PatrolPath patrol;
 		CapsuleCollider capsule;
 		LastPlayerSighting lastSighting;
@@ -449,7 +453,7 @@ namespace DAShooter
 		public float playerProximityRadius = 3.0f;
 		public bool mode2D = false;
 
-		public DungeonNavAgent Agent {
+		public NavMeshAgent Agent {
 			get {
 				return agent;
 			}
@@ -477,7 +481,7 @@ namespace DAShooter
 		protected override void Initialize() {
 			capsule = GetComponent<CapsuleCollider>();
 			patrol = GetComponent<PatrolPath>();
-			agent = GetComponent<DungeonNavAgent>();
+			agent = GetComponent<NavMeshAgent>();
 			lastSighting = GetComponent<LastPlayerSighting>();
 
 			State startState = null;

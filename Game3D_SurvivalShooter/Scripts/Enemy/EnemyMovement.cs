@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
 using System.Collections;
 using DungeonArchitect;
 using DungeonArchitect.Navigation;
@@ -10,7 +11,7 @@ namespace DAShooter
         Transform player;               // Reference to the player's position.
         PlayerHealth playerHealth;      // Reference to the player's health.
         EnemyHealth enemyHealth;        // Reference to this enemy's health.
-		DungeonNavAgent navAgent;
+        NavMeshAgent navAgent;
 
         void Awake ()
         {
@@ -18,7 +19,7 @@ namespace DAShooter
             player = GameObject.FindGameObjectWithTag ("Player").transform;
             playerHealth = player.GetComponent <PlayerHealth> ();
             enemyHealth = GetComponent <EnemyHealth> ();
-			navAgent = GetComponent<DungeonNavAgent>();
+			navAgent = GetComponent<NavMeshAgent>();
         }
 
         void Update ()
@@ -27,7 +28,7 @@ namespace DAShooter
             if(enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0)
             {
                 // ... set the destination of the nav mesh agent to the player.
-				navAgent.Destination = player.position;
+				navAgent.destination = player.position;
             }
             // Otherwise...
             else

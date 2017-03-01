@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
 using System.Collections;
 using DungeonArchitect;
 using DungeonArchitect.Navigation;
@@ -98,7 +99,7 @@ namespace DAShooter
 
 		IEnumerator StartSinkingAnimation() {
             // Find and disable the Nav Mesh Agent.
-            GetComponent <DungeonNavAgent> ().enabled = false;
+            GetComponent <NavMeshAgent> ().enabled = false;
 
 			// Increase the score by the enemy's score value.
 			ScoreManager.score += scoreValue;
