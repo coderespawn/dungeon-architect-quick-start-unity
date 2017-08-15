@@ -103,7 +103,7 @@ namespace DAShooter {
 	#endif
 			}
 			else
-				Application.CaptureScreenshot( filename, (int)supersampleScreenshot );
+				ScreenCapture.CaptureScreenshot( filename, (int)supersampleScreenshot );
 
 			if( Time.frameCount % frameRate == 0 )
 				Debug.Log( string.Format( "{0} second rendered, {1} total frames.", Time.frameCount / Time.captureFramerate, Time.frameCount ) );

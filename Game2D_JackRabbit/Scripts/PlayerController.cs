@@ -61,7 +61,7 @@ namespace JackRabbit {
 			var radius = 0.7f;
 			var colliders = Physics2D.OverlapCircleAll(gameObject.transform.position + offset, radius);
 			foreach (var collider in colliders) {
-                var enemyController = collider.gameObject.GetComponent<DAShooter.AIController>();
+                var enemyController = collider.gameObject.GetComponent<DAShooter.TwoD.AIController2D>();
                 if (enemyController != null)
                 {
 					// Apply damage to the enemy
