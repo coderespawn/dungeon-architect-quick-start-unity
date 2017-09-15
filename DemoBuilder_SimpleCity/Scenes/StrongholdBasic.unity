@@ -38,11 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44692558, g: 0.49678743, b: 0.57508624, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 11
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -54,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 8
+    serializedVersion: 9
     m_Resolution: 2
     m_BakeResolution: 40
     m_TextureWidth: 1024
@@ -74,6 +74,7 @@ LightmapSettings:
     m_MixedBakeMode: 1
     m_BakeBackend: 0
     m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
     m_PVRFiltering: 0
@@ -85,9 +86,9 @@ LightmapSettings:
     m_PVRFilteringAtrousColorSigma: 1
     m_PVRFilteringAtrousNormalSigma: 1
     m_PVRFilteringAtrousPositionSigma: 1
-  m_LightingDataAsset: {fileID: 112000001, guid: cc739452a17d4674290714b694c2f290,
+  m_LightingDataAsset: {fileID: 112000002, guid: cc739452a17d4674290714b694c2f290,
     type: 2}
-  m_ShadowMaskMode: 2
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -236,6 +237,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &13856440
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,6 +366,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &14910783
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,6 +413,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &19703283
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,6 +460,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &21700377
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,6 +753,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &31510862
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -845,6 +851,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &32974747
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -942,6 +949,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &40951878
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1039,6 +1047,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &45975464
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1218,6 +1227,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &51623838
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1315,6 +1325,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &56556008
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1412,6 +1423,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &58311073
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1673,6 +1685,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &62991651
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1770,6 +1783,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &69405191
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1867,6 +1881,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &76994003
 GameObject:
   m_ObjectHideFlags: 0
@@ -1913,6 +1928,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &78094930
 GameObject:
   m_ObjectHideFlags: 0
@@ -2041,6 +2057,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &82614764
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2220,6 +2237,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &91453249
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2563,6 +2581,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &99513905
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2742,6 +2761,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &119385525
 GameObject:
   m_ObjectHideFlags: 0
@@ -2788,6 +2808,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &119385528
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3049,6 +3070,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &128827298
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3146,6 +3168,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &135258192
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3243,6 +3266,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &138194790
 GameObject:
   m_ObjectHideFlags: 0
@@ -3289,6 +3313,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &138646799
 GameObject:
   m_ObjectHideFlags: 0
@@ -3581,6 +3606,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &142336270
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3678,6 +3704,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &153089656
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3857,6 +3884,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &153195471
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4200,6 +4228,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &163921724
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4379,6 +4408,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &169766628
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4558,6 +4588,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &196146141
 GameObject:
   m_ObjectHideFlags: 0
@@ -4604,6 +4635,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &207190640
 GameObject:
   m_ObjectHideFlags: 0
@@ -4650,6 +4682,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &207190643
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4747,6 +4780,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &221027743
 GameObject:
   m_ObjectHideFlags: 0
@@ -4875,6 +4909,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &227346792
 GameObject:
   m_ObjectHideFlags: 0
@@ -5167,6 +5202,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &232215747
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5346,6 +5382,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &240520938
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5689,6 +5726,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &249508083
 GameObject:
   m_ObjectHideFlags: 0
@@ -5817,6 +5855,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &250979857
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6078,6 +6117,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &256391871
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6421,6 +6461,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &273052643
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6600,6 +6641,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &278303370
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6943,6 +6985,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &294053914
 GameObject:
   m_ObjectHideFlags: 0
@@ -6989,6 +7032,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &294053917
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7250,6 +7294,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &304333063
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7347,6 +7392,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &304982729
 GameObject:
   m_ObjectHideFlags: 0
@@ -7393,6 +7439,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &304982732
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7572,6 +7619,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &312790977
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7833,6 +7881,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &321565392
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7930,6 +7979,7 @@ MonoBehaviour:
   NodeId: e11fd4d3-98e3-4a86-a291-1e2e9491e2ee
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &324361154
 GameObject:
   m_ObjectHideFlags: 0
@@ -7976,6 +8026,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &324382303
 GameObject:
   m_ObjectHideFlags: 0
@@ -8104,6 +8155,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &326024357
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8201,6 +8253,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &332542024
 GameObject:
   m_ObjectHideFlags: 0
@@ -8247,6 +8300,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &334489707
 GameObject:
   m_ObjectHideFlags: 0
@@ -8293,6 +8347,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &334489710
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8390,6 +8445,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &340649595
 GameObject:
   m_ObjectHideFlags: 0
@@ -8436,6 +8492,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &343917929
 GameObject:
   m_ObjectHideFlags: 0
@@ -8482,6 +8539,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &345007521
 GameObject:
   m_ObjectHideFlags: 0
@@ -8692,6 +8750,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &350471996
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8789,6 +8848,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &356991929
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9050,6 +9110,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &361921987
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9229,6 +9290,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &368373522
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9326,6 +9388,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &368973848
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9587,6 +9650,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &384342291
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9684,6 +9748,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &387441846
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10027,6 +10092,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &395020907
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10124,6 +10190,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &398461865
 GameObject:
   m_ObjectHideFlags: 0
@@ -10334,6 +10401,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &412023928
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10841,6 +10909,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &430401735
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11020,6 +11089,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &433802793
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11117,6 +11187,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &441965864
 GameObject:
   m_ObjectHideFlags: 0
@@ -11163,6 +11234,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &441965867
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11260,6 +11332,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &445885263
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11357,6 +11430,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &446318568
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11454,6 +11528,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &454606370
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11633,6 +11708,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &466460222
 GameObject:
   m_ObjectHideFlags: 0
@@ -11925,6 +12001,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &485888265
 GameObject:
   m_ObjectHideFlags: 0
@@ -11971,6 +12048,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &485888268
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12150,6 +12228,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &488248967
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12247,6 +12326,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &494092906
 GameObject:
   m_ObjectHideFlags: 0
@@ -12293,6 +12373,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &495788126
 GameObject:
   m_ObjectHideFlags: 0
@@ -12421,6 +12502,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &506483602
 GameObject:
   m_ObjectHideFlags: 0
@@ -12467,6 +12549,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &506483605
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12564,6 +12647,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &509821129
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12825,6 +12909,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &524088827
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12922,6 +13007,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &532239003
 GameObject:
   m_ObjectHideFlags: 0
@@ -13296,6 +13382,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &543054493
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13557,6 +13644,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &561901692
 GameObject:
   m_ObjectHideFlags: 0
@@ -13603,6 +13691,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &561901695
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13700,6 +13789,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &563506344
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13961,6 +14051,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &577036576
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14058,6 +14149,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &577413737
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14319,6 +14411,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &582205440
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14416,6 +14509,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &584870668
 GameObject:
   m_ObjectHideFlags: 0
@@ -14462,6 +14556,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &584870671
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14641,6 +14736,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &588608083
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14820,6 +14916,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &594614635
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14999,6 +15096,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &597221824
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15178,6 +15276,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &597839019
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15275,6 +15374,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &600073649
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15372,6 +15472,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &615029595
 GameObject:
   m_ObjectHideFlags: 0
@@ -15418,6 +15519,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &615029598
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15551,51 +15653,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 617402532}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &624261572
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 199460, guid: aa47324eda2ce1b48a99b93e5e946e8c, type: 2}
-  m_PrefabInternal: {fileID: 1075892161}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 624261573}
-  - component: {fileID: 624261574}
-  m_Layer: 0
-  m_Name: PaintMode
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &624261573
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 428972, guid: aa47324eda2ce1b48a99b93e5e946e8c, type: 2}
-  m_PrefabInternal: {fileID: 1075892161}
-  m_GameObject: {fileID: 624261572}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 784981814}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &624261574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11442264, guid: aa47324eda2ce1b48a99b93e5e946e8c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1075892161}
-  m_GameObject: {fileID: 624261572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5972edcfa6d95d143bebbb3afbd9a58d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cursorLogicalHeight: 0
-  overlayOpacity: 0.1
-  mode2D: 0
-  brushSize: 1
 --- !u!1 &629662071
 GameObject:
   m_ObjectHideFlags: 0
@@ -15642,6 +15699,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &629662074
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15821,6 +15879,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &636165294
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15918,6 +15977,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &638175599
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16015,6 +16075,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &639513716
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16194,6 +16255,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &644972765
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16373,6 +16435,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &664164314
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16634,6 +16697,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &670790636
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16731,6 +16795,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &674323737
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16828,6 +16893,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &679332102
 GameObject:
   m_ObjectHideFlags: 0
@@ -16956,6 +17022,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &682528645
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17217,6 +17284,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &693592823
 GameObject:
   m_ObjectHideFlags: 0
@@ -17591,6 +17659,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &702541842
 GameObject:
   m_ObjectHideFlags: 0
@@ -18047,6 +18116,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &715314824
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18226,6 +18296,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &719043505
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18323,6 +18394,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &720552869
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18420,6 +18492,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &722070584
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18681,6 +18754,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &732565551
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18778,6 +18852,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &732610625
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18875,6 +18950,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &734565978
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19136,6 +19212,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &738513367
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19397,6 +19474,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &752957898
 GameObject:
   m_ObjectHideFlags: 0
@@ -19525,6 +19603,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &753704457
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19704,6 +19783,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &760477280
 GameObject:
   m_ObjectHideFlags: 0
@@ -19750,6 +19830,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &763208251
 GameObject:
   m_ObjectHideFlags: 0
@@ -19796,128 +19877,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
---- !u!1 &767028726
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 101000, guid: 7200002e625a3594fa56c5d03765c7c7, type: 2}
-  m_PrefabInternal: {fileID: 1051619444}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 767028729}
-  - component: {fileID: 767028728}
-  - component: {fileID: 767028727}
-  m_Layer: 0
-  m_Name: DemoController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &767028727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11454068, guid: 7200002e625a3594fa56c5d03765c7c7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1051619444}
-  m_GameObject: {fileID: 767028726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d300587c3519c1f4281c4c39bafc2fdd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  guiStyle:
-    m_Name: 
-    m_Normal:
-      m_Background: {fileID: 2800000, guid: 003810e4f2340cc4aa7a74e7bb0db546, type: 3}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_Hover:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_Active:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_Focused:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_OnNormal:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_OnHover:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_OnActive:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_OnFocused:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_Border:
-      m_Left: 0
-      m_Right: 0
-      m_Top: 0
-      m_Bottom: 0
-    m_Margin:
-      m_Left: 0
-      m_Right: 0
-      m_Top: 0
-      m_Bottom: 0
-    m_Padding:
-      m_Left: 10
-      m_Right: 10
-      m_Top: 10
-      m_Bottom: 10
-    m_Overflow:
-      m_Left: 0
-      m_Right: 0
-      m_Top: 0
-      m_Bottom: 0
-    m_Font: {fileID: 0}
-    m_FontSize: 0
-    m_FontStyle: 0
-    m_Alignment: 0
-    m_WordWrap: 0
-    m_RichText: 1
-    m_TextClipping: 0
-    m_ImagePosition: 0
-    m_ContentOffset: {x: 0, y: 0}
-    m_FixedWidth: 0
-    m_FixedHeight: 0
-    m_StretchWidth: 1
-    m_StretchHeight: 0
---- !u!114 &767028728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11473990, guid: 7200002e625a3594fa56c5d03765c7c7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1051619444}
-  m_GameObject: {fileID: 767028726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cea220192b383540a977ab5b950f5ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dungeon: {fileID: 1075892162}
---- !u!4 &767028729
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 406714, guid: 7200002e625a3594fa56c5d03765c7c7, type: 2}
-  m_PrefabInternal: {fileID: 1051619444}
-  m_GameObject: {fileID: 767028726}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  userData: -1
 --- !u!1 &768000533
 GameObject:
   m_ObjectHideFlags: 0
@@ -19964,6 +19924,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &768000536
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20061,6 +20022,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &768283688
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20158,6 +20120,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &770579932
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20337,6 +20300,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &776584891
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20434,6 +20398,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &779426425
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20567,97 +20532,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 780489615}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &784981809
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 126202, guid: aa47324eda2ce1b48a99b93e5e946e8c, type: 2}
-  m_PrefabInternal: {fileID: 1075892161}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 784981814}
-  - component: {fileID: 1075892162}
-  - component: {fileID: 1075892163}
-  - component: {fileID: 784981813}
-  - component: {fileID: 784981812}
-  - component: {fileID: 784981811}
-  - component: {fileID: 784981810}
-  m_Layer: 0
-  m_Name: DungeonSimpleCity
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &784981810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11457014, guid: aa47324eda2ce1b48a99b93e5e946e8c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1075892161}
-  m_GameObject: {fileID: 784981809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd0ef9172759d43928c6f1131063f690, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemParent: {fileID: 1202664520}
---- !u!114 &784981811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11465646, guid: aa47324eda2ce1b48a99b93e5e946e8c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1075892161}
-  m_GameObject: {fileID: 784981809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fc0b7b641bd1ec4a9c35d8ea9502e37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ToolData: {fileID: 0}
-  Config: {fileID: 1075892163}
-  CityWidth: 17
-  CityHeight: 16
---- !u!114 &784981812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11402302, guid: aa47324eda2ce1b48a99b93e5e946e8c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1075892161}
-  m_GameObject: {fileID: 784981809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 148dcb7d2559c404eb2b7420330ceaeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &784981813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114820163125449884, guid: aa47324eda2ce1b48a99b93e5e946e8c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1075892161}
-  m_GameObject: {fileID: 784981809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d008d22774767a42947f3af95e214a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enableRuntimeNavigation: 0
-  boundsPadding: {x: 0, y: 0, z: 0}
-  landscapeBaking: 1
---- !u!4 &784981814
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 438170, guid: aa47324eda2ce1b48a99b93e5e946e8c, type: 2}
-  m_PrefabInternal: {fileID: 1075892161}
-  m_GameObject: {fileID: 784981809}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 624261573}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &791337008
 GameObject:
   m_ObjectHideFlags: 0
@@ -20868,198 +20742,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
---- !u!1 &792562376
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 183776, guid: d786dead44590e943860d8527730886b, type: 2}
-  m_PrefabInternal: {fileID: 1855632909}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 792562388}
-  - component: {fileID: 792562387}
-  - component: {fileID: 792562386}
-  - component: {fileID: 792562385}
-  - component: {fileID: 792562384}
-  - component: {fileID: 792562383}
-  - component: {fileID: 792562382}
-  - component: {fileID: 792562381}
-  - component: {fileID: 792562380}
-  - component: {fileID: 792562379}
-  - component: {fileID: 792562378}
-  - component: {fileID: 792562377}
-  m_Layer: 0
-  m_Name: DemoCamera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &792562377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11413438, guid: d786dead44590e943860d8527730886b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1855632909}
-  m_GameObject: {fileID: 792562376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &792562378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11424562, guid: d786dead44590e943860d8527730886b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1855632909}
-  m_GameObject: {fileID: 792562376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &792562379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11426140, guid: d786dead44590e943860d8527730886b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1855632909}
-  m_GameObject: {fileID: 792562376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &792562380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11424994, guid: d786dead44590e943860d8527730886b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1855632909}
-  m_GameObject: {fileID: 792562376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &792562381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11414888, guid: d786dead44590e943860d8527730886b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1855632909}
-  m_GameObject: {fileID: 792562376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &792562382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11456064, guid: d786dead44590e943860d8527730886b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1855632909}
-  m_GameObject: {fileID: 792562376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9cc9689fabea4d46b135ff89b1407b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clampInDegrees: {x: 360, y: 180}
-  lockCursor: 0
-  sensitivity: {x: 2, y: 2}
-  smoothing: {x: 3, y: 3}
-  targetDirection: {x: 0, y: 0}
-  targetCharacterDirection: {x: 0, y: 0}
-  characterBody: {fileID: 0}
---- !u!114 &792562383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11433326, guid: d786dead44590e943860d8527730886b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1855632909}
-  m_GameObject: {fileID: 792562376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6e28700fb4bc0342b72f651800a8625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 15
---- !u!81 &792562384
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8100312, guid: d786dead44590e943860d8527730886b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1855632909}
-  m_GameObject: {fileID: 792562376}
-  m_Enabled: 1
---- !u!124 &792562385
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 12487432, guid: d786dead44590e943860d8527730886b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1855632909}
-  m_GameObject: {fileID: 792562376}
-  m_Enabled: 1
---- !u!92 &792562386
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9269106, guid: d786dead44590e943860d8527730886b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1855632909}
-  m_GameObject: {fileID: 792562376}
-  m_Enabled: 1
---- !u!20 &792562387
-Camera:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2001464, guid: d786dead44590e943860d8527730886b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1855632909}
-  m_GameObject: {fileID: 792562376}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 0
-  m_AllowMSAA: 1
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
---- !u!4 &792562388
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 419674, guid: d786dead44590e943860d8527730886b, type: 2}
-  m_PrefabInternal: {fileID: 1855632909}
-  m_GameObject: {fileID: 792562376}
-  m_LocalRotation: {x: 0.29612947, y: 0.36943224, z: -0.12548296, w: 0.87182635}
-  m_LocalPosition: {x: -2.48, y: 19.07, z: -9.61}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  userData: -1
 --- !u!1 &794374488
 GameObject:
   m_ObjectHideFlags: 0
@@ -21106,6 +20789,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &794374491
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21203,6 +20887,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &809619514
 GameObject:
   m_ObjectHideFlags: 0
@@ -21249,6 +20934,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &809619517
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21346,6 +21032,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &811266183
 GameObject:
   m_ObjectHideFlags: 0
@@ -21392,6 +21079,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &811266186
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21489,6 +21177,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &814895422
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21668,6 +21357,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &822631220
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21765,6 +21455,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &826917417
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21862,6 +21553,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &828774150
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21959,6 +21651,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &828902200
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22220,6 +21913,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &832226910
 GameObject:
   m_ObjectHideFlags: 0
@@ -22266,6 +21960,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &832226913
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22363,6 +22058,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &836811673
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22542,6 +22238,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &837645205
 GameObject:
   m_ObjectHideFlags: 0
@@ -22670,6 +22367,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &839246819
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22767,6 +22465,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &840663572
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22946,6 +22645,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &853955362
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23043,6 +22743,7 @@ MonoBehaviour:
   NodeId: e11fd4d3-98e3-4a86-a291-1e2e9491e2ee
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &863695739
 GameObject:
   m_ObjectHideFlags: 0
@@ -23089,6 +22790,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &863695742
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23268,6 +22970,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &866864281
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23365,6 +23068,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &873428267
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23462,6 +23166,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &879692219
 GameObject:
   m_ObjectHideFlags: 0
@@ -23672,6 +23377,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &891797125
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23851,6 +23557,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &895120409
 GameObject:
   m_ObjectHideFlags: 0
@@ -24061,6 +23768,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &905494009
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24158,6 +23866,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &912580633
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24255,6 +23964,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &913777493
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24352,6 +24062,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &917251003
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24531,6 +24242,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &929808663
 GameObject:
   m_ObjectHideFlags: 0
@@ -24577,6 +24289,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &935003946
 GameObject:
   m_ObjectHideFlags: 0
@@ -24623,6 +24336,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &935003949
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24966,6 +24680,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &939218468
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25145,6 +24860,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &943544016
 GameObject:
   m_ObjectHideFlags: 0
@@ -25273,6 +24989,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &944736793
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25370,6 +25087,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &944814781
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25467,6 +25185,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &947771124
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25646,6 +25365,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &961859404
 GameObject:
   m_ObjectHideFlags: 0
@@ -25692,6 +25412,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &963854411
 GameObject:
   m_ObjectHideFlags: 0
@@ -25738,6 +25459,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &966035993
 GameObject:
   m_ObjectHideFlags: 0
@@ -25784,6 +25506,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &966035996
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25881,6 +25604,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &970752802
 GameObject:
   m_ObjectHideFlags: 0
@@ -25927,6 +25651,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &970752805
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26024,6 +25749,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &975608142
 GameObject:
   m_ObjectHideFlags: 0
@@ -26316,6 +26042,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &985738442
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26413,6 +26140,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &988483374
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26510,6 +26238,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &993408307
 GameObject:
   m_ObjectHideFlags: 0
@@ -26556,6 +26285,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &993408310
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26735,6 +26465,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1000545986
 GameObject:
   m_ObjectHideFlags: 0
@@ -26863,6 +26594,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1003332717
 GameObject:
   m_ObjectHideFlags: 0
@@ -26909,6 +26641,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1003332720
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27006,6 +26739,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1024900181
 GameObject:
   m_ObjectHideFlags: 0
@@ -27216,6 +26950,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1050578455
 GameObject:
   m_ObjectHideFlags: 0
@@ -27344,6 +27079,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1051049992
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27440,7 +27176,6 @@ Prefab:
       objectReference: {fileID: 1075892162}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7200002e625a3594fa56c5d03765c7c7, type: 2}
-  m_RootGameObject: {fileID: 767028726}
   m_IsPrefabParent: 0
 --- !u!1 &1057974096
 GameObject:
@@ -27488,6 +27223,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1057974099
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27585,6 +27321,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1064344011
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27764,6 +27501,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1075551910
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27889,47 +27627,19 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa47324eda2ce1b48a99b93e5e946e8c, type: 2}
-  m_RootGameObject: {fileID: 784981809}
   m_IsPrefabParent: 0
---- !u!114 &1075892162
+--- !u!114 &1075892162 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11419902, guid: aa47324eda2ce1b48a99b93e5e946e8c,
     type: 2}
   m_PrefabInternal: {fileID: 1075892161}
-  m_GameObject: {fileID: 784981809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e65b74248fe594982b0d9bfde7d96c6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  debugDraw: 0
-  dungeonThemes:
-  - {fileID: 11400000, guid: 7f2d8cd38b4666741a925ce40cbe057e, type: 2}
---- !u!114 &1075892163
+--- !u!114 &1075892163 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11474598, guid: aa47324eda2ce1b48a99b93e5e946e8c,
     type: 2}
   m_PrefabInternal: {fileID: 1075892161}
-  m_GameObject: {fileID: 784981809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8114737d4a991c8409ea735d4ab715c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Seed: 1
-  Mode2D: 0
-  CellSize: {x: 4, y: 4}
-  minSize: 15
-  maxSize: 20
-  minBlockSize: 4
-  maxBlockSize: 5
-  biggerHouseProbability: 0
-  cityWallPadding: 1
-  cityDoorSize: 1
-  roadEdgeRemovalProbability: 0
-  customBlockDimensions: []
 --- !u!1 &1076429435
 GameObject:
   m_ObjectHideFlags: 0
@@ -27976,6 +27686,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1083925655
 GameObject:
   m_ObjectHideFlags: 0
@@ -28432,6 +28143,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1091290410
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28611,6 +28323,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1095471699
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28708,6 +28421,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1103905154
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29051,6 +28765,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1115193026
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29148,6 +28863,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1116185115
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29327,6 +29043,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1124733959
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29424,6 +29141,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1125048593
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29603,6 +29321,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1131940088
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29782,6 +29501,7 @@ MonoBehaviour:
   NodeId: e11fd4d3-98e3-4a86-a291-1e2e9491e2ee
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1139745918
 GameObject:
   m_ObjectHideFlags: 0
@@ -29910,6 +29630,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1142048854
 GameObject:
   m_ObjectHideFlags: 0
@@ -30038,6 +29759,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1153956138
 GameObject:
   m_ObjectHideFlags: 0
@@ -30084,6 +29806,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1153956141
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30181,6 +29904,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1158413947
 GameObject:
   m_ObjectHideFlags: 0
@@ -30309,6 +30033,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1159915329
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30734,6 +30459,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1174465552
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30913,6 +30639,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1179719903
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31174,6 +30901,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1186482942
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31846,6 +31574,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1203348876
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32025,6 +31754,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1209482366
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32122,6 +31852,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1209556408
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32301,6 +32032,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1213954927
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32398,6 +32130,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1221551807
 GameObject:
   m_ObjectHideFlags: 0
@@ -32526,6 +32259,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1223274326
 GameObject:
   m_ObjectHideFlags: 0
@@ -32736,6 +32470,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1231118195
 GameObject:
   m_ObjectHideFlags: 0
@@ -32864,6 +32599,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1231997906
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33043,6 +32779,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1239677920
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33140,6 +32877,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1240345778
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33237,6 +32975,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1240776785
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33334,6 +33073,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1242224467
 GameObject:
   m_ObjectHideFlags: 0
@@ -33544,6 +33284,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1248222650
 GameObject:
   m_ObjectHideFlags: 0
@@ -33754,6 +33495,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1252199391
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33851,6 +33593,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1253177902
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33948,6 +33691,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1259844854
 GameObject:
   m_ObjectHideFlags: 0
@@ -33994,6 +33738,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1259844857
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34173,6 +33918,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1265508941
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34270,6 +34016,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1265595652
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34367,6 +34114,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1270959285
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34464,6 +34212,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1275635534
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34643,6 +34392,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1282099844
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34740,6 +34490,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1292443270
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34837,6 +34588,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1293496149
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35180,6 +34932,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1301990400
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35277,6 +35030,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1308723470
 GameObject:
   m_ObjectHideFlags: 0
@@ -35323,6 +35077,7 @@ MonoBehaviour:
   NodeId: e11fd4d3-98e3-4a86-a291-1e2e9491e2ee
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1308937009
 GameObject:
   m_ObjectHideFlags: 0
@@ -35533,6 +35288,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1314429064
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35630,6 +35386,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1316807214
 GameObject:
   m_ObjectHideFlags: 0
@@ -35758,6 +35515,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1317210486
 GameObject:
   m_ObjectHideFlags: 0
@@ -35886,6 +35644,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1318538626
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36065,6 +35824,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1322327936
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36162,6 +35922,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1323197605
 GameObject:
   m_ObjectHideFlags: 0
@@ -36208,6 +35969,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1323197608
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36387,6 +36149,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1328735201
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36648,6 +36411,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1334915462
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36745,6 +36509,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1336977377
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36842,6 +36607,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1337165332
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36939,6 +36705,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1343486985
 GameObject:
   m_ObjectHideFlags: 0
@@ -37067,6 +36834,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1344454678
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37164,6 +36932,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1348577614
 GameObject:
   m_ObjectHideFlags: 0
@@ -37456,6 +37225,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1354869306
 GameObject:
   m_ObjectHideFlags: 0
@@ -37584,6 +37354,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1357161484
 GameObject:
   m_ObjectHideFlags: 0
@@ -37794,6 +37565,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1359986822
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37891,6 +37663,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1360343845
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38070,6 +37843,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1365870316
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38331,6 +38105,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1385135837
 GameObject:
   m_ObjectHideFlags: 0
@@ -38377,6 +38152,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1385135840
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38474,6 +38250,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1386885041
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38571,6 +38348,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1391051286
 GameObject:
   m_ObjectHideFlags: 0
@@ -38617,6 +38395,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1394394885
 GameObject:
   m_ObjectHideFlags: 0
@@ -38745,6 +38524,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1396095799
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38842,6 +38622,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1400687758
 GameObject:
   m_ObjectHideFlags: 0
@@ -38888,6 +38669,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1400687761
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38985,6 +38767,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1401599087
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39082,6 +38865,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1404033310
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39179,6 +38963,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1410166690
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39604,6 +39389,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1419993012
 GameObject:
   m_ObjectHideFlags: 0
@@ -39650,6 +39436,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1419993015
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39829,6 +39616,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1421373497
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39926,6 +39714,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1422175389
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40023,6 +39812,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1422769461
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40284,6 +40074,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1429714751
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40463,6 +40254,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1436203497
 GameObject:
   m_ObjectHideFlags: 0
@@ -40755,6 +40547,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1443838999
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40852,6 +40645,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1445033757
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41031,6 +40825,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1450521799
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41128,6 +40923,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1454043501
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41307,6 +41103,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1455789145
 GameObject:
   m_ObjectHideFlags: 0
@@ -41353,6 +41150,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1456750091
 GameObject:
   m_ObjectHideFlags: 0
@@ -41399,6 +41197,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1456750094
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41578,6 +41377,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1465571689
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41675,6 +41475,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1474706785
 GameObject:
   m_ObjectHideFlags: 0
@@ -41885,6 +41686,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1488912462
 GameObject:
   m_ObjectHideFlags: 0
@@ -41931,6 +41733,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1488912465
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42028,6 +41831,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1489052692
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42207,6 +42011,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1493403415
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42304,6 +42109,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1493556092
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42401,6 +42207,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1493911247
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42662,6 +42469,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1502535955
 GameObject:
   m_ObjectHideFlags: 0
@@ -42708,6 +42516,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1503570995
 GameObject:
   m_ObjectHideFlags: 0
@@ -42754,6 +42563,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1503570998
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43015,6 +42825,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1516930920
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43194,6 +43005,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1524756567
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43455,6 +43267,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1537125419
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43634,6 +43447,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1540810720
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43731,6 +43545,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1542901875
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43910,6 +43725,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1551219544
 GameObject:
   m_ObjectHideFlags: 0
@@ -43956,6 +43772,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1551219547
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44299,6 +44116,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1562436945
 GameObject:
   m_ObjectHideFlags: 0
@@ -44427,6 +44245,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1562902982
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44606,6 +44425,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1567508674
 GameObject:
   m_ObjectHideFlags: 0
@@ -44734,6 +44554,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1568657050
 GameObject:
   m_ObjectHideFlags: 0
@@ -44944,6 +44765,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1584686698
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45287,6 +45109,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1590654857
 GameObject:
   m_ObjectHideFlags: 0
@@ -45497,6 +45320,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1591311340
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45758,6 +45582,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1596083347
 GameObject:
   m_ObjectHideFlags: 0
@@ -45804,6 +45629,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1596083350
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45983,6 +45809,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1599127317
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46162,6 +45989,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1607020422
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46259,6 +46087,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1607196120
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46848,6 +46677,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1618173063
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46945,6 +46775,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1620967206
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47042,6 +46873,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1622544248
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47303,6 +47135,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1641515956
 GameObject:
   m_ObjectHideFlags: 0
@@ -47349,6 +47182,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1642164026
 GameObject:
   m_ObjectHideFlags: 0
@@ -47641,6 +47475,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1653135902
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47820,6 +47655,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1657429365
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47999,6 +47835,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1665342139
 GameObject:
   m_ObjectHideFlags: 0
@@ -48045,6 +47882,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1665342142
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48142,6 +47980,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1669178009
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48239,6 +48078,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1673262939
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48418,6 +48258,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1678906235
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48597,6 +48438,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1681823807
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48940,6 +48782,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1699177824
 GameObject:
   m_ObjectHideFlags: 0
@@ -49150,6 +48993,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1701120184
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49329,6 +49173,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1703327647
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49426,6 +49271,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1703504714
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49523,6 +49369,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1709288284
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49784,6 +49631,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1729280667
 GameObject:
   m_ObjectHideFlags: 0
@@ -49994,6 +49842,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1736108932
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50173,6 +50022,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1756293097
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50352,6 +50202,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1762797039
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50695,6 +50546,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1776848181
 GameObject:
   m_ObjectHideFlags: 0
@@ -50741,6 +50593,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1776848184
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51248,6 +51101,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1791833935
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51345,6 +51199,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1801734776
 GameObject:
   m_ObjectHideFlags: 0
@@ -51719,6 +51574,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1813779184
 GameObject:
   m_ObjectHideFlags: 0
@@ -51765,6 +51621,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1817622924
 GameObject:
   m_ObjectHideFlags: 0
@@ -51811,6 +51668,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1817622927
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51990,6 +51848,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1824752681
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -52333,6 +52192,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1839775132
 GameObject:
   m_ObjectHideFlags: 0
@@ -52543,6 +52403,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1843011934
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -52640,6 +52501,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1847178936
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -52737,6 +52599,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1850658376
 GameObject:
   m_ObjectHideFlags: 0
@@ -52783,6 +52646,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1851614735
 GameObject:
   m_ObjectHideFlags: 0
@@ -52829,6 +52693,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1851614738
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -52926,6 +52791,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1851965132
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -53023,6 +52889,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1001 &1855632909
 Prefab:
   m_ObjectHideFlags: 0
@@ -53068,7 +52935,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d786dead44590e943860d8527730886b, type: 2}
-  m_RootGameObject: {fileID: 792562376}
   m_IsPrefabParent: 0
 --- !u!1 &1856504290
 GameObject:
@@ -53280,6 +53146,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1862731779
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -53377,6 +53244,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1865298425
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -54622,6 +54490,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1903495390
 GameObject:
   m_ObjectHideFlags: 0
@@ -54668,6 +54537,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1903495393
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -54847,6 +54717,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1913716615
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55026,6 +54897,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1915340708
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55205,6 +55077,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1918496495
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55302,6 +55175,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1919561054
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55563,6 +55437,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1931060017
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55660,6 +55535,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1932345602
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55757,6 +55633,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1940441780
 GameObject:
   m_ObjectHideFlags: 0
@@ -55803,6 +55680,7 @@ MonoBehaviour:
   NodeId: 098e376d-8698-4743-8983-684b1d015f70
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1940441783
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55984,6 +55862,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1941016196
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -56083,7 +55962,22 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_CCT: 6570
+  m_FalloffTable:
+    m_Table[0]: 0
+    m_Table[1]: 0
+    m_Table[2]: 0
+    m_Table[3]: 0
+    m_Table[4]: 0
+    m_Table[5]: 0
+    m_Table[6]: 0
+    m_Table[7]: 0
+    m_Table[8]: 0
+    m_Table[9]: 0
+    m_Table[10]: 0
+    m_Table[11]: 0
+    m_Table[12]: 0
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &1941200525
@@ -56227,6 +56121,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1946005514
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -56324,6 +56219,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1946048103
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -56421,6 +56317,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1950617726
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -56518,6 +56415,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1953965287
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -56697,6 +56595,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1958681774
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -57122,6 +57021,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &1978677243
 GameObject:
   m_ObjectHideFlags: 0
@@ -57414,6 +57314,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &1998560243
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -57675,6 +57576,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &2017538936
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -57854,6 +57756,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &2020318075
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -58033,6 +57936,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &2030414692
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -58212,6 +58116,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &2036830031
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -58637,6 +58542,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &2054847314
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -59062,6 +58968,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &2059796349
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -59159,6 +59066,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &2074997678
 GameObject:
   m_ObjectHideFlags: 0
@@ -59205,6 +59113,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &2074997681
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -59466,6 +59375,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &2086299675
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -59645,6 +59555,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &2092623284
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -59988,6 +59899,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &2098689818
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60331,6 +60243,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &2117514581
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60592,6 +60505,7 @@ MonoBehaviour:
   NodeId: f388df05-c183-4710-a849-1a17536d8381
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &2123470106
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60689,6 +60603,7 @@ MonoBehaviour:
   NodeId: 6815f1fa-6c9b-4cc0-a089-3fc44f50c21b
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &2126855418
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60786,6 +60701,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &2127144484
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60883,6 +60799,7 @@ MonoBehaviour:
   NodeId: 693d6a8d-40ed-43b3-8fbc-ae7580958be0
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &2131005568
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -61062,6 +60979,7 @@ MonoBehaviour:
   NodeId: d60c0e85-cc4c-4eda-b1da-36843be25d7e
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!23 &2137321893
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -61241,6 +61159,7 @@ MonoBehaviour:
   NodeId: 6a469441-3309-48fc-ad13-45a90f90384a
   dungeon: {fileID: 1075892162}
   affectsNavigation: 0
+  userData: -1
 --- !u!1 &2143672427
 GameObject:
   m_ObjectHideFlags: 0
