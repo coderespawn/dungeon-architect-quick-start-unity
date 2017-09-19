@@ -89,21 +89,23 @@ namespace DAShooter {
 		void OnPostRender()
 		{
 			var filename = _folder + generateFilename();
-			if( captureUsingScreenshot == false )
-			{
-				#if !UNITY_WEBPLAYER
-				var cam = Camera.current;
-				if( cam != null )
-				{
-					System.IO.File.WriteAllBytes( filename, captureCam( cam, Screen.width, Screen.height ) );
-					Debug.Log( "File written" );
-				}
-				else
-					Debug.LogError( "Cam is null?" );
-	#endif
-			}
-			else
-				ScreenCapture.CaptureScreenshot( filename, (int)supersampleScreenshot );
+            if (captureUsingScreenshot == false)
+            {
+#if !UNITY_WEBPLAYER
+                var cam = Camera.current;
+                if (cam != null)
+                {
+                    System.IO.File.WriteAllBytes(filename, captureCam(cam, Screen.width, Screen.height));
+                    Debug.Log("File written");
+                }
+                else
+                    Debug.LogError("Cam is null?");
+#endif
+            }
+            else
+            {
+               // ScreenCapture.CaptureScreenshot(filename, (int)supersampleScreenshot);
+            }
 
 			if( Time.frameCount % frameRate == 0 )
 				Debug.Log( string.Format( "{0} second rendered, {1} total frames.", Time.frameCount / Time.captureFramerate, Time.frameCount ) );
