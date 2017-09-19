@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Name: CandyRoomCeilingsDungeonTheme
   m_EditorClassIdentifier: 
   indexCounter:
-    index: 111
+    index: 112
   topZIndex:
-    index: 567
+    index: 580
   nodes:
   - {fileID: 11423626}
   - {fileID: 11435484}
@@ -97,7 +97,7 @@ MonoBehaviour:
   - {fileID: 11489840}
   - {fileID: 11415162}
   - {fileID: 114875169892835042}
-  - {fileID: 114488292624996312}
+  - {fileID: 114440477908752560}
 --- !u!114 &11400504
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -118,7 +118,7 @@ MonoBehaviour:
     width: 120
     height: 120
   selected: 0
-  zIndex: 506
+  zIndex: 573
   inputPins:
   - {fileID: 11423604}
   outputPins:
@@ -233,12 +233,12 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: 465.5
-    y: 667.5
+    x: 463.5
+    y: 670.5
     width: 120
     height: 120
-  selected: 0
-  zIndex: 509
+  selected: 1
+  zIndex: 580
   inputPins:
   - {fileID: 11419336}
   outputPins:
@@ -267,8 +267,8 @@ MonoBehaviour:
   affectsNavigation: 1
   selectionRuleEnabled: 0
   selectionRuleClassName: 
-  transformRuleEnabled: 0
-  transformRuleClassName: 
+  transformRuleEnabled: 1
+  transformRuleClassName: ClampToGroundTransformRule
   useSpatialConstraint: 0
   spatialConstraint: {fileID: 0}
   Template: {fileID: 102710, guid: 1288d7757404a1b4e84b9fea1315937a, type: 2}
@@ -427,7 +427,7 @@ MonoBehaviour:
     width: 120
     height: 120
   selected: 0
-  zIndex: 508
+  zIndex: 575
   inputPins:
   - {fileID: 11436042}
   outputPins:
@@ -456,8 +456,8 @@ MonoBehaviour:
   affectsNavigation: 1
   selectionRuleEnabled: 0
   selectionRuleClassName: 
-  transformRuleEnabled: 0
-  transformRuleClassName: 
+  transformRuleEnabled: 1
+  transformRuleClassName: ClampToGroundTransformRule
   useSpatialConstraint: 0
   spatialConstraint: {fileID: 0}
   Template: {fileID: 172464, guid: 7e031a72402985f43967ba198e70228b, type: 2}
@@ -653,12 +653,12 @@ MonoBehaviour:
   caption: Stair
   bounds:
     serializedVersion: 2
-    x: 283
-    y: 288
+    x: 227
+    y: 302
     width: 120
     height: 50
   selected: 0
-  zIndex: 564
+  zIndex: 570
   inputPins: []
   outputPins:
   - {fileID: 11418044}
@@ -1284,7 +1284,7 @@ MonoBehaviour:
     width: 120
     height: 120
   selected: 0
-  zIndex: 507
+  zIndex: 574
   inputPins:
   - {fileID: 11483738}
   outputPins:
@@ -4246,7 +4246,7 @@ MonoBehaviour:
     width: 120
     height: 120
   selected: 0
-  zIndex: 554
+  zIndex: 572
   inputPins:
   - {fileID: 114259395044079014}
   outputPins:
@@ -4302,7 +4302,7 @@ MonoBehaviour:
     height: 15
   tangent: {x: 0, y: -1}
   tangentStrength: 50
---- !u!114 &114488292624996312
+--- !u!114 &114440477908752560
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -4311,9 +4311,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_111
+  m_Name: Link_112
   m_EditorClassIdentifier: 
-  id: 111
+  id: 112
   input: {fileID: 114034838578133076}
   output: {fileID: 11418044}
   graph: {fileID: 11400000}
@@ -4354,12 +4354,12 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: 10.839111
-    y: 390.83356
+    x: 13.839111
+    y: 385.83356
     width: 120
     height: 120
-  selected: 1
-  zIndex: 567
+  selected: 0
+  zIndex: 568
   inputPins:
   - {fileID: 114034838578133076}
   outputPins:
@@ -4386,8 +4386,8 @@ MonoBehaviour:
   attachmentProbability: 1
   IsStatic: 1
   affectsNavigation: 1
-  selectionRuleEnabled: 0
-  selectionRuleClassName: 
+  selectionRuleEnabled: 1
+  selectionRuleClassName: RoomSelectionRule
   transformRuleEnabled: 0
   transformRuleClassName: 
   useSpatialConstraint: 0
