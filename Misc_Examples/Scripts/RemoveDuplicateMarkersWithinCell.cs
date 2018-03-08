@@ -8,7 +8,7 @@ using DungeonArchitect.Builders.Grid;
 public class RemoveDuplicateMarkersWithinCell : DungeonEventListener {
     public string markerName;
 
-    public override void OnDungeonMarkersEmitted(Dungeon dungeon, DungeonModel model, List<PropSocket> markers) {
+    public override void OnDungeonMarkersEmitted(Dungeon dungeon, DungeonModel model, LevelMarkerList markers) {
         var config = dungeon.Config as GridDungeonConfig;
         var gridSize = config.GridCellSize;
 

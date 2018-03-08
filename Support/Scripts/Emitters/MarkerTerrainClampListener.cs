@@ -5,7 +5,7 @@ using DungeonArchitect.Utils;
 
 public class MarkerTerrainClampListener : DungeonEventListener {
     
-    public override void OnDungeonMarkersEmitted(Dungeon dungeon, DungeonModel model, List<PropSocket> markers) 
+    public override void OnDungeonMarkersEmitted(Dungeon dungeon, DungeonModel model, LevelMarkerList markers) 
     {
         var terrain = Terrain.activeTerrain;
         if (terrain == null) return;

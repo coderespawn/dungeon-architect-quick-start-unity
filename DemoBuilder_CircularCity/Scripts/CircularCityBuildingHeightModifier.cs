@@ -12,7 +12,7 @@ namespace DungeonArchitect.Samples.CircularCity
         public float maxScale = 2;
         public float minScale = 1;
 
-        public override void OnDungeonMarkersEmitted(Dungeon dungeon, DungeonModel model, List<PropSocket> markers) {
+        public override void OnDungeonMarkersEmitted(Dungeon dungeon, DungeonModel model, LevelMarkerList markers) {
             var config = dungeon.Config as CircularCityDungeonConfig;
             if (config == null) return;
 

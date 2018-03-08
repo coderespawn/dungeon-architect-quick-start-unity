@@ -15,12 +15,12 @@ namespace DAShooter
 		public Vector3 waypointOffset = Vector3.up;
 		bool mode2D = false;
 
-        public override void OnDungeonMarkersEmitted(Dungeon dungeon, DungeonModel model, List<PropSocket> markers) 
+        public override void OnDungeonMarkersEmitted(Dungeon dungeon, DungeonModel model, LevelMarkerList markers) 
 		{
             BuildWaypoints(model, markers);
         }
 
-        public void BuildWaypoints(DungeonModel model, List<PropSocket> markers)
+        public void BuildWaypoints(DungeonModel model, LevelMarkerList markers)
         {
             // Destroy all existing waypoints
             DestroyAllWaypoints();
@@ -40,7 +40,7 @@ namespace DAShooter
             }
         }
 
-        void BuildGridWaypoints(GridDungeonModel gridModel, List<PropSocket> markers)
+        void BuildGridWaypoints(GridDungeonModel gridModel, LevelMarkerList markers)
         {
             mode2D = gridModel.Config.Mode2D;
 
