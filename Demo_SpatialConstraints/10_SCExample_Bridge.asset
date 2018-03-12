@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Name: 10_SCExample_Bridge
   m_EditorClassIdentifier: 
   indexCounter:
-    index: 21
+    index: 25
   topZIndex:
-    index: 575
+    index: 600
   nodes:
   - {fileID: 114997415073345796}
   - {fileID: 114018643370017052}
@@ -39,12 +39,12 @@ MonoBehaviour:
   - {fileID: 114545897108408700}
   links:
   - {fileID: 114420430697510462}
-  - {fileID: 114872656513326572}
-  - {fileID: 114457024397123178}
   - {fileID: 114228306332578198}
   - {fileID: 114000180591369968}
   - {fileID: 114778812018407224}
   - {fileID: 114283563673570724}
+  - {fileID: 114076437299028026}
+  - {fileID: 114192968381477206}
 --- !u!114 &114000180591369968
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -96,12 +96,16 @@ MonoBehaviour:
   indexCounter:
     index: 0
   topZIndex:
-    index: 41
+    index: 87
   nodes:
   - {fileID: 114469132543583276}
   - {fileID: 114259337367086188}
   - {fileID: 114695151504744278}
   - {fileID: 114797580444487068}
+  - {fileID: 114316445119222506}
+  - {fileID: 114487145497116956}
+  - {fileID: 114599165366890034}
+  - {fileID: 114581328622658414}
   links: []
   asset: {fileID: 114304989624198192}
 --- !u!114 &114014241477044268
@@ -118,7 +122,7 @@ MonoBehaviour:
   indexCounter:
     index: 0
   topZIndex:
-    index: 41
+    index: 60
   nodes:
   - {fileID: 114727615600031828}
   - {fileID: 114732758197138236}
@@ -177,7 +181,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 546
+  zIndex: 599
   inputPins: []
   outputPins:
   - {fileID: 114029199287495676}
@@ -332,15 +336,15 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: -298.5027
-    y: 192.6668
+    x: -337.072
+    y: 211.84373
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 443
+  zIndex: 598
   inputPins:
   - {fileID: 114257280073894878}
   outputPins:
@@ -396,6 +400,21 @@ MonoBehaviour:
     height: 15
   tangent: {x: 0, y: 1}
   tangentStrength: 50
+--- !u!114 &114076437299028026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_24
+  m_EditorClassIdentifier: 
+  id: 24
+  input: {fileID: 114257280073894878}
+  output: {fileID: 114694614540097184}
+  graph: {fileID: 11400000}
 --- !u!114 &114106671211206964
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -427,19 +446,19 @@ MonoBehaviour:
   caption: 
   bounds:
     serializedVersion: 2
-    x: 176.5
-    y: -57
-    width: 335
-    height: 36
+    x: 75.5
+    y: -54
+    width: 240
+    height: 49
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 37
+  zIndex: 47
   inputPins: []
   outputPins: []
   graph: {fileID: 114014241477044268}
-  message: Multiple constraints can be added to a single rule node
+  message: "We want this to pass only when \nthere are no adjacent ground meshes"
   background: {r: 0.224, g: 1, b: 0.161, a: 0.7}
   fontSize: 22
 --- !u!114 &114111568788344708
@@ -521,6 +540,21 @@ MonoBehaviour:
     height: 15
   tangent: {x: 0, y: 1}
   tangentStrength: 50
+--- !u!114 &114192968381477206
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_25
+  m_EditorClassIdentifier: 
+  id: 25
+  input: {fileID: 114870834404378394}
+  output: {fileID: 114029199287495676}
+  graph: {fileID: 11400000}
 --- !u!114 &114228306332578198
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -641,7 +675,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 39
+  zIndex: 84
   inputPins: []
   outputPins: []
   graph: {fileID: 114004856223110664}
@@ -794,6 +828,36 @@ MonoBehaviour:
   inverseRule: 1
   markerName: Ground
   searchRadius: 0.1
+--- !u!114 &114316445119222506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c09d4c3fb3528d4a92fba293ac13e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: fd02b2c6-0a8b-4df6-994e-08b4e7ab67e2
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: -148.5
+    y: 186
+    width: 73
+    height: 36
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 67
+  inputPins: []
+  outputPins: []
+  graph: {fileID: 114004856223110664}
+  message: ^ Empty
+  background: {r: 0.224, g: 1, b: 0.161, a: 0.7}
+  fontSize: 22
 --- !u!114 &114334915072508248
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -927,8 +991,8 @@ MonoBehaviour:
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
-  selected: 0
-  zIndex: 564
+  selected: 1
+  zIndex: 600
   inputPins:
   - {fileID: 114870834404378394}
   outputPins:
@@ -1037,8 +1101,8 @@ MonoBehaviour:
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
-  selected: 1
-  zIndex: 41
+  selected: 0
+  zIndex: 59
   inputPins: []
   outputPins: []
   graph: {fileID: 114014241477044268}
@@ -1052,21 +1116,6 @@ MonoBehaviour:
     removeAllMarkers: 1
     removalRadius: 0.1
     markersToRemove: []
---- !u!114 &114457024397123178
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_17
-  m_EditorClassIdentifier: 
-  id: 17
-  input: {fileID: 114257280073894878}
-  output: {fileID: 114694614540097184}
-  graph: {fileID: 11400000}
 --- !u!114 &114465402548294064
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1117,8 +1166,8 @@ MonoBehaviour:
   canBeDeleted: 0
   canBeSelected: 1
   canBeMoved: 1
-  selected: 0
-  zIndex: 38
+  selected: 1
+  zIndex: 87
   inputPins: []
   outputPins: []
   graph: {fileID: 114004856223110664}
@@ -1169,6 +1218,36 @@ MonoBehaviour:
   inverseRule: 0
   markerName: Wall
   searchRadius: 0.1
+--- !u!114 &114487145497116956
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c09d4c3fb3528d4a92fba293ac13e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: b858ce9c-a2df-435a-bbea-fd0be5fdb0ed
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 40.5
+    y: 185
+    width: 79
+    height: 36
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 68
+  inputPins: []
+  outputPins: []
+  graph: {fileID: 114004856223110664}
+  message: ^ Ground
+  background: {r: 0.224, g: 1, b: 0.161, a: 0.7}
+  fontSize: 22
 --- !u!114 &114518784862454846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1342,6 +1421,38 @@ MonoBehaviour:
   outputPins:
   - {fileID: 114623994131746886}
   graph: {fileID: 11400000}
+--- !u!114 &114581328622658414
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c09d4c3fb3528d4a92fba293ac13e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: fd560b2c-7467-4df8-a35f-720302201a25
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: -173.5
+    y: -36
+    width: 323
+    height: 49
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 66
+  inputPins: []
+  outputPins: []
+  graph: {fileID: 114004856223110664}
+  message: 'We want a bridge fence only when the
+
+    ground it is attached to is surrounded by empty tiles'
+  background: {r: 0.224, g: 1, b: 0.161, a: 0.7}
+  fontSize: 22
 --- !u!114 &114582445135985870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1378,6 +1489,36 @@ MonoBehaviour:
   - {fileID: 114380743042180388}
   links: []
   asset: {fileID: 114293044580101340}
+--- !u!114 &114599165366890034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c09d4c3fb3528d4a92fba293ac13e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 651a1942-4d4c-45ff-ac2b-500478eb265c
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 254.5
+    y: 188
+    width: 73
+    height: 36
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 70
+  inputPins: []
+  outputPins: []
+  graph: {fileID: 114004856223110664}
+  message: ^ Empty
+  background: {r: 0.224, g: 1, b: 0.161, a: 0.7}
+  fontSize: 22
 --- !u!114 &114604715779248428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1569,7 +1710,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 40
+  zIndex: 85
   inputPins: []
   outputPins: []
   graph: {fileID: 114004856223110664}
@@ -1695,7 +1836,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 1
+  zIndex: 55
   inputPins: []
   outputPins: []
   graph: {fileID: 114014241477044268}
@@ -1730,8 +1871,8 @@ MonoBehaviour:
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
-  selected: 0
-  zIndex: 39
+  selected: 1
+  zIndex: 60
   inputPins: []
   outputPins: []
   graph: {fileID: 114014241477044268}
@@ -1840,8 +1981,8 @@ MonoBehaviour:
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
-  selected: 1
-  zIndex: 41
+  selected: 0
+  zIndex: 86
   inputPins: []
   outputPins: []
   graph: {fileID: 114004856223110664}
@@ -1870,7 +2011,7 @@ MonoBehaviour:
   caption: MarkerEmitter
   bounds:
     serializedVersion: 2
-    x: 110.51727
+    x: 113.51727
     y: 336.15015
     width: 120
     height: 50
@@ -1878,7 +2019,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 549
+  zIndex: 581
   inputPins:
   - {fileID: 114929712004179986}
   outputPins: []
@@ -2011,21 +2152,6 @@ MonoBehaviour:
     height: 15
   tangent: {x: 0, y: -1}
   tangentStrength: 50
---- !u!114 &114872656513326572
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_14
-  m_EditorClassIdentifier: 
-  id: 14
-  input: {fileID: 114870834404378394}
-  output: {fileID: 114029199287495676}
-  graph: {fileID: 11400000}
 --- !u!114 &114891604988993694
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2049,7 +2175,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 552
+  zIndex: 592
   inputPins:
   - {fileID: 114969325430947466}
   outputPins:
@@ -2282,7 +2408,7 @@ MonoBehaviour:
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
-  selected: 1
+  selected: 0
   zIndex: 575
   inputPins:
   - {fileID: 114247264436273274}
@@ -2340,7 +2466,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 500
+  zIndex: 594
   inputPins: []
   outputPins:
   - {fileID: 114694614540097184}

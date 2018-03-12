@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Name: 09_SCExample_DiabloTopDown
   m_EditorClassIdentifier: 
   indexCounter:
-    index: 21
+    index: 23
   topZIndex:
-    index: 600
+    index: 628
   nodes:
   - {fileID: 114997415073345796}
   - {fileID: 114018643370017052}
@@ -40,9 +40,9 @@ MonoBehaviour:
   - {fileID: 114671252637112732}
   - {fileID: 114056013381557854}
   - {fileID: 114410523707012742}
-  - {fileID: 114268871860378296}
-  - {fileID: 114158265627312160}
   - {fileID: 114042620787697814}
+  - {fileID: 114418475718022342}
+  - {fileID: 114685662324096836}
 --- !u!114 &114003744213430190
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -421,21 +421,6 @@ MonoBehaviour:
     height: 15
   tangent: {x: 0, y: 1}
   tangentStrength: 50
---- !u!114 &114158265627312160
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_20
-  m_EditorClassIdentifier: 
-  id: 20
-  input: {fileID: 114750631909398308}
-  output: {fileID: 114005553115917488}
-  graph: {fileID: 11400000}
 --- !u!114 &114163200151766070
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -481,7 +466,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 40
+  zIndex: 52
   inputPins: []
   outputPins: []
   graph: {fileID: 114914095880918628}
@@ -664,21 +649,6 @@ MonoBehaviour:
     height: 15
   tangent: {x: 0, y: -1}
   tangentStrength: 50
---- !u!114 &114268871860378296
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_17
-  m_EditorClassIdentifier: 
-  id: 17
-  input: {fileID: 114287389992994424}
-  output: {fileID: 114005553115917488}
-  graph: {fileID: 11400000}
 --- !u!114 &114280449440323672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -829,8 +799,8 @@ MonoBehaviour:
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
-  selected: 0
-  zIndex: 24
+  selected: 1
+  zIndex: 39
   inputPins: []
   outputPins: []
   graph: {fileID: 114741437449324938}
@@ -888,7 +858,7 @@ MonoBehaviour:
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
-  selected: 0
+  selected: 1
   zIndex: 20
   inputPins: []
   outputPins: []
@@ -938,7 +908,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 1
-  zIndex: 34
+  zIndex: 40
   inputPins: []
   outputPins: []
   graph: {fileID: 114741437449324938}
@@ -974,7 +944,7 @@ MonoBehaviour:
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
-  selected: 1
+  selected: 0
   zIndex: 44
   inputPins: []
   outputPins: []
@@ -1014,6 +984,21 @@ MonoBehaviour:
   id: 14
   input: {fileID: 114692138660251294}
   output: {fileID: 114808152197854264}
+  graph: {fileID: 11400000}
+--- !u!114 &114418475718022342
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_22
+  m_EditorClassIdentifier: 
+  id: 22
+  input: {fileID: 114287389992994424}
+  output: {fileID: 114005553115917488}
   graph: {fileID: 11400000}
 --- !u!114 &114443082971418678
 MonoBehaviour:
@@ -1075,15 +1060,15 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: 428.49768
-    y: 160.96445
+    x: 479.49768
+    y: 183.96445
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 598
+  zIndex: 621
   inputPins:
   - {fileID: 114576177121895458}
   outputPins:
@@ -1148,15 +1133,15 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: -14.502319
-    y: 199.96445
+    x: -12.502319
+    y: 196.96445
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 1
-  zIndex: 600
+  zIndex: 628
   inputPins:
   - {fileID: 114287389992994424}
   outputPins:
@@ -1427,7 +1412,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 39
+  zIndex: 51
   inputPins: []
   outputPins: []
   graph: {fileID: 114914095880918628}
@@ -1516,6 +1501,21 @@ MonoBehaviour:
   input: {fileID: 114220791458037012}
   output: {fileID: 114029199287495676}
   graph: {fileID: 11400000}
+--- !u!114 &114685662324096836
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_23
+  m_EditorClassIdentifier: 
+  id: 23
+  input: {fileID: 114750631909398308}
+  output: {fileID: 114005553115917488}
+  graph: {fileID: 11400000}
 --- !u!114 &114692138660251294
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1582,8 +1582,8 @@ MonoBehaviour:
   canBeDeleted: 0
   canBeSelected: 1
   canBeMoved: 1
-  selected: 0
-  zIndex: 33
+  selected: 1
+  zIndex: 37
   inputPins: []
   outputPins: []
   graph: {fileID: 114741437449324938}
@@ -1626,7 +1626,7 @@ MonoBehaviour:
   indexCounter:
     index: 0
   topZIndex:
-    index: 34
+    index: 40
   nodes:
   - {fileID: 114716953772490374}
   - {fileID: 114393967211272956}
@@ -1764,15 +1764,15 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: 118.49768
-    y: 218.96445
+    x: 130.49768
+    y: 235.96445
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 599
+  zIndex: 627
   inputPins:
   - {fileID: 114750631909398308}
   outputPins:
@@ -1869,7 +1869,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 536
+  zIndex: 624
   inputPins: []
   outputPins:
   - {fileID: 114005553115917488}
@@ -1948,7 +1948,7 @@ MonoBehaviour:
   indexCounter:
     index: 0
   topZIndex:
-    index: 44
+    index: 58
   nodes:
   - {fileID: 114994167785066098}
   - {fileID: 114173142135406448}
@@ -2057,8 +2057,8 @@ MonoBehaviour:
   canBeDeleted: 0
   canBeSelected: 1
   canBeMoved: 1
-  selected: 0
-  zIndex: 28
+  selected: 1
+  zIndex: 58
   inputPins: []
   outputPins: []
   graph: {fileID: 114914095880918628}

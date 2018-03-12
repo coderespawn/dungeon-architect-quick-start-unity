@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Name: 08_SCExample_GroundDeco2
   m_EditorClassIdentifier: 
   indexCounter:
-    index: 10
+    index: 13
   topZIndex:
-    index: 445
+    index: 458
   nodes:
   - {fileID: 114997415073345796}
   - {fileID: 114018643370017052}
@@ -36,8 +36,8 @@ MonoBehaviour:
   - {fileID: 114500497135865890}
   - {fileID: 114130184846291544}
   - {fileID: 114703268253108740}
-  - {fileID: 114478735451875968}
-  - {fileID: 114322488690238132}
+  - {fileID: 114733593845044606}
+  - {fileID: 114476473021914340}
 --- !u!114 &114003744213430190
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -74,7 +74,7 @@ MonoBehaviour:
   indexCounter:
     index: 0
   topZIndex:
-    index: 52
+    index: 56
   nodes:
   - {fileID: 114727615600031828}
   - {fileID: 114925203413915842}
@@ -286,15 +286,15 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: 85.497314
-    y: 133.6668
+    x: 89.497314
+    y: 121.666794
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 444
+  zIndex: 457
   inputPins:
   - {fileID: 114257280073894878}
   outputPins:
@@ -514,7 +514,7 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: 227.49506
+    x: 232.49506
     y: 171.44458
     width: 120
     height: 120
@@ -522,7 +522,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 1
-  zIndex: 445
+  zIndex: 458
   inputPins:
   - {fileID: 114202441841724094}
   outputPins:
@@ -690,21 +690,6 @@ MonoBehaviour:
   inverseRule: 0
   markerName: Wall
   searchRadius: 0.1
---- !u!114 &114322488690238132
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_10
-  m_EditorClassIdentifier: 
-  id: 10
-  input: {fileID: 114202441841724094}
-  output: {fileID: 114694614540097184}
-  graph: {fileID: 11400000}
 --- !u!114 &114334915072508248
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -825,7 +810,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 1
-  zIndex: 4
+  zIndex: 5
   inputPins: []
   outputPins: []
   graph: {fileID: 114890893163023956}
@@ -899,6 +884,21 @@ MonoBehaviour:
   outputPins:
   - {fileID: 114058928302873274}
   graph: {fileID: 11400000}
+--- !u!114 &114476473021914340
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_13
+  m_EditorClassIdentifier: 
+  id: 13
+  input: {fileID: 114202441841724094}
+  output: {fileID: 114694614540097184}
+  graph: {fileID: 11400000}
 --- !u!114 &114476996757248634
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -915,21 +915,6 @@ MonoBehaviour:
   inverseRule: 0
   markerName: Wall
   searchRadius: 0.1
---- !u!114 &114478735451875968
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_7
-  m_EditorClassIdentifier: 
-  id: 7
-  input: {fileID: 114257280073894878}
-  output: {fileID: 114694614540097184}
-  graph: {fileID: 11400000}
 --- !u!114 &114500497135865890
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1303,7 +1288,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 39
+  zIndex: 55
   inputPins: []
   outputPins: []
   graph: {fileID: 114014241477044268}
@@ -1316,6 +1301,21 @@ MonoBehaviour:
     removeAllMarkers: 1
     removalRadius: 0.1
     markersToRemove: []
+--- !u!114 &114733593845044606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_11
+  m_EditorClassIdentifier: 
+  id: 11
+  input: {fileID: 114257280073894878}
+  output: {fileID: 114694614540097184}
+  graph: {fileID: 11400000}
 --- !u!114 &114744351845091756
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1563,7 +1563,7 @@ MonoBehaviour:
   indexCounter:
     index: 0
   topZIndex:
-    index: 4
+    index: 5
   nodes:
   - {fileID: 114760723199927860}
   - {fileID: 114405867111340898}
@@ -1654,8 +1654,8 @@ MonoBehaviour:
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
-  selected: 0
-  zIndex: 52
+  selected: 1
+  zIndex: 56
   inputPins: []
   outputPins: []
   graph: {fileID: 114014241477044268}
@@ -1771,7 +1771,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 409
+  zIndex: 455
   inputPins: []
   outputPins:
   - {fileID: 114694614540097184}
