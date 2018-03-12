@@ -9,12 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1cae2f5e5cd144c01b4028cc28a5f1d6, type: 3}
-  m_Name: 3_SCExample_AdjacentToDoors
+  m_Name: 02_SCExample_NotNearDoor
   m_EditorClassIdentifier: 
   indexCounter:
-    index: 5
+    index: 4
   topZIndex:
-    index: 132
+    index: 190
   nodes:
   - {fileID: 114997415073345796}
   - {fileID: 114018643370017052}
@@ -30,12 +30,12 @@ MonoBehaviour:
   - {fileID: 114991543903957588}
   - {fileID: 114025727770472992}
   - {fileID: 114709441376335998}
-  - {fileID: 114837185324462326}
+  - {fileID: 114746451122156550}
   links:
+  - {fileID: 114180002116672228}
   - {fileID: 114500497135865890}
   - {fileID: 114130184846291544}
   - {fileID: 114703268253108740}
-  - {fileID: 114772782497083696}
 --- !u!114 &114003744213430190
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -58,6 +58,22 @@ MonoBehaviour:
     height: 15
   tangent: {x: 0, y: 1}
   tangentStrength: 50
+--- !u!114 &114005389957288238
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39f774940a6d5240b5bfd97a3794f05, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  enabled: 1
+  ruleName: Marker Exists
+  inverseRule: 1
+  markerName: Door
+  searchRadius: 0.1
 --- !u!114 &114018643370017052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -73,15 +89,15 @@ MonoBehaviour:
   caption: Wall
   bounds:
     serializedVersion: 2
-    x: 226
-    y: 15
+    x: 643
+    y: 217
     width: 120
     height: 50
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 126
+  zIndex: 175
   inputPins: []
   outputPins:
   - {fileID: 114163200151766070}
@@ -101,15 +117,15 @@ MonoBehaviour:
   caption: Fence
   bounds:
     serializedVersion: 2
-    x: 688
-    y: -2
+    x: 633
+    y: -5
     width: 120
     height: 50
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 88
+  zIndex: 174
   inputPins: []
   outputPins:
   - {fileID: 114029199287495676}
@@ -129,15 +145,15 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: 287.61047
-    y: 116.5
+    x: 643.6105
+    y: 306.5
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 130
+  zIndex: 176
   inputPins:
   - {fileID: 114785812154548666}
   outputPins:
@@ -208,15 +224,15 @@ MonoBehaviour:
   caption: FenceSeparator
   bounds:
     serializedVersion: 2
-    x: 840
-    y: -10
+    x: 785
+    y: -13
     width: 120
     height: 50
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 96
+  zIndex: 168
   inputPins: []
   outputPins:
   - {fileID: 114355397274303542}
@@ -236,15 +252,15 @@ MonoBehaviour:
   caption: WallHalfSeparator
   bounds:
     serializedVersion: 2
-    x: 845
-    y: 118
+    x: 790
+    y: 115
     width: 120
     height: 50
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 94
+  zIndex: 170
   inputPins: []
   outputPins:
   - {fileID: 114903097319197892}
@@ -271,6 +287,38 @@ MonoBehaviour:
     height: 15
   tangent: {x: 0, y: 1}
   tangentStrength: 50
+--- !u!114 &114072951323160318
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39f774940a6d5240b5bfd97a3794f05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enabled: 1
+  ruleName: Marker Exists
+  inverseRule: 1
+  markerName: Door
+  searchRadius: 6
+--- !u!114 &114090284519456224
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39f774940a6d5240b5bfd97a3794f05, type: 3}
+  m_Name: (Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  enabled: 1
+  ruleName: Marker Exists
+  inverseRule: 1
+  markerName: Door
+  searchRadius: 0.1
 --- !u!114 &114106671211206964
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -365,6 +413,37 @@ MonoBehaviour:
     height: 15
   tangent: {x: 0, y: 1}
   tangentStrength: 50
+--- !u!114 &114180002116672228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_1
+  m_EditorClassIdentifier: 
+  id: 1
+  input: {fileID: 114578329968053234}
+  output: {fileID: 114694614540097184}
+  graph: {fileID: 11400000}
+--- !u!114 &114244692756111478
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39f774940a6d5240b5bfd97a3794f05, type: 3}
+  m_Name: (Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  enabled: 1
+  ruleName: Marker Exists
+  inverseRule: 1
+  markerName: Door
+  searchRadius: 5
 --- !u!114 &114247264436273274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -387,6 +466,22 @@ MonoBehaviour:
     height: 15
   tangent: {x: 0, y: -1}
   tangentStrength: 50
+--- !u!114 &114262531949612088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39f774940a6d5240b5bfd97a3794f05, type: 3}
+  m_Name: (Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  enabled: 1
+  ruleName: Marker Exists
+  inverseRule: 1
+  markerName: Door
+  searchRadius: 0.1
 --- !u!114 &114280449440323672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -401,6 +496,7 @@ MonoBehaviour:
   rotateToFit: 1
   applyFitRotation: 0
   applyMarkerRotation: 1
+  checkRelativeToMarkerRotation: 1
   hostThemeNode: {fileID: 114991543903957588}
   graph: {fileID: 114117034798599360}
 --- !u!114 &114288449696649208
@@ -422,6 +518,22 @@ MonoBehaviour:
   - {fileID: 114334915072508248}
   links: []
   asset: {fileID: 114582445135985870}
+--- !u!114 &114293667219285486
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39f774940a6d5240b5bfd97a3794f05, type: 3}
+  m_Name: (Clone)(Clone)
+  m_EditorClassIdentifier: 
+  enabled: 1
+  ruleName: Marker Exists
+  inverseRule: 1
+  markerName: Door
+  searchRadius: 5
 --- !u!114 &114294698832447470
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -437,6 +549,38 @@ MonoBehaviour:
   ruleName: Marker Exists
   inverseRule: 0
   markerName: Wall
+  searchRadius: 0.1
+--- !u!114 &114297892001332910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39f774940a6d5240b5bfd97a3794f05, type: 3}
+  m_Name: (Clone)
+  m_EditorClassIdentifier: 
+  enabled: 1
+  ruleName: Marker Exists
+  inverseRule: 1
+  markerName: Door
+  searchRadius: 0.1
+--- !u!114 &114329130283903144
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39f774940a6d5240b5bfd97a3794f05, type: 3}
+  m_Name: (Clone)
+  m_EditorClassIdentifier: 
+  enabled: 1
+  ruleName: Marker Exists
+  inverseRule: 1
+  markerName: Door
   searchRadius: 0.1
 --- !u!114 &114334915072508248
 MonoBehaviour:
@@ -468,6 +612,7 @@ MonoBehaviour:
   ruleDomain: 0
   isSnapped: 1
   constraints: []
+  constraintEvaluationMode: 0
   exclusionRule:
     enabled: 0
     removeAllMarkers: 1
@@ -488,38 +633,38 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: 138
-    y: 114.5
+    x: 146
+    y: 189.5
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
-  selected: 1
-  zIndex: 132
+  selected: 0
+  zIndex: 190
   inputPins:
   - {fileID: 114578329968053234}
   outputPins:
   - {fileID: 114800028142152644}
   graph: {fileID: 11400000}
   offset:
-    e00: 4
+    e00: 2
     e01: 0
     e02: 0
     e03: 0
     e10: 0
-    e11: 4
+    e11: 1
     e12: 0
-    e13: 2
+    e13: 0
     e20: 0
     e21: 0
-    e22: 0.2
+    e22: 2
     e23: 0
     e30: 0
     e31: 0
     e32: 0
     e33: 1
-  consumeOnAttach: 1
+  consumeOnAttach: 0
   attachmentProbability: 1
   IsStatic: 1
   affectsNavigation: 1
@@ -552,37 +697,6 @@ MonoBehaviour:
     height: 15
   tangent: {x: 0, y: 1}
   tangentStrength: 50
---- !u!114 &114362236338370588
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c09d4c3fb3528d4a92fba293ac13e88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: b813b8ef-3a69-41e4-a7d2-44103bf2cd7a
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: -371.5
-    y: -85
-    width: 352
-    height: 49
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 199
-  inputPins: []
-  outputPins: []
-  graph: {fileID: 114561671351571030}
-  message: "Since this rule is attached to a wall marker, \nthe reference node (purple)
-    is moved to an edge position"
-  background: {r: 0.224, g: 1, b: 0.161, a: 0.7}
-  fontSize: 22
 --- !u!114 &114387461983036930
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -597,6 +711,7 @@ MonoBehaviour:
   rotateToFit: 1
   applyFitRotation: 0
   applyMarkerRotation: 1
+  checkRelativeToMarkerRotation: 1
   hostThemeNode: {fileID: 114025727770472992}
   graph: {fileID: 114924513407944376}
 --- !u!114 &114396296107241242
@@ -621,42 +736,6 @@ MonoBehaviour:
     height: 15
   tangent: {x: 0, y: 1}
   tangentStrength: 50
---- !u!114 &114404728203738278
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ffc412e82b9c2548980c51f82505fc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: ac3e3249-8407-4bfc-a81a-2caf6e84410b
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 90
-    y: -10
-    width: 20
-    height: 20
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 200
-  inputPins: []
-  outputPins: []
-  graph: {fileID: 114561671351571030}
-  ruleDomain: 1
-  isSnapped: 1
-  constraints:
-  - {fileID: 114720245906059426}
-  exclusionRule:
-    enabled: 0
-    removeAllMarkers: 1
-    removalRadius: 0.1
-    markersToRemove: []
 --- !u!114 &114407099623955268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -688,15 +767,15 @@ MonoBehaviour:
   caption: Door
   bounds:
     serializedVersion: 2
-    x: 862
-    y: 383
+    x: 789
+    y: 375
     width: 120
     height: 50
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 90
+  zIndex: 166
   inputPins: []
   outputPins:
   - {fileID: 114058928302873274}
@@ -747,26 +826,44 @@ MonoBehaviour:
   caption: 
   bounds:
     serializedVersion: 2
-    x: -110
-    y: -10
+    x: 90
+    y: 90
     width: 20
     height: 20
   canBeDeleted: 0
   canBeSelected: 1
   canBeMoved: 1
-  selected: 0
-  zIndex: 201
+  selected: 1
+  zIndex: 242
   inputPins: []
   outputPins: []
   graph: {fileID: 114561671351571030}
-  ruleDomain: 1
+  ruleDomain: 0
   isSnapped: 1
-  constraints: []
+  constraints:
+  - {fileID: 114072951323160318}
+  constraintEvaluationMode: 0
   exclusionRule:
     enabled: 0
     removeAllMarkers: 1
     removalRadius: 0.1
     markersToRemove: []
+--- !u!114 &114517424370654956
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39f774940a6d5240b5bfd97a3794f05, type: 3}
+  m_Name: (Clone)(Clone)
+  m_EditorClassIdentifier: 
+  enabled: 1
+  ruleName: Marker Exists
+  inverseRule: 1
+  markerName: Door
+  searchRadius: 0.1
 --- !u!114 &114518784862454846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -819,6 +916,7 @@ MonoBehaviour:
   ruleDomain: 0
   isSnapped: 1
   constraints: []
+  constraintEvaluationMode: 0
   exclusionRule:
     enabled: 0
     removeAllMarkers: 1
@@ -839,15 +937,15 @@ MonoBehaviour:
   caption: WallHalf
   bounds:
     serializedVersion: 2
-    x: 848
-    y: 184
+    x: 793
+    y: 181
     width: 120
     height: 50
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 93
+  zIndex: 171
   inputPins: []
   outputPins:
   - {fileID: 114518784862454846}
@@ -866,12 +964,10 @@ MonoBehaviour:
   indexCounter:
     index: 0
   topZIndex:
-    index: 201
+    index: 242
   nodes:
   - {fileID: 114512550702180496}
-  - {fileID: 114404728203738278}
-  - {fileID: 114362236338370588}
-  - {fileID: 114734742592297298}
+  - {fileID: 114614203451882650}
   links: []
   asset: {fileID: 114792214187198248}
 --- !u!114 &114577952881570276
@@ -889,15 +985,15 @@ MonoBehaviour:
   caption: WallSeparator
   bounds:
     serializedVersion: 2
-    x: 842
-    y: 55
+    x: 787
+    y: 52
     width: 120
     height: 50
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 95
+  zIndex: 169
   inputPins: []
   outputPins:
   - {fileID: 114623994131746886}
@@ -938,8 +1034,25 @@ MonoBehaviour:
   rotateToFit: 1
   applyFitRotation: 0
   applyMarkerRotation: 1
+  checkRelativeToMarkerRotation: 1
   hostThemeNode: {fileID: 114709441376335998}
   graph: {fileID: 114288449696649208}
+--- !u!114 &114598334607580766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39f774940a6d5240b5bfd97a3794f05, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  enabled: 1
+  ruleName: Marker Exists
+  inverseRule: 1
+  markerName: Door
+  searchRadius: 0.1
 --- !u!114 &114604715779248428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -955,19 +1068,51 @@ MonoBehaviour:
   caption: Stair
   bounds:
     serializedVersion: 2
-    x: 851
-    y: 312
+    x: 791
+    y: 309
     width: 120
     height: 50
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 91
+  zIndex: 167
   inputPins: []
   outputPins:
   - {fileID: 114137008148808752}
   graph: {fileID: 11400000}
+--- !u!114 &114614203451882650
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c09d4c3fb3528d4a92fba293ac13e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 036f8be7-626d-41e3-943e-2f21470b098d
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: -339.5
+    y: -26
+    width: 341
+    height: 101
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 240
+  inputPins: []
+  outputPins: []
+  graph: {fileID: 114561671351571030}
+  message: "A constraint rule is added to the reference node itself.  \nInverse check
+    box is click to invert the rule logic\n\nWe search for doors within a certain
+    distance, \nwhich can be great for avoiding prop placement \nnear doors"
+  background: {r: 0.224, g: 1, b: 0.161, a: 0.7}
+  fontSize: 22
 --- !u!114 &114623994131746886
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -990,6 +1135,22 @@ MonoBehaviour:
     height: 15
   tangent: {x: 0, y: 1}
   tangentStrength: 50
+--- !u!114 &114633905828362896
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39f774940a6d5240b5bfd97a3794f05, type: 3}
+  m_Name: (Clone)
+  m_EditorClassIdentifier: 
+  enabled: 1
+  ruleName: Marker Exists
+  inverseRule: 1
+  markerName: Door
+  searchRadius: 0.1
 --- !u!114 &114638861876232680
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1006,6 +1167,22 @@ MonoBehaviour:
   inverseRule: 0
   markerName: Wall
   searchRadius: 0.1
+--- !u!114 &114659396742459894
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39f774940a6d5240b5bfd97a3794f05, type: 3}
+  m_Name: (Clone)
+  m_EditorClassIdentifier: 
+  enabled: 1
+  ruleName: Marker Exists
+  inverseRule: 1
+  markerName: Door
+  searchRadius: 5
 --- !u!114 &114666337676036522
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1021,15 +1198,15 @@ MonoBehaviour:
   caption: Stair2X
   bounds:
     serializedVersion: 2
-    x: 849
-    y: 250
+    x: 794
+    y: 247
     width: 120
     height: 50
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 92
+  zIndex: 172
   inputPins: []
   outputPins:
   - {fileID: 114003744213430190}
@@ -1056,6 +1233,22 @@ MonoBehaviour:
     height: 15
   tangent: {x: 0, y: 1}
   tangentStrength: 50
+--- !u!114 &114702626654915760
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39f774940a6d5240b5bfd97a3794f05, type: 3}
+  m_Name: (Clone)
+  m_EditorClassIdentifier: 
+  enabled: 1
+  ruleName: Marker Exists
+  inverseRule: 1
+  markerName: Door
+  searchRadius: 0.1
 --- !u!114 &114703268253108740
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1086,15 +1279,15 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: 688.0563
-    y: 77.301865
+    x: 633.0563
+    y: 74.301865
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 89
+  zIndex: 173
   inputPins:
   - {fileID: 114912448218128146}
   outputPins:
@@ -1141,10 +1334,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enabled: 1
   ruleName: Marker Exists
-  inverseRule: 0
+  inverseRule: 1
   markerName: Door
-  searchRadius: 0.1
---- !u!114 &114734742592297298
+  searchRadius: 5
+--- !u!114 &114730499912230998
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1152,30 +1345,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c09d4c3fb3528d4a92fba293ac13e88, type: 3}
-  m_Name: 
+  m_Script: {fileID: 11500000, guid: b39f774940a6d5240b5bfd97a3794f05, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
-  id: bcdb321a-5793-4145-ac10-778f9724a574
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 48.333344
-    y: 36.5
-    width: 319
-    height: 49
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 198
-  inputPins: []
-  outputPins: []
-  graph: {fileID: 114561671351571030}
-  message: 'We want this to succeed only if it is adjacent a door
-
-    The grey rule node defines a rule to enforce this'
-  background: {r: 0.224, g: 1, b: 0.161, a: 0.7}
-  fontSize: 22
+  enabled: 1
+  ruleName: Marker Exists
+  inverseRule: 1
+  markerName: Door
+  searchRadius: 0.1
 --- !u!114 &114744351845091756
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1206,12 +1383,13 @@ MonoBehaviour:
   ruleDomain: 0
   isSnapped: 1
   constraints: []
+  constraintEvaluationMode: 0
   exclusionRule:
     enabled: 0
     removeAllMarkers: 1
     removalRadius: 0.1
     markersToRemove: []
---- !u!114 &114772782497083696
+--- !u!114 &114746451122156550
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1219,13 +1397,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_5
+  m_Script: {fileID: 11500000, guid: 7c09d4c3fb3528d4a92fba293ac13e88, type: 3}
+  m_Name: 
   m_EditorClassIdentifier: 
-  id: 5
-  input: {fileID: 114578329968053234}
-  output: {fileID: 114163200151766070}
+  id: ed701827-e66f-452d-87fd-1878028af32a
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 34.69049
+    y: 12.128693
+    width: 372
+    height: 49
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 187
+  inputPins: []
+  outputPins: []
   graph: {fileID: 11400000}
+  message: "We do not want the green mesh near the doors.   \nClick the mesh node
+    and check the spatial constraint window"
+  background: {r: 1, g: 0.714, b: 0.992, a: 0.175}
+  fontSize: 22
 --- !u!114 &114785812154548666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1248,6 +1442,22 @@ MonoBehaviour:
     height: 15
   tangent: {x: 0, y: -1}
   tangentStrength: 50
+--- !u!114 &114790535966863096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39f774940a6d5240b5bfd97a3794f05, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  enabled: 1
+  ruleName: Marker Exists
+  inverseRule: 1
+  markerName: Door
+  searchRadius: 0.1
 --- !u!114 &114792214187198248
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1262,6 +1472,7 @@ MonoBehaviour:
   rotateToFit: 1
   applyFitRotation: 0
   applyMarkerRotation: 1
+  checkRelativeToMarkerRotation: 1
   hostThemeNode: {fileID: 114336964214505450}
   graph: {fileID: 114561671351571030}
 --- !u!114 &114800028142152644
@@ -1286,7 +1497,7 @@ MonoBehaviour:
     height: 15
   tangent: {x: 0, y: 1}
   tangentStrength: 50
---- !u!114 &114837185324462326
+--- !u!114 &114828874310138626
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1294,30 +1505,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c09d4c3fb3528d4a92fba293ac13e88, type: 3}
-  m_Name: 
+  m_Script: {fileID: 11500000, guid: b39f774940a6d5240b5bfd97a3794f05, type: 3}
+  m_Name: (Clone)(Clone)
   m_EditorClassIdentifier: 
-  id: 7ca80ba0-4612-469f-ba0c-277caeb87f4a
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 9.761902
-    y: -57.29988
-    width: 346
-    height: 49
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 110
-  inputPins: []
-  outputPins: []
-  graph: {fileID: 11400000}
-  message: 'We want the green walls to be adjacent to the doors
-
-    Click the mesh and check the spatial constraints window'
-  background: {r: 1, g: 0.714, b: 0.992, a: 0.175}
-  fontSize: 22
+  enabled: 1
+  ruleName: Marker Exists
+  inverseRule: 1
+  markerName: Door
+  searchRadius: 0.1
 --- !u!114 &114841197357958400
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1333,6 +1528,22 @@ MonoBehaviour:
   ruleName: Marker Exists
   inverseRule: 0
   markerName: Wall
+  searchRadius: 0.1
+--- !u!114 &114844477190508476
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39f774940a6d5240b5bfd97a3794f05, type: 3}
+  m_Name: (Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  enabled: 1
+  ruleName: Marker Exists
+  inverseRule: 1
+  markerName: Door
   searchRadius: 0.1
 --- !u!114 &114853016190434814
 MonoBehaviour:
@@ -1356,6 +1567,22 @@ MonoBehaviour:
     height: 15
   tangent: {x: 0, y: 1}
   tangentStrength: 50
+--- !u!114 &114853774469887498
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39f774940a6d5240b5bfd97a3794f05, type: 3}
+  m_Name: (Clone)(Clone)
+  m_EditorClassIdentifier: 
+  enabled: 1
+  ruleName: Marker Exists
+  inverseRule: 1
+  markerName: Door
+  searchRadius: 0.1
 --- !u!114 &114903097319197892
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1419,6 +1646,22 @@ MonoBehaviour:
   - {fileID: 114552314654275860}
   links: []
   asset: {fileID: 114387461983036930}
+--- !u!114 &114962348466187684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39f774940a6d5240b5bfd97a3794f05, type: 3}
+  m_Name: (Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  enabled: 1
+  ruleName: Marker Exists
+  inverseRule: 1
+  markerName: Door
+  searchRadius: 0.1
 --- !u!114 &114979209593194432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1456,15 +1699,15 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: 690
-    y: 313.5
+    x: 301
+    y: 187.5
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 120
+  zIndex: 157
   inputPins:
   - {fileID: 114247264436273274}
   outputPins:
@@ -1513,16 +1756,32 @@ MonoBehaviour:
   caption: Ground
   bounds:
     serializedVersion: 2
-    x: 688
-    y: 221
+    x: 226
+    y: 87
     width: 120
     height: 50
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 122
+  zIndex: 158
   inputPins: []
   outputPins:
   - {fileID: 114694614540097184}
   graph: {fileID: 11400000}
+--- !u!114 &114998060647401084
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39f774940a6d5240b5bfd97a3794f05, type: 3}
+  m_Name: (Clone)(Clone)
+  m_EditorClassIdentifier: 
+  enabled: 1
+  ruleName: Marker Exists
+  inverseRule: 1
+  markerName: Door
+  searchRadius: 0.1
