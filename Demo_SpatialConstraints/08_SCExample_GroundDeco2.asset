@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Name: 08_SCExample_GroundDeco2
   m_EditorClassIdentifier: 
   indexCounter:
-    index: 13
+    index: 15
   topZIndex:
-    index: 458
+    index: 464
   nodes:
   - {fileID: 114997415073345796}
   - {fileID: 114018643370017052}
@@ -36,8 +36,8 @@ MonoBehaviour:
   - {fileID: 114500497135865890}
   - {fileID: 114130184846291544}
   - {fileID: 114703268253108740}
-  - {fileID: 114733593845044606}
-  - {fileID: 114476473021914340}
+  - {fileID: 114821699539780886}
+  - {fileID: 114042983588419038}
 --- !u!114 &114003744213430190
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -74,7 +74,7 @@ MonoBehaviour:
   indexCounter:
     index: 0
   topZIndex:
-    index: 56
+    index: 57
   nodes:
   - {fileID: 114727615600031828}
   - {fileID: 114925203413915842}
@@ -286,7 +286,7 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: 89.497314
+    x: 88.497314
     y: 121.666794
     width: 120
     height: 120
@@ -294,7 +294,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 457
+  zIndex: 461
   inputPins:
   - {fileID: 114257280073894878}
   outputPins:
@@ -328,6 +328,21 @@ MonoBehaviour:
   useSpatialConstraint: 1
   spatialConstraint: {fileID: 114819151462806590}
   Template: {fileID: 181900, guid: 38de52072039fc34cbf94160a49ef70d, type: 2}
+--- !u!114 &114042983588419038
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_15
+  m_EditorClassIdentifier: 
+  id: 15
+  input: {fileID: 114202441841724094}
+  output: {fileID: 114694614540097184}
+  graph: {fileID: 11400000}
 --- !u!114 &114058928302873274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -521,8 +536,8 @@ MonoBehaviour:
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
-  selected: 1
-  zIndex: 458
+  selected: 0
+  zIndex: 463
   inputPins:
   - {fileID: 114202441841724094}
   outputPins:
@@ -721,11 +736,8 @@ MonoBehaviour:
   isSnapped: 1
   constraints: []
   constraintEvaluationMode: 0
-  exclusionRule:
-    enabled: 0
-    removeAllMarkers: 1
-    removalRadius: 0.1
-    markersToRemove: []
+  exclusionRuleSearchRadius: 0.1
+  exclusionRuleMarkersToRemove: []
 --- !u!114 &114355397274303542
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -810,7 +822,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 1
-  zIndex: 5
+  zIndex: 6
   inputPins: []
   outputPins: []
   graph: {fileID: 114890893163023956}
@@ -819,11 +831,8 @@ MonoBehaviour:
   constraints:
   - {fileID: 114810189746774374}
   constraintEvaluationMode: 0
-  exclusionRule:
-    enabled: 0
-    removeAllMarkers: 1
-    removalRadius: 0.1
-    markersToRemove: []
+  exclusionRuleSearchRadius: 0.1
+  exclusionRuleMarkersToRemove: []
 --- !u!114 &114407099623955268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -883,21 +892,6 @@ MonoBehaviour:
   inputPins: []
   outputPins:
   - {fileID: 114058928302873274}
-  graph: {fileID: 11400000}
---- !u!114 &114476473021914340
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_13
-  m_EditorClassIdentifier: 
-  id: 13
-  input: {fileID: 114202441841724094}
-  output: {fileID: 114694614540097184}
   graph: {fileID: 11400000}
 --- !u!114 &114476996757248634
 MonoBehaviour:
@@ -983,11 +977,8 @@ MonoBehaviour:
   isSnapped: 1
   constraints: []
   constraintEvaluationMode: 0
-  exclusionRule:
-    enabled: 0
-    removeAllMarkers: 1
-    removalRadius: 0.1
-    markersToRemove: []
+  exclusionRuleSearchRadius: 0.1
+  exclusionRuleMarkersToRemove: []
 --- !u!114 &114556284271938172
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1296,26 +1287,8 @@ MonoBehaviour:
   isSnapped: 1
   constraints: []
   constraintEvaluationMode: 0
-  exclusionRule:
-    enabled: 0
-    removeAllMarkers: 1
-    removalRadius: 0.1
-    markersToRemove: []
---- !u!114 &114733593845044606
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_11
-  m_EditorClassIdentifier: 
-  id: 11
-  input: {fileID: 114257280073894878}
-  output: {fileID: 114694614540097184}
-  graph: {fileID: 11400000}
+  exclusionRuleSearchRadius: 0.1
+  exclusionRuleMarkersToRemove: []
 --- !u!114 &114744351845091756
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1347,11 +1320,8 @@ MonoBehaviour:
   isSnapped: 1
   constraints: []
   constraintEvaluationMode: 0
-  exclusionRule:
-    enabled: 0
-    removeAllMarkers: 1
-    removalRadius: 0.1
-    markersToRemove: []
+  exclusionRuleSearchRadius: 0.1
+  exclusionRuleMarkersToRemove: []
 --- !u!114 &114760723199927860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1383,11 +1353,8 @@ MonoBehaviour:
   isSnapped: 1
   constraints: []
   constraintEvaluationMode: 0
-  exclusionRule:
-    enabled: 0
-    removeAllMarkers: 1
-    removalRadius: 0.1
-    markersToRemove: []
+  exclusionRuleSearchRadius: 0.1
+  exclusionRuleMarkersToRemove: []
 --- !u!114 &114777461288264594
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1459,6 +1426,21 @@ MonoBehaviour:
   checkRelativeToMarkerRotation: 1
   hostThemeNode: {fileID: 114036063192353676}
   graph: {fileID: 114014241477044268}
+--- !u!114 &114821699539780886
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_14
+  m_EditorClassIdentifier: 
+  id: 14
+  input: {fileID: 114257280073894878}
+  output: {fileID: 114694614540097184}
+  graph: {fileID: 11400000}
 --- !u!114 &114835164979439284
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1563,7 +1545,7 @@ MonoBehaviour:
   indexCounter:
     index: 0
   topZIndex:
-    index: 5
+    index: 6
   nodes:
   - {fileID: 114760723199927860}
   - {fileID: 114405867111340898}
@@ -1655,7 +1637,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 1
-  zIndex: 56
+  zIndex: 57
   inputPins: []
   outputPins: []
   graph: {fileID: 114014241477044268}
@@ -1664,11 +1646,8 @@ MonoBehaviour:
   constraints:
   - {fileID: 114777461288264594}
   constraintEvaluationMode: 0
-  exclusionRule:
-    enabled: 0
-    removeAllMarkers: 1
-    removalRadius: 0.1
-    markersToRemove: []
+  exclusionRuleSearchRadius: 0.1
+  exclusionRuleMarkersToRemove: []
 --- !u!114 &114979209593194432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1706,15 +1685,15 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: 557
-    y: 116.5
+    x: 450
+    y: 155.5
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
-  selected: 0
-  zIndex: 436
+  selected: 1
+  zIndex: 464
   inputPins:
   - {fileID: 114247264436273274}
   outputPins:
@@ -1771,7 +1750,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 455
+  zIndex: 462
   inputPins: []
   outputPins:
   - {fileID: 114694614540097184}
