@@ -16,7 +16,7 @@ public class SkyscraperRange
 public class CitySkyscraperInserter : DungeonEventListener {
 	public SkyscraperRange[] skyscraperRanges;
 
-	public override void OnDungeonMarkersEmitted(Dungeon dungeon, DungeonModel model, List<PropSocket> markers) { 
+	public override void OnDungeonMarkersEmitted(Dungeon dungeon, DungeonModel model, LevelMarkerList markers) { 
 		var cityModel = model as SimpleCityDungeonModel;
 		var width = cityModel.CityWidth;
 		var height = cityModel.CityHeight;
