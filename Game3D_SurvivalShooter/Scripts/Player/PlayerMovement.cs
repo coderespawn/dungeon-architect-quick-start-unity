@@ -20,9 +20,14 @@ namespace DAShooter
             // Set up references.
             anim = GetComponent <Animator> ();
 			character = GetComponent<CharacterController>();
+            character.enabled = false;
             //playerRigidbody = GetComponent <Rigidbody> ();
         }
 
+        public void OnTeleportered()
+        {
+            character.enabled = true;
+        }
 
         void FixedUpdate ()
         {
@@ -50,7 +55,10 @@ namespace DAShooter
             movement = movement.normalized * speed * Time.deltaTime;
 			movement.y += gravity * Time.deltaTime;
 
-			character.Move(movement);
+            if (character.enabled)
+            {
+                character.Move(movement);
+            }
         }
 
 

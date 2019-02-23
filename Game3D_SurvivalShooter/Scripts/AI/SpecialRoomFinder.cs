@@ -99,6 +99,11 @@ namespace DAShooter {
             if (player != null)
             {
                 player.transform.position = position;
+                var movement = player.GetComponent<PlayerMovement>();
+                if (movement != null)
+                {
+                    movement.OnTeleportered();
+                }
             }
         }
         
