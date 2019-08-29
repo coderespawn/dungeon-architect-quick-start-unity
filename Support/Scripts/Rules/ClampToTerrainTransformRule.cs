@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Collections;
 using DungeonArchitect;
 using DungeonArchitect.Utils;
+using DungeonArchitect.Landscape;
 
 public class ClampToTerrainTransformRule : TransformationRule {
 	
@@ -21,5 +22,14 @@ public class ClampToTerrainTransformRule : TransformationRule {
 
 		outPosition.y = targetY - currentY;
 
-	}
+        // HACK
+        {
+            /*
+            var baseScale = Matrix.GetScale(ref propTransform);
+            outPosition.x /= baseScale.x;
+            outPosition.y /= baseScale.y;
+            outPosition.z /= baseScale.z;
+            */
+        }
+    }
 }

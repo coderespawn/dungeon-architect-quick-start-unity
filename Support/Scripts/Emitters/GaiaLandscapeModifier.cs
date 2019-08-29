@@ -3,6 +3,7 @@ using System.Collections;
 using DungeonArchitect;
 using DungeonArchitect.Utils;
 using DungeonArchitect.Builders.Grid;
+using DungeonArchitect.Landscape;
 
 public class GaiaLandscapeModifier : DungeonEventListener
 {
