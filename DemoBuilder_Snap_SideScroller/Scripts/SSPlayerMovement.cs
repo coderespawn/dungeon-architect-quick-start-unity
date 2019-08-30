@@ -79,6 +79,11 @@ namespace DASideScroller
             else
             {
                 movement.x = h * speed;
+
+                if (character.velocity.y == 0)
+                {
+                    movement.y = 0;
+                }
             }
 
             if (Input.GetButton("Jump"))
