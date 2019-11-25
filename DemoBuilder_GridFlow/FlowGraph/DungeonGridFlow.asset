@@ -410,7 +410,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 3750
+  zIndex: 3794
   inputPins:
   - {fileID: -1777230594476938437}
   outputPins:
@@ -520,8 +520,8 @@ MonoBehaviour:
   description: Alt Bonus room
   keyBranch: alt
   lockBranch: bonus_alt
-  keyMarkerName: Key
-  lockMarkerName: Lock
+  keyMarkerName: KeyAltTreasure
+  lockMarkerName: LockAltTreasure
 --- !u!114 &-6741995801378091252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -686,7 +686,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 3748
+  zIndex: 3801
   inputPins:
   - {fileID: -1058561920531166438}
   outputPins:
@@ -717,7 +717,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 2531
+  zIndex: 3766
   inputPins:
   - {fileID: 2858021916006416780}
   outputPins:
@@ -739,8 +739,8 @@ MonoBehaviour:
   description: Bonus (main branch)
   keyBranch: main
   lockBranch: bonus_main
-  keyMarkerName: Key
-  lockMarkerName: Lock
+  keyMarkerName: KeyTreasure
+  lockMarkerName: LockTreasure
 --- !u!114 &-5540972168355937138
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -778,9 +778,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   indexCounter:
-    index: 150
+    index: 152
   topZIndex:
-    index: 3753
+    index: 3833
   nodes:
   - {fileID: 5498855864046928022}
   - {fileID: -7481221004516692863}
@@ -810,6 +810,7 @@ MonoBehaviour:
   - {fileID: 692070054859715996}
   - {fileID: 2599577391702372912}
   - {fileID: 1697245969073618904}
+  - {fileID: 235204993363965432}
   links:
   - {fileID: 120189146241303206}
   - {fileID: 4718594233425109959}
@@ -842,6 +843,8 @@ MonoBehaviour:
   - {fileID: 2603216661610767342}
   - {fileID: -5963578527372898613}
   - {fileID: -1219317071420935000}
+  - {fileID: -1140635207330671722}
+  - {fileID: 1187028696716227546}
   resultNode: {fileID: 5498855864046928022}
 --- !u!114 &-5259518781310888565
 MonoBehaviour:
@@ -1067,8 +1070,8 @@ MonoBehaviour:
   description: Main path
   keyBranch: main_key
   lockBranch: main
-  keyMarkerName: Key
-  lockMarkerName: Lock
+  keyMarkerName: KeyMain
+  lockMarkerName: LockMain
 --- !u!114 &-4578898777385898449
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1227,8 +1230,8 @@ MonoBehaviour:
   description: Alt path
   keyBranch: alt
   lockBranch: alt
-  keyMarkerName: Key
-  lockMarkerName: Lock
+  keyMarkerName: KeyAltPath
+  lockMarkerName: LockAltPath
 --- !u!114 &-3888833264851935756
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1368,14 +1371,14 @@ MonoBehaviour:
   bounds:
     serializedVersion: 2
     x: -964.1477
-    y: 76.829865
+    y: 75.829865
     width: 141
     height: 62
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 3745
+  zIndex: 3796
   inputPins:
   - {fileID: 7048881840758613630}
   outputPins:
@@ -1437,7 +1440,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 3684
+  zIndex: 3828
   inputPins:
   - {fileID: -8559014098388463400}
   outputPins:
@@ -1643,13 +1646,37 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 3730
+  zIndex: 3770
   inputPins:
   - {fileID: 5760942863808686075}
   outputPins:
   - {fileID: 6430155890161624750}
   graph: {fileID: -5478330468054701134}
   nodeHandler: {fileID: 1590584823618682736}
+--- !u!114 &-1531906277598948732
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06f969e17269ce14784d6212535211b2, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: 
+  pinType: 1
+  node: {fileID: 235204993363965432}
+  position: {x: 95, y: 31}
+  boundsOffset:
+    serializedVersion: 2
+    x: -95
+    y: -31
+    width: 190
+    height: 62
+  tangent: {x: 0, y: -1}
+  tangentStrength: 50
+  Padding: {x: 12, y: 12}
 --- !u!114 &-1510724478599770341
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1698,7 +1725,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 3746
+  zIndex: 3797
   inputPins:
   - {fileID: 1160743026763926995}
   outputPins:
@@ -1769,6 +1796,22 @@ MonoBehaviour:
   tangent: {x: 0, y: -1}
   tangentStrength: 50
   Padding: {x: 12, y: 12}
+--- !u!114 &-1140635207330671722
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_151
+  m_EditorClassIdentifier: 
+  id: 151
+  input: {fileID: -1531906277598948732}
+  output: {fileID: -4075689980800551098}
+  graph: {fileID: -5478330468054701134}
 --- !u!114 &-1126582797473963250
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1926,6 +1969,30 @@ MonoBehaviour:
   input: {fileID: 7990745956396653865}
   output: {fileID: -4760460711437146771}
   graph: {fileID: -5478330468054701134}
+--- !u!114 &-363006707270790471
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06f969e17269ce14784d6212535211b2, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: 
+  pinType: 0
+  node: {fileID: 235204993363965432}
+  position: {x: 95, y: 31}
+  boundsOffset:
+    serializedVersion: 2
+    x: -95
+    y: -31
+    width: 190
+    height: 62
+  tangent: {x: 0, y: -1}
+  tangentStrength: 50
+  Padding: {x: 10, y: 10}
 --- !u!114 &-299092174250820958
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1950,7 +2017,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 3729
+  zIndex: 3829
   inputPins:
   - {fileID: -5540972168355937138}
   outputPins:
@@ -2089,6 +2156,37 @@ MonoBehaviour:
   endOnPath: main
   drawDebug: 0
   nodeColor: {r: 1, g: 1, b: 0, a: 1}
+--- !u!114 &235204993363965432
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb360f4db0e05142a400eb1627b50fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 76298134-7b0d-4a7d-adb6-d605be3906e9
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: -809.86475
+    y: 667.3733
+    width: 190
+    height: 62
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 1
+  zIndex: 3833
+  inputPins:
+  - {fileID: -363006707270790471}
+  outputPins:
+  - {fileID: -1531906277598948732}
+  graph: {fileID: -5478330468054701134}
+  nodeHandler: {fileID: 3485385904731622728}
 --- !u!114 &463884864248008177
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2137,7 +2235,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 3744
+  zIndex: 3795
   inputPins:
   - {fileID: -6980579486034991197}
   outputPins:
@@ -2206,7 +2304,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 3722
+  zIndex: 3830
   inputPins:
   - {fileID: -7475358643450856147}
   outputPins:
@@ -2289,6 +2387,22 @@ MonoBehaviour:
   input: {fileID: 7435603840432889606}
   output: {fileID: -6741995801378091252}
   graph: {fileID: -5478330468054701134}
+--- !u!114 &1187028696716227546
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_152
+  m_EditorClassIdentifier: 
+  id: 152
+  input: {fileID: 4261045496788228900}
+  output: {fileID: -1531906277598948732}
+  graph: {fileID: -5478330468054701134}
 --- !u!114 &1439993770446279570
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2351,7 +2465,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 3723
+  zIndex: 3826
   inputPins:
   - {fileID: -1843515203114570467}
   outputPins:
@@ -2487,7 +2601,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 3736
+  zIndex: 3831
   inputPins:
   - {fileID: -7471858799254204665}
   outputPins:
@@ -2699,6 +2813,38 @@ MonoBehaviour:
   lockBranch: main
   keyMarkerName: Key
   lockMarkerName: Lock
+--- !u!114 &3485385904731622728
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c187585c8b2eb004e9cd6d5593859da2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: Grass Foliage
+  markerName: Grass
+  color: {r: 0.33247656, g: 0.4245283, b: 0.006007465, a: 1}
+  generationMethod: 0
+  noiseSettings:
+    noiseOctaves: 4
+    noiseFrequency: 0.15
+    noiseValuePower: 0
+    noiseMinValue: 0
+    noiseMaxValue: 1.49
+    noiseThreshold: 0.5
+    minDistFromMainPath: 1
+  mergeConfig:
+    minHeight: 0
+    maxHeight: 0
+    wallOverlayRule: 0
+    markerHeightOffsetForLayoutTiles: 0
+    markerHeightOffsetForNonLayoutTiles: 0
+    removeElevationMarker: 0
+  generatorScriptClass: 
 --- !u!114 &3499265472026822175
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2846,7 +2992,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 2530
+  zIndex: 3767
   inputPins:
   - {fileID: -6403358468522019751}
   outputPins:
@@ -3085,8 +3231,8 @@ MonoBehaviour:
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
-  selected: 1
-  zIndex: 3753
+  selected: 0
+  zIndex: 3792
   inputPins:
   - {fileID: -7013237108365398782}
   outputPins:
@@ -3890,7 +4036,7 @@ MonoBehaviour:
   caption: 
   bounds:
     serializedVersion: 2
-    x: -416.82007
+    x: -415.82007
     y: 172.16364
     width: 158
     height: 62
@@ -3898,7 +4044,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 3749
+  zIndex: 3754
   inputPins:
   - {fileID: -1347690301090839609}
   outputPins:
