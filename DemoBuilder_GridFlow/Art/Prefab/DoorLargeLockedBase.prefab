@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 7153126392977421974}
   - component: {fileID: 7891127404732042074}
   - component: {fileID: 4421335832806565832}
+  - component: {fileID: -8192394918960988123}
   m_Layer: 0
   m_Name: DoorLargeLockedBase
   m_TagString: Untagged
@@ -182,31 +183,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorLeft: {fileID: 2661967246976543565}
   doorRight: {fileID: 931602151174495216}
-  animationTime: 0.25
-  animationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!95 &4421335832806565832
 Animator:
   serializedVersion: 3
@@ -226,6 +202,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-8192394918960988123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4962598089629183762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9155f2032d53ddf4d9c7b1e6b8a44c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: f9a63d97de9a6b94899b67364f1ff3fc, type: 3}
+  iconScale: 2.5
+  rotateIcon: 0
+  tint: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &5302711445596106986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -233,6 +225,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8252258574654758145}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 3d870c7cd1be1c647bf54d2c10828dee,
+        type: 3}
+      propertyPath: m_Name
+      value: DoorSlabR
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 3d870c7cd1be1c647bf54d2c10828dee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -287,11 +284,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 3d870c7cd1be1c647bf54d2c10828dee,
-        type: 3}
-      propertyPath: m_Name
-      value: DoorSlabR
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d870c7cd1be1c647bf54d2c10828dee, type: 3}
@@ -395,6 +387,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8252258574654758145}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 52e4ee1119d52fa429889598e0fb4c1c,
+        type: 3}
+      propertyPath: m_Name
+      value: LockSkull (1)
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 52e4ee1119d52fa429889598e0fb4c1c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -450,11 +447,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 52e4ee1119d52fa429889598e0fb4c1c,
-        type: 3}
-      propertyPath: m_Name
-      value: LockSkull (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52e4ee1119d52fa429889598e0fb4c1c, type: 3}
 --- !u!4 &2351237755078716115 stripped
@@ -470,6 +462,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8252258574654758145}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 52e4ee1119d52fa429889598e0fb4c1c,
+        type: 3}
+      propertyPath: m_Name
+      value: LockSkull
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 52e4ee1119d52fa429889598e0fb4c1c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -524,11 +521,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 52e4ee1119d52fa429889598e0fb4c1c,
-        type: 3}
-      propertyPath: m_Name
-      value: LockSkull
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52e4ee1119d52fa429889598e0fb4c1c, type: 3}

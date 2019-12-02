@@ -218,6 +218,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonGridFlow
       objectReference: {fileID: 0}
+    - target: {fileID: 114048670744695864, guid: 8cdb106c3578fb842b3b50d027ef47d8,
+        type: 3}
+      propertyPath: dungeonThemes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114048670744695864, guid: 8cdb106c3578fb842b3b50d027ef47d8,
+        type: 3}
+      propertyPath: dungeonThemes.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 0ba71064e39e3b64e967e274ee2f88a2,
+        type: 2}
+    - target: {fileID: 114048670744695864, guid: 8cdb106c3578fb842b3b50d027ef47d8,
+        type: 3}
+      propertyPath: debugDraw
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4492765733295724, guid: 8cdb106c3578fb842b3b50d027ef47d8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -260,22 +276,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4492765733295724, guid: 8cdb106c3578fb842b3b50d027ef47d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114048670744695864, guid: 8cdb106c3578fb842b3b50d027ef47d8,
-        type: 3}
-      propertyPath: dungeonThemes.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114048670744695864, guid: 8cdb106c3578fb842b3b50d027ef47d8,
-        type: 3}
-      propertyPath: dungeonThemes.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 0ba71064e39e3b64e967e274ee2f88a2,
-        type: 2}
-    - target: {fileID: 114048670744695864, guid: 8cdb106c3578fb842b3b50d027ef47d8,
-        type: 3}
-      propertyPath: debugDraw
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7769902451462461510, guid: 8cdb106c3578fb842b3b50d027ef47d8,
@@ -59519,6 +59519,11 @@ PrefabInstance:
       propertyPath: debugRTT
       value: 
       objectReference: {fileID: 8400000, guid: 1ffcf22311a9c7242b5c784feb21df1d, type: 2}
+    - target: {fileID: 4886969319601685936, guid: 8cdb106c3578fb842b3b50d027ef47d8,
+        type: 3}
+      propertyPath: icons.iconOneWayDoor
+      value: 
+      objectReference: {fileID: 2800000, guid: ff9e76e1bb9817e4abcf4837dd91a594, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cdb106c3578fb842b3b50d027ef47d8, type: 3}
 --- !u!1 &409305722
@@ -60056,7 +60061,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -30, y: -30}
-  m_SizeDelta: {x: 400, y: 400}
+  m_SizeDelta: {x: 450, y: 450}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1811352746
 MonoBehaviour:
@@ -60071,7 +60076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 44de747865a4b584984729e3755bb909, type: 2}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8627451}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
