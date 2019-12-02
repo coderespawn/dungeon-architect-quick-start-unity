@@ -3,7 +3,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-namespace DAShooter
+namespace DungeonArchitect.Samples.ShooterGame
 {
 	public class PatrolPath : MonoBehaviour {
 		public int minPathLength = 5;

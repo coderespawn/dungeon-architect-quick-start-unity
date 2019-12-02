@@ -3,7 +3,7 @@
 using UnityEngine;
 using System.Collections;
 
-namespace DAShooter
+namespace DungeonArchitect.Samples.ShooterGame
 {
 	public class Waypoint : MonoBehaviour {
 		public int id;

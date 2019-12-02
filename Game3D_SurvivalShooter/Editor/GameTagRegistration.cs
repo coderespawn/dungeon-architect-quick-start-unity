@@ -5,7 +5,7 @@ using UnityEditor;
 using System.Collections;
 using DungeonArchitect.Editors;
 
-namespace DAShooter.Editors
+namespace DungeonArchitect.Samples.ShooterGame.Editors
 {
 	public class GameTagRegistration : AssetPostprocessor 
 	{

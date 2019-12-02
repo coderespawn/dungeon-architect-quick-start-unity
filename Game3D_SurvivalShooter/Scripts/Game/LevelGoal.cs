@@ -5,7 +5,7 @@ using System.Collections;
 using DungeonArchitect;
 using DungeonArchitect.Utils;
 
-namespace DAShooter {
+namespace DungeonArchitect.Samples.ShooterGame {
     public class LevelGoal : MonoBehaviour {
 		void OnTriggerEnter(Collider other) {
 			// Create a new level

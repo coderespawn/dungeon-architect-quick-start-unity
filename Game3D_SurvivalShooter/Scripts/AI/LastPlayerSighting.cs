@@ -3,7 +3,7 @@
 using UnityEngine;
 using System.Collections;
 
-namespace DAShooter
+namespace DungeonArchitect.Samples.ShooterGame
 {
 	public class LastPlayerSighting : MonoBehaviour {
 		static readonly Vector3 NO_SIGHTING = new Vector3(-10000, -10000, -10000);

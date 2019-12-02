@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using DungeonArchitect;
 using DungeonArchitect.Navigation;
 
-namespace DAShooter.TwoD
+namespace DungeonArchitect.Samples.ShooterGame.TwoD
 {
 	public class AIStateBase : StateBase {
 		protected AIController2D controller;

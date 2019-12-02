@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Collections;
 
 
-namespace DAShooter
+namespace DungeonArchitect.Samples.ShooterGame
 {
 	public class WaypointPathVisualizer : MonoBehaviour {
 		public Color pathColor = Color.cyan;

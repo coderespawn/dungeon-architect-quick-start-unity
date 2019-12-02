@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DAShooter
+namespace DungeonArchitect.Samples.ShooterGame
 {
     public class GameOverManager : MonoBehaviour
     {

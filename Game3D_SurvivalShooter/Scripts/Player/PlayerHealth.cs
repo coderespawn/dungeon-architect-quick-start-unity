@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-namespace DAShooter
+namespace DungeonArchitect.Samples.ShooterGame
 {
     public class PlayerHealth : MonoBehaviour
     {

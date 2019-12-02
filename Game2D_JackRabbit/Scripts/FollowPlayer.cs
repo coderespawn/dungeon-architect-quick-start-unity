@@ -13,7 +13,7 @@ namespace JackRabbit {
 		
 		// Update is called once per frame
 		void FixedUpdate () {
-			var player = GameObject.FindGameObjectWithTag(DAShooter.GameTags.Player);
+			var player = GameObject.FindGameObjectWithTag(DungeonArchitect.Samples.ShooterGame.GameTags.Player);
 			agent.Destination = player.transform.position;
 		}
 	}

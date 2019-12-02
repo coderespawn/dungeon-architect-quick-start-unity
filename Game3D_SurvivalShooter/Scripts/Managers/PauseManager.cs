@@ -6,7 +6,7 @@ using UnityEngine.Audio;
 using UnityEditor;
 #endif
 
-namespace DAShooter {
+namespace DungeonArchitect.Samples.ShooterGame {
 	public class PauseManager : MonoBehaviour {
 		
 		public AudioMixerSnapshot paused;

@@ -63,7 +63,7 @@ namespace JackRabbit {
 
 			
 			GetComponent<DungeonNavAgent>().enabled = false;
-			GetComponent<DAShooter.TwoD.AIController2D>().enabled = false;
+			GetComponent<DungeonArchitect.Samples.ShooterGame.TwoD.AIController2D>().enabled = false;
 		}
 
 	}

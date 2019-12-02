@@ -4,7 +4,7 @@ using System.Collections;
 using DungeonArchitect;
 using DungeonArchitect.Navigation;
 
-namespace DAShooter
+namespace DungeonArchitect.Samples.ShooterGame
 {
     public class EnemyHealth : MonoBehaviour
     {

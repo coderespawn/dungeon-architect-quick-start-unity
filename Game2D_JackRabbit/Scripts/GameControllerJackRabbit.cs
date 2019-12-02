@@ -11,8 +11,8 @@ namespace JackRabbit {
 		public Text loadingText;
 		private static GameControllerJackRabbit instance;
 
-        DAShooter.LevelNpcSpawner npcSpawner;
-        DAShooter.WaypointGenerator waypointGenerator;
+        DungeonArchitect.Samples.ShooterGame.LevelNpcSpawner npcSpawner;
+        DungeonArchitect.Samples.ShooterGame.WaypointGenerator waypointGenerator;
         SpecialRoomFinder2D specialRoomFinder;
 		
 		public static GameControllerJackRabbit Instance {
@@ -25,8 +25,8 @@ namespace JackRabbit {
 		void Awake() {
 			Physics2D.gravity = Vector2.zero;
             instance = this;
-            npcSpawner = GetComponent<DAShooter.LevelNpcSpawner>();
-            waypointGenerator = GetComponent<DAShooter.WaypointGenerator>();
+            npcSpawner = GetComponent<DungeonArchitect.Samples.ShooterGame.LevelNpcSpawner>();
+            waypointGenerator = GetComponent<DungeonArchitect.Samples.ShooterGame.WaypointGenerator>();
             specialRoomFinder = GetComponent<SpecialRoomFinder2D>();
 			CreateNewLevel();
 		}

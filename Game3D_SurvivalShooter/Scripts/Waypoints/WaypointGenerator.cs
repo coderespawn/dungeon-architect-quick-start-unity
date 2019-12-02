@@ -7,7 +7,7 @@ using DungeonArchitect.Utils;
 using DungeonArchitect.Builders.Grid;
 using DungeonArchitect.Builders.SimpleCity;
 
-namespace DAShooter
+namespace DungeonArchitect.Samples.ShooterGame
 {
 	public class WaypointGenerator : DungeonEventListener {
 		public GameObject waypointTemplate;

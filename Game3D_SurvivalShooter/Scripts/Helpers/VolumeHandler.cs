@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 
 
-namespace DAShooter {
+namespace DungeonArchitect.Samples.ShooterGame {
 	public class VolumeHandler : MonoBehaviour {
 
 		// Use this for initialization

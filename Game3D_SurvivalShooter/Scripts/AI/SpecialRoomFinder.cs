@@ -7,7 +7,7 @@ using DungeonArchitect.Utils;
 using DungeonArchitect.Builders.Grid;
 using DungeonArchitect.Builders.SimpleCity;
 
-namespace DAShooter {
+namespace DungeonArchitect.Samples.ShooterGame {
 	public class SpecialRoomFinder : DungeonEventListener {
 		public GameObject levelEndGoalTemplate;
 
@@ -114,7 +114,7 @@ namespace DAShooter {
 			var goal = Instantiate(levelEndGoalTemplate) as GameObject;
             goal.transform.position = position;
 
-            if (goal.GetComponent<DAShooter.LevelGoal>() == null)
+            if (goal.GetComponent<DungeonArchitect.Samples.ShooterGame.LevelGoal>() == null)
             {
                 Debug.LogWarning("No LevelGoal component attached to the Level goal prefab.  cleanup will not be proper");
             }
@@ -122,7 +122,7 @@ namespace DAShooter {
 
         void DestroyAllLevelGoals()
         {
-            var oldGoals = GameObject.FindObjectsOfType<DAShooter.LevelGoal>();
+            var oldGoals = GameObject.FindObjectsOfType<DungeonArchitect.Samples.ShooterGame.LevelGoal>();
             foreach (var oldGoal in oldGoals)
             {
                 var oldGoalObj = oldGoal.gameObject;

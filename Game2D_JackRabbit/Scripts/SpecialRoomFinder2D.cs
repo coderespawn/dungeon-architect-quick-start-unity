@@ -40,7 +40,7 @@ namespace JackRabbit {
 			var roomCenter = MathUtils.GridToWorld(model.Config.GridCellSize, cell.CenterF);
 			
 			// Teleport the player here
-			var player = GameObject.FindGameObjectWithTag(DAShooter.GameTags.Player);
+			var player = GameObject.FindGameObjectWithTag(DungeonArchitect.Samples.ShooterGame.GameTags.Player);
 			if (player != null) {
 				player.transform.position = FlipYZ(roomCenter);
 			}

@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace DAShooter {
+namespace DungeonArchitect.Samples.ShooterGame {
 	public class MiniMapEnemyDots : MonoBehaviour {
 		public GameObject enemyDotTemplate;
 		public Queue<GameObject> dots = new Queue<GameObject>();

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace DAShooter {
+namespace DungeonArchitect.Samples.ShooterGame {
 	public class RandomParticlePoint : MonoBehaviour 
 	{
 	    [Range(0f, 1f)]

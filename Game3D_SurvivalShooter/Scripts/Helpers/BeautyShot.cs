@@ -6,7 +6,7 @@ using UnityEngine;
 using System.IO;
 using System.Collections;
 
-namespace DAShooter {
+namespace DungeonArchitect.Samples.ShooterGame {
 	public class BeautyShot : MonoBehaviour
 	{
 		public string generateFilename()

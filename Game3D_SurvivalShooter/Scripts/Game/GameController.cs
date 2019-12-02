@@ -7,7 +7,7 @@ using DungeonArchitect;
 using DungeonArchitect.Utils;
 using DungeonArchitect.Navigation;
 
-namespace DAShooter {
+namespace DungeonArchitect.Samples.ShooterGame {
 	public class GameController : MonoBehaviour {
 		private static GameController instance;
 		public Dungeon dungeon;

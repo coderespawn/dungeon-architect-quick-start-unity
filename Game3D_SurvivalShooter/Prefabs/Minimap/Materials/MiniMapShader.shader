@@ -1,4 +1,4 @@
-﻿Shader "DAShooter/MiniMap" {
+﻿Shader "DungeonArchitect.Samples.ShooterGame/MiniMap" {
  
 	Properties {
 	    _Color ("Main Color (A=Opacity)", Color) = (1,1,1,1)

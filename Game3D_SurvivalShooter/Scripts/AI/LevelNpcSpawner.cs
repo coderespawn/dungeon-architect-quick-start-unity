@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using DungeonArchitect;
 
-namespace DAShooter
+namespace DungeonArchitect.Samples.ShooterGame
 {
 	public class LevelNpcSpawner : DungeonEventListener {
 		public GameObject parentObject;

@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.Audio;
 
-namespace DAShooter {
+namespace DungeonArchitect.Samples.ShooterGame {
 	public class MixLevels : MonoBehaviour {
 
 		public AudioMixer masterMixer;
