@@ -16,7 +16,7 @@ namespace DungeonArchitect.Samples.GridFlow
         private string[] validKeys = new string[0];
  
 
-        private void Awake()
+        private void Start()
         {
             // find the door id (grab it from the item metadata component that DA creates)
             var lockMetadata = GetComponent<GridFlowDoorLockComponent>();
