@@ -13,6 +13,7 @@ namespace DungeonArchitect.Editors.DevTools
         {
             Lightmapping.realtimeGI = false;
             Lightmapping.bakedGI = false;
+            Lightmapping.giWorkflowMode = Lightmapping.GIWorkflowMode.OnDemand;
         }
 
 
@@ -48,7 +49,7 @@ namespace DungeonArchitect.Editors.DevTools
             bool build = EditorUtility.DisplayDialog("Build Lighting", "Are you sure you want to build lighting on all the scenes?", "Yes", "No");
             if (build)
             {
-                OpenAllScenes(() => BakeCurrentScene(), false);
+                OpenAllScenes(() => BakeCurrentScene(), true);
             }
         }
 
