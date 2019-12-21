@@ -66,7 +66,10 @@ namespace DungeonArchitect.Editors.DevTools
             {
                 if (assetPath.EndsWith(".unity") && assetPath.StartsWith("Assets/DungeonArchitect"))
                 {
-                    scenePaths.Add(assetPath);
+                    if (!assetPath.Contains("DungeonArchitect_LaunchPad"))
+                    {
+                        scenePaths.Add(assetPath);
+                    }
                 }
             }
             foreach (var scenePath in scenePaths)
