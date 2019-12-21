@@ -13,6 +13,7 @@ namespace DungeonArchitect.Editors.DevTools
         {
             Lightmapping.realtimeGI = false;
             Lightmapping.bakedGI = false;
+            Lightmapping.giWorkflowMode = Lightmapping.GIWorkflowMode.OnDemand;
         }
 
 
@@ -50,7 +51,10 @@ namespace DungeonArchitect.Editors.DevTools
             {
                 if (assetPath.EndsWith(".unity") && assetPath.StartsWith("Assets/DungeonArchitect"))
                 {
-                    scenePaths.Add(assetPath);
+                    if (!assetPath.Contains("DungeonArchitect_LaunchPad"))
+                    {
+                        scenePaths.Add(assetPath);
+                    }
                 }
             }
             foreach (var scenePath in scenePaths)
