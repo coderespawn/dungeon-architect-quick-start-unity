@@ -34,14 +34,22 @@ namespace DungeonArchitect.Editors.DevTools
         [MenuItem("Window/Rendering/Dungeon Architect/Internal Dev Tools/Clear Lighting on All Samples", priority = 2021)]
         public static void ClearAllScenes()
         {
-            OpenAllScenes(() => ClearCurrentScene(), false);
+            bool proceed = EditorUtility.DisplayDialog("Build Lighting", "Are you sure you want to clear lighting data on all the scenes?", "Yes", "No");
+            if (proceed)
+            {
+                OpenAllScenes(() => ClearCurrentScene(), false);
+            }
         }
 
 
-        //[MenuItem("Window/Rendering/Dungeon Architect/Internal Dev Tools/Lightmap/Bake All Scenes", priority = 2021)]
+        [MenuItem("Window/Rendering/Dungeon Architect/Internal Dev Tools/Bake Lighting on All Samples", priority = 2021)]
         public static void BakeAllScenes()
         {
-            OpenAllScenes(() => ClearCurrentScene(), false);
+            bool build = EditorUtility.DisplayDialog("Build Lighting", "Are you sure you want to build lighting on all the scenes?", "Yes", "No");
+            if (build)
+            {
+                OpenAllScenes(() => BakeCurrentScene(), false);
+            }
         }
 
         static void OpenAllScenes(System.Action action, bool saveAfterAction)
