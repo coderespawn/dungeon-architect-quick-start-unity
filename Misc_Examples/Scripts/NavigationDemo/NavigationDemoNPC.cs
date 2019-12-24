@@ -22,15 +22,18 @@ namespace DungeonArchitect.Samples.Navigation
         {
             if (target != null)
             {
-                agent.SetDestination(target.position);
+                if (agent.isActiveAndEnabled)
+                {
+                    agent.SetDestination(target.position);
 
-                if (agent.remainingDistance > agent.stoppingDistance)
-                {
-                    character.SimpleMove(agent.desiredVelocity);
-                }
-                else
-                {
-                    character.SimpleMove(Vector3.zero);
+                    if (agent.remainingDistance > agent.stoppingDistance)
+                    {
+                        character.SimpleMove(agent.desiredVelocity);
+                    }
+                    else
+                    {
+                        character.SimpleMove(Vector3.zero);
+                    }
                 }
             }
             

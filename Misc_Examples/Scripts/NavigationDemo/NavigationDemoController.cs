@@ -14,7 +14,7 @@ namespace DungeonArchitect.Samples.Navigation
         public Vector3 spawnOffset;
 
         // Use this for initialization
-        void Awake()
+        void Start()
         {
             dungeon.Config.Seed = (uint)Random.Range(0, 100000);
             dungeon.Build();
