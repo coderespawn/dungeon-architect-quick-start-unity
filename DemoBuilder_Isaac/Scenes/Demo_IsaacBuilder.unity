@@ -94,9 +94,9 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
-  m_LightingDataAsset: {fileID: 112000000, guid: 7a2456b527e0c724383a079ff9663d5b,
+    m_TrainingDataDestination: TrainingData
+  m_LightingDataAsset: {fileID: 112000000, guid: 7fe468af1a1fa984fb3e173d5392a03e,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -108061,6 +108061,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonIsaac
       objectReference: {fileID: 0}
+    - target: {fileID: 721525814404498422, guid: 5853d86b6fafe904bb56d83673737875,
+        type: 3}
+      propertyPath: dungeonThemes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 721525814404498422, guid: 5853d86b6fafe904bb56d83673737875,
+        type: 3}
+      propertyPath: dungeonThemes.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1578a84c21433b64ebbc7b03b7fc346c,
+        type: 2}
+    - target: {fileID: 721525814404498422, guid: 5853d86b6fafe904bb56d83673737875,
+        type: 3}
+      propertyPath: debugDraw
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2773107764399141254, guid: 5853d86b6fafe904bb56d83673737875,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -108115,22 +108131,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 721525814404498422, guid: 5853d86b6fafe904bb56d83673737875,
-        type: 3}
-      propertyPath: dungeonThemes.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 721525814404498422, guid: 5853d86b6fafe904bb56d83673737875,
-        type: 3}
-      propertyPath: dungeonThemes.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 1578a84c21433b64ebbc7b03b7fc346c,
-        type: 2}
-    - target: {fileID: 721525814404498422, guid: 5853d86b6fafe904bb56d83673737875,
-        type: 3}
-      propertyPath: debugDraw
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114374885380614575, guid: 5853d86b6fafe904bb56d83673737875,
         type: 3}

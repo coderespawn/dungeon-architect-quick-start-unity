@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.46169513, g: 0.5124164, b: 0.58993304, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -94,9 +94,9 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
-  m_LightingDataAsset: {fileID: 112000000, guid: f9aba7dc96734e04587c90c24651533d,
+    m_TrainingDataDestination: TrainingData
+  m_LightingDataAsset: {fileID: 112000000, guid: b4f5165475a32984f968bbeeb5e4d9ca,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -297,14 +297,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11474598, guid: aa47324eda2ce1b48a99b93e5e946e8c, type: 3}
-      propertyPath: cityDoorSize
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11457014, guid: aa47324eda2ce1b48a99b93e5e946e8c, type: 3}
-      propertyPath: itemParent
-      value: 
-      objectReference: {fileID: 132504435}
     - target: {fileID: 11419902, guid: aa47324eda2ce1b48a99b93e5e946e8c, type: 3}
       propertyPath: dungeonThemes.Array.data[0]
       value: 
@@ -314,6 +306,14 @@ PrefabInstance:
       propertyPath: debugDraw
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11474598, guid: aa47324eda2ce1b48a99b93e5e946e8c, type: 3}
+      propertyPath: cityDoorSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11457014, guid: aa47324eda2ce1b48a99b93e5e946e8c, type: 3}
+      propertyPath: itemParent
+      value: 
+      objectReference: {fileID: 132504435}
     - target: {fileID: 11465646, guid: aa47324eda2ce1b48a99b93e5e946e8c, type: 3}
       propertyPath: CityWidth
       value: 19
@@ -474,63 +474,6 @@ PrefabInstance:
     - target: {fileID: 195034, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
       propertyPath: m_Name
       value: DungeonGrid
-      objectReference: {fileID: 0}
-    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -53.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 13.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11455964, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: dungeonThemes.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 8085bc3a41b4ad246b5469d4283e1e7c,
-        type: 2}
-    - target: {fileID: 11455964, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: debugDraw
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11457970, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: Seed
-      value: 1237924736
       objectReference: {fileID: 0}
     - target: {fileID: 11447134, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
       propertyPath: DoorManager.doors.Array.size
@@ -2900,10 +2843,67 @@ PrefabInstance:
       propertyPath: Cells.Array.data[40].cellType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -53.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11455964, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: dungeonThemes.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8085bc3a41b4ad246b5469d4283e1e7c,
+        type: 2}
+    - target: {fileID: 11455964, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: debugDraw
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 11486402, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
       propertyPath: itemParent
       value: 
       objectReference: {fileID: 1305810825}
+    - target: {fileID: 11457970, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: Seed
+      value: 1237924736
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
 --- !u!1 &769351852 stripped
@@ -3107,22 +3107,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1408002864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 465e171cadc0fa74c89d90e7e71e809c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  paintedCells:
-  - x: -26
-    y: 0
-    z: 84
 --- !u!1 &2120086907
 GameObject:
   m_ObjectHideFlags: 0
@@ -3160,7 +3144,7 @@ Terrain:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2120086907}
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_TerrainData: {fileID: 15600000, guid: 53069964f5c69fb47816b13655df5e6b, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
@@ -3176,12 +3160,7 @@ Terrain:
   m_DrawInstanced: 0
   m_DrawTreesAndFoliage: 1
   m_ReflectionProbeUsage: 1
-  m_MaterialType: 0
-  m_LegacySpecular:
-    serializedVersion: 2
-    rgba: 4286545791
-  m_LegacyShininess: 0.078125
-  m_MaterialTemplate: {fileID: 0}
+  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
