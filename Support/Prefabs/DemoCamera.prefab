@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 8100312}
   - component: {fileID: 11433326}
   - component: {fileID: 11456064}
-  - component: {fileID: 114192627332518982}
   m_Layer: 0
   m_Name: DemoCamera
   m_TagString: MainCamera
@@ -66,11 +65,11 @@ Camera:
   m_TargetEye: 3
   m_HDR: 0
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!81 &8100312
 AudioListener:
   m_ObjectHideFlags: 1
@@ -133,15 +132,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 183776}
   m_IsPrefabParent: 1
---- !u!114 &114192627332518982
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 183776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: 79ba04db0695a084dbed6efb1c8a4412, type: 2}
