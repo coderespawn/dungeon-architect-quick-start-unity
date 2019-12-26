@@ -38,22 +38,25 @@ namespace DungeonArchitect.Samples.ShooterGame
 
         void Update ()
         {
-            // If the player has just been damaged...
-            if(damaged)
+            if (damageImage != null)
             {
-                if (damageImage)
+                // If the player has just been damaged...
+                if (damaged)
                 {
-                    // ... set the colour of the damageImage to the flash colour.
-                    damageImage.color = flashColour;
+                    if (damageImage)
+                    {
+                        // ... set the colour of the damageImage to the flash colour.
+                        damageImage.color = flashColour;
+                    }
                 }
-            }
-            // Otherwise...
-            else
-            {
-                if (damageImage)
+                // Otherwise...
+                else
                 {
-                    // ... transition the colour back to clear.
-                    damageImage.color = Color.Lerp(damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
+                    if (damageImage)
+                    {
+                        // ... transition the colour back to clear.
+                        damageImage.color = Color.Lerp(damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
+                    }
                 }
             }
 
