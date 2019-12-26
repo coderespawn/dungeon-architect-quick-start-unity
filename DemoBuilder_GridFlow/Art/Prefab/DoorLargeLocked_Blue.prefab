@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 65901559363526704}
   - component: {fileID: 114267675242743336}
   - component: {fileID: 95810781062813452}
+  - component: {fileID: 114287592584394624}
   m_Layer: 0
   m_Name: DoorLargeLocked_Blue
   m_TagString: Untagged
@@ -473,3 +474,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorLeft: {fileID: 4832662387794772}
   doorRight: {fileID: 4699220060419846}
+--- !u!114 &114287592584394624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1198038591205460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9155f2032d53ddf4d9c7b1e6b8a44c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: f9a63d97de9a6b94899b67364f1ff3fc, type: 3}
+  iconScale: 2.5
+  rotateIcon: 0
+  tint: {r: 0, g: 0.21379304, b: 1, a: 1}
+  exploresFogOfWar: 0
+  fogOfWarNumTileRadius: 5
+  fogOfWarLightFalloffStart: 0.5

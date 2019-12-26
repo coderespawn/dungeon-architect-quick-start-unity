@@ -79,6 +79,7 @@ GameObject:
   - component: {fileID: 65980357041741994}
   - component: {fileID: 114623770985509812}
   - component: {fileID: 95220764299672168}
+  - component: {fileID: 114827223171963416}
   m_Layer: 0
   m_Name: DoorLargeLockedBase
   m_TagString: Untagged
@@ -473,3 +474,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorLeft: {fileID: 4155045259266760}
   doorRight: {fileID: 4670680825056944}
+--- !u!114 &114827223171963416
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1912895240808548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9155f2032d53ddf4d9c7b1e6b8a44c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: f9a63d97de9a6b94899b67364f1ff3fc, type: 3}
+  iconScale: 2.5
+  rotateIcon: 0
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  exploresFogOfWar: 0
+  fogOfWarNumTileRadius: 5
+  fogOfWarLightFalloffStart: 0.5

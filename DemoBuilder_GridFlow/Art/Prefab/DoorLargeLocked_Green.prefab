@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 65461847990959446}
   - component: {fileID: 114423708271423294}
   - component: {fileID: 95228584740853046}
+  - component: {fileID: 114857334067848684}
   m_Layer: 0
   m_Name: DoorLargeLocked_Green
   m_TagString: Untagged
@@ -473,3 +474,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorLeft: {fileID: 4596804954101254}
   doorRight: {fileID: 4795199046948872}
+--- !u!114 &114857334067848684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1844805609090042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9155f2032d53ddf4d9c7b1e6b8a44c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: f9a63d97de9a6b94899b67364f1ff3fc, type: 3}
+  iconScale: 2.5
+  rotateIcon: 0
+  tint: {r: 0.034482718, g: 1, b: 0, a: 1}
+  exploresFogOfWar: 0
+  fogOfWarNumTileRadius: 5
+  fogOfWarLightFalloffStart: 0.5
