@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4947481388523342}
   - component: {fileID: 33715599228438676}
-  - component: {fileID: 135023663379782568}
   - component: {fileID: 23452885953500660}
   m_Layer: 0
   m_Name: Sphere
@@ -38,7 +37,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4847802263406796}
   - component: {fileID: 33469345387533350}
-  - component: {fileID: 136493728075992518}
   - component: {fileID: 23077975064114596}
   m_Layer: 0
   m_Name: Cylinder
@@ -204,28 +202,3 @@ MonoBehaviour:
   exploresFogOfWar: 0
   fogOfWarNumTileRadius: 5
   fogOfWarLightFalloffStart: 0.5
---- !u!135 &135023663379782568
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1395136791783274}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &136493728075992518
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1598204633055068}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
