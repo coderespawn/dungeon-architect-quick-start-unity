@@ -152,15 +152,15 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 11454068, guid: 7200002e625a3594fa56c5d03765c7c7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 11473990, guid: 7200002e625a3594fa56c5d03765c7c7, type: 3}
       propertyPath: dungeon
       value: 
       objectReference: {fileID: 1436192415}
     - target: {fileID: 11473990, guid: 7200002e625a3594fa56c5d03765c7c7, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11454068, guid: 7200002e625a3594fa56c5d03765c7c7, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -235,13 +235,13 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 11426140, guid: d786dead44590e943860d8527730886b, type: 3}
-      propertyPath: focalSize
-      value: 1.04
-      objectReference: {fileID: 0}
     - target: {fileID: 11414888, guid: d786dead44590e943860d8527730886b, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426140, guid: d786dead44590e943860d8527730886b, type: 3}
+      propertyPath: focalSize
+      value: 1.04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d786dead44590e943860d8527730886b, type: 3}
@@ -272,6 +272,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11405048, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: asyncBuild
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11405048, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: maxBuildTimePerFrame
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 11447134, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
       propertyPath: Cells.Array.size
       value: 0
@@ -4800,47 +4840,11 @@ PrefabInstance:
       propertyPath: Cells.Array.data[147].cellType
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 11455964, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
       propertyPath: dungeonThemes.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: 99e071feff59a624f9f5a3cb36001f63,
         type: 2}
-    - target: {fileID: 11486402, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: itemParent
-      value: 
-      objectReference: {fileID: 342141827}
     - target: {fileID: 11457970, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
       propertyPath: GridCellSize.y
       value: 2
@@ -4869,14 +4873,10 @@ PrefabInstance:
       propertyPath: CorridorPaddingDoubleSided
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11405048, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: asyncBuild
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11405048, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
-      propertyPath: maxBuildTimePerFrame
-      value: 6
-      objectReference: {fileID: 0}
+    - target: {fileID: 11486402, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: itemParent
+      value: 
+      objectReference: {fileID: 342141827}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
 --- !u!114 &1436192415 stripped
