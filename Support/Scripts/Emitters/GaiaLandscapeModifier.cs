@@ -3,6 +3,7 @@ using System.Collections;
 using DungeonArchitect;
 using DungeonArchitect.Utils;
 using DungeonArchitect.Builders.Grid;
+using DungeonArchitect.Landscape;
 
 public class GaiaLandscapeModifier : DungeonEventListener
 {
@@ -13,11 +14,13 @@ public class GaiaLandscapeModifier : DungeonEventListener
     public float corridorBlurThreshold = 0.5f;
 
     public bool modifyTextures = true;
-    public bool modifyDetails = true;      
+    public bool modifyDetails = true;
 
-	public override void OnPostDungeonLayoutBuild(Dungeon dungeon, DungeonModel model) {
+    public override void OnPostDungeonLayoutBuild(Dungeon dungeon, DungeonModel model)
+    {
         var gridModel = model as GridDungeonModel;
-        if (modifyTextures) {
+        if (modifyTextures)
+        {
             UpdateTerrainTextures(gridModel);
         }
         if (modifyDetails)
@@ -53,7 +56,7 @@ public class GaiaLandscapeModifier : DungeonEventListener
     void UpdateDetailTexture(GridDungeonModel model, int[,] map)
     {
         var gridSize = model.Config.GridCellSize;
-        
+
         foreach (var cell in model.Cells)
         {
             var bounds = cell.Bounds;
@@ -73,7 +76,7 @@ public class GaiaLandscapeModifier : DungeonEventListener
         }
     }
 
-    void UpdateBaseTexture(GridDungeonModel model, float[, ,] map)
+    void UpdateBaseTexture(GridDungeonModel model, float[,,] map)
     {
         var gridSize = model.Config.GridCellSize;
         var layoutMap = new float[map.GetLength(0), map.GetLength(1)];

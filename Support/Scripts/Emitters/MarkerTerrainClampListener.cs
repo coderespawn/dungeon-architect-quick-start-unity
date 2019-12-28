@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using DungeonArchitect;
 using DungeonArchitect.Utils;
+using DungeonArchitect.Landscape;
 
 public class MarkerTerrainClampListener : DungeonEventListener {
     
