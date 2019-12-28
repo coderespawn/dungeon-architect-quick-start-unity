@@ -20,7 +20,7 @@ namespace DungeonArchitect.Samples.GridFlow
             var maxJitterDistance = 0.25f;
             var jitterDistance = random.NextFloat() * maxJitterDistance;
             var jitterAngle = random.NextFloat() * Mathf.PI * 2;
-            var jitter = new Vector3(Mathf.Cos(jitterAngle), 0, Mathf.Sin(jitterAngle)) * maxJitterDistance;
+            var jitter = new Vector3(Mathf.Cos(jitterAngle), 0, Mathf.Sin(jitterAngle)) * jitterDistance;
             outPosition += jitter;
         }
     }
