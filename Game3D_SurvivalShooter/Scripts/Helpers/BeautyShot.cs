@@ -17,9 +17,6 @@ namespace DAShooter {
 			return string.Format("/{0}.png", frame + frameOffset );
 		}
 
-		private string _folder = "";
-		private Texture2D _result = null;
-
 		public LayerMask layerMask;
 
 		public int frameRate = 60;
@@ -28,8 +25,14 @@ namespace DAShooter {
 		private float numFrames;
 		
 		public bool captureUsingScreenshot = false;
-		
-		public enum Supersample
+
+#if UNITY_EDITOR
+        private string _folder = "";
+        private Texture2D _result = null;
+#endif // UNITY_EDITOR
+
+
+        public enum Supersample
 		{
 			None = 1,
 			Two = 2,
