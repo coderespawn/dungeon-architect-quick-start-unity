@@ -17,8 +17,6 @@ namespace DungeonArchitect.Samples.ShooterGame {
 			return string.Format("/{0}.png", frame + frameOffset );
 		}
 
-		private string _folder = "";
-		private Texture2D _result = null;
 
 		public LayerMask layerMask;
 
@@ -41,7 +39,13 @@ namespace DungeonArchitect.Samples.ShooterGame {
 		
 		public Supersample supersampleScreenshot = Supersample.None;
 
-		void Start()
+#if UNITY_EDITOR
+        private string _folder = "";
+        private Texture2D _result = null;
+#endif // UNITY_EDITOR
+
+
+        void Start()
 		{
 			if( !Application.isPlaying )
 				return;
