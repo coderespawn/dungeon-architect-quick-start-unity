@@ -17,10 +17,12 @@ namespace DAShooter {
 			return string.Format("/{0}.png", frame + frameOffset );
 		}
 
-		private string _folder = "";
+#if UNITY_EDITOR
+        private string _folder = "";
 		private Texture2D _result = null;
+#endif // UNITY_EDITOR
 
-		public LayerMask layerMask;
+        public LayerMask layerMask;
 
 		public int frameRate = 60;
 		public float duration = 10;
