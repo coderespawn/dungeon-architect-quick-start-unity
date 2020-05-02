@@ -94,9 +94,10 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
-  m_LightingDataAsset: {fileID: 112000000, guid: b9a15fdef7096be4c9527fa6093e5522,
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 112000000, guid: 8b0c0080ded61ea4ab295d3085640389,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -262,8 +263,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725429615}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -499,6 +501,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114006701340578286, guid: ba8a489405bb4704385ecb36a3b16a3d,
+        type: 3}
+      propertyPath: chunkSize.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114006701340578286, guid: ba8a489405bb4704385ecb36a3b16a3d,
+        type: 3}
+      propertyPath: chunkSize.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114006701340578286, guid: ba8a489405bb4704385ecb36a3b16a3d,
+        type: 3}
+      propertyPath: chunkSize.z
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114006701340578286, guid: ba8a489405bb4704385ecb36a3b16a3d,
+        type: 3}
+      propertyPath: gridSize.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114006701340578286, guid: ba8a489405bb4704385ecb36a3b16a3d,
+        type: 3}
+      propertyPath: gridSize.y
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 114050838514332560, guid: ba8a489405bb4704385ecb36a3b16a3d,
         type: 3}
       propertyPath: dungeonThemes.Array.size
@@ -525,30 +552,5 @@ PrefabInstance:
       propertyPath: buildPositionTracker
       value: 
       objectReference: {fileID: 1152309956}
-    - target: {fileID: 114006701340578286, guid: ba8a489405bb4704385ecb36a3b16a3d,
-        type: 3}
-      propertyPath: chunkSize.x
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 114006701340578286, guid: ba8a489405bb4704385ecb36a3b16a3d,
-        type: 3}
-      propertyPath: chunkSize.y
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 114006701340578286, guid: ba8a489405bb4704385ecb36a3b16a3d,
-        type: 3}
-      propertyPath: chunkSize.z
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 114006701340578286, guid: ba8a489405bb4704385ecb36a3b16a3d,
-        type: 3}
-      propertyPath: gridSize.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114006701340578286, guid: ba8a489405bb4704385ecb36a3b16a3d,
-        type: 3}
-      propertyPath: gridSize.y
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba8a489405bb4704385ecb36a3b16a3d, type: 3}

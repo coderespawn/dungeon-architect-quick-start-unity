@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -94,9 +94,11 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
-  m_LightingDataAsset: {fileID: 0}
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 112000000, guid: 9c1a5404ffa1eec4dbefc8ee3d447823,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -727,8 +729,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 45574090}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -7828,17 +7831,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114048670744695864, guid: 42eded0b8edfce54fa106c44e775f6f6,
-        type: 3}
-      propertyPath: dungeonThemes.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114048670744695864, guid: 42eded0b8edfce54fa106c44e775f6f6,
-        type: 3}
-      propertyPath: dungeonThemes.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 0ff83c272ec97514fb2c0254c7ab101a,
-        type: 2}
     - target: {fileID: 4492765733295724, guid: 42eded0b8edfce54fa106c44e775f6f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7871,16 +7863,27 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114494374647570544, guid: 42eded0b8edfce54fa106c44e775f6f6,
+    - target: {fileID: 114048670744695864, guid: 42eded0b8edfce54fa106c44e775f6f6,
         type: 3}
-      propertyPath: Config
+      propertyPath: dungeonThemes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114048670744695864, guid: 42eded0b8edfce54fa106c44e775f6f6,
+        type: 3}
+      propertyPath: dungeonThemes.Array.data[0]
       value: 
-      objectReference: {fileID: 349444673}
+      objectReference: {fileID: 11400000, guid: 0ff83c272ec97514fb2c0254c7ab101a,
+        type: 2}
     - target: {fileID: 114406795247347602, guid: 42eded0b8edfce54fa106c44e775f6f6,
         type: 3}
       propertyPath: itemParent
       value: 
       objectReference: {fileID: 1969956737}
+    - target: {fileID: 114494374647570544, guid: 42eded0b8edfce54fa106c44e775f6f6,
+        type: 3}
+      propertyPath: Config
+      value: 
+      objectReference: {fileID: 349444673}
     - target: {fileID: 114900848687031672, guid: 42eded0b8edfce54fa106c44e775f6f6,
         type: 3}
       propertyPath: gridSize.y
