@@ -5,7 +5,13 @@ using DungeonArchitect;
 using DungeonArchitect.Navigation;
 
 namespace JackRabbit {
-	public class GameControllerJackRabbit : MonoBehaviour {
+    public interface IJackRabbitGameController
+    {
+        void CreateNewLevel();
+    }
+
+	public class GameControllerJackRabbit : MonoBehaviour, IJackRabbitGameController
+    {
 		public Dungeon dungeon;
 		public DungeonNavMesh navMesh;
 		public Text loadingText;
@@ -15,7 +21,7 @@ namespace JackRabbit {
         DungeonArchitect.Samples.ShooterGame.WaypointGenerator waypointGenerator;
         SpecialRoomFinder2D specialRoomFinder;
 		
-		public static GameControllerJackRabbit Instance {
+		public static IJackRabbitGameController Instance {
 			get {
 				return instance;
 			}
