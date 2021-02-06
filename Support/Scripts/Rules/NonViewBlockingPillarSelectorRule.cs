@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using DungeonArchitect;
 using DungeonArchitect.Utils;
 using DungeonArchitect.Builders.Grid;
+using DungeonArchitect.Themeing;
 
 public class NonViewBlockingPillarSelectorRule : NonViewBlockingSelectionRule {
 	public override bool CanSelect(PropSocket socket, Matrix4x4 propTransform, DungeonModel model, System.Random random) {

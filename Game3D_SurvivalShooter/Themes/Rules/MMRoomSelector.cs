@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Collections;
 using DungeonArchitect;
 using DungeonArchitect.Builders.Grid;
+using DungeonArchitect.Themeing;
 
 namespace DungeonArchitect.Samples.ShooterGame {
 	public class MMRoomSelector : SelectorRule {

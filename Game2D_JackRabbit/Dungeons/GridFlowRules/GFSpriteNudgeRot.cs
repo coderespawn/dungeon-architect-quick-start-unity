@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DungeonArchitect.Themeing;
 
 namespace DungeonArchitect.Samples.JackRabbit
 {

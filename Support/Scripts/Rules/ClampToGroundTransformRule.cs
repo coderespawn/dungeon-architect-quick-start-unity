@@ -5,6 +5,7 @@ using System.Collections;
 using DungeonArchitect;
 using DungeonArchitect.Utils;
 using DungeonArchitect.Builders.Grid;
+using DungeonArchitect.Themeing;
 
 public class ClampToGroundTransformRule : TransformationRule {
 	

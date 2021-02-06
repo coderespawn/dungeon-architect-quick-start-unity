@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using DungeonArchitect;
 using DungeonArchitect.Utils;
+using DungeonArchitect.Themeing;
 
 public class NonViewBlockingSelectionRule : SelectorRule {
 	static Vector3[] validDirections = new Vector3[] {

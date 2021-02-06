@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Collections;
 using DungeonArchitect;
 using DungeonArchitect.Utils;
+using DungeonArchitect.Themeing;
 
 public class RandomRotY90TransformRule : TransformationRule {
 	

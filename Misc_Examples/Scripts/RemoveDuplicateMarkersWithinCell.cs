@@ -4,6 +4,7 @@ using UnityEngine;
 using DungeonArchitect;
 using DungeonArchitect.Utils;
 using DungeonArchitect.Builders.Grid;
+using DungeonArchitect.Themeing;
 
 public class RemoveDuplicateMarkersWithinCell : DungeonEventListener {
     public string markerName;

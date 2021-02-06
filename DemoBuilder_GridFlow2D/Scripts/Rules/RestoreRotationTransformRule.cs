@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DungeonArchitect;
+using DungeonArchitect.Themeing;
 
 namespace DungeonArchitect.Samples.GridFlow
 {

@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Collections;
 using DungeonArchitect;
 using DungeonArchitect.Builders.Grid;
+using DungeonArchitect.Themeing;
 
 public class RoomSelectionRule : SelectorRule {
 	public override bool CanSelect(PropSocket socket, Matrix4x4 propTransform, DungeonModel model, System.Random random) {
