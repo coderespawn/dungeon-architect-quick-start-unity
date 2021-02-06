@@ -64,7 +64,7 @@ namespace DungeonArchitect.Editors.DevTools
             var scenePaths = new List<string>();
             foreach (var assetPath in assetPaths)
             {
-                if (assetPath.EndsWith(".unity") && assetPath.StartsWith("Assets/DungeonArchitect"))
+                if (assetPath.EndsWith(".unity") && assetPath.StartsWith("Assets/CodeRespawn"))
                 {
                     if (!assetPath.Contains("DungeonArchitect_LaunchPad"))
                     {
