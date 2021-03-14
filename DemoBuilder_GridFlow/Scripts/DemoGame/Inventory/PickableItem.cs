@@ -1,6 +1,8 @@
 ﻿using DungeonArchitect.Builders.GridFlow;
 using System.Collections;
 using System.Collections.Generic;
+using DungeonArchitect.Flow;
+using DungeonArchitect.Flow.Items;
 using UnityEngine;
 
 namespace DungeonArchitect.Samples.GridFlow
@@ -32,7 +34,7 @@ namespace DungeonArchitect.Samples.GridFlow
 
         string GetItemId()
         {
-            var itemMetadata = GetComponent<GridFlowItemMetadataComponent>();
+            var itemMetadata = GetComponent<FlowItemMetadataComponent>();
             return (itemMetadata != null) ? itemMetadata.itemId : "";
         }
     }

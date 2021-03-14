@@ -1,6 +1,8 @@
 ﻿using DungeonArchitect.Builders.GridFlow;
 using System.Collections;
 using System.Collections.Generic;
+using DungeonArchitect.Flow;
+using DungeonArchitect.Flow.Items;
 using UnityEngine;
 
 namespace DungeonArchitect.Samples.GridFlow
@@ -19,7 +21,7 @@ namespace DungeonArchitect.Samples.GridFlow
         private void Start()
         {
             // find the door id (grab it from the item metadata component that DA creates)
-            var lockMetadata = GetComponent<GridFlowDoorLockComponent>();
+            var lockMetadata = GetComponent<FlowDoorLockComponent>();
             if (lockMetadata != null)
             {
                 lockId = lockMetadata.lockId;
