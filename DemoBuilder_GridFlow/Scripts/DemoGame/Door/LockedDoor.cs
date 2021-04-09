@@ -17,11 +17,11 @@ namespace DungeonArchitect.Samples.GridFlow
         private void Start()
         {
             // find the door id (grab it from the item metadata component that DA creates)
-            var lockMetadata = GetComponent<FlowDoorLockComponent>();
-            if (lockMetadata != null)
+            var lockItemMetadata = GetComponent<FlowItemMetadataComponent>();
+            if (lockItemMetadata != null)
             {
-                lockId = lockMetadata.lockId;
-                validKeys = lockMetadata.validKeyIds;
+                lockId = lockItemMetadata.itemId;
+                validKeys = lockItemMetadata.referencedItemIds;
             }
 
             animator = GetComponent<Animator>();
