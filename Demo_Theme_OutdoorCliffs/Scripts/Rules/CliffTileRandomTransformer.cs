@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
 using DungeonArchitect;
-using DungeonArchitect.Themeing;
 
 public class CliffTileRandomTransformer : TransformationRule {
     public float tileWidth = 3;

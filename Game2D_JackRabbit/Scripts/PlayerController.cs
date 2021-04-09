@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 namespace JackRabbit {
 	public class PlayerController : MonoBehaviour {

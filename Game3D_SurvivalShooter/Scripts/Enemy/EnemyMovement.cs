@@ -1,8 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
-using System.Collections;
-using DungeonArchitect;
-using DungeonArchitect.Navigation;
 
 namespace DungeonArchitect.Samples.ShooterGame
 {

@@ -2,10 +2,7 @@
 
 using UnityEngine;
 using UnityEngine.AI;
-using System.Collections;
 using System.Collections.Generic;
-using DungeonArchitect;
-using DungeonArchitect.Navigation;
 
 namespace DungeonArchitect.Samples.ShooterGame
 {

@@ -1,10 +1,7 @@
 ﻿//$ Copyright 2016, Code Respawn Technologies Pvt Ltd - All Rights Reserved $//
 
 using UnityEngine;
-using System.Collections;
 using DungeonArchitect;
-using DungeonArchitect.Utils;
-using DungeonArchitect.Themeing;
 
 public class BrokenTilesTransformRule : TransformationRule {
 

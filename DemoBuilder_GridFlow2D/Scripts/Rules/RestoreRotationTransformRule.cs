@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using DungeonArchitect;
-using DungeonArchitect.Themeing;
+﻿using UnityEngine;
 
 namespace DungeonArchitect.Samples.GridFlow
 {

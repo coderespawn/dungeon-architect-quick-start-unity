@@ -2,7 +2,6 @@
 
 using UnityEngine;
 using System.Collections.Generic;
-using DungeonArchitect;
 using DungeonArchitect.Utils;
 using DungeonArchitect.Builders.Grid;
 using DungeonArchitect.Builders.SimpleCity;

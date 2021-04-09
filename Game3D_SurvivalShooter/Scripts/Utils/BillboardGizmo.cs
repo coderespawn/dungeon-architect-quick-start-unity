@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class BillboardGizmo : MonoBehaviour {
 	public string iconName = "flag_icon.png";

@@ -6,7 +6,7 @@ namespace DungeonArchitect.Samples.Common
 {
     public class DAFPSMouseLook : MonoBehaviour
     {
-        public float mouseSensitivity = 100.0f;
+        public float lookSpeed = 1.25f;
         public Transform playerBody;
 
         float angleUpDown = 0;
@@ -18,8 +18,8 @@ namespace DungeonArchitect.Samples.Common
 
         private void Update()
         {
-            float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-            float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+            float mouseX = Input.GetAxis("Mouse X") * lookSpeed;
+            float mouseY = Input.GetAxis("Mouse Y") * lookSpeed;
 
             angleUpDown -= mouseY;
             angleUpDown = Mathf.Clamp(angleUpDown, -90, 90);

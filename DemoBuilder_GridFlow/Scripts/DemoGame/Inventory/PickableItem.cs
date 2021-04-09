@@ -1,8 +1,4 @@
-﻿using DungeonArchitect.Builders.GridFlow;
-using System.Collections;
-using System.Collections.Generic;
-using DungeonArchitect.Flow;
-using DungeonArchitect.Flow.Items;
+﻿using DungeonArchitect.Flow.Items;
 using UnityEngine;
 
 namespace DungeonArchitect.Samples.GridFlow

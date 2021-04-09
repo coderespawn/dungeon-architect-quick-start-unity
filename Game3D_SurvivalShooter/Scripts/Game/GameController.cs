@@ -3,9 +3,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using DungeonArchitect;
-using DungeonArchitect.Utils;
-using DungeonArchitect.Navigation;
 
 namespace DungeonArchitect.Samples.ShooterGame {
 	public class GameController : MonoBehaviour {

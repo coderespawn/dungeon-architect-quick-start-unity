@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class RotatorZ : MonoBehaviour {
 	public float frequency = 1;

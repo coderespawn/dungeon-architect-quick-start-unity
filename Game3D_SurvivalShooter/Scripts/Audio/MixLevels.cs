@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.Audio;
 
 namespace DungeonArchitect.Samples.ShooterGame {

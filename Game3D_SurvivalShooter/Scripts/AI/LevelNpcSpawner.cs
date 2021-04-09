@@ -2,7 +2,6 @@
 
 using UnityEngine;
 using System.Collections.Generic;
-using DungeonArchitect;
 
 namespace DungeonArchitect.Samples.ShooterGame
 {

@@ -1,0 +1,3552 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45d6db40929a46df92949006bb6fcfe9, type: 3}
+  m_Name: SGFModuleDB
+  m_EditorClassIdentifier: 
+  ModuleBoundsAsset: {fileID: 11400000, guid: 4b634ea7866b24a469818a8f2ad36436, type: 2}
+  Modules:
+  - ModulePrefab: {fileID: 792991543164372321, guid: 27f9418616b5c70429a2d253424e1e73, type: 3}
+    Category: Room
+    allowRotation: 1
+    SelectionWeight: 2
+    ModuleBounds:
+      m_Center: {x: 20, y: 5, z: 20}
+      m_Extent: {x: 20.000053, y: 5, z: 20.000046}
+    NumChunks: {x: 1, y: 1, z: 1}
+    Connections:
+    - ConnectionIndex: 0
+      Transform:
+        e00: 0.0000029206276
+        e01: 0
+        e02: 1.0000001
+        e03: 40
+        e10: -0
+        e11: 1
+        e12: 0
+        e13: 5
+        e20: -1.0000001
+        e21: -0
+        e22: 0.0000029206276
+        e23: 20
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      Category: 
+    - ConnectionIndex: 1
+      Transform:
+        e00: -1
+        e01: 0
+        e02: 0.000005900859
+        e03: 20
+        e10: -0
+        e11: 1
+        e12: 0
+        e13: 5
+        e20: -0.000005900859
+        e21: -0
+        e22: -1
+        e23: 0
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      Category: 
+    - ConnectionIndex: 2
+      Transform:
+        e00: 0.0000029206276
+        e01: 0
+        e02: -1
+        e03: 0
+        e10: 0
+        e11: 1
+        e12: 0
+        e13: 5
+        e20: 1
+        e21: 0
+        e22: 0.0000029206276
+        e23: 20
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      Category: 
+    - ConnectionIndex: 3
+      Transform:
+        e00: 1
+        e01: 0
+        e02: 0
+        e03: 20
+        e10: 0
+        e11: 1
+        e12: 0
+        e13: 5
+        e20: 0
+        e21: 0
+        e22: 1
+        e23: 40
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      Category: 
+    RotatedAssemblies:
+    - numChunks: {x: 1, y: 1, z: 1}
+      front:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      left:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 0
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      back:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 3
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      right:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 2
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      top:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      down:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+    - numChunks: {x: 1, y: 1, z: 1}
+      front:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 2
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      left:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      back:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 0
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      right:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 3
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      top:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      down:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+    - numChunks: {x: 1, y: 1, z: 1}
+      front:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 3
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      left:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 2
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      back:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      right:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 0
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      top:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      down:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+    - numChunks: {x: 1, y: 1, z: 1}
+      front:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 0
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      left:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 3
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      back:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 2
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      right:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      top:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      down:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+    AvailableMarkers:
+    - placeableMarkerTemplate: {fileID: 3697456226053052183, guid: 7d98dd3488f7ba14bb8a07a99f28548f, type: 3}
+      count: 4
+    - placeableMarkerTemplate: {fileID: 4067589728760754811, guid: 1ac0c9970e4d31147972e5c9792f6ec8, type: 3}
+      count: 4
+    - placeableMarkerTemplate: {fileID: 6786595330144845668, guid: 6571f18a39016a748a836420fe41dd89, type: 3}
+      count: 2
+  - ModulePrefab: {fileID: 792991543164372321, guid: 90b02a7fd8704ce4ca847a5a9c659086, type: 3}
+    Category: Room
+    allowRotation: 1
+    SelectionWeight: 1
+    ModuleBounds:
+      m_Center: {x: 40.000004, y: 5, z: 20}
+      m_Extent: {x: 40.000057, y: 5, z: 20.000046}
+    NumChunks: {x: 2, y: 1, z: 1}
+    Connections:
+    - ConnectionIndex: 0
+      Transform:
+        e00: 0.0000029206276
+        e01: 0
+        e02: 1.0000001
+        e03: 80
+        e10: -0
+        e11: 1
+        e12: 0
+        e13: 5
+        e20: -1.0000001
+        e21: -0
+        e22: 0.0000029206276
+        e23: 20
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      Category: 
+    - ConnectionIndex: 1
+      Transform:
+        e00: -1
+        e01: 0
+        e02: 0.000005900859
+        e03: 20
+        e10: -0
+        e11: 1
+        e12: 0
+        e13: 5
+        e20: -0.000005900859
+        e21: -0
+        e22: -1
+        e23: 0
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      Category: 
+    - ConnectionIndex: 2
+      Transform:
+        e00: 0.0000029206276
+        e01: 0
+        e02: -1
+        e03: 0
+        e10: 0
+        e11: 1
+        e12: 0
+        e13: 5
+        e20: 1
+        e21: 0
+        e22: 0.0000029206276
+        e23: 20
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      Category: 
+    - ConnectionIndex: 3
+      Transform:
+        e00: 1
+        e01: 0
+        e02: 0
+        e03: 20
+        e10: 0
+        e11: 1
+        e12: 0
+        e13: 5
+        e20: 0
+        e21: 0
+        e22: 1
+        e23: 40
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      Category: 
+    - ConnectionIndex: 4
+      Transform:
+        e00: -1
+        e01: 0
+        e02: 0.000005900859
+        e03: 60
+        e10: -0
+        e11: 1
+        e12: 0
+        e13: 5
+        e20: -0.000005900859
+        e21: -0
+        e22: -1
+        e23: 0
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      Category: 
+    - ConnectionIndex: 5
+      Transform:
+        e00: 1
+        e01: 0
+        e02: 0
+        e03: 60
+        e10: 0
+        e11: 1
+        e12: 0
+        e13: 5
+        e20: 0
+        e21: 0
+        e22: 1
+        e23: 40
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      Category: 
+    RotatedAssemblies:
+    - numChunks: {x: 2, y: 1, z: 1}
+      front:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 4
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      left:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 0
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      back:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 5
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 3
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      right:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 2
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      top:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      down:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+    - numChunks: {x: 1, y: 1, z: 2}
+      front:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 2
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      left:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 4
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      back:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 0
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      right:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 5
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 3
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      top:
+        width: 1
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      down:
+        width: 1
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+    - numChunks: {x: 2, y: 1, z: 1}
+      front:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 5
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 3
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      left:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 2
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      back:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 4
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      right:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 0
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      top:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      down:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+    - numChunks: {x: 1, y: 1, z: 2}
+      front:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 0
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      left:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 5
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 3
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      back:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: 2
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      right:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 4
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      top:
+        width: 1
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      down:
+        width: 1
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+    AvailableMarkers:
+    - placeableMarkerTemplate: {fileID: 3697456226053052183, guid: 7d98dd3488f7ba14bb8a07a99f28548f, type: 3}
+      count: 3
+    - placeableMarkerTemplate: {fileID: 4067589728760754811, guid: 1ac0c9970e4d31147972e5c9792f6ec8, type: 3}
+      count: 5
+    - placeableMarkerTemplate: {fileID: 6786595330144845668, guid: 6571f18a39016a748a836420fe41dd89, type: 3}
+      count: 2
+  - ModulePrefab: {fileID: 792991543164372321, guid: 7e409e89af106734c973ed660c742d09, type: 3}
+    Category: Room
+    allowRotation: 1
+    SelectionWeight: 1
+    ModuleBounds:
+      m_Center: {x: 40, y: 5, z: 40}
+      m_Extent: {x: 40.000053, y: 5, z: 40.000046}
+    NumChunks: {x: 2, y: 1, z: 2}
+    Connections:
+    - ConnectionIndex: 0
+      Transform:
+        e00: 0.0000029206276
+        e01: 0
+        e02: 1.0000001
+        e03: 80
+        e10: -0
+        e11: 1
+        e12: 0
+        e13: 5
+        e20: -1.0000001
+        e21: -0
+        e22: 0.0000029206276
+        e23: 20
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      Category: 
+    - ConnectionIndex: 1
+      Transform:
+        e00: -1
+        e01: 0
+        e02: 0.000005900859
+        e03: 20
+        e10: -0
+        e11: 1
+        e12: 0
+        e13: 5
+        e20: -0.000005900859
+        e21: -0
+        e22: -1
+        e23: 0
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      Category: 
+    - ConnectionIndex: 2
+      Transform:
+        e00: 0.0000029206276
+        e01: 0
+        e02: -1
+        e03: 0
+        e10: 0
+        e11: 1
+        e12: 0
+        e13: 5
+        e20: 1
+        e21: 0
+        e22: 0.0000029206276
+        e23: 20
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      Category: 
+    - ConnectionIndex: 3
+      Transform:
+        e00: 1
+        e01: 0
+        e02: 0
+        e03: 20
+        e10: 0
+        e11: 1
+        e12: 0
+        e13: 5
+        e20: 0
+        e21: 0
+        e22: 1
+        e23: 80
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      Category: 
+    - ConnectionIndex: 4
+      Transform:
+        e00: -1
+        e01: 0
+        e02: 0.000005900859
+        e03: 60
+        e10: -0
+        e11: 1
+        e12: 0
+        e13: 5
+        e20: -0.000005900859
+        e21: -0
+        e22: -1
+        e23: 0
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      Category: 
+    - ConnectionIndex: 5
+      Transform:
+        e00: 1
+        e01: 0
+        e02: 0
+        e03: 60
+        e10: 0
+        e11: 1
+        e12: 0
+        e13: 5
+        e20: 0
+        e21: 0
+        e22: 1
+        e23: 80
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      Category: 
+    - ConnectionIndex: 6
+      Transform:
+        e00: 0.0000029206276
+        e01: 0
+        e02: 1
+        e03: 80
+        e10: -0
+        e11: 1
+        e12: 0
+        e13: 5
+        e20: -1
+        e21: -0
+        e22: 0.0000029206276
+        e23: 60
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      Category: 
+    - ConnectionIndex: 7
+      Transform:
+        e00: 0.0000029206276
+        e01: 0
+        e02: -1
+        e03: 0
+        e10: 0
+        e11: 1
+        e12: 0
+        e13: 5
+        e20: 1
+        e21: 0
+        e22: 0.0000029206276
+        e23: 60
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      Category: 
+    RotatedAssemblies:
+    - numChunks: {x: 2, y: 1, z: 2}
+      front:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 4
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      left:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 0
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 6
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      back:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 5
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 3
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      right:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 7
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 2
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      top:
+        width: 2
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      down:
+        width: 2
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+    - numChunks: {x: 2, y: 1, z: 2}
+      front:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 7
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 2
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      left:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 4
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      back:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 0
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 6
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      right:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 5
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 3
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      top:
+        width: 2
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      down:
+        width: 2
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+    - numChunks: {x: 2, y: 1, z: 2}
+      front:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 5
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 3
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      left:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 7
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 2
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      back:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 4
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      right:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 0
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 6
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      top:
+        width: 2
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      down:
+        width: 2
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+    - numChunks: {x: 2, y: 1, z: 2}
+      front:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 0
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 6
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      left:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 5
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 3
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      back:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 7
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 2
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      right:
+        width: 2
+        height: 1
+        connectionIndices:
+        - connectionIdx: 1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 4
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      top:
+        width: 2
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      down:
+        width: 2
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+    AvailableMarkers:
+    - placeableMarkerTemplate: {fileID: 4067589728760754811, guid: 1ac0c9970e4d31147972e5c9792f6ec8, type: 3}
+      count: 6
+    - placeableMarkerTemplate: {fileID: 3697456226053052183, guid: 7d98dd3488f7ba14bb8a07a99f28548f, type: 3}
+      count: 4
+    - placeableMarkerTemplate: {fileID: 6786595330144845668, guid: 6571f18a39016a748a836420fe41dd89, type: 3}
+      count: 2
+  - ModulePrefab: {fileID: 792991543164372321, guid: f5fa7e5574a7197488a82f0984978237, type: 3}
+    Category: Room
+    allowRotation: 1
+    SelectionWeight: 1
+    ModuleBounds:
+      m_Center: {x: 20.000025, y: 20, z: 20.000023}
+      m_Extent: {x: 20.000057, y: 20, z: 20.000023}
+    NumChunks: {x: 1, y: 2, z: 1}
+    Connections:
+    - ConnectionIndex: 0
+      Transform:
+        e00: -1
+        e01: 0
+        e02: -0.000005900859
+        e03: 20
+        e10: 0
+        e11: 1
+        e12: 0
+        e13: 25
+        e20: 0.000005900859
+        e21: 0
+        e22: -1
+        e23: 0
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      Category: 
+    - ConnectionIndex: 1
+      Transform:
+        e00: -1
+        e01: 0
+        e02: -0.000005900859
+        e03: 20
+        e10: 0
+        e11: 1
+        e12: 0
+        e13: 5
+        e20: 0.000005900859
+        e21: 0
+        e22: -1
+        e23: 0
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      Category: 
+    RotatedAssemblies:
+    - numChunks: {x: 1, y: 2, z: 1}
+      front:
+        width: 1
+        height: 2
+        connectionIndices:
+        - connectionIdx: 1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 0
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      left:
+        width: 1
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      back:
+        width: 1
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      right:
+        width: 1
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      top:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      down:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+    - numChunks: {x: 1, y: 2, z: 1}
+      front:
+        width: 1
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      left:
+        width: 1
+        height: 2
+        connectionIndices:
+        - connectionIdx: 1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 0
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      back:
+        width: 1
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      right:
+        width: 1
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      top:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      down:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+    - numChunks: {x: 1, y: 2, z: 1}
+      front:
+        width: 1
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      left:
+        width: 1
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      back:
+        width: 1
+        height: 2
+        connectionIndices:
+        - connectionIdx: 1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 0
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      right:
+        width: 1
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      top:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      down:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+    - numChunks: {x: 1, y: 2, z: 1}
+      front:
+        width: 1
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      left:
+        width: 1
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      back:
+        width: 1
+        height: 2
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      right:
+        width: 1
+        height: 2
+        connectionIndices:
+        - connectionIdx: 1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+        - connectionIdx: 0
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      top:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+      down:
+        width: 1
+        height: 1
+        connectionIndices:
+        - connectionIdx: -1
+          nodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkedNodeId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+          linkId:
+            A: 0
+            B: 0
+            C: 0
+            D: 0
+    AvailableMarkers:
+    - placeableMarkerTemplate: {fileID: 4067589728760754811, guid: 1ac0c9970e4d31147972e5c9792f6ec8, type: 3}
+      count: 5
+    - placeableMarkerTemplate: {fileID: 3697456226053052183, guid: 7d98dd3488f7ba14bb8a07a99f28548f, type: 3}
+      count: 3
+    - placeableMarkerTemplate: {fileID: 6786595330144845668, guid: 6571f18a39016a748a836420fe41dd89, type: 3}
+      count: 2

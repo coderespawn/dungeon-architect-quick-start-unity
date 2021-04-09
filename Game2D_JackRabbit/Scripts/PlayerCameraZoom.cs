@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class PlayerCameraZoom : MonoBehaviour {
 	public float sensitivity = 1;

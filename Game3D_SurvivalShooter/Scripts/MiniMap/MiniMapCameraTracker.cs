@@ -1,8 +1,6 @@
 ﻿//$ Copyright 2016, Code Respawn Technologies Pvt Ltd - All Rights Reserved $//
 
 using UnityEngine;
-using System.Collections;
-using DungeonArchitect;
 
 
 namespace DungeonArchitect.Samples.ShooterGame

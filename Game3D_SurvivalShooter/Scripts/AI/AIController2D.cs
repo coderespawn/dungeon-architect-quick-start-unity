@@ -1,10 +1,7 @@
 ﻿//$ Copyright 2016, Code Respawn Technologies Pvt Ltd - All Rights Reserved $//
 
 using UnityEngine;
-using UnityEngine.AI;
-using System.Collections;
 using System.Collections.Generic;
-using DungeonArchitect;
 using DungeonArchitect.Navigation;
 
 namespace DungeonArchitect.Samples.ShooterGame.TwoD

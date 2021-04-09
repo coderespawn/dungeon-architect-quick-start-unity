@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class PickupWobbler : MonoBehaviour {
 	public Vector2 wobbleDirection = Vector2.up;

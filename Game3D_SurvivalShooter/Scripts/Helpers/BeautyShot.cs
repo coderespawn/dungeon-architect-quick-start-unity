@@ -3,8 +3,6 @@ using UnityEditor;
 #endif
 
 using UnityEngine;
-using System.IO;
-using System.Collections;
 
 namespace DungeonArchitect.Samples.ShooterGame {
 	public class BeautyShot : MonoBehaviour

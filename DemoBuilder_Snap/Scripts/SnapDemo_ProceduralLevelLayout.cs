@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using DungeonArchitect.Grammar;
 
 public class SnapDemo_ProceduralLevelLayout : MonoBehaviour, IGrammarGraphBuildScript

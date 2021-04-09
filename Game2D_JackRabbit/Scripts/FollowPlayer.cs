@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-using DungeonArchitect;
 using DungeonArchitect.Navigation;
 
 namespace JackRabbit {

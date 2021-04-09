@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using DungeonArchitect.Themeing;
+﻿using UnityEngine;
 
 namespace DungeonArchitect.Samples.JackRabbit
 {

@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.UI;
 using UnityEngine.Audio;
 #if UNITY_EDITOR
 using UnityEditor;
