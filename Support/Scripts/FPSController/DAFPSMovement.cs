@@ -6,10 +6,11 @@ namespace DungeonArchitect.Samples.Common
     {
         public float speed = 12;
         public float gravity = -9.81f;
+        public bool enableJumping = false;
         public float jumpHeight = 1;
 
         public CharacterController controller;
-        Vector3 velocity = Vector3.zero;
+        float speedY = 0;
 
         void Update()
         {
@@ -19,20 +20,19 @@ namespace DungeonArchitect.Samples.Common
             var z = Input.GetAxis("Vertical") * speed * Time.deltaTime;
 
             Vector3 move = transform.right * x + transform.forward * z;
-            controller.Move(move);
 
-            if (Input.GetButton("Jump") && controller.isGrounded)
-            {
-                //velocity.y += Mathf.Sqrt(jumpHeight * -1 * gravity);
-            }
-
-            velocity.y += gravity * Time.deltaTime;
-            var movementPerFrame = velocity * Time.deltaTime;
-            controller.Move(movementPerFrame);
             if (controller.isGrounded)
             {
-                velocity.y = 0;
+                speedY = 0;
+                if (enableJumping && Input.GetButton("Jump"))
+                {
+                    speedY += jumpHeight;
+                }
             }
+            speedY += gravity * Time.deltaTime;
+
+            move.y = speedY * Time.deltaTime;
+            controller.Move(move);
         }
     }
 }

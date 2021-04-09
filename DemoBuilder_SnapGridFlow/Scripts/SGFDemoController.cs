@@ -1,15 +1,19 @@
 ﻿using DungeonArchitect;
 using UnityEngine;
 
-public class SGFDemoController : MonoBehaviour
+namespace DungeonArchitect.Samples.SnapGridFlow
 {
-    public Dungeon dungeon;
-    void Start()
+    public class SGFDemoController : MonoBehaviour
     {
-        if (dungeon != null)
-        {
-            dungeon.Build();
-        }
-    }
+        public Dungeon dungeon;
 
+        void Start()
+        {
+            if (dungeon != null)
+            {
+                dungeon.Build();
+            }
+        }
+
+    }
 }
