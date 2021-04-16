@@ -17,7 +17,7 @@ namespace DungeonArchitect.Samples.GridFlow
         private void Start()
         {
             // find the door id (grab it from the item metadata component that DA creates)
-            var lockItemMetadata = GetComponent<FlowItemMetadataComponent>();
+            var lockItemMetadata = FindItemMetadata();
             if (lockItemMetadata != null)
             {
                 lockId = lockItemMetadata.itemId;
@@ -27,6 +27,27 @@ namespace DungeonArchitect.Samples.GridFlow
             animator = GetComponent<Animator>();
         }
 
+        /// <summary>
+        /// Search the current game object and works its way up the hierarchy to find the item metadata object 
+        /// </summary>
+        /// <returns></returns>
+        FlowItemMetadataComponent FindItemMetadata()
+        {
+            var obj = gameObject;
+            while (obj != null)
+            {
+                var itemMetadata = obj.GetComponent<FlowItemMetadataComponent>();
+                if (itemMetadata != null)
+                {
+                    return itemMetadata;
+                }
+
+                var parentTransform = obj.transform.parent; 
+                obj = (parentTransform != null) ? parentTransform.gameObject : null;
+            }
+
+            return null;
+        }
 
         void OnTriggerEnter(Collider other)
         {
