@@ -55,7 +55,7 @@ namespace DungeonArchitect.Samples.ShooterGame
             {
                 foreach (var marker in markers)
                 {
-                    if (marker.SocketType == DungeonConstants.ST_WALL2D)
+                    if (marker.SocketType == GridDungeonMarkerNames.Wall2D)
                     {
                         wall2DPositions.Add(marker.gridPosition);
                     }

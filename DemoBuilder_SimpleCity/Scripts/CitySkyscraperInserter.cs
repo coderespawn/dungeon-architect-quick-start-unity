@@ -22,7 +22,7 @@ public class CitySkyscraperInserter : DungeonEventListener {
 		center += dungeon.transform.position;
 
 		foreach (var marker in markers) {
-			if (marker.SocketType == SimpleCityDungeonConstants.House) {
+			if (marker.SocketType == SimpleCityDungeonMarkerNames.House) {
 				var distanceFromCenter = (Matrix.GetTranslation (ref marker.Transform) - center).magnitude;
 				foreach (var rangeInfo in skyscraperRanges) {
 					if (distanceFromCenter >= rangeInfo.startDistance && distanceFromCenter <= rangeInfo.endDistance) {
