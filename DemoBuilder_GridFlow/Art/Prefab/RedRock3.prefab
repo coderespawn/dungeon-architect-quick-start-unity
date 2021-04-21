@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1870030512019060907
 Transform:
@@ -56,6 +56,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -67,6 +68,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -89,9 +91,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: -3983063591393173388, guid: 3db436203a1a7064cb030ab5012457c7, type: 3}
 --- !u!1001 &3352324625927641335
 PrefabInstance:
@@ -100,11 +102,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1870030512019060907}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 2634b14a13a6db2408c82333f3e78eae,
-        type: 3}
-      propertyPath: m_Name
-      value: BockadeBase2
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 2634b14a13a6db2408c82333f3e78eae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -180,6 +177,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 266f87c4145aefa49ba8c7e63512283a, type: 2}
+    - target: {fileID: -927199367670048503, guid: 2634b14a13a6db2408c82333f3e78eae,
+        type: 3}
+      propertyPath: m_Name
+      value: BockadeBase2
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 2634b14a13a6db2408c82333f3e78eae,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2634b14a13a6db2408c82333f3e78eae, type: 3}
 --- !u!4 &7782059296244610029 stripped
