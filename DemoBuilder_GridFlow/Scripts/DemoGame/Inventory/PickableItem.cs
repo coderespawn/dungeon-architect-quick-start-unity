@@ -1,4 +1,5 @@
-﻿using DungeonArchitect.Flow.Items;
+//$ Copyright 2015-21, Code Respawn Technologies Pvt Ltd - All Rights Reserved $//
+using DungeonArchitect.Flow.Items;
 using UnityEngine;
 
 namespace DungeonArchitect.Samples.GridFlow

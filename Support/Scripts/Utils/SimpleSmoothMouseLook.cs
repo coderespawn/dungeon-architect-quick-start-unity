@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+//$ Copyright 2015-21, Code Respawn Technologies Pvt Ltd - All Rights Reserved $//
+using UnityEngine;
 
 // Very simple smooth mouselook modifier for the MainCamera in Unity
 // by Francis R. Griffiths-Keam - www.runningdimensions.com

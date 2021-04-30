@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+//$ Copyright 2015-21, Code Respawn Technologies Pvt Ltd - All Rights Reserved $//
+using UnityEngine;
 
 public class PickupWobbler : MonoBehaviour {
 	public Vector2 wobbleDirection = Vector2.up;

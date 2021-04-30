@@ -1,5 +1,4 @@
-﻿
-
+//$ Copyright 2015-21, Code Respawn Technologies Pvt Ltd - All Rights Reserved $//
 using UnityEngine;
 using DungeonArchitect;
 using DungeonArchitect.Utils;
