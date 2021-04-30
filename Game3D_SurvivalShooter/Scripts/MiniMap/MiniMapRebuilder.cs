@@ -1,4 +1,4 @@
-﻿//$ Copyright 2016, Code Respawn Technologies Pvt Ltd - All Rights Reserved $//
+﻿
 
 namespace DungeonArchitect.Samples.ShooterGame
 {
