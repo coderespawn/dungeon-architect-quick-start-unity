@@ -35,7 +35,13 @@ MonoBehaviour:
   nodeColor: {r: 1, g: 0.6933962, b: 0.9777912, a: 1}
   startFromPath: main
   endOnPath: 
+  startNodePathNameOverride: 
+  endNodePathNameOverride: 
+  numParallelSearches: 1
+  maxFramesToProcess: 2000
   drawDebug: 0
+  positionConstraintMode: 0
+  nodePositionConstraintScriptClassName: 
 --- !u!114 &-8731616214121309416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -103,7 +109,13 @@ MonoBehaviour:
   nodeColor: {r: 1, g: 0.5330188, b: 0.88468874, a: 1}
   startFromPath: main_start
   endOnPath: 
+  startNodePathNameOverride: 
+  endNodePathNameOverride: 
+  numParallelSearches: 1
+  maxFramesToProcess: 2000
   drawDebug: 0
+  positionConstraintMode: 0
+  nodePositionConstraintScriptClassName: 
 --- !u!114 &-8542768259193049766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -156,13 +168,13 @@ MonoBehaviour:
   spawnDistributionVariance: 0.2
   minSpawnDifficulty: 0
   spawnProbability: 1
+  showDifficulty: 0
+  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
   placementSettings:
     placementMethod: 0
     avoidPlacingNextToDoors: 1
     placementScriptClass: 
     fallbackToRandomPlacement: 1
-  showDifficulty: 0
-  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
 --- !u!114 &-8314646464254739315
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -183,6 +195,9 @@ MonoBehaviour:
   goalMarkerName: LevelGoal
   startNodePathName: main_start
   goalNodePathName: main_goal
+  drawDebug: 0
+  numParallelSearches: 1
+  maxFramesToProcess: 1000
   startPlacementSettings:
     placementMethod: 0
     avoidPlacingNextToDoors: 1
@@ -193,7 +208,12 @@ MonoBehaviour:
     avoidPlacingNextToDoors: 1
     placementScriptClass: 
     fallbackToRandomPlacement: 1
-  drawDebug: 0
+  positionConstraintMode: 0
+  startNodePositionConstraints: []
+  endNodePositionConstraints: []
+  nodePositionConstraintScriptClassName: 
+  fixedStartRoomSize: 0
+  fixedEndRoomSize: 0
 --- !u!114 &-8179755628897898030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -246,13 +266,13 @@ MonoBehaviour:
   spawnDistributionVariance: 0.2
   minSpawnDifficulty: 0.2
   spawnProbability: 1
+  showDifficulty: 0
+  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
   placementSettings:
     placementMethod: 0
     avoidPlacingNextToDoors: 1
     placementScriptClass: 
     fallbackToRandomPlacement: 1
-  showDifficulty: 0
-  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
 --- !u!114 &-8151288734014206536
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -283,7 +303,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: -1184737505378942792}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: 192532101238822456}
+  task: {fileID: 192532101238822456}
 --- !u!114 &-7481221004516692863
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -314,7 +334,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 2906247584829972836}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: 8256314452958062547}
+  task: {fileID: 8256314452958062547}
 --- !u!114 &-7475358643450856147
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -395,7 +415,13 @@ MonoBehaviour:
   nodeColor: {r: 0.13725491, g: 0.94509804, b: 0.74509805, a: 1}
   startFromPath: main
   endOnPath: 
+  startNodePathNameOverride: 
+  endNodePathNameOverride: 
+  numParallelSearches: 1
+  maxFramesToProcess: 2000
   drawDebug: 0
+  positionConstraintMode: 0
+  nodePositionConstraintScriptClassName: 
 --- !u!114 &-7259196407492275919
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -442,7 +468,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 4878455057807621785}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: -4606458280417280842}
+  task: {fileID: -4606458280417280842}
 --- !u!114 &-7160527682872963945
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -631,7 +657,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: -6741995801378091252}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: 7786080460944699934}
+  task: {fileID: 7786080460944699934}
 --- !u!114 &-6403358468522019751
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -723,7 +749,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: -4075689980800551098}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: 7233397521325908327}
+  task: {fileID: 7233397521325908327}
 --- !u!114 &-5728515404352105364
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -754,7 +780,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: -2182820879276462184}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: 2443687494818383878}
+  task: {fileID: 2443687494818383878}
 --- !u!114 &-5576174016927005242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -941,7 +967,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 7716987619293361139}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: 6229749032087813317}
+  task: {fileID: 6229749032087813317}
 --- !u!114 &-4855027961815103735
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1035,13 +1061,13 @@ MonoBehaviour:
   spawnDistributionVariance: 0.2
   minSpawnDifficulty: 0
   spawnProbability: 0.8
+  showDifficulty: 0
+  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
   placementSettings:
     placementMethod: 0
     avoidPlacingNextToDoors: 1
     placementScriptClass: 
     fallbackToRandomPlacement: 1
-  showDifficulty: 0
-  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
 --- !u!114 &-4760460711437146771
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1086,6 +1112,9 @@ MonoBehaviour:
   goalMarkerName: LevelGoal
   startNodePathName: main_start
   goalNodePathName: main_goal
+  drawDebug: 0
+  numParallelSearches: 1
+  maxFramesToProcess: 1000
   startPlacementSettings:
     placementMethod: 0
     avoidPlacingNextToDoors: 1
@@ -1096,7 +1125,12 @@ MonoBehaviour:
     avoidPlacingNextToDoors: 1
     placementScriptClass: 
     fallbackToRandomPlacement: 1
-  drawDebug: 0
+  positionConstraintMode: 0
+  startNodePositionConstraints: []
+  endNodePositionConstraints: []
+  nodePositionConstraintScriptClassName: 
+  fixedStartRoomSize: 0
+  fixedEndRoomSize: 0
 --- !u!114 &-4652765542924343561
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1292,13 +1326,13 @@ MonoBehaviour:
   spawnDistributionVariance: 0.5
   minSpawnDifficulty: 0
   spawnProbability: 1
+  showDifficulty: 0
+  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
   placementSettings:
     placementMethod: 0
     avoidPlacingNextToDoors: 1
     placementScriptClass: 
     fallbackToRandomPlacement: 1
-  showDifficulty: 0
-  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
 --- !u!114 &-3985770474268357686
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1417,13 +1451,13 @@ MonoBehaviour:
   spawnDistributionVariance: 0.2
   minSpawnDifficulty: 0
   spawnProbability: 1
+  showDifficulty: 0
+  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
   placementSettings:
     placementMethod: 0
     avoidPlacingNextToDoors: 1
     placementScriptClass: 
     fallbackToRandomPlacement: 1
-  showDifficulty: 0
-  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
 --- !u!114 &-3664986345237294074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1512,7 +1546,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 6605783871597341678}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: -3985770474268357686}
+  task: {fileID: -3985770474268357686}
 --- !u!114 &-3036157652967567373
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1543,7 +1577,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 7435603840432889606}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: -3625188926377400996}
+  task: {fileID: -3625188926377400996}
 --- !u!114 &-3003346626422550263
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1574,7 +1608,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: -1510724478599770341}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: -1126582797473963250}
+  task: {fileID: -1126582797473963250}
 --- !u!114 &-2964400817018385130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1685,7 +1719,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: -4760460711437146771}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: -4718312251415194910}
+  task: {fileID: -4718312251415194910}
 --- !u!114 &-1953473081106510485
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1828,7 +1862,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 6430155890161624750}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: 1590584823618682736}
+  task: {fileID: 1590584823618682736}
 --- !u!114 &-1531906277598948732
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1907,7 +1941,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 7119061053466934815}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: -5576174016927005242}
+  task: {fileID: -5576174016927005242}
 --- !u!114 &-1347690301090839609
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2135,13 +2169,13 @@ MonoBehaviour:
   spawnDistributionVariance: 0.2
   minSpawnDifficulty: 0
   spawnProbability: 1
+  showDifficulty: 0
+  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
   placementSettings:
     placementMethod: 0
     avoidPlacingNextToDoors: 1
     placementScriptClass: 
     fallbackToRandomPlacement: 1
-  showDifficulty: 0
-  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
 --- !u!114 &-482032901504421589
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2188,7 +2222,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: -7160527682872963945}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: -4015786785564473168}
+  task: {fileID: -4015786785564473168}
 --- !u!114 &-415689778137233815
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2259,7 +2293,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: -5259518781310888565}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: -6574398107329853841}
+  task: {fileID: -6574398107329853841}
 --- !u!114 &-185423278192707603
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2318,7 +2352,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 187156394504309783}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: 3711137122141117061}
+  task: {fileID: 3711137122141117061}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2391,7 +2425,13 @@ MonoBehaviour:
   nodeColor: {r: 1, g: 1, b: 0, a: 1}
   startFromPath: main
   endOnPath: main
+  startNodePathNameOverride: 
+  endNodePathNameOverride: 
+  numParallelSearches: 1
+  maxFramesToProcess: 2000
   drawDebug: 0
+  positionConstraintMode: 0
+  nodePositionConstraintScriptClassName: 
 --- !u!114 &235204993363965432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2422,7 +2462,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: -1531906277598948732}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: 3485385904731622728}
+  task: {fileID: 3485385904731622728}
 --- !u!114 &463884864248008177
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2477,7 +2517,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 2160630414195215615}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: -6800546819787588933}
+  task: {fileID: -6800546819787588933}
 --- !u!114 &584006612349623561
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2546,7 +2586,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 8486750299340089793}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: 3499265472026822175}
+  task: {fileID: 3499265472026822175}
 --- !u!114 &798449042312283020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2582,7 +2622,13 @@ MonoBehaviour:
   nodeColor: {r: 1, g: 0.5, b: 0, a: 1}
   startFromPath: main
   endOnPath: 
+  startNodePathNameOverride: 
+  endNodePathNameOverride: 
+  numParallelSearches: 1
+  maxFramesToProcess: 2000
   drawDebug: 0
+  positionConstraintMode: 0
+  nodePositionConstraintScriptClassName: 
 --- !u!114 &1160743026763926995
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2691,7 +2737,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: -3664986345237294074}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: 6897695696218069452}
+  task: {fileID: 6897695696218069452}
 --- !u!114 &1794625201991085227
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2796,7 +2842,13 @@ MonoBehaviour:
   nodeColor: {r: 1, g: 0.5, b: 0, a: 1}
   startFromPath: main
   endOnPath: main
+  startNodePathNameOverride: 
+  endNodePathNameOverride: 
+  numParallelSearches: 1
+  maxFramesToProcess: 2000
   drawDebug: 0
+  positionConstraintMode: 0
+  nodePositionConstraintScriptClassName: 
 --- !u!114 &2451407765948124757
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2851,7 +2903,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 3130848064302653522}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: -969573749104785200}
+  task: {fileID: -969573749104785200}
 --- !u!114 &2603216661610767342
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2887,7 +2939,13 @@ MonoBehaviour:
   nodeColor: {r: 1, g: 0.9899542, b: 0, a: 1}
   startFromPath: alt
   endOnPath: 
+  startNodePathNameOverride: 
+  endNodePathNameOverride: 
+  numParallelSearches: 1
+  maxFramesToProcess: 2000
   drawDebug: 0
+  positionConstraintMode: 0
+  nodePositionConstraintScriptClassName: 
 --- !u!114 &2855726429278537384
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3214,7 +3272,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 5464866571111666956}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: -4768636215259531504}
+  task: {fileID: -4768636215259531504}
 --- !u!114 &3711137122141117061
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3234,7 +3292,13 @@ MonoBehaviour:
   nodeColor: {r: 0.3820755, g: 0.5912391, b: 1, a: 1}
   startFromPath: main
   endOnPath: main
+  startNodePathNameOverride: 
+  endNodePathNameOverride: 
+  numParallelSearches: 1
+  maxFramesToProcess: 2000
   drawDebug: 0
+  positionConstraintMode: 0
+  nodePositionConstraintScriptClassName: 
 --- !u!114 &3733638862395336715
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3289,7 +3353,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 7990745956396653865}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: -7319741922765480498}
+  task: {fileID: -7319741922765480498}
 --- !u!114 &3881986138294052789
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3336,7 +3400,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 1439993770446279570}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: 2761072734340220548}
+  task: {fileID: 2761072734340220548}
 --- !u!114 &4198952356043906224
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3367,7 +3431,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: -2964400817018385130}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: -8551039408921251356}
+  task: {fileID: -8551039408921251356}
 --- !u!114 &4261045496788228900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3536,7 +3600,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 3212116437388659442}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: -669764193914854362}
+  task: {fileID: -669764193914854362}
 --- !u!114 &5464866571111666956
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3591,7 +3655,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 3305648566415660034}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: 4436523756673798208}
+  task: {fileID: 4436523756673798208}
 --- !u!114 &5760942863808686075
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3726,13 +3790,13 @@ MonoBehaviour:
   spawnDistributionVariance: 0.2
   minSpawnDifficulty: 0
   spawnProbability: 0.25
+  showDifficulty: 0
+  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
   placementSettings:
     placementMethod: 0
     avoidPlacingNextToDoors: 1
     placementScriptClass: 
     fallbackToRandomPlacement: 1
-  showDifficulty: 0
-  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
 --- !u!114 &6229749032087813317
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3785,13 +3849,13 @@ MonoBehaviour:
   spawnDistributionVariance: 0.2
   minSpawnDifficulty: 0
   spawnProbability: 1
+  showDifficulty: 0
+  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
   placementSettings:
     placementMethod: 0
     avoidPlacingNextToDoors: 1
     placementScriptClass: 
     fallbackToRandomPlacement: 1
-  showDifficulty: 0
-  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
 --- !u!114 &6430155890161624750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3862,7 +3926,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 5033229475762675073}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: -8179755628897898030}
+  task: {fileID: -8179755628897898030}
 --- !u!114 &6605783871597341678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3917,7 +3981,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 7721282072845422622}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: 7024348793664580728}
+  task: {fileID: 7024348793664580728}
 --- !u!114 &6897695696218069452
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3997,7 +4061,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 4261045496788228900}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: -3888833264851935756}
+  task: {fileID: -3888833264851935756}
 --- !u!114 &7024348793664580728
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4051,13 +4115,13 @@ MonoBehaviour:
   spawnDistributionVariance: 0
   minSpawnDifficulty: 1
   spawnProbability: 1
+  showDifficulty: 0
+  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
   placementSettings:
     placementMethod: 0
     avoidPlacingNextToDoors: 1
     placementScriptClass: 
     fallbackToRandomPlacement: 1
-  showDifficulty: 0
-  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
 --- !u!114 &7048881840758613630
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4158,13 +4222,13 @@ MonoBehaviour:
   spawnDistributionVariance: 0.2
   minSpawnDifficulty: 0
   spawnProbability: 1
+  showDifficulty: 0
+  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
   placementSettings:
     placementMethod: 0
     avoidPlacingNextToDoors: 1
     placementScriptClass: 
     fallbackToRandomPlacement: 1
-  showDifficulty: 0
-  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
 --- !u!114 &7233397521325908327
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4182,6 +4246,7 @@ MonoBehaviour:
   perturbAmount: {x: 3, y: 3}
   corridorLaneWidth: 2
   layoutPadding: 5
+  cropTilemap: 1
   wallGenerationMethod: 1
   caveAutomataNeighbors: 5
   caveAutomataIterations: 4
@@ -4366,13 +4431,13 @@ MonoBehaviour:
   spawnDistributionVariance: 0.2
   minSpawnDifficulty: 0
   spawnProbability: 0.3
+  showDifficulty: 0
+  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
   placementSettings:
     placementMethod: 0
     avoidPlacingNextToDoors: 1
     placementScriptClass: 
     fallbackToRandomPlacement: 1
-  showDifficulty: 0
-  difficultyInfoColor: {r: 0, g: 0, b: 0.5, a: 1}
 --- !u!114 &7990745956396653865
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4427,7 +4492,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: -1698244795479802742}
   graph: {fileID: -5478330468054701134}
-  nodeHandler: {fileID: 6073711845712741806}
+  task: {fileID: 6073711845712741806}
 --- !u!114 &8256314452958062547
 MonoBehaviour:
   m_ObjectHideFlags: 1
