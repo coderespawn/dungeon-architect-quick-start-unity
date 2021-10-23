@@ -8,7 +8,7 @@ namespace DungeonArchitect.Samples.SnapGridFlow
     {
         public Dungeon dungeon;
 
-        void Start()
+        protected virtual void Start()
         {
             if (dungeon != null)
             {
