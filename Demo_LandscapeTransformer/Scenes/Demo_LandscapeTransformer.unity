@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: f9aba7dc96734e04587c90c24651533d,
+  m_LightingDataAsset: {fileID: 112000000, guid: 169ae5c47b2f91946afd3cdcaed935be,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -6780,12 +6780,47 @@ MonoBehaviour:
   cachedTerrainDataRestored: 1
   worldBounds:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
+    x: -20
+    y: -20
+    width: 40
+    height: 40
   landscapeRestorationCache: {fileID: 11400000, guid: d276508055383df4eb44726e8dc7a576,
     type: 2}
+  textures:
+  - textureType: 0
+    terrainLayer: {fileID: 8574412962073106934, guid: 36b2e95923327f44c9dd2a7109df6735,
+      type: 2}
+  - textureType: 1
+    terrainLayer: {fileID: 8574412962073106934, guid: d05d8ceff299bf643915f9ed01245759,
+      type: 2}
+  layoutLevelOffset: 0
+  smoothingDistance: 5
+  roomElevationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  roadBlurDistance: 6
+  roomBlurThreshold: 0.5
 --- !u!1 &2120086907
 GameObject:
   m_ObjectHideFlags: 0
@@ -6813,7 +6848,7 @@ TerrainCollider:
   m_GameObject: {fileID: 2120086907}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: 53069964f5c69fb47816b13655df5e6b, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: f1c89373db021da4e839aaaa4ce3ea33, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &2120086909
 Terrain:
@@ -6824,7 +6859,7 @@ Terrain:
   m_GameObject: {fileID: 2120086907}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 53069964f5c69fb47816b13655df5e6b, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: f1c89373db021da4e839aaaa4ce3ea33, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
