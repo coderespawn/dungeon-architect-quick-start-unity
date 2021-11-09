@@ -50,8 +50,7 @@ namespace DungeonArchitect.Samples.SnapGridFlow
             foreach (var moduleNode in model.snapModules)
             {
                 // Grab the world bounds of the module
-                var localBounds = moduleNode.GetModuleBounds();
-                var worldBounds = MathUtils.TransformBounds(moduleNode.WorldTransform, localBounds);
+                var worldBounds = moduleNode.GetModuleBounds();
                 
                 // Test if we need to hide it
                 float moduleLowest = worldBounds.center.y - worldBounds.extents.y;
