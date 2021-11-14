@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
 namespace DungeonArchitect.Samples.Snap
@@ -37,9 +36,10 @@ namespace DungeonArchitect.Samples.Snap
                 textStyle = new GUIStyle(GUI.skin.label);
                 textStyle.normal.textColor = Color.red;
             }
-            Handles.Label(position + new Vector3(0, 1.0f, 0), markerName, textStyle);
-            Handles.color = Color.red;
-            Handles.ArrowHandleCap(0, position, t.rotation, 1.1f, EventType.Repaint);
+            
+            //Handles.Label(position + new Vector3(0, 1.0f, 0), markerName, textStyle);
+            //Handles.color = Color.red;
+            //Handles.ArrowHandleCap(0, position, t.rotation, 1.1f, EventType.Repaint);
         }
     }
 }
