@@ -13,6 +13,14 @@ namespace DungeonArchitect.Samples.SnapGridFlow
             if (dungeon != null)
             {
                 dungeon.Build();
+                
+                // Setup the visibility graph to track the player
+                var playerObject = GameObject.FindWithTag("Player");
+                if (playerObject != null)
+                {
+                    // Detach the spawned player object from the room prefab
+                    playerObject.transform.SetParent(null, true);
+                }
             }
         }
 

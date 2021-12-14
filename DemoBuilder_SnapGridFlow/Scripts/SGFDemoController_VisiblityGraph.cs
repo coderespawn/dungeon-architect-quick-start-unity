@@ -24,6 +24,9 @@ namespace DungeonArchitect.Samples.SnapGridFlow
                     {
                         visibilityGraph.trackedObjects = new Transform[] { playerObject.transform };
                     }
+                    
+                    // Detach the spawned player object from the room prefab (we don't want to hide the player's camera when the spawn room hides)
+                    playerObject.transform.SetParent(null, true);
                 }
             }
         }
