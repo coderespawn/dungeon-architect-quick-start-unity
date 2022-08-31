@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SGFDemoNodeConstraintFloor1 : ScriptableObject, ISGFLayoutNodePositionConstraint
 {
-    public bool CanCreateNodeAt(int currentPathPosition, int totalPathLength, Vector3Int nodeCoord, Vector3Int gridSize)
+    public bool CanCreateNodeAt(SGFLayoutNodePositionConstraintSettings settings)
     {
-        return nodeCoord.y == 1;
+        return settings.NodeCoord.y == 1;
     }
 }

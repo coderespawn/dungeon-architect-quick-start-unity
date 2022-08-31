@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class SGFDemoNodeConstraints : ScriptableObject, ISGFLayoutNodePositionConstraint
 {
-    public bool CanCreateNodeAt(int currentPathPosition, int totalPathLength, Vector3Int nodeCoord, Vector3Int gridSize)
+    public bool CanCreateNodeAt(SGFLayoutNodePositionConstraintSettings settings)
     {
-        if (currentPathPosition == totalPathLength - 1)
+        if (settings.CurrentPathPosition == settings.TotalPathLength - 1)
         {
-            return nodeCoord == new Vector3Int(0, 0, 0);
+            return settings.NodeCoord == new Vector3Int(0, 0, 0);
         }
 
         return true;
