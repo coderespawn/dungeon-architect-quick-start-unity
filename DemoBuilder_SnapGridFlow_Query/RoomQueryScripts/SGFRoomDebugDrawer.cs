@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using DungeonArchitect;
 using DungeonArchitect.Builders.SnapGridFlow;
+using DungeonArchitect.Flow.Impl.SnapGridFlow;
+using DungeonArchitect.Frameworks.Snap;
 using DungeonArchitect.Utils;
 
 public class SGFRoomDebugDrawer : MonoBehaviour
@@ -42,10 +44,25 @@ public class SGFRoomDebugDrawer : MonoBehaviour
         // Draw a red box around the room (in the scene view)
         DebugDrawUtils.DrawBounds(roomBoundsToDraw, Color.red);
         
+        //////// Grab all Doors
+        var doors = new List<SgfModuleDoor>();
+        doors.AddRange(module.Incoming);
+        doors.AddRange(module.Outgoing);
+        
         // Draw a green circle near the doors
-        foreach (var sgfModuleDoor in module.Doors)
+        foreach (var sgfModuleDoor in doors)
         {
             var connection = sgfModuleDoor.SpawnedDoor;
+            // NOTE: Doors from only one side would be spawned (to avoid duplicates). This is usually for the outgoing link.   
+            // We'll search for the other side's connected door if this one doesn't have a spawned door prefab reference
+            if (connection == null || connection.connectionState == SnapConnectionState.None)
+            {
+                if (sgfModuleDoor.ConnectedDoor != null)
+                {
+                    connection = sgfModuleDoor.ConnectedDoor.SpawnedDoor;
+                }
+            }
+            
             if (connection == null || !connection.IsDoorState())
             {
                 // We're only interested in doors
