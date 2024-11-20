@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 875143027480629229}
   - component: {fileID: 1686991219}
   m_Layer: 0
-  m_Name: ProceduralRoomModule_1x1_Template
+  m_Name: ProceduralRoomModule_1x1_Doors4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8586,8 +8586,12 @@ PrefabInstance:
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 11457970, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: CellDistributionWidth
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 11457970, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
       propertyPath: CellDistributionLength
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 11457970, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
       propertyPath: UseFastCellDistribution
@@ -8597,6 +8601,10 @@ PrefabInstance:
       propertyPath: itemParent
       value: 
       objectReference: {fileID: 875143026998860707}
+    - target: {fileID: 4728402887157601744, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
+      propertyPath: HeightVariationProbability
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 3}
 --- !u!114 &875143026399949884 stripped
