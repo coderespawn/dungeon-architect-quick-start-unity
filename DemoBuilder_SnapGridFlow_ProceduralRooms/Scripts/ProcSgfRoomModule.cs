@@ -11,7 +11,10 @@ namespace DungeonArchitect.Samples.SGF.ProceduralRooms
     {
         public Dungeon moduleDungeon;
         public int localSeed = 0;
-        private int masterSeed = 0;
+        
+        [HideInInspector]
+        public int masterSeed = 0;
+        
         private IDungeonSceneObjectInstantiator cachedObjectInstantiator = null;
         
         public void BuildRoom(int masterSeed, IDungeonSceneObjectInstantiator objectInstantiator)
