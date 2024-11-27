@@ -110,6 +110,29 @@ MonoBehaviour:
   outputPins:
   - {fileID: -1629602692449429030}
   graph: {fileID: 11400000}
+--- !u!114 &-5096181098423165037
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15a4af758c5024ee3ad022895232667f, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: 
+  pinType: 0
+  node: {fileID: 4533947916313090435}
+  position: {x: 60, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: -40
+    y: 0
+    width: 80
+    height: 15
+  tangent: {x: 0, y: -1}
+  tangentStrength: 50
 --- !u!114 &-4840351599766385627
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -162,6 +185,26 @@ MonoBehaviour:
   outputPins:
   - {fileID: 6787843327111946912}
   graph: {fileID: 11400000}
+--- !u!114 &-4120927832325606259
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 473b3d45cb4f50043ba3a6be2df48e2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indexCounter:
+    index: 0
+  topZIndex:
+    index: 0
+  nodes:
+  - {fileID: -2843678091408080685}
+  links: []
+  asset: {fileID: -859188359677886773}
 --- !u!114 &-3420940645090455395
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -214,6 +257,40 @@ MonoBehaviour:
   outputPins:
   - {fileID: -4840351599766385627}
   graph: {fileID: 11400000}
+--- !u!114 &-2843678091408080685
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 584263142da7e3f4ebae84cbbc5b4b65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0c669307-542f-4a62-af09-be6b398072fd
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 90
+    y: 90
+    width: 20
+    height: 20
+  canBeDeleted: 0
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins: []
+  outputPins: []
+  graph: {fileID: -4120927832325606259}
+  ruleDomain: 0
+  isSnapped: 1
+  constraints: []
+  constraintEvaluationMode: 0
+  exclusionRuleSearchRadius: 0.1
+  exclusionRuleMarkersToRemove: []
 --- !u!114 &-1629602692449429030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -260,6 +337,24 @@ MonoBehaviour:
     height: 15
   tangent: {x: 0, y: 1}
   tangentStrength: 50
+--- !u!114 &-859188359677886773
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec8e932ba1f67d245ac1a041984c7f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateToFit: 1
+  applyFitRotation: 0
+  applyMarkerRotation: 1
+  checkRelativeToMarkerRotation: 1
+  hostThemeNode: {fileID: 4533947916313090435}
+  graph: {fileID: -4120927832325606259}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,9 +368,9 @@ MonoBehaviour:
   m_Name: Theme_ProcGraph
   m_EditorClassIdentifier: 
   indexCounter:
-    index: 0
+    index: 2
   topZIndex:
-    index: 5
+    index: 27
   nodes:
   - {fileID: 3969990939243318278}
   - {fileID: -4689756473305823730}
@@ -287,7 +382,10 @@ MonoBehaviour:
   - {fileID: 257010605139128434}
   - {fileID: 8818059564018342795}
   - {fileID: -8083692740668593480}
-  links: []
+  - {fileID: 4567574288046817514}
+  - {fileID: 4533947916313090435}
+  links:
+  - {fileID: 9112346216265386573}
 --- !u!114 &257010605139128434
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -450,6 +548,93 @@ MonoBehaviour:
   outputPins:
   - {fileID: -879072506050560416}
   graph: {fileID: 11400000}
+--- !u!114 &4533947916313090435
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc1d246dd77b46a4aee970ab911ea63, type: 3}
+  m_Name: MeshNode_dde1af5d-5e80-481d-8686-827050dcb259
+  m_EditorClassIdentifier: 
+  id: dde1af5d-5e80-481d-8686-827050dcb259
+  caption: Game Object Node
+  bounds:
+    serializedVersion: 2
+    x: 101.833466
+    y: -233.83344
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 20
+  inputPins:
+  - {fileID: -5096181098423165037}
+  outputPins:
+  - {fileID: 5404426298163585062}
+  graph: {fileID: 11400000}
+  offset:
+    e00: 2
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 15
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 2
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  consumeOnAttach: 1
+  attachmentProbability: 1
+  IsStatic: 0
+  affectsNavigation: 1
+  selectionRuleEnabled: 0
+  selectionRuleClassName: 
+  transformRuleEnabled: 0
+  transformRuleClassName: 
+  useSpatialConstraint: 0
+  spatialConstraint: {fileID: -859188359677886773}
+  Template: {fileID: 181900, guid: 7cb658e0e5af2ec49851fa357ff2b264, type: 3}
+--- !u!114 &4567574288046817514
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f86a247f92be461b8448085107abfca, type: 3}
+  m_Name: MarkerNode_ab010046-636c-4c31-a1bb-8b925f7f2706
+  m_EditorClassIdentifier: 
+  id: ab010046-636c-4c31-a1bb-8b925f7f2706
+  caption: MySGFEnemy
+  bounds:
+    serializedVersion: 2
+    x: 99.83345
+    y: -344.16675
+    width: 120
+    height: 50
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 14
+  inputPins: []
+  outputPins:
+  - {fileID: 5938571757695898056}
+  graph: {fileID: 11400000}
 --- !u!114 &5053399350460533111
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -464,6 +649,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pinType: 1
   node: {fileID: 1827132776305461174}
+  position: {x: 60, y: 48}
+  boundsOffset:
+    serializedVersion: 2
+    x: -40
+    y: -15
+    width: 80
+    height: 15
+  tangent: {x: 0, y: 1}
+  tangentStrength: 50
+--- !u!114 &5404426298163585062
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15a4af758c5024ee3ad022895232667f, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: 
+  pinType: 1
+  node: {fileID: 4533947916313090435}
+  position: {x: 60, y: 120}
+  boundsOffset:
+    serializedVersion: 2
+    x: -40
+    y: -15
+    width: 80
+    height: 15
+  tangent: {x: 0, y: 1}
+  tangentStrength: 50
+--- !u!114 &5938571757695898056
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15a4af758c5024ee3ad022895232667f, type: 3}
+  m_Name: MarkerNode_ab010046-636c-4c31-a1bb-8b925f7f2706_OutputPin
+  m_EditorClassIdentifier: 
+  pinType: 1
+  node: {fileID: 4567574288046817514}
   position: {x: 60, y: 48}
   boundsOffset:
     serializedVersion: 2
@@ -547,4 +778,20 @@ MonoBehaviour:
   inputPins: []
   outputPins:
   - {fileID: -3420940645090455395}
+  graph: {fileID: 11400000}
+--- !u!114 &9112346216265386573
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_1
+  m_EditorClassIdentifier: 
+  id: 1
+  input: {fileID: -5096181098423165037}
+  output: {fileID: 5938571757695898056}
   graph: {fileID: 11400000}
