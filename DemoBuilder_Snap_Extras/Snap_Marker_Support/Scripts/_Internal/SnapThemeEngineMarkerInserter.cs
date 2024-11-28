@@ -1,4 +1,6 @@
-﻿using System.Collections;
+//$ Copyright 2015-25, Code Respawn Technologies Pvt Ltd - All Rights Reserved $//
+
+using System.Collections;
 using System.Collections.Generic;
 using DungeonArchitect;
 using DungeonArchitect.Samples.Snap;
