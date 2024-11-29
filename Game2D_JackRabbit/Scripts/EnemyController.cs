@@ -22,9 +22,9 @@ namespace JackRabbit {
 
 		// Update is called once per frame
 		void FixedUpdate () {
-			animator.SetFloat("Speed", rigidBody2D.velocity.magnitude);
+			animator.SetFloat("Speed", rigidBody2D.linearVelocity.magnitude);
 
-			var moveX = rigidBody2D.velocity.x;
+			var moveX = rigidBody2D.linearVelocity.x;
 			if (moveX > 0 && facingRight) {
 				Flip();
 			} else if (moveX < 0 && !facingRight) {
@@ -55,7 +55,7 @@ namespace JackRabbit {
 
 		void OnDead() {
 			animator.SetTrigger("Dead");
-			rigidBody2D.velocity = Vector2.zero;
+			rigidBody2D.linearVelocity = Vector2.zero;
 			rigidBody2D.collisionDetectionMode = CollisionDetectionMode2D.Discrete;
 			var colliders = GetComponents<Collider2D>();
 			foreach (var collider in colliders) {

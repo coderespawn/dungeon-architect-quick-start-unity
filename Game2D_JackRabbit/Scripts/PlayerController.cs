@@ -43,10 +43,10 @@ namespace JackRabbit {
 				direction /= directionLength;
 			}
 
-			var currentSpeed = rigidBody2D.velocity.magnitude;
+			var currentSpeed = rigidBody2D.linearVelocity.magnitude;
 			var desiredSpeed = Mathf.Lerp(currentSpeed, targetSpeed, movementSensitivity);
 
-			rigidBody2D.velocity = direction * desiredSpeed;
+			rigidBody2D.linearVelocity = direction * desiredSpeed;
 			
 			if (moveX > 0 && !facingRight) {
 				Flip();
@@ -54,7 +54,7 @@ namespace JackRabbit {
 				Flip ();
 			}
 
-			animator.SetFloat("Speed", rigidBody2D.velocity.magnitude);
+			animator.SetFloat("Speed", rigidBody2D.linearVelocity.magnitude);
 		}
 
 		void OnAttack() {
