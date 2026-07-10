@@ -20,7 +20,7 @@ public class PlayerCameraZoom : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		var speed = rigidBody2D.velocity.magnitude;
+		var speed = rigidBody2D.linearVelocity.magnitude;
 		var t = speed / maxSpeed;
 		var multiplier = Mathf.Lerp (1, zoomMultiplier, t);
 		targetZoom = startingZoom * multiplier;

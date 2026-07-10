@@ -203,7 +203,7 @@ namespace DungeonArchitect.Samples.ShooterGame
 		}
 
 		void DestroyAllWaypoints() {
-			var oldWaypoints = GameObject.FindObjectsOfType<Waypoint>();
+			var oldWaypoints = CompatUtils.FindObjectsByType<Waypoint>();
 			foreach (var waypoint in oldWaypoints) {
 				if (Application.isPlaying) {
 					Destroy(waypoint.gameObject);

@@ -13,6 +13,7 @@ namespace DungeonArchitect.Samples.ShooterGame
 
 
         float timer;                                    // A timer to determine when to fire.
+        [System.NonSerialized]
         public Ray shootRay;                                   // A ray from the gun end forwards.
         RaycastHit shootHit;                            // A raycast hit to get information about what was hit.
         ParticleSystem gunParticles;                    // Reference to the particle system.

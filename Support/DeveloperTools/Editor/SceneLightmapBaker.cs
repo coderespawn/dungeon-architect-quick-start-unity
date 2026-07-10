@@ -13,7 +13,11 @@ namespace DungeonArchitect.Editors.DevTools
         {
             Lightmapping.realtimeGI = false;
             Lightmapping.bakedGI = false;
+#if !UNITY_6000_0_OR_NEWER
+            // Bake on demand instead of continuously. Auto-generate lighting was removed in Unity 6,
+            // where on-demand is the only mode
             Lightmapping.giWorkflowMode = Lightmapping.GIWorkflowMode.OnDemand;
+#endif
         }
 
 

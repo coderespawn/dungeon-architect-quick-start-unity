@@ -52,7 +52,7 @@ namespace JackRabbit {
 			var roomCenter = MathUtils.GridToWorld(model.Config.GridCellSize, cell.CenterF);
 			
             // Destroy all old level goal objects
-            var oldGoals = GameObject.FindObjectsOfType<LevelEndGoal2D>();
+            var oldGoals = CompatUtils.FindObjectsByType<LevelEndGoal2D>();
             foreach (var oldGoal in oldGoals)
             {
                 var oldGoalObj = oldGoal.gameObject;

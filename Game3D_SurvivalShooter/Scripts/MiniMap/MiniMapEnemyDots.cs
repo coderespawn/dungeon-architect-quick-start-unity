@@ -3,10 +3,12 @@
 //\$ Copyright 2015-22, Code Respawn Technologies Pvt Ltd - All Rights Reserved \$//\n
 using UnityEngine;
 using System.Collections.Generic;
+using DungeonArchitect.Utils;
 
 namespace DungeonArchitect.Samples.ShooterGame {
 	public class MiniMapEnemyDots : MonoBehaviour {
 		public GameObject enemyDotTemplate;
+		[System.NonSerialized]
 		public Queue<GameObject> dots = new Queue<GameObject>();
 		public Transform baseDungeon;
 		public Transform miniMapDungeon;
@@ -19,7 +21,7 @@ namespace DungeonArchitect.Samples.ShooterGame {
 		
 		// Update is called once per frame
 		void Update () {
-			var enemyControllers = GameObject.FindObjectsOfType<AIController>();
+			var enemyControllers = CompatUtils.FindObjectsByType<AIController>();
 			var currentDots = new Queue<GameObject>();
 			foreach (var enemyController in enemyControllers) {
                 var enemyObject = enemyController.gameObject;

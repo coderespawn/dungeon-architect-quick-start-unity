@@ -3,6 +3,7 @@
 //\$ Copyright 2015-22, Code Respawn Technologies Pvt Ltd - All Rights Reserved \$//\n
 using UnityEngine;
 using System.Collections.Generic;
+using DungeonArchitect.Utils;
 
 namespace DungeonArchitect.Samples.ShooterGame
 {
@@ -42,7 +43,7 @@ namespace DungeonArchitect.Samples.ShooterGame
 
 		public void Build(Vector3 nearestStartingPoint) {
 			// Find all the waypoints in the map
-			var waypoints = GameObject.FindObjectsOfType<Waypoint>();
+			var waypoints = CompatUtils.FindObjectsByType<Waypoint>();
 			var nearestWaypoint = FindNearest(waypoints, gameObject.transform.position);
 			if (nearestWaypoint == null) {
 				// No waypoints found

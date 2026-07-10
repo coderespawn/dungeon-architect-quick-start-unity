@@ -2,6 +2,7 @@
 
 //\$ Copyright 2015-22, Code Respawn Technologies Pvt Ltd - All Rights Reserved \$//\n
 using UnityEngine;
+using DungeonArchitect.Utils;
 
 
 namespace DungeonArchitect.Samples.ShooterGame
@@ -16,7 +17,7 @@ namespace DungeonArchitect.Samples.ShooterGame
 		void DrawWaypointPaths() {
 			Gizmos.color = pathColor;
 			// Draw the connection of waypoints
-			var waypoints = GameObject.FindObjectsOfType<Waypoint>();
+			var waypoints = CompatUtils.FindObjectsByType<Waypoint>();
 			foreach (var waypoint in waypoints) {
 				if (waypoint == null) continue;
 				var startPosition = waypoint.gameObject.transform.position;

@@ -4,6 +4,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using DungeonArchitect.Utils;
 
 namespace DungeonArchitect.Samples.ShooterGame {
 	public class GameController : MonoBehaviour {
@@ -84,7 +85,7 @@ namespace DungeonArchitect.Samples.ShooterGame {
 			}
 
 			// Destroy any npc too close to the player
-			var enemyControllers = GameObject.FindObjectsOfType<AIController>();
+			var enemyControllers = CompatUtils.FindObjectsByType<AIController>();
 			var playerPosition = player.transform.position;
             foreach (var enemyController in enemyControllers)
             {

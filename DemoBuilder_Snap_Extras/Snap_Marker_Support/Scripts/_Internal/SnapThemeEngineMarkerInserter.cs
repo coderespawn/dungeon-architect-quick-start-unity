@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using DungeonArchitect;
 using DungeonArchitect.Samples.Snap;
 using UnityEngine;
+using DungeonArchitect.Utils;
 
 /// <summary>
 /// This will be run in the second dummy dungeon (Dungeon 2) whose sole purpose is to spawn the snap markers
@@ -25,7 +26,7 @@ public class SnapThemeEngineMarkerInserter : DungeonEventListener
     public override void OnDungeonMarkersEmitted(Dungeon dungeon, DungeonModel model, LevelMarkerList markers)
     {
         // Find all the spawn markers in the scene (they would have been spawned
-        var snapMarkersInScene = FindObjectsOfType<SnapCustomMarker>();
+        var snapMarkersInScene = CompatUtils.FindObjectsByType<SnapCustomMarker>();
         
         // insert the snap markers into the theme engine's marker list so our dungeon can pick it up and spawn it
         foreach (var snapMarker in snapMarkersInScene)

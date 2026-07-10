@@ -2,6 +2,7 @@
 
 //\$ Copyright 2015-22, Code Respawn Technologies Pvt Ltd - All Rights Reserved \$//\n
 using UnityEngine;
+using DungeonArchitect.Utils;
 
 namespace DungeonArchitect.Samples.GridFlow
 {
@@ -26,7 +27,7 @@ namespace DungeonArchitect.Samples.GridFlow
 
         private void Awake()
         {
-            inventoryUI = GameObject.FindObjectOfType<InventoryUI>();
+            inventoryUI = CompatUtils.FindAnyObjectByType<InventoryUI>();
         }
 
         /// <summary>

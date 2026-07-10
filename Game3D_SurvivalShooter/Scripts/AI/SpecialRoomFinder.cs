@@ -122,7 +122,7 @@ namespace DungeonArchitect.Samples.ShooterGame {
 
         void DestroyAllLevelGoals()
         {
-            var oldGoals = GameObject.FindObjectsOfType<DungeonArchitect.Samples.ShooterGame.LevelGoal>();
+            var oldGoals = CompatUtils.FindObjectsByType<DungeonArchitect.Samples.ShooterGame.LevelGoal>();
             foreach (var oldGoal in oldGoals)
             {
                 var oldGoalObj = oldGoal.gameObject;
