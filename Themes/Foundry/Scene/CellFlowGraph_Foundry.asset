@@ -350,7 +350,7 @@ MonoBehaviour:
   canBeDeleted: 0
   canBeSelected: 1
   canBeMoved: 1
-  selected: 0
+  selected: 1
   zIndex: 21
   inputPins:
   - {fileID: -1906221496010716298}
@@ -420,7 +420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 
   minPathSize: 2
-  maxPathSize: 5
+  maxPathSize: 4
   pathName: b2
   nodeColor: {r: 1, g: 0, b: 0.9044337, a: 1}
   startFromPath: main
@@ -446,13 +446,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 
   worldSize: {x: 30, y: 30}
-  minGroupArea: 20
+  minGroupArea: 9
   clusterBlobbiness: 0.5
   minCellSize: 2
-  maxCellSize: 6
+  maxCellSize: 3
   fitIterations: 15
   minAspectRatio: 0.4
-  maxAspectRatio: 1.5
+  maxAspectRatio: 1
 --- !u!114 &-909207332856371576
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -466,8 +466,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   description: 
-  minPathSize: 2
-  maxPathSize: 5
+  minPathSize: 1
+  maxPathSize: 3
   pathName: b1
   nodeColor: {r: 1, g: 0.5, b: 0, a: 1}
   startFromPath: main
@@ -639,7 +639,7 @@ MonoBehaviour:
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
-  selected: 1
+  selected: 0
   zIndex: 24
   inputPins:
   - {fileID: 3290487939841206725}
@@ -755,7 +755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   description: 
-  pathSize: 12
+  pathSize: 8
   pathName: main
   nodeColor: {r: 0, g: 1, b: 0, a: 1}
   startMarkerName: SpawnPoint
