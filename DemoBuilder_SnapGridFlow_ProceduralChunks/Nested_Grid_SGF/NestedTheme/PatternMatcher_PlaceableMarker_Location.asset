@@ -177,6 +177,7 @@ MonoBehaviour:
   - {fileID: -8201552596819339565}
   outputPins: []
   graph: {fileID: 8562973194559411386}
+  tags: []
 --- !u!114 &-7818912551142586601
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -246,9 +247,12 @@ MonoBehaviour:
   outputPins:
   - {fileID: -7157923140376139127}
   graph: {fileID: 8562973194559411386}
+  tags: []
   markerName: MyPlaceableMarker
+  emitCopiesAlongAllElevations: 0
   copyRotationFromMarkers: []
   copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
 --- !u!114 &-7358919356520256935
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -278,6 +282,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: -4760323265495302595}
   graph: {fileID: -2023235704201609403}
+  tags: []
 --- !u!114 &-7325162925961066348
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -427,7 +432,9 @@ MonoBehaviour:
   outputPins:
   - {fileID: 2700860970585660541}
   graph: {fileID: -2023235704201609403}
+  tags: []
   markerName: Door
+  requiredElevations: 
 --- !u!114 &-6118527506660525964
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -497,6 +504,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 6658505908497801359}
   graph: {fileID: -4249789963742908374}
+  tags: []
 --- !u!114 &-5368347204077138563
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -639,6 +647,7 @@ MonoBehaviour:
   - {fileID: 9034156748286014212}
   outputPins: []
   graph: {fileID: 5824195090744345461}
+  tags: []
 --- !u!114 &-4249789963742908374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -801,6 +810,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: -6529745418663744492}
   graph: {fileID: 8562973194559411386}
+  tags: []
 --- !u!114 &-2023235704201609403
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -906,6 +916,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 6913005308376037863}
   graph: {fileID: -5368347204077138563}
+  tags: []
 --- !u!114 &-1266492543360039552
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -935,6 +946,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: -7818912551142586601}
   graph: {fileID: -5368347204077138563}
+  tags: []
 --- !u!114 &-1211690477587581778
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -970,7 +982,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patternName: Pattern
+  enabled: 1
   probability: 1
+  tags: []
   rotateToFit: 1
   randomizeFittingOrder: 1
   allowInsertionOverlaps: 0
@@ -980,6 +994,7 @@ MonoBehaviour:
   - {fileID: -1211690477587581778}
   - {fileID: 5805670110760567691}
   - {fileID: 2209992693089376788}
+  folder: 
   sameHeightMarkers: []
   expandMarkerDomain: 0
   expandMarkerDomainAmount: 0
@@ -1013,6 +1028,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: -2264609507854472582}
   graph: {fileID: -2023235704201609403}
+  tags: []
 --- !u!114 &-231144540794388718
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1056,6 +1072,7 @@ MonoBehaviour:
   patterns:
   - {fileID: -868485749250239861}
   layoutType: 0
+  folders: []
 --- !u!114 &60320477211362947
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1233,7 +1250,9 @@ MonoBehaviour:
   outputPins:
   - {fileID: 5785776219493820497}
   graph: {fileID: -5368347204077138563}
+  tags: []
   markerName: Door
+  requiredElevations: 
 --- !u!114 &1717075493446473969
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1335,6 +1354,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 9205518375138797778}
   graph: {fileID: 5824195090744345461}
+  tags: []
 --- !u!114 &2544596466309923727
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1365,6 +1385,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 8137586897724235312}
   graph: {fileID: -4249789963742908374}
+  tags: []
 --- !u!114 &2700860970585660541
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1403,8 +1424,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   markerName: MyPlaceableMarker
+  emitCopiesAlongAllElevations: 0
   copyRotationFromMarkers: []
   copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
 --- !u!114 &2726435064218866651
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1434,6 +1457,7 @@ MonoBehaviour:
   - {fileID: -5736750427625990988}
   outputPins: []
   graph: {fileID: -5368347204077138563}
+  tags: []
 --- !u!114 &2855825762081018490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1536,8 +1560,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   markerName: 
+  emitCopiesAlongAllElevations: 0
   copyRotationFromMarkers: []
   copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
 --- !u!114 &4000129858489472134
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1567,7 +1593,9 @@ MonoBehaviour:
   outputPins:
   - {fileID: 1202742835941903097}
   graph: {fileID: -2023235704201609403}
+  tags: []
   markerName: Wall
+  requiredElevations: 
 --- !u!114 &4383926224237154820
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1624,6 +1652,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: -3710269512942924591}
   graph: {fileID: -2023235704201609403}
+  tags: []
 --- !u!114 &5041043318321811175
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1653,6 +1682,7 @@ MonoBehaviour:
   - {fileID: 3700407405510343749}
   outputPins: []
   graph: {fileID: -2023235704201609403}
+  tags: []
 --- !u!114 &5345595679814326356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1682,7 +1712,9 @@ MonoBehaviour:
   outputPins:
   - {fileID: -8435849189415920821}
   graph: {fileID: 5824195090744345461}
+  tags: []
   markerName: Door
+  requiredElevations: 
 --- !u!114 &5383790321372720241
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1714,6 +1746,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: -5358939826772684877}
   graph: {fileID: -2023235704201609403}
+  tags: []
 --- !u!114 &5457656037526579226
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1744,6 +1777,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 4383926224237154820}
   graph: {fileID: 5824195090744345461}
+  tags: []
 --- !u!114 &5715493446943796526
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1986,7 +2020,9 @@ MonoBehaviour:
   outputPins:
   - {fileID: -1928802971444006915}
   graph: {fileID: 8562973194559411386}
+  tags: []
   markerName: Ground
+  requiredElevations: 
 --- !u!114 &6913005308376037863
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2109,7 +2145,9 @@ MonoBehaviour:
   outputPins:
   - {fileID: 825083902649931870}
   graph: {fileID: -2023235704201609403}
+  tags: []
   markerName: Fence
+  requiredElevations: 
 --- !u!114 &8137586897724235312
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2164,6 +2202,7 @@ MonoBehaviour:
   - {fileID: -6963606031578644315}
   outputPins: []
   graph: {fileID: -4249789963742908374}
+  tags: []
 --- !u!114 &8359361994142360970
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2193,7 +2232,9 @@ MonoBehaviour:
   outputPins:
   - {fileID: 1717075493446473969}
   graph: {fileID: -4249789963742908374}
+  tags: []
   markerName: Door
+  requiredElevations: 
 --- !u!114 &8540028978261952093
 MonoBehaviour:
   m_ObjectHideFlags: 1
