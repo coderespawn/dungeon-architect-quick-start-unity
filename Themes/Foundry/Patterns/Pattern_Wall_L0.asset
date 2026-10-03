@@ -1,0 +1,2192 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9052192422817874427
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &-9026906870145658701
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &-9026500363915824358
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - Wall
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &-9006953590210386937
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &-8585425574443975710
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: 
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers: []
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &-8561521879068582355
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a33889324bb430cb014ed964e0e1ba7, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: 
+  pinType: 0
+  node: {fileID: 7203606277136170434}
+  position: {x: 0, y: 39.530014}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: -9
+    width: 18
+    height: 18
+  tangent: {x: -1, y: 0}
+  tangentStrength: 50
+  text: 
+--- !u!114 &-7849564275641334439
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &-7739479691462615664
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a33889324bb430cb014ed964e0e1ba7, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: 
+  pinType: 1
+  node: {fileID: 7203606277136170434}
+  position: {x: 122.16998, y: 39.530014}
+  boundsOffset:
+    serializedVersion: 2
+    x: -18
+    y: -9
+    width: 18
+    height: 18
+  tangent: {x: 1, y: 0}
+  tangentStrength: 50
+  text: 
+--- !u!114 &-7637216020815003454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &-7555167351103988965
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7153bb1aa84dba85ea6134e334fb0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionList: []
+  hints:
+    emitsMarker: 0
+--- !u!114 &-7533851103745063947
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallL
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers: []
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &-7273863084777563584
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallSeparator
+--- !u!114 &-7248434018313635589
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallSeparatorL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - WallSeparator
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &-7091752527341262520
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - W
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &-7089967563583188058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - Wall
+  copyHeightFromMarkers:
+  - Wal
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &-7063907460244460021
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455b3b28dd3a4d41a5654db8b9f48cfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ruleGraph: {fileID: 4398890599678035904}
+  program: {fileID: -6596225966204626512}
+  actions: {fileID: 1563033132279702753}
+  previewTextCondition: 'WallSeparator @[0]'
+  previewTextActions:
+  - ADD WallSeparatorL0
+  - DEL WallSeparator
+  color: {r: 1, g: 0.6985636, b: 0.5, a: 1}
+  visuallyDominant: 1
+  coord: {x: 1, y: 0}
+  ruleType: 3
+  hintWillInsertAssetHere: 0
+--- !u!114 &-6740633611540015877
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455b3b28dd3a4d41a5654db8b9f48cfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ruleGraph: {fileID: -2850358545132436497}
+  program: {fileID: -4255499767045771578}
+  actions: {fileID: 339374373298596385}
+  previewTextCondition: 'Wall @[0]'
+  previewTextActions:
+  - ADD WallL0
+  - DEL Wall
+  color: {r: 0.56651807, g: 0.5, b: 1, a: 1}
+  visuallyDominant: 1
+  coord: {x: 0, y: 1}
+  ruleType: 1
+  hintWillInsertAssetHere: 0
+--- !u!114 &-6596225966204626512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d6af1551d84882ad36eb7d9e94265e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instructions:
+  - opcode: 10
+    arg0: 0
+    arg1: 0
+  - opcode: 10
+    arg0: 0
+    arg1: 0
+  - opcode: 202
+    arg0: 1
+    arg1: 0
+  - opcode: 1000
+    arg0: 0
+    arg1: 0
+  stringTable:
+  - WallSeparator
+  compiled: 1
+--- !u!114 &-6532745339520726064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: W
+--- !u!114 &-6211333684452800789
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &-6060830037954407860
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallSeparatorL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - WallSeparator
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &-5902323436502327463
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - Wal
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &-5746116303257632626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wa
+--- !u!114 &-5569144356370047979
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c01b3a5d2414dd0ba5a5896ba3a579c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0d4d5838-a52f-475b-80c7-d7f5976901bb
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 442.00018
+    y: -7.416626
+    width: 130.28
+    height: 54.53
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 22
+  inputPins:
+  - {fileID: -3497734916482321972}
+  outputPins:
+  - {fileID: 4491524872581232974}
+  graph: {fileID: -2850358545132436497}
+  tags: []
+  markerName: Wall
+--- !u!114 &-5541693779051893419
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallSeparatorL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers: []
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &-5449471696410217790
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - Wall
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &-5120894836266677598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b26b17c51d1b467cad6081f203299116, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: 
+  pinType: 0
+  node: {fileID: -4627205106259596313}
+  position: {x: 0, y: 40.53}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: -10
+    width: 20
+    height: 20
+  tangent: {x: -1, y: 0}
+  tangentStrength: 50
+  text: Result
+  defaultValue: 1
+--- !u!114 &-5081904638780530963
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallSeparator
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers: []
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &-5041022967267030505
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_6
+  m_EditorClassIdentifier: 
+  id: 6
+  input: {fileID: -8561521879068582355}
+  output: {fileID: 2204724389968014026}
+  graph: {fileID: -2850358545132436497}
+--- !u!114 &-4834108788330367875
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &-4627205106259596313
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0598e0e629a44aa5923f6507cf63ba6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 638fa635-5cb6-4730-a7dc-a8d805ca489d
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 96.18
+    height: 56.53
+  canBeDeleted: 0
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 2
+  inputPins:
+  - {fileID: -5120894836266677598}
+  outputPins: []
+  graph: {fileID: 0}
+  tags: []
+--- !u!114 &-4605381151742071152
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a33889324bb430cb014ed964e0e1ba7, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: 
+  pinType: 1
+  node: {fileID: 3152495579305697233}
+  position: {x: 178.04999, y: 39.53}
+  boundsOffset:
+    serializedVersion: 2
+    x: -18
+    y: -9
+    width: 18
+    height: 18
+  tangent: {x: 1, y: 0}
+  tangentStrength: 50
+  text: 
+--- !u!114 &-4255499767045771578
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d6af1551d84882ad36eb7d9e94265e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instructions:
+  - opcode: 10
+    arg0: 0
+    arg1: 0
+  - opcode: 10
+    arg0: 0
+    arg1: 0
+  - opcode: 202
+    arg0: 1
+    arg1: 0
+  - opcode: 1000
+    arg0: 0
+    arg1: 0
+  stringTable:
+  - Wall
+  compiled: 1
+--- !u!114 &-4088318235373924078
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallSeparatorL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - 
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &-3997433605642195309
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_2
+  m_EditorClassIdentifier: 
+  id: 2
+  input: {fileID: -3497734916482321972}
+  output: {fileID: 2204724389968014026}
+  graph: {fileID: -2850358545132436497}
+--- !u!114 &-3833265416207409389
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &-3497734916482321972
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a33889324bb430cb014ed964e0e1ba7, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: 
+  pinType: 0
+  node: {fileID: -5569144356370047979}
+  position: {x: 0.000061035156, y: 39.53}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: -9
+    width: 18
+    height: 18
+  tangent: {x: -1, y: 0}
+  tangentStrength: 50
+  text: 
+--- !u!114 &-3236968304493787103
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a33889324bb430cb014ed964e0e1ba7, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: 
+  pinType: 1
+  node: {fileID: 5662973193639932043}
+  position: {x: 81.45001, y: 39.53}
+  boundsOffset:
+    serializedVersion: 2
+    x: -18
+    y: -9
+    width: 18
+    height: 18
+  tangent: {x: 1, y: 0}
+  tangentStrength: 50
+  text: Exec
+--- !u!114 &-3038960662138047385
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - Wall
+  copyHeightFromMarkers:
+  - W
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &-2990675701751150381
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d6af1551d84882ad36eb7d9e94265e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instructions:
+  - opcode: 10
+    arg0: 1
+    arg1: 0
+  - opcode: 1000
+    arg0: 0
+    arg1: 0
+  stringTable: []
+  compiled: 1
+--- !u!114 &-2850358545132436497
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f712e62250a84e678bb9c51b8f3bc3f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indexCounter:
+    index: 6
+  topZIndex:
+    index: 24
+  nodes:
+  - {fileID: -2546319398883102048}
+  - {fileID: -1534763080427759959}
+  - {fileID: 1356987822957914121}
+  - {fileID: -5569144356370047979}
+  - {fileID: 7203606277136170434}
+  links:
+  - {fileID: 2032713159948510407}
+  - {fileID: 1230389535176137858}
+  - {fileID: -5041022967267030505}
+  resultNode: {fileID: -2546319398883102048}
+  passNode: {fileID: -1534763080427759959}
+--- !u!114 &-2850115124525050752
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b26b17c51d1b467cad6081f203299116, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: 
+  pinType: 1
+  node: {fileID: -966066895502931645}
+  position: {x: 174.08002, y: 40.53}
+  boundsOffset:
+    serializedVersion: 2
+    x: -20
+    y: -10
+    width: 20
+    height: 20
+  tangent: {x: 1, y: 0}
+  tangentStrength: 50
+  text: 
+  defaultValue: 1
+--- !u!114 &-2704497991123124743
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b5a756503e41b08075c746275d0c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 3e1ae7b9-ac55-4da4-8022-e12f0ac8438e
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 132.66669
+    y: 1.333313
+    width: 81.45
+    height: 54.53
+  canBeDeleted: 0
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 18
+  inputPins: []
+  outputPins:
+  - {fileID: 2149063459711830551}
+  graph: {fileID: 4398890599678035904}
+  tags: []
+--- !u!114 &-2546319398883102048
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0598e0e629a44aa5923f6507cf63ba6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: ea211817-62a5-4554-8df9-763d14d141d6
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 96.18
+    height: 56.53
+  canBeDeleted: 0
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -1557143554317826094}
+  outputPins: []
+  graph: {fileID: -2850358545132436497}
+  tags: []
+--- !u!114 &-2225453096643621885
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers: []
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &-1625566501770768210
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - Wall
+  copyHeightFromMarkers:
+  - Wa
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &-1557143554317826094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b26b17c51d1b467cad6081f203299116, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: 
+  pinType: 0
+  node: {fileID: -2546319398883102048}
+  position: {x: 0, y: 40.530014}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: -10
+    width: 20
+    height: 20
+  tangent: {x: -1, y: 0}
+  tangentStrength: 50
+  text: Result
+  defaultValue: 1
+--- !u!114 &-1534763080427759959
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b5a756503e41b08075c746275d0c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: d376804a-4f51-4ab5-8e7c-d1659f3cd5c2
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 120
+    y: 0
+    width: 81.45
+    height: 54.53
+  canBeDeleted: 0
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 23
+  inputPins: []
+  outputPins:
+  - {fileID: 2204724389968014026}
+  graph: {fileID: -2850358545132436497}
+  tags: []
+--- !u!114 &-1259903237470067540
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_5
+  m_EditorClassIdentifier: 
+  id: 5
+  input: {fileID: 1589361844338141134}
+  output: {fileID: 2149063459711830551}
+  graph: {fileID: 4398890599678035904}
+--- !u!114 &-1205680704256655629
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c8e567a70dc4cffa297d6f8a6fcbec6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patternName: L0 - Insert Wall Sep
+  enabled: 1
+  probability: 1
+  tags: []
+  rotateToFit: 1
+  randomizeFittingOrder: 1
+  allowInsertionOverlaps: 0
+  rules:
+  - {fileID: -7063907460244460021}
+  sameHeightMarkers: []
+  expandMarkerDomain: 0
+  expandMarkerDomainAmount: 0
+--- !u!114 &-966066895502931645
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183aefbe986844c0a0d8e710b0042ff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0ec07c38-31f1-4cda-89ce-187f97c72160
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: -212
+    y: 5.25
+    width: 174.08
+    height: 56.53
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 5
+  inputPins: []
+  outputPins:
+  - {fileID: -2850115124525050752}
+  graph: {fileID: 4398890599678035904}
+  tags: []
+  markerName: WallSeparator
+  requiredElevations: 00000000
+--- !u!114 &-676476414826613670
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wal
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers: []
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &-604881010613623307
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &-234151933494652845
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2db24979bc3947958de6e8cb53183706, type: 3}
+  m_Name: Pattern_Wall_L0
+  m_EditorClassIdentifier: 
+  patterns:
+  - {fileID: 5875502023368294439}
+  - {fileID: -1205680704256655629}
+  layoutType: 0
+--- !u!114 &137730868465525868
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &339374373298596385
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7153bb1aa84dba85ea6134e334fb0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionList:
+  - {fileID: 7425764696073546868}
+  - {fileID: 3807851658509087634}
+  hints:
+    emitsMarker: 1
+--- !u!114 &710653372661912717
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &1053511197949941566
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &1211624773853189132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallSeparatorL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - WallSeparator
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &1230389535176137858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_5
+  m_EditorClassIdentifier: 
+  id: 5
+  input: {fileID: -3497734916482321972}
+  output: {fileID: -7739479691462615664}
+  graph: {fileID: -2850358545132436497}
+--- !u!114 &1356987822957914121
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183aefbe986844c0a0d8e710b0042ff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 6d36e186-7fa3-4935-b7c0-cca318832c08
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: -178.66669
+    y: -2.750061
+    width: 118.2
+    height: 56.53
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 5
+  inputPins: []
+  outputPins:
+  - {fileID: 4742796105082972612}
+  graph: {fileID: -2850358545132436497}
+  tags: []
+  markerName: Wall
+  requiredElevations: 00000000
+--- !u!114 &1563033132279702753
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7153bb1aa84dba85ea6134e334fb0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionList:
+  - {fileID: 5455133888511288480}
+  - {fileID: 6136698648965859284}
+  hints:
+    emitsMarker: 1
+--- !u!114 &1589361844338141134
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a33889324bb430cb014ed964e0e1ba7, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: 
+  pinType: 0
+  node: {fileID: 3152495579305697233}
+  position: {x: 0, y: 39.53}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: -9
+    width: 18
+    height: 18
+  tangent: {x: -1, y: 0}
+  tangentStrength: 50
+  text: 
+--- !u!114 &1621422556605237543
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallSeparatorL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - WallSeparator
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &1898015349454200976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &1936401072489011457
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - Wa
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &2032713159948510407
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_1
+  m_EditorClassIdentifier: 
+  id: 1
+  input: {fileID: -1557143554317826094}
+  output: {fileID: 4742796105082972612}
+  graph: {fileID: -2850358545132436497}
+--- !u!114 &2149063459711830551
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a33889324bb430cb014ed964e0e1ba7, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: 
+  pinType: 1
+  node: {fileID: -2704497991123124743}
+  position: {x: 81.45001, y: 39.53}
+  boundsOffset:
+    serializedVersion: 2
+    x: -18
+    y: -9
+    width: 18
+    height: 18
+  tangent: {x: 1, y: 0}
+  tangentStrength: 50
+  text: Exec
+--- !u!114 &2192163099689124555
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &2204724389968014026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a33889324bb430cb014ed964e0e1ba7, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: 
+  pinType: 1
+  node: {fileID: -1534763080427759959}
+  position: {x: 81.45001, y: 39.53}
+  boundsOffset:
+    serializedVersion: 2
+    x: -18
+    y: -9
+    width: 18
+    height: 18
+  tangent: {x: 1, y: 0}
+  tangentStrength: 50
+  text: Exec
+--- !u!114 &2518448274432648494
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b26b17c51d1b467cad6081f203299116, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: 
+  pinType: 0
+  node: {fileID: 4003162539738766359}
+  position: {x: 0, y: 40.53}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: -10
+    width: 20
+    height: 20
+  tangent: {x: -1, y: 0}
+  tangentStrength: 50
+  text: Result
+  defaultValue: 1
+--- !u!114 &2659209759126670393
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallSeparator
+--- !u!114 &3152495579305697233
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b73dbb7a2b4f4d8239648c4c2b49d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 492fd8bb-bfd0-48d3-a20d-dd6d777ce890
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 254.66669
+    y: 1.916626
+    width: 178.05
+    height: 54.53
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 1
+  zIndex: 19
+  inputPins:
+  - {fileID: 1589361844338141134}
+  outputPins:
+  - {fileID: -4605381151742071152}
+  graph: {fileID: 4398890599678035904}
+  tags: []
+  markerName: WallSeparatorL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - WallSeparator
+  copyHeightFromMarkers:
+  - WallSeparator
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &3190826896864036133
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: 
+--- !u!114 &3484245904451125957
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &3528357588151775256
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a33889324bb430cb014ed964e0e1ba7, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: 
+  pinType: 1
+  node: {fileID: 5853666473294302795}
+  position: {x: 186.15997, y: 39.53}
+  boundsOffset:
+    serializedVersion: 2
+    x: -18
+    y: -9
+    width: 18
+    height: 18
+  tangent: {x: 1, y: 0}
+  tangentStrength: 50
+  text: 
+--- !u!114 &3578176666574138722
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: 
+--- !u!114 &3789341657708791481
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - Wall
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &3807851658509087634
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &4003162539738766359
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0598e0e629a44aa5923f6507cf63ba6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 9d81d7f8-fde6-4a00-b8b8-b4dd43c7d436
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 96.18
+    height: 56.53
+  canBeDeleted: 0
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 1
+  inputPins:
+  - {fileID: 2518448274432648494}
+  outputPins: []
+  graph: {fileID: 4398890599678035904}
+  tags: []
+--- !u!114 &4061416230102098485
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallSeparator
+--- !u!114 &4329501988856148700
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers: []
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &4398890599678035904
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f712e62250a84e678bb9c51b8f3bc3f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indexCounter:
+    index: 5
+  topZIndex:
+    index: 19
+  nodes:
+  - {fileID: 4003162539738766359}
+  - {fileID: -2704497991123124743}
+  - {fileID: -966066895502931645}
+  - {fileID: 3152495579305697233}
+  - {fileID: 5853666473294302795}
+  links:
+  - {fileID: 7005442315770875941}
+  - {fileID: 8366995762186473011}
+  - {fileID: -1259903237470067540}
+  resultNode: {fileID: 4003162539738766359}
+  passNode: {fileID: -2704497991123124743}
+--- !u!114 &4406624277827207117
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a33889324bb430cb014ed964e0e1ba7, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: 
+  pinType: 0
+  node: {fileID: 5853666473294302795}
+  position: {x: -0.000061035156, y: 39.53}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: -9
+    width: 18
+    height: 18
+  tangent: {x: -1, y: 0}
+  tangentStrength: 50
+  text: 
+--- !u!114 &4491524872581232974
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a33889324bb430cb014ed964e0e1ba7, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: 
+  pinType: 1
+  node: {fileID: -5569144356370047979}
+  position: {x: 130.28009, y: 39.53}
+  boundsOffset:
+    serializedVersion: 2
+    x: -18
+    y: -9
+    width: 18
+    height: 18
+  tangent: {x: 1, y: 0}
+  tangentStrength: 50
+  text: 
+--- !u!114 &4724449721833319986
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - Wall
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &4742796105082972612
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b26b17c51d1b467cad6081f203299116, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: 
+  pinType: 1
+  node: {fileID: 1356987822957914121}
+  position: {x: 118.20001, y: 40.53}
+  boundsOffset:
+    serializedVersion: 2
+    x: -20
+    y: -10
+    width: 20
+    height: 20
+  tangent: {x: 1, y: 0}
+  tangentStrength: 50
+  text: 
+  defaultValue: 1
+--- !u!114 &4746124912709939676
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - Wall
+  copyHeightFromMarkers:
+  - 
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &4881380626866440704
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wal
+--- !u!114 &4887710003531949922
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: 
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers: []
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &5271207259762002934
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallSeparatorL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - WallSeparator
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &5455133888511288480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallSeparatorL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - WallSeparator
+  copyHeightFromMarkers:
+  - WallSeparator
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &5662973193639932043
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b5a756503e41b08075c746275d0c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: d82889ef-55af-4d56-8762-04b9c5fa7255
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 120
+    y: 0
+    width: 81.45
+    height: 54.53
+  canBeDeleted: 0
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins: []
+  outputPins:
+  - {fileID: -3236968304493787103}
+  graph: {fileID: 0}
+  tags: []
+--- !u!114 &5853666473294302795
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c01b3a5d2414dd0ba5a5896ba3a579c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: f9cf90e5-75a5-4ecf-9038-e779988f8505
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 483.99994
+    y: 9.916687
+    width: 186.16
+    height: 54.53
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 14
+  inputPins:
+  - {fileID: 4406624277827207117}
+  outputPins:
+  - {fileID: 3528357588151775256}
+  graph: {fileID: 4398890599678035904}
+  tags: []
+  markerName: WallSeparator
+--- !u!114 &5875502023368294439
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c8e567a70dc4cffa297d6f8a6fcbec6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patternName: L0 - Insert Wall
+  enabled: 1
+  probability: 1
+  tags: []
+  rotateToFit: 1
+  randomizeFittingOrder: 1
+  allowInsertionOverlaps: 0
+  rules:
+  - {fileID: -6740633611540015877}
+  sameHeightMarkers: []
+  expandMarkerDomain: 0
+  expandMarkerDomainAmount: 0
+--- !u!114 &6136698648965859284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallSeparator
+--- !u!114 &6182701678979302484
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: W
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers: []
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &6595745167221009854
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &7005442315770875941
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_1
+  m_EditorClassIdentifier: 
+  id: 1
+  input: {fileID: 2518448274432648494}
+  output: {fileID: -2850115124525050752}
+  graph: {fileID: 4398890599678035904}
+--- !u!114 &7132118444782589868
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallSeparatorL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - WallSeparator
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &7203606277136170434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b73dbb7a2b4f4d8239648c4c2b49d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: c4881fcf-026a-4ffb-8e63-683f182bc0ab
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 257.99994
+    y: 1.916687
+    width: 122.17
+    height: 54.53
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 1
+  zIndex: 24
+  inputPins:
+  - {fileID: -8561521879068582355}
+  outputPins:
+  - {fileID: -7739479691462615664}
+  graph: {fileID: -2850358545132436497}
+  tags: []
+  markerName: WallL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - Wall
+  copyHeightFromMarkers:
+  - Wall
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &7381594873888670889
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &7425764696073546868
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - Wall
+  copyHeightFromMarkers:
+  - Wall
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &7655570205459069848
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &8001912450433113195
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - 
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &8038905832813131410
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallSeparatorL
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers: []
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &8366995762186473011
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_4
+  m_EditorClassIdentifier: 
+  id: 4
+  input: {fileID: 4406624277827207117}
+  output: {fileID: -4605381151742071152}
+  graph: {fileID: 4398890599678035904}
+--- !u!114 &8468056130268087530
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallSeparatorL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - WallSeparator
+  copyHeightFromMarkers:
+  - 
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &8564764193494973416
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallL0
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers:
+  - Wall
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
+--- !u!114 &8572979758145206236
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wall
+--- !u!114 &8686603074715232823
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96851a6fa8d740f0b5415dfcd47f1ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: WallSeparator
+--- !u!114 &9083335258877472855
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5431f0d84e444de89f9259fa863dc1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markerName: Wa
+  emitCopiesAlongAllElevations: 0
+  copyRotationFromMarkers: []
+  copyHeightFromMarkers: []
+  duplicateMarkerRemoveRule: 1
