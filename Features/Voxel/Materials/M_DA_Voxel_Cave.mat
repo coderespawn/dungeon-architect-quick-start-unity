@@ -24,6 +24,30 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _SideAlbedo:
+        m_Texture: {fileID: 2800000, guid: e4cb77499872786418c61196e4cde363, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SideMask:
+        m_Texture: {fileID: 2800000, guid: 0d5c57907514a664c808ab3b93d02488, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SideNormal:
+        m_Texture: {fileID: 2800000, guid: 892b87bcf14af5541923a10aa461aff7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TopAlbedo:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TopMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TopNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -39,17 +63,21 @@ Material:
     m_Ints: []
     m_Floats:
     - _AOStrength: 1
+    - _NormalStrength: 1
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _SideTileSize: 8
     - _Smoothness: 0.15
+    - _SmoothnessScale: 1
     - _TopBlend: 0.15
     - _TopThreshold: 0.55
+    - _TopTileSize: 4
     - _VariationScale: 0.08
     - _VariationStrength: 0.25
     m_Colors:
-    - _CeilingColor: {r: 0.25999996, g: 0.23999995, b: 0.21999997, a: 1}
-    - _SideColor: {r: 0.35999998, g: 0.32999998, b: 0.28999996, a: 1}
-    - _TopColor: {r: 0.23999995, g: 0.29999998, b: 0.15999997, a: 1}
+    - _CeilingColor: {r: 0.75, g: 0.72, b: 0.7, a: 1}
+    - _SideColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TopColor: {r: 0.24, g: 0.3, b: 0.16, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &4665917188317810924
