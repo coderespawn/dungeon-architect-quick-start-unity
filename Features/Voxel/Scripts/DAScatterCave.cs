@@ -5,109 +5,109 @@ using UnityEngine;
 namespace DungeonArchitect.Samples.Voxel
 {
     /// <summary>
-    /// Scatters rocks, stalactites, mushrooms, moss, plants and grass through a voxel cave.
+    /// Scatters boulders, stalactites, stalagmites, mushrooms, moss and grass through a voxel cave.
     /// The big pieces are spawned as game objects (they have colliders), the small ones are GPU instanced
     /// </summary>
     [CreateAssetMenu(menuName = "Dungeon Architect/Scatter/Samples/Cave Scatter")]
     public class DAScatterCave : DungeonScatterScript
     {
-        public GameObject[] tallRocks;
-        public GameObject[] rocks;
+        [Tooltip("Rocks with the pivot at the ground, about 1 unit across")]
+        public GameObject[] boulders;
+
+        [Tooltip("Pointing up from the pivot, about 1 unit tall. Used for stalagmites and, flipped, for stalactites")]
+        public GameObject[] stalagmites;
+
+        [Tooltip("Mushrooms that glow, placed in the darkest crevices")]
+        public GameObject[] glowingMushrooms;
+
         public GameObject[] mushrooms;
+
+        [Tooltip("Hangs down from the pivot")]
         public GameObject[] hangingMoss;
-        public GameObject[] plants;
+
         public GameObject[] grass;
 
         [Tooltip("Grass tufts closer than this are skipped, lower for denser grass")]
-        public float grassSpacing = 0.35f;
-
-        [Tooltip("Height of the hanging moss model, so its top touches the ceiling")]
-        public float mossHeight = 1.4f;
+        public float grassSpacing = 0.3f;
 
         public override void Execute(DungeonScatterContext ctx)
         {
-            var floor = ctx.SampleSurface(2).WhereFloor(0.75f);
+            var floor = ctx.SampleSurface(3).WhereFloor(0.75f);
 
-            // Big rocks in the open parts of the rooms, off the walkable path, with room above them
+            // Big boulders in the open parts of the rooms, off the walkable path, with room above them
             var bigRocks = floor
                 .WhereAO(0.5f, 1)
                 .AwayFromPath(3)
                 .Prune(7)
-                .WhereClearanceAbove(4)
-                .RandomYaw().RandomTilt(10).RandomScale(1.5f, 3)
-                .OffsetAlongNormal(-0.2f);
+                .WhereClearanceAbove(3)
+                .RandomYaw().RandomTilt(10).RandomScale(1.5f, 3);
             ctx.Debug(bigRocks, Color.red, "big rocks");
-            ctx.Spawn(bigRocks, tallRocks);
+            ctx.Spawn(bigRocks, boulders);
 
             // Stalactites hang from the ceiling, about half of them get a stalagmite on the floor below
-            var ceiling = ctx.SampleSurface(0.3f, 1).WhereCeiling(0.85f).Prune(5);
-            var stalactites = ceiling.AlignToNormal().RandomYaw().RandomScale(1, 2.2f).OffsetAlongNormal(-0.3f);
+            var ceiling = ctx.SampleSurface(0.3f, 1).WhereCeiling(0.85f).Prune(4);
+            var stalactites = ceiling.AlignToNormal().RandomYaw().RandomScale(1.2f, 3);
             ctx.Debug(stalactites, Color.blue, "stalactites");
-            ctx.Spawn(stalactites, tallRocks);
+            ctx.Spawn(stalactites, stalagmites);
 
-            var stalagmites = ceiling
+            var stalagmitePoints = ceiling
                 .WhereRandom(0.5f)
                 .ProjectDown(15)
                 .AwayFromPath(2)
                 .Difference(bigRocks, 3)
-                .RandomYaw().RandomScale(0.8f, 1.6f)
-                .OffsetAlongNormal(-0.2f);
-            ctx.Debug(stalagmites, Color.cyan, "stalagmites");
-            ctx.Spawn(stalagmites, tallRocks);
+                .RandomYaw().RandomTilt(6).RandomScale(1, 2.2f);
+            ctx.Debug(stalagmitePoints, Color.cyan, "stalagmites");
+            ctx.Spawn(stalagmitePoints, stalagmites);
 
-            // Medium rocks gather at the bottom of the walls (low AO)
+            // Smaller rocks gather at the bottom of the walls (low AO)
             var wallRocks = ctx.SampleSurface(0.8f, 2)
                 .WhereSlope(0, 45)
                 .WhereAO(0, 0.55f)
                 .Difference(bigRocks, 2.5f)
-                .Difference(stalagmites, 2)
-                .Prune(2.5f)
-                .RandomYaw().RandomTilt(20).RandomScale(0.5f, 1.3f)
-                .OffsetAlongNormal(-0.15f);
+                .Difference(stalagmitePoints, 1.5f)
+                .Prune(1.8f)
+                .RandomYaw().RandomTilt(20).RandomScale(0.3f, 0.9f);
             ctx.Debug(wallRocks, Color.yellow, "wall rocks");
-            ctx.Instance(wallRocks, rocks);
+            ctx.Instance(wallRocks, boulders);
 
-            // Mushrooms in crevices, in patches
+            // Glowing mushrooms in the darkest crevices, normal ones in patches around them
+            var glowPoints = floor
+                .WhereAO(0, 0.3f)
+                .NoiseMask(0.07f, 0.55f, 3)
+                .Difference(wallRocks, 0.6f)
+                .Prune(0.9f)
+                .AlignToNormal(0.5f).RandomYaw().RandomScale(0.8f, 1.8f);
+            ctx.Debug(glowPoints, new Color(0.3f, 0.8f, 1), "glowing mushrooms");
+            ctx.Instance(glowPoints, glowingMushrooms, castShadows: false);
+
             var mushroomPoints = floor
-                .WhereAO(0, 0.45f)
-                .NoiseMask(0.08f, 0.55f)
-                .Difference(wallRocks, 0.8f)
-                .Prune(0.7f)
-                .RandomYaw().RandomScale(0.7f, 1.5f);
+                .WhereAO(0.25f, 0.6f)
+                .NoiseMask(0.09f, 0.6f, 4)
+                .Difference(wallRocks, 0.6f)
+                .Difference(glowPoints, 0.6f)
+                .Prune(0.8f)
+                .AlignToNormal(0.5f).RandomYaw().RandomScale(0.8f, 1.6f);
             ctx.Debug(mushroomPoints, Color.magenta, "mushrooms");
-            ctx.Instance(mushroomPoints, mushrooms);
+            ctx.Instance(mushroomPoints, mushrooms, castShadows: false);
 
-            // Moss hanging from the ceiling, its top at the surface
-            var moss = ctx.SampleSurface(0.5f, 3)
+            // Moss hanging from the ceiling in patches
+            var moss = ctx.SampleSurface(0.6f, 3)
                 .WhereCeiling(0.6f)
                 .NoiseMask(0.1f, 0.5f)
-                .Prune(1.2f)
-                .RandomYaw().RandomScale(0.8f, 1.5f)
-                .Select(p => { p.Position += Vector3.down * (mossHeight * p.Scale.y - 0.1f); return p; });
+                .Prune(0.8f)
+                .RandomYaw().RandomScale(0.8f, 1.6f);
             ctx.Debug(moss, new Color(0.4f, 1, 0.4f), "hanging moss");
             ctx.Instance(moss, hangingMoss, castShadows: false);
 
-            // Plants in open floor patches, clear of everything else
-            var plantPoints = floor
-                .WhereAO(0.4f, 1)
-                .NoiseMask(0.06f, 0.5f)
-                .Difference(bigRocks, 1.5f)
-                .Difference(wallRocks, 0.8f)
-                .Difference(stalagmites, 1)
-                .Prune(1)
-                .RandomYaw().RandomScale(0.8f, 1.6f);
-            ctx.Debug(plantPoints, Color.green, "plants");
-            ctx.Instance(plantPoints, plants);
-
-            // Dense grass in the open, lots of it, so instanced without shadows and culled with distance
+            // Grass in the open, lots of it, so instanced without shadows and culled with distance
             var grassPoints = floor
-                .WhereAO(0.3f, 1)
+                .WhereAO(0.35f, 1)
                 .NoiseMask(0.05f, 0.35f, 7)
                 .Difference(bigRocks, 1.2f)
-                .Difference(stalagmites, 0.8f)
-                .Difference(wallRocks, 0.5f)
+                .Difference(stalagmitePoints, 0.6f)
+                .Difference(wallRocks, 0.4f)
                 .Prune(grassSpacing)
-                .RandomYaw().RandomTilt(15).RandomScale(0.6f, 1.3f);
+                .AlignToNormal(0.6f).RandomYaw().RandomTilt(10).RandomScale(0.6f, 1.4f);
             ctx.Debug(grassPoints, new Color(0.6f, 0.9f, 0.2f), "grass");
             ctx.Instance(grassPoints, grass, castShadows: false, cullDistance: 60);
         }
