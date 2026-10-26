@@ -116,14 +116,22 @@ namespace DungeonArchitect.Samples.Voxel
             ctx.Instance(moss, hangingMoss, castShadows: false);
 
             // Grass in the open, lots of it, so instanced without shadows and culled with distance
-            var grassPoints = floor
-                .WhereAO(0.35f, 1)
-                .NoiseMask(0.05f, 0.35f, 7)
+            // Density instead of a hard mask: patches from noise, thinning out into the dark corners,
+            // so the grass fades out at the edges instead of stopping on a line
+            var grassDensity = floor
+                .NoiseDensity(0.05f, DungeonPointSet.DensityMode.Set, 7)
+                .DensityRemap(0.25f, 0.6f)
+                .DensityFromAO(0.25f, 0.6f);
+            ctx.DebugDensity(grassDensity, "grass density");
+
+            var grassPoints = grassDensity
+                .WhereRandomByDensity()
                 .Difference(bigRocks, 1.2f)
                 .Difference(stalagmitePoints, 0.6f)
                 .Difference(wallRocks, 0.4f)
-                .Prune(grassSpacing)
-                .AlignToNormal(0.6f).RandomYaw().RandomTilt(10).RandomScale(0.6f, 1.4f);
+                .Prune(grassSpacing, byDensity: true)
+                .AlignToNormal(0.6f).RandomYaw().RandomTilt(10).RandomScale(0.6f, 1.4f)
+                .ScaleByDensity(0.7f, 1.1f);
             grassPoints = grassPoints.TransformPoints(grassTransform);
             ctx.Debug(grassPoints, new Color(0.6f, 0.9f, 0.2f), "grass");
             ctx.Instance(grassPoints, grass, castShadows: false, cullDistance: 60);
