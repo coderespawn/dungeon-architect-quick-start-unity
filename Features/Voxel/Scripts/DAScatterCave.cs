@@ -82,10 +82,10 @@ namespace DungeonArchitect.Samples.Voxel
 
             var mushroomPoints = floor
                 .WhereAO(0.25f, 0.6f)
-                .NoiseMask(0.09f, 0.6f, 4)
+                .NoiseMask(0.09f, 0.7f, 4)
                 .Difference(wallRocks, 0.6f)
                 .Difference(glowPoints, 0.6f)
-                .Prune(0.8f)
+                .Prune(1.8f)
                 .AlignToNormal(0.5f).RandomYaw().RandomScale(0.8f, 1.6f);
             ctx.Debug(mushroomPoints, Color.magenta, "mushrooms");
             ctx.Instance(mushroomPoints, mushrooms, castShadows: false);
