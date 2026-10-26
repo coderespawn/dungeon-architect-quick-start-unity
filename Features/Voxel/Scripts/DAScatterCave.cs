@@ -30,6 +30,15 @@ namespace DungeonArchitect.Samples.Voxel
         [Tooltip("Grass tufts closer than this are skipped, lower for denser grass")]
         public float grassSpacing = 0.3f;
 
+        [Header("Extra offset, rotation and scale per layer, on top of the script's own randomness")]
+        public DungeonScatterTransform grassTransform = new DungeonScatterTransform();
+        public DungeonScatterTransform bigRockTransform = new DungeonScatterTransform();
+        public DungeonScatterTransform wallRockTransform = new DungeonScatterTransform();
+        public DungeonScatterTransform stalactiteTransform = new DungeonScatterTransform();
+        public DungeonScatterTransform stalagmiteTransform = new DungeonScatterTransform();
+        public DungeonScatterTransform mushroomTransform = new DungeonScatterTransform();
+        public DungeonScatterTransform mossTransform = new DungeonScatterTransform();
+
         public override void Execute(DungeonScatterContext ctx)
         {
             var floor = ctx.SampleSurface(3).WhereFloor(0.75f);
@@ -41,12 +50,14 @@ namespace DungeonArchitect.Samples.Voxel
                 .Prune(7)
                 .WhereClearanceAbove(3)
                 .RandomYaw().RandomTilt(10).RandomScale(1.5f, 3);
+            bigRocks = bigRocks.TransformPoints(bigRockTransform);
             ctx.Debug(bigRocks, Color.red, "big rocks");
             ctx.Spawn(bigRocks, boulders);
 
             // Stalactites hang from the ceiling, about half of them get a stalagmite on the floor below
             var ceiling = ctx.SampleSurface(0.3f, 1).WhereCeiling(0.85f).Prune(4);
             var stalactites = ceiling.AlignToNormal().RandomYaw().RandomScale(1.2f, 3);
+            stalactites = stalactites.TransformPoints(stalactiteTransform);
             ctx.Debug(stalactites, Color.blue, "stalactites");
             ctx.Spawn(stalactites, stalagmites);
 
@@ -56,6 +67,7 @@ namespace DungeonArchitect.Samples.Voxel
                 .AwayFromPath(2)
                 .Difference(bigRocks, 3)
                 .RandomYaw().RandomTilt(6).RandomScale(1, 2.2f);
+            stalagmitePoints = stalagmitePoints.TransformPoints(stalagmiteTransform);
             ctx.Debug(stalagmitePoints, Color.cyan, "stalagmites");
             ctx.Spawn(stalagmitePoints, stalagmites);
 
@@ -67,6 +79,7 @@ namespace DungeonArchitect.Samples.Voxel
                 .Difference(stalagmitePoints, 1.5f)
                 .Prune(1.8f)
                 .RandomYaw().RandomTilt(20).RandomScale(0.3f, 0.9f);
+            wallRocks = wallRocks.TransformPoints(wallRockTransform);
             ctx.Debug(wallRocks, Color.yellow, "wall rocks");
             ctx.Instance(wallRocks, boulders);
 
@@ -77,6 +90,7 @@ namespace DungeonArchitect.Samples.Voxel
                 .Difference(wallRocks, 0.6f)
                 .Prune(0.9f)
                 .AlignToNormal(0.5f).RandomYaw().RandomScale(0.8f, 1.8f);
+            glowPoints = glowPoints.TransformPoints(mushroomTransform);
             ctx.Debug(glowPoints, new Color(0.3f, 0.8f, 1), "glowing mushrooms");
             ctx.Instance(glowPoints, glowingMushrooms, castShadows: false);
 
@@ -87,6 +101,7 @@ namespace DungeonArchitect.Samples.Voxel
                 .Difference(glowPoints, 0.6f)
                 .Prune(1.8f)
                 .AlignToNormal(0.5f).RandomYaw().RandomScale(0.8f, 1.6f);
+            mushroomPoints = mushroomPoints.TransformPoints(mushroomTransform);
             ctx.Debug(mushroomPoints, Color.magenta, "mushrooms");
             ctx.Instance(mushroomPoints, mushrooms, castShadows: false);
 
@@ -96,6 +111,7 @@ namespace DungeonArchitect.Samples.Voxel
                 .NoiseMask(0.1f, 0.5f)
                 .Prune(0.8f)
                 .RandomYaw().RandomScale(0.8f, 1.6f);
+            moss = moss.TransformPoints(mossTransform);
             ctx.Debug(moss, new Color(0.4f, 1, 0.4f), "hanging moss");
             ctx.Instance(moss, hangingMoss, castShadows: false);
 
@@ -108,6 +124,7 @@ namespace DungeonArchitect.Samples.Voxel
                 .Difference(wallRocks, 0.4f)
                 .Prune(grassSpacing)
                 .AlignToNormal(0.6f).RandomYaw().RandomTilt(10).RandomScale(0.6f, 1.4f);
+            grassPoints = grassPoints.TransformPoints(grassTransform);
             ctx.Debug(grassPoints, new Color(0.6f, 0.9f, 0.2f), "grass");
             ctx.Instance(grassPoints, grass, castShadows: false, cullDistance: 60);
         }
