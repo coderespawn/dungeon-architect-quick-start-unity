@@ -5,7 +5,8 @@ using UnityEngine;
 namespace DungeonArchitect.Samples.Voxel
 {
     /// <summary>
-    /// Scatters rocks, stalactites, mushrooms, moss and plants through a voxel cave
+    /// Scatters rocks, stalactites, mushrooms, moss, plants and grass through a voxel cave.
+    /// The big pieces are spawned as game objects (they have colliders), the small ones are GPU instanced
     /// </summary>
     [CreateAssetMenu(menuName = "Dungeon Architect/Scatter/Samples/Cave Scatter")]
     public class DAScatterCave : DungeonScatterScript
@@ -15,6 +16,10 @@ namespace DungeonArchitect.Samples.Voxel
         public GameObject[] mushrooms;
         public GameObject[] hangingMoss;
         public GameObject[] plants;
+        public GameObject[] grass;
+
+        [Tooltip("Grass tufts closer than this are skipped, lower for denser grass")]
+        public float grassSpacing = 0.35f;
 
         [Tooltip("Height of the hanging moss model, so its top touches the ceiling")]
         public float mossHeight = 1.4f;
@@ -60,7 +65,7 @@ namespace DungeonArchitect.Samples.Voxel
                 .RandomYaw().RandomTilt(20).RandomScale(0.5f, 1.3f)
                 .OffsetAlongNormal(-0.15f);
             ctx.Debug(wallRocks, Color.yellow, "wall rocks");
-            ctx.Spawn(wallRocks, rocks);
+            ctx.Instance(wallRocks, rocks);
 
             // Mushrooms in crevices, in patches
             var mushroomPoints = floor
@@ -70,7 +75,7 @@ namespace DungeonArchitect.Samples.Voxel
                 .Prune(0.7f)
                 .RandomYaw().RandomScale(0.7f, 1.5f);
             ctx.Debug(mushroomPoints, Color.magenta, "mushrooms");
-            ctx.Spawn(mushroomPoints, mushrooms);
+            ctx.Instance(mushroomPoints, mushrooms);
 
             // Moss hanging from the ceiling, its top at the surface
             var moss = ctx.SampleSurface(0.5f, 3)
@@ -80,7 +85,7 @@ namespace DungeonArchitect.Samples.Voxel
                 .RandomYaw().RandomScale(0.8f, 1.5f)
                 .Select(p => { p.Position += Vector3.down * (mossHeight * p.Scale.y - 0.1f); return p; });
             ctx.Debug(moss, new Color(0.4f, 1, 0.4f), "hanging moss");
-            ctx.Spawn(moss, hangingMoss);
+            ctx.Instance(moss, hangingMoss, castShadows: false);
 
             // Plants in open floor patches, clear of everything else
             var plantPoints = floor
@@ -92,7 +97,19 @@ namespace DungeonArchitect.Samples.Voxel
                 .Prune(1)
                 .RandomYaw().RandomScale(0.8f, 1.6f);
             ctx.Debug(plantPoints, Color.green, "plants");
-            ctx.Spawn(plantPoints, plants);
+            ctx.Instance(plantPoints, plants);
+
+            // Dense grass in the open, lots of it, so instanced without shadows and culled with distance
+            var grassPoints = floor
+                .WhereAO(0.3f, 1)
+                .NoiseMask(0.05f, 0.35f, 7)
+                .Difference(bigRocks, 1.2f)
+                .Difference(stalagmites, 0.8f)
+                .Difference(wallRocks, 0.5f)
+                .Prune(grassSpacing)
+                .RandomYaw().RandomTilt(15).RandomScale(0.6f, 1.3f);
+            ctx.Debug(grassPoints, new Color(0.6f, 0.9f, 0.2f), "grass");
+            ctx.Instance(grassPoints, grass, castShadows: false, cullDistance: 60);
         }
     }
 }
