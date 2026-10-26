@@ -39,7 +39,7 @@ void DAVoxelTerrain_float(float3 PositionWS, float3 NormalWS, float4 VertexColor
     UnityTexture2D SideAlbedo, UnityTexture2D SideNormal, UnityTexture2D SideMask,
     float4 TopColor, float4 SideColor, float4 CeilingColor,
     float TopTileSize, float SideTileSize, float NormalStrength, float TopSmoothness, float SideSmoothness,
-    float TopThreshold, float TopBlend, float VariationScale, float VariationStrength, float AOStrength,
+    float TopThreshold, float TopBlend, float VariationScale, float VariationStrength, float AOStrength, float AODirect,
     out float3 BaseColor, out float3 NormalOut, out float Metallic, out float Smoothness, out float Occlusion)
 {
     float3 n = normalize(NormalWS);
@@ -87,11 +87,15 @@ void DAVoxelTerrain_float(float3 PositionWS, float3 NormalWS, float4 VertexColor
     topMask.a *= TopSmoothness;
     float4 mask = lerp(sideMask, topMask, topWeight);
 
+    // URP only applies occlusion to ambient light, so darken the albedo a bit too for crevices under local lights
+    float ao = VertexColor.r;
+    color *= lerp(1.0, ao, AODirect);
+
     BaseColor = saturate(color);
     NormalOut = normalize(lerp(sideNormal, topNormal, topWeight));
     Metallic = mask.r;
     Smoothness = saturate(mask.a);
-    Occlusion = lerp(1.0, VertexColor.r, AOStrength);
+    Occlusion = lerp(1.0, ao, AOStrength);
 }
 
 void DAVoxelTerrain_half(half3 PositionWS, half3 NormalWS, half4 VertexColor,
@@ -99,14 +103,14 @@ void DAVoxelTerrain_half(half3 PositionWS, half3 NormalWS, half4 VertexColor,
     UnityTexture2D SideAlbedo, UnityTexture2D SideNormal, UnityTexture2D SideMask,
     half4 TopColor, half4 SideColor, half4 CeilingColor,
     half TopTileSize, half SideTileSize, half NormalStrength, half TopSmoothness, half SideSmoothness,
-    half TopThreshold, half TopBlend, half VariationScale, half VariationStrength, half AOStrength,
+    half TopThreshold, half TopBlend, half VariationScale, half VariationStrength, half AOStrength, half AODirect,
     out half3 BaseColor, out half3 NormalOut, out half Metallic, out half Smoothness, out half Occlusion)
 {
     float3 baseColor, normalOut;
     float metallic, smoothness, occlusion;
     DAVoxelTerrain_float(PositionWS, NormalWS, VertexColor, TopAlbedo, TopNormal, TopMask, SideAlbedo, SideNormal, SideMask,
         TopColor, SideColor, CeilingColor, TopTileSize, SideTileSize, NormalStrength, TopSmoothness, SideSmoothness,
-        TopThreshold, TopBlend, VariationScale, VariationStrength, AOStrength,
+        TopThreshold, TopBlend, VariationScale, VariationStrength, AOStrength, AODirect,
         baseColor, normalOut, metallic, smoothness, occlusion);
     BaseColor = baseColor;
     NormalOut = normalOut;
