@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9108474961547132568
+--- !u!114 &-9172070587026789089
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,31 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_16
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 16
-  input: {fileID: 3459945985542860782}
-  output: {fileID: 316032117072336808}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &-8961023730637672170
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 7c80832f9ad25314c8216dcd81af82fc, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGRandomByDensityNode
-  id: 84e13bb4-ba3a-40c7-b6ae-7c8fbcf7642f
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGNoiseDensityNode
+  id: 37c3b8a0-a09b-4eb8-b880-2c6719c51a1b
   caption: 
   bounds:
     serializedVersion: 2
-    x: 460
-    y: 0
+    x: 690
+    y: 440
     width: 120
     height: 120
   canBeDeleted: 1
@@ -42,16 +26,19 @@ MonoBehaviour:
   selected: 0
   zIndex: 0
   inputPins:
-  - {fileID: 39734018395493884}
+  - {fileID: 7620237623634099702}
   outputPins:
-  - {fileID: 1532523834437562633}
-  graph: {fileID: 4329347771479587910}
+  - {fileID: 8574290945470638643}
+  graph: {fileID: 3900646809023489370}
   Level: -1
   ReadMargin: 4
+  SameLevelMargin: 0
   DebugDraw: 0
   DebugDensity: 0
-  Salt: 0
---- !u!114 &-8943013935807257482
+  Scale: 0.03
+  Mode: 1
+  Seed: 0
+--- !u!114 &-9092742299874398474
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -60,11 +47,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
   m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
-  node: {fileID: 1413392021090754048}
+  node: {fileID: 2630961017879833827}
   position: {x: 0, y: 0}
   boundsOffset:
     serializedVersion: 2
@@ -75,7 +62,7 @@ MonoBehaviour:
   tangent: {x: 0, y: 0}
   tangentStrength: 50
   text: Out
---- !u!114 &-8823608649342996533
+--- !u!114 &-8972800398484500823
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -84,83 +71,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: -4159586226855099257}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: B
---- !u!114 &-8556483068544001133
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: 5023325404336313332}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: A
---- !u!114 &-8369870429068071170
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: 5023325404336313332}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: B
---- !u!114 &-8201718349473697245
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
   m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
-  node: {fileID: -1391297733734212585}
+  node: {fileID: -3944313102459047497}
   position: {x: 0, y: 0}
   boundsOffset:
     serializedVersion: 2
@@ -171,7 +86,7 @@ MonoBehaviour:
   tangent: {x: 0, y: 0}
   tangentStrength: 50
   text: Out
---- !u!114 &-8143454433864706168
+--- !u!114 &-8430296301611528525
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,451 +95,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 1af637a12dab44447bea5c7558404ee5, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGSampleSurfaceNode
-  id: 10b48eb9-06ca-4fa3-8ae7-1d31eb85be4d
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 0
-    y: 220
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins: []
-  outputPins:
-  - {fileID: -5337519414420263446}
-  graph: {fileID: 4329347771479587910}
-  Level: 1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  PointsPerSquareUnit: 0.3
-  Seed: 2
---- !u!114 &-7939525672037673535
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: -1271884451806898195}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &-7705478683962508778
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_20
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 20
-  input: {fileID: 721553993255436979}
-  output: {fileID: 2099726355690846578}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &-7527570866006869189
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: 1413392021090754048}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: A
---- !u!114 &-7461142698380537732
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_3
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 3
-  input: {fileID: -2390710666153674550}
-  output: {fileID: 1532523834437562633}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &-7347983737822280203
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: -2428534226435705290}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &-7260213468869947089
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGTransformPointsNode
-  id: e13afc42-a428-4981-99bc-6be459bab7bb
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 1840
-    y: 0
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: 3219458360274023035}
-  outputPins:
-  - {fileID: -3127484329180284586}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  Settings:
-    OffsetMin: {x: 0, y: 0, z: 0}
-    OffsetMax: {x: 0, y: 0, z: 0}
-    RotationMin: {x: 0, y: 0, z: 0}
-    RotationMax: {x: 0, y: 0, z: 0}
-    ScaleMin: 1
-    ScaleMax: 1
-    ScaleAxis: {x: 1, y: 1, z: 1}
---- !u!114 &-6440151696394400954
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGOffsetNode
-  id: 7f7b9085-68e5-41db-9e93-513271c5ca2c
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 1610
-    y: 0
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: 5565055087877624474}
-  outputPins:
-  - {fileID: 3196629272350246250}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  AlongNormal: -0.3
-  World: {x: 0, y: 0, z: 0}
---- !u!114 &-6328740796601831862
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: 5174981821201855492}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &-5824979777318257718
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: 3641110744671530588}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &-5764492910785075052
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: 5174981821201855492}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &-5526812346450590929
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: 2115788783690386684}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &-5337519414420263446
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: -8143454433864706168}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &-5285676667253853396
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: 4076250867025701074}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &-5261924440006475584
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: -3789940313688701221}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &-5260932244097047552
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_30
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 30
-  input: {fileID: -1501560001121434322}
-  output: {fileID: 2120271001723273210}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &-5245774870291696740
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: 4999379983481070141}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &-5221610063388815278
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_12
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 12
-  input: {fileID: -8369870429068071170}
-  output: {fileID: -7939525672037673535}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &-5213656883985758260
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGTerrainLayerDensityNode
-  id: 43ebecb3-3853-4c4f-ac8e-06306955981a
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGTerrainLayerDensityNode
+  id: ab890ce3-5939-4b7b-bd1b-efb23ea679eb
   caption: 
   bounds:
     serializedVersion: 2
@@ -638,17 +112,18 @@ MonoBehaviour:
   selected: 0
   zIndex: 0
   inputPins:
-  - {fileID: 721553993255436979}
+  - {fileID: 5360288330271945644}
   outputPins:
-  - {fileID: 1104972902853438688}
-  graph: {fileID: 4329347771479587910}
+  - {fileID: 436914657388752716}
+  graph: {fileID: 3900646809023489370}
   Level: -1
   ReadMargin: 4
+  SameLevelMargin: 0
   DebugDraw: 0
   DebugDensity: 0
   LayerName: Grass
   Mode: 1
---- !u!114 &-4974282637812039566
+--- !u!114 &-8040747717982202971
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -657,11 +132,67 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 7980041779077782491}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &-7869356190293747931
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_29
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 29
+  input: {fileID: -5520114632094096269}
+  output: {fileID: -1110847827649778536}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &-7818749929775165925
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_11
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 11
+  input: {fileID: 295542745021127468}
+  output: {fileID: -2474897096654089941}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &-7783573597869440453
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
   m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
-  node: {fileID: 2457219630116948141}
+  node: {fileID: -2902154042158574443}
   position: {x: 0, y: 0}
   boundsOffset:
     serializedVersion: 2
@@ -672,7 +203,7 @@ MonoBehaviour:
   tangent: {x: 0, y: 0}
   tangentStrength: 50
   text: Out
---- !u!114 &-4658078620466146223
+--- !u!114 &-7703208870571070354
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -681,10 +212,74 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_14
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 14
+  input: {fileID: -5342954430813476029}
+  output: {fileID: 1640545023750651636}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &-7690033561266036162
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: -6718796590199888578}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &-7501175654952498212
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 1182808383144569002}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: A
+--- !u!114 &-7330033765340747924
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d12f4312714c0b439ed2383f295539d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGTransformPointsNode
-  id: 714d5bd9-3383-4ea6-abcb-a36c019c9a44
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGTransformPointsNode
+  id: 72b3ec20-0dcb-4a36-874b-f1a06a2b82de
   caption: 
   bounds:
     serializedVersion: 2
@@ -698,12 +293,13 @@ MonoBehaviour:
   selected: 0
   zIndex: 0
   inputPins:
-  - {fileID: 6169037943079743133}
+  - {fileID: 5725637051411469970}
   outputPins:
-  - {fileID: 3097500958647293081}
-  graph: {fileID: 4329347771479587910}
+  - {fileID: -5284735181528160546}
+  graph: {fileID: 3900646809023489370}
   Level: -1
   ReadMargin: 4
+  SameLevelMargin: 0
   DebugDraw: 0
   DebugDensity: 0
   Settings:
@@ -714,7 +310,7 @@ MonoBehaviour:
     ScaleMin: 1
     ScaleMax: 1
     ScaleAxis: {x: 1, y: 1, z: 1}
---- !u!114 &-4529609511168500202
+--- !u!114 &-7284563090388081976
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -723,135 +319,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGRandomRotationNode
-  id: c041b76b-4684-43b6-a2dc-eb482fb441ec
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 2300
-    y: 440
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: -1501560001121434322}
-  outputPins:
-  - {fileID: -1154953067022378597}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  RandomYaw: 1
-  MaxTilt: 10
---- !u!114 &-4234296291134065026
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_28
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 28
-  input: {fileID: -2965237437127188087}
-  output: {fileID: -8943013935807257482}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &-4159586226855099257
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGDifferenceNode
-  id: d872cf1c-fb41-4da0-a9f7-e4a59dcca80e
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 1380
-    y: 440
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: 4814127282742939976}
-  - {fileID: -8823608649342996533}
-  outputPins:
-  - {fileID: -3712446393792562579}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 3
-  DebugDraw: 0
-  DebugDensity: 0
-  Radius: 2
---- !u!114 &-4146424428181639393
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGSlopeFilterNode
-  id: c13bbfcd-1406-4aa7-995d-7a8e4aa4fd5a
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 230
-    y: 220
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: 3559676086092759445}
-  outputPins:
-  - {fileID: 3054997268472144408}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  MinDegrees: 15
-  MaxDegrees: 50
---- !u!114 &-3885860042051986547
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
   m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
-  node: {fileID: -238012062650884459}
+  node: {fileID: 17785843329106188}
   position: {x: 0, y: 0}
   boundsOffset:
     serializedVersion: 2
@@ -862,7 +334,7 @@ MonoBehaviour:
   tangent: {x: 0, y: 0}
   tangentStrength: 50
   text: Out
---- !u!114 &-3789940313688701221
+--- !u!114 &-7265038591142194597
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -871,1105 +343,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 41f94af82101382468f57a8c01fd9044, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGAlignToNormalNode
-  id: 8512d44a-0d0b-4541-bb40-e3b75ab58d6c
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 2070
-    y: 440
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: -5261924440006475584}
-  outputPins:
-  - {fileID: 2120271001723273210}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  Amount: 0.5
---- !u!114 &-3712446393792562579
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: -4159586226855099257}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &-3277294726904738285
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: 6894032075401103526}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &-3127484329180284586
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: -7260213468869947089}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &-2965237437127188087
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: 355988316474050059}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &-2428534226435705290
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGRandomRotationNode
-  id: 83c1e909-6a30-4fa5-a36c-6b5d10ffc976
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 1150
-    y: 0
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: -7347983737822280203}
-  outputPins:
-  - {fileID: 3527406287846032303}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  RandomYaw: 1
-  MaxTilt: 15
---- !u!114 &-2390710666153674550
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: -1391297733734212585}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &-2214725417342137388
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: 8869404163184084921}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &-2058261444816582290
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_4
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 4
-  input: {fileID: -5285676667253853396}
-  output: {fileID: -8201718349473697245}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &-1953699550518107826
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_21
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 21
-  input: {fileID: -600966686501554163}
-  output: {fileID: 1104972902853438688}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &-1921316212200549308
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_18
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 18
-  input: {fileID: -347323102687977380}
-  output: {fileID: -2214725417342137388}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &-1501560001121434322
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: -4529609511168500202}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &-1465077356282954913
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: 9046930309210262381}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &-1391297733734212585
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGPruneNode
-  id: ba86043d-c5e0-4e3a-9834-56d91a4471c2
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 690
-    y: 0
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: -2390710666153674550}
-  outputPins:
-  - {fileID: -8201718349473697245}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  Radius: 6
-  ByDensity: 0
---- !u!114 &-1271884451806898195
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGSpawnNode
-  id: 822fa9dd-3d5f-4208-a229-e07c9f70f6e0
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 2070
-    y: 0
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: 5234150345474190929}
-  outputPins:
-  - {fileID: -7939525672037673535}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 1
-  DebugDensity: 0
-  Prefabs:
-  - {fileID: 8012459010696510826, guid: be8ff3af3f24a9d48add1d14050afff0, type: 3}
-  - {fileID: 4948255667786883780, guid: 64a2bbf51cc72a74cbb8a44547446257, type: 3}
-  - {fileID: 3051258880918777885, guid: 6faf2fdb8525b7341978e1a45595ef96, type: 3}
-  - {fileID: 3693517648748088166, guid: 24ab4069ddae3bd448738f7a2670e99b, type: 3}
-  Weights: []
---- !u!114 &-1154953067022378597
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: -4529609511168500202}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &-1091006477812187604
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: 7090768542057380873}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &-929254667492178113
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: -872214448873648732}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &-928948268374813736
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_1
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 1
-  input: {fileID: -929254667492178113}
-  output: {fileID: -4974282637812039566}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &-872214448873648732
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGTerrainLayerDensityNode
-  id: a496bed0-2ba5-40f8-a571-bb480436ed98
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 230
-    y: 0
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: -929254667492178113}
-  outputPins:
-  - {fileID: 521000304832682023}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  LayerName: Rock
-  Mode: 1
---- !u!114 &-759509665803160975
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGRandomScaleNode
-  id: c683abaa-60d5-477e-a502-e6c000e9e487
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 1380
-    y: 0
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: 5956732396062891097}
-  outputPins:
-  - {fileID: 607946256027068032}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  Min: 1.5
-  Max: 3.5
---- !u!114 &-757722907638091204
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: 355988316474050059}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &-600966686501554163
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: 4999379983481070141}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &-347323102687977380
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: 7090768542057380873}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &-294153207615676165
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: 8450967417662936805}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &-238012062650884459
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGRandomScaleNode
-  id: 7bc36aa0-c1b5-4759-8b32-56ddd2923915
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 1380
-    y: 220
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: 3459945985542860782}
-  outputPins:
-  - {fileID: -3885860042051986547}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  Min: 0.2
-  Max: 0.6
---- !u!114 &-211192812004280676
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: 2115788783690386684}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &-81596538853828617
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_2
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 2
-  input: {fileID: 39734018395493884}
-  output: {fileID: 521000304832682023}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &-5155551612691871
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_24
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 24
-  input: {fileID: 4814127282742939976}
-  output: {fileID: 1704458890178227846}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: DA_PCG_TerrainGraph
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphAsset
-  graph: {fileID: 4329347771479587910}
---- !u!114 &39734018395493884
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: -8961023730637672170}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &105109721170691414
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGSlopeFilterNode
-  id: 59b49b6b-144f-4cc1-8c87-9110fe38a609
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 230
-    y: 440
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: 1331341346704889479}
-  outputPins:
-  - {fileID: 2099726355690846578}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  MinDegrees: 0
-  MaxDegrees: 30
---- !u!114 &298916292569552375
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_9
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 9
-  input: {fileID: 5234150345474190929}
-  output: {fileID: -3127484329180284586}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &316032117072336808
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: 3022292277539259501}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &355988316474050059
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGPruneNode
-  id: 7f2dad25-fe16-4224-8a6c-06255d8012a5
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 1840
-    y: 440
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: -2965237437127188087}
-  outputPins:
-  - {fileID: -757722907638091204}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  Radius: 0.5
-  ByDensity: 1
---- !u!114 &494755817917980751
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_27
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 27
-  input: {fileID: 3398292218415013453}
-  output: {fileID: -1091006477812187604}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &521000304832682023
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: -872214448873648732}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &544809410257741992
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_5
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 5
-  input: {fileID: -7347983737822280203}
-  output: {fileID: 5674907365043417233}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &607946256027068032
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: -759509665803160975}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &690386117930622952
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_31
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 31
-  input: {fileID: -5824979777318257718}
-  output: {fileID: -1154953067022378597}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &721553993255436979
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: -5213656883985758260}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &805640860341305687
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGDensityRemapNode
-  id: 63761a56-7657-4984-8a58-382027b06b2d
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 920
-    y: 440
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: 3431593243809963492}
-  outputPins:
-  - {fileID: 3414866949268177933}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  InMin: 0.1
-  InMax: 0.6
-  OutMin: 0
-  OutMax: 1
---- !u!114 &1104972902853438688
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: -5213656883985758260}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &1331341346704889479
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: 105109721170691414}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &1413392021090754048
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGDifferenceNode
-  id: 878d6889-87ea-4928-995d-44a286d32c2c
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGOffsetNode
+  id: dd8f5ff5-a9c7-4025-8d35-04663d73b61f
   caption: 
   bounds:
     serializedVersion: 2
     x: 1610
-    y: 440
+    y: 220
     width: 120
     height: 120
   canBeDeleted: 1
@@ -1978,17 +360,18 @@ MonoBehaviour:
   selected: 0
   zIndex: 0
   inputPins:
-  - {fileID: -7527570866006869189}
-  - {fileID: 3398292218415013453}
+  - {fileID: 2652413050486915499}
   outputPins:
-  - {fileID: -8943013935807257482}
-  graph: {fileID: 4329347771479587910}
+  - {fileID: 2197813466538080891}
+  graph: {fileID: 3900646809023489370}
   Level: -1
-  ReadMargin: 1
+  ReadMargin: 4
+  SameLevelMargin: 0
   DebugDraw: 0
   DebugDensity: 0
-  Radius: 0.5
---- !u!114 &1503229804915267763
+  AlongNormal: -0.05
+  World: {x: 0, y: 0, z: 0}
+--- !u!114 &-6803544465982934935
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1997,35 +380,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: 3022292277539259501}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &1532523834437562633
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
   m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
-  node: {fileID: -8961023730637672170}
+  node: {fileID: 4596337987777729703}
   position: {x: 0, y: 0}
   boundsOffset:
     serializedVersion: 2
@@ -2036,7 +395,7 @@ MonoBehaviour:
   tangent: {x: 0, y: 0}
   tangentStrength: 50
   text: Out
---- !u!114 &1563939738148457583
+--- !u!114 &-6718796590199888578
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2045,114 +404,223 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_14
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 14
-  input: {fileID: 8471554682018768510}
-  output: {fileID: -6328740796601831862}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &1704458890178227846
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: 8450967417662936805}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &1965005549191145206
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_7
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 7
-  input: {fileID: 5565055087877624474}
-  output: {fileID: 607946256027068032}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &2098109481920459517
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: 8869404163184084921}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &2099726355690846578
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: 105109721170691414}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &2115788783690386684
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 48739db933f0ac141befc9abdd1bef1f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGScaleByDensityNode
-  id: 4ed45ccd-3180-41e1-974c-cb8ff2c8466e
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGRandomScaleNode
+  id: 9da1b627-bab0-4b00-b9c6-8989e82e1527
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 1380
+    y: 220
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: 8231038344574657384}
+  outputPins:
+  - {fileID: -7690033561266036162}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  Min: 0.2
+  Max: 0.6
+--- !u!114 &-6213494766164565264
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_13
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 13
+  input: {fileID: 4657822642613595518}
+  output: {fileID: 7022144869217574626}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &-6165066870560925115
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 4596337987777729703}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: A
+--- !u!114 &-5520114632094096269
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: -2902154042158574443}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &-5342954430813476029
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: -1456116050142555559}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &-5284735181528160546
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: -7330033765340747924}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &-5169205879585629687
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 7497582775975705084}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &-5045741233888679805
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_16
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 16
+  input: {fileID: 8231038344574657384}
+  output: {fileID: -9092742299874398474}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &-4534550031887887816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 9101919329886424748}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &-4479383420481883514
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd47bb136802e004f93f3e7eeb206e19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGScaleByDensityNode
+  id: 02106f89-ea1f-4781-a643-fb7301cf2d65
   caption: 
   bounds:
     serializedVersion: 2
@@ -2166,17 +634,18 @@ MonoBehaviour:
   selected: 0
   zIndex: 0
   inputPins:
-  - {fileID: -5526812346450590929}
+  - {fileID: 5081308006420418508}
   outputPins:
-  - {fileID: -211192812004280676}
-  graph: {fileID: 4329347771479587910}
+  - {fileID: 973651122698712812}
+  graph: {fileID: 3900646809023489370}
   Level: -1
   ReadMargin: 4
+  SameLevelMargin: 0
   DebugDraw: 0
   DebugDensity: 0
   MinScale: 0.7
   MaxScale: 1.1
---- !u!114 &2120271001723273210
+--- !u!114 &-4421762388205842650
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2185,11 +654,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
   m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
-  node: {fileID: -3789940313688701221}
+  node: {fileID: -2279292864360214191}
   position: {x: 0, y: 0}
   boundsOffset:
     serializedVersion: 2
@@ -2200,7 +669,68 @@ MonoBehaviour:
   tangent: {x: 0, y: 0}
   tangentStrength: 50
   text: Out
---- !u!114 &2238232682690634880
+--- !u!114 &-4321616912498425588
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: -3824964470905818979}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &-4292008877918246020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d5db1cbe675944bb0c59b1bf85d2f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGRandomRotationNode
+  id: 3067f725-5629-4a61-a39b-bdb9a8d22252
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 1150
+    y: 0
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -2486858221752176465}
+  outputPins:
+  - {fileID: 1706051661040929717}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  RandomYaw: 1
+  MaxTilt: 15
+--- !u!114 &-4059388643411922132
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2210,13 +740,176 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_25
+  m_Name: Link_2
   m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 25
-  input: {fileID: -8823608649342996533}
-  output: {fileID: -7939525672037673535}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &2339784385401208841
+  id: 2
+  input: {fileID: 8726069247519232565}
+  output: {fileID: -4421762388205842650}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &-4047773014687506786
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 139426278486995302}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &-3944313102459047497
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 182bfe142183ab24e960562d990074ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGRandomByDensityNode
+  id: b12f8800-9797-48ae-8713-f50990c0322d
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 1150
+    y: 440
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: 6667665658763426522}
+  outputPins:
+  - {fileID: -8972800398484500823}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  Salt: 0
+--- !u!114 &-3824964470905818979
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37dd669a805e63c4184ee98ccb4d259f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGInstanceNode
+  id: a5227fd0-bfb2-4aa6-9a28-0f4d67880882
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 1840
+    y: 220
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -84681934685976192}
+  outputPins:
+  - {fileID: -4321616912498425588}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  Prefabs:
+  - {fileID: 8012459010696510826, guid: be8ff3af3f24a9d48add1d14050afff0, type: 3}
+  - {fileID: 4948255667786883780, guid: 64a2bbf51cc72a74cbb8a44547446257, type: 3}
+  - {fileID: 3051258880918777885, guid: 6faf2fdb8525b7341978e1a45595ef96, type: 3}
+  - {fileID: 3693517648748088166, guid: 24ab4069ddae3bd448738f7a2670e99b, type: 3}
+  Weights: []
+  CastShadows: 1
+  CullDistance: 0
+--- !u!114 &-3757292191847674706
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 5717007499809156504}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &-3576560716453761322
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 182bfe142183ab24e960562d990074ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGRandomByDensityNode
+  id: b94f9d26-41e0-4328-8e30-96f6bba481a7
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 460
+    y: 0
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: 8726069247519232565}
+  outputPins:
+  - {fileID: 6549124969123002671}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  Salt: 0
+--- !u!114 &-3547083675285104686
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2229,10 +922,10 @@ MonoBehaviour:
   m_Name: Link_34
   m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
   id: 34
-  input: {fileID: -1465077356282954913}
-  output: {fileID: 3097500958647293081}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &2361541973744965965
+  input: {fileID: 7018264644357561133}
+  output: {fileID: -5284735181528160546}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &-3516644516464960915
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2241,11 +934,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_8
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 8
+  input: {fileID: 2971374058812848001}
+  output: {fileID: -3132012186805428974}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &-3454356491235363404
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_5
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 5
+  input: {fileID: -2486858221752176465}
+  output: {fileID: -4047773014687506786}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &-3132012186805428974
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
   m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
-  node: {fileID: 8305751521732186188}
+  node: {fileID: 6594089279605365598}
   position: {x: 0, y: 0}
   boundsOffset:
     serializedVersion: 2
@@ -2256,7 +981,7 @@ MonoBehaviour:
   tangent: {x: 0, y: 0}
   tangentStrength: 50
   text: Out
---- !u!114 &2457219630116948141
+--- !u!114 &-3068883178928873700
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2265,10 +990,1267 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 5147547757252893056}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &-3045899934797765573
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_20
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 20
+  input: {fileID: 5360288330271945644}
+  output: {fileID: 6566229210577721517}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &-2902154042158574443
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e03a7931536464c4784c8ac7df077352, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGSampleSurfaceNode
-  id: 94f4691d-c493-41f4-8f37-72a55530069f
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGAlignToNormalNode
+  id: 160470e6-01be-41e0-8cb1-bef8853e7493
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 2070
+    y: 440
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -5520114632094096269}
+  outputPins:
+  - {fileID: -7783573597869440453}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  Amount: 0.5
+--- !u!114 &-2874944009097950534
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 7178817664856399218}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &-2486858221752176465
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: -4292008877918246020}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &-2474897096654089941
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: -1771274050082951740}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &-2443200199136018091
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_7
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 7
+  input: {fileID: 3433360981473243253}
+  output: {fileID: 4330820379928250786}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &-2279292864360214191
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af637a12dab44447bea5c7558404ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGTerrainLayerDensityNode
+  id: 0d74f2c6-1c3b-4fab-bfed-eee085ffe0bc
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 230
+    y: 0
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: 4054821898367102378}
+  outputPins:
+  - {fileID: -4421762388205842650}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  LayerName: Rock
+  Mode: 1
+--- !u!114 &-2170487170671859617
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 17785843329106188}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &-1929553833941671756
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 1056679913665881054}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &-1853553429201380111
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_6
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 6
+  input: {fileID: -1929553833941671756}
+  output: {fileID: 1706051661040929717}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &-1771274050082951740
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49786c110483cf41bf226191dea5557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGSlopeFilterNode
+  id: 29088365-b3fc-4319-8edc-6503a7cd6a18
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 230
+    y: 220
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: 5519329827425399686}
+  outputPins:
+  - {fileID: -2474897096654089941}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  MinDegrees: 15
+  MaxDegrees: 50
+--- !u!114 &-1456116050142555559
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e03a7931536464c4784c8ac7df077352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGAlignToNormalNode
+  id: c490265e-f0d6-48d0-8415-b479038078fe
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 920
+    y: 220
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -5342954430813476029}
+  outputPins:
+  - {fileID: 7338432562446570106}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  Amount: 0.8
+--- !u!114 &-1274254259223977665
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_23
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 23
+  input: {fileID: 6667665658763426522}
+  output: {fileID: 919851834005757114}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &-1272980410813242843
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 7178817664856399218}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &-1271570318102389142
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_26
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 26
+  input: {fileID: -6165066870560925115}
+  output: {fileID: 7851492445945362856}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &-1110847827649778536
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: -181310805977021212}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &-442035146984377747
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_31
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 31
+  input: {fileID: -2170487170671859617}
+  output: {fileID: 6818086153049360838}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &-212911554880492293
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_32
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 32
+  input: {fileID: 5081308006420418508}
+  output: {fileID: -7284563090388081976}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &-181310805977021212
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec1cbead1bb75443a765c4cd506f38c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGPruneNode
+  id: c17bb41f-e74e-42ec-8052-84c93b109d4a
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 1840
+    y: 440
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: 5548855397977928244}
+  outputPins:
+  - {fileID: -1110847827649778536}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  Radius: 0.5
+  ByDensity: 1
+--- !u!114 &-84681934685976192
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: -3824964470905818979}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334c902b82d688e428cfa7f54b76ff65, type: 3}
+  m_Name: DA_PCG_TerrainGraph
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphAsset
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &17785843329106188
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48739db933f0ac141befc9abdd1bef1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGRandomScaleNode
+  id: 7d482d56-3bbe-48de-b3ec-e55cc15fca7b
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 2530
+    y: 440
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -2170487170671859617}
+  outputPins:
+  - {fileID: -7284563090388081976}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  Min: 0.8
+  Max: 1.5
+--- !u!114 &109332595392988967
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 139426278486995302}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &139426278486995302
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e03a7931536464c4784c8ac7df077352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGAlignToNormalNode
+  id: 9d98cc45-e9e7-447a-a0cf-7289e5d06821
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 920
+    y: 0
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: 109332595392988967}
+  outputPins:
+  - {fileID: -4047773014687506786}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  Amount: 0.7
+--- !u!114 &281388551924235350
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 2630961017879833827}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &295542745021127468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 2249270774732462082}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: A
+--- !u!114 &403908653093932820
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2493999c1ac2d4f82fb43841f59821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGSpawnNode
+  id: 913ea401-6484-4d45-b1b2-2b75a2f6a03e
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 2070
+    y: 0
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: 2746570492434203155}
+  outputPins:
+  - {fileID: 4176527693481880123}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 1
+  DebugDensity: 0
+  Prefabs:
+  - {fileID: 8012459010696510826, guid: be8ff3af3f24a9d48add1d14050afff0, type: 3}
+  - {fileID: 4948255667786883780, guid: 64a2bbf51cc72a74cbb8a44547446257, type: 3}
+  - {fileID: 3051258880918777885, guid: 6faf2fdb8525b7341978e1a45595ef96, type: 3}
+  - {fileID: 3693517648748088166, guid: 24ab4069ddae3bd448738f7a2670e99b, type: 3}
+  Weights: []
+--- !u!114 &436914657388752716
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: -8430296301611528525}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &547477850804682976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_17
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 17
+  input: {fileID: 2652413050486915499}
+  output: {fileID: -7690033561266036162}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &878502569515807846
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_33
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 33
+  input: {fileID: 5725637051411469970}
+  output: {fileID: 973651122698712812}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &919851834005757114
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 3338934634795654935}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &961212798194271809
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_15
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 15
+  input: {fileID: 281388551924235350}
+  output: {fileID: 7338432562446570106}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &971577807628046954
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_9
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 9
+  input: {fileID: 2746570492434203155}
+  output: {fileID: -3068883178928873700}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &973651122698712812
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: -4479383420481883514}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &1056679913665881054
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48739db933f0ac141befc9abdd1bef1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGRandomScaleNode
+  id: 22b74a08-8df2-4824-8528-55c2837bfc7f
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 1380
+    y: 0
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -1929553833941671756}
+  outputPins:
+  - {fileID: 4330820379928250786}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  Min: 1.5
+  Max: 3.5
+--- !u!114 &1182808383144569002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b8f1f49a2b4244fb462c834dacccb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGDifferenceNode
+  id: 48014b01-cab0-475b-92e6-802a367d028e
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 1380
+    y: 440
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -7501175654952498212}
+  - {fileID: 4183511857067998884}
+  outputPins:
+  - {fileID: 7851492445945362856}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 3
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  Radius: 2
+--- !u!114 &1353619282130057403
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 3401058621700978303}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &1375130427616898157
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 3338934634795654935}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &1640545023750651636
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 7305984863205020412}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &1706051661040929717
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: -4292008877918246020}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &1927241323096619005
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_12
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 12
+  input: {fileID: 3941627549284125636}
+  output: {fileID: 4176527693481880123}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &1991388763888128741
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_19
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 19
+  input: {fileID: -4534550031887887816}
+  output: {fileID: -3757292191847674706}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &2197813466538080891
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: -7265038591142194597}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &2249270774732462082
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b8f1f49a2b4244fb462c834dacccb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGDifferenceNode
+  id: b8f27953-c1c4-4f07-bf37-89bbd91b7eba
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 460
+    y: 220
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: 295542745021127468}
+  - {fileID: 3941627549284125636}
+  outputPins:
+  - {fileID: 7022144869217574626}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  Radius: 3
+--- !u!114 &2630961017879833827
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d5db1cbe675944bb0c59b1bf85d2f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGRandomRotationNode
+  id: 4ca4c14d-8a57-4eb3-be7b-b80cb7d1228f
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 1150
+    y: 220
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: 281388551924235350}
+  outputPins:
+  - {fileID: -9092742299874398474}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  RandomYaw: 1
+  MaxTilt: 0
+--- !u!114 &2652413050486915499
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: -7265038591142194597}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &2746570492434203155
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 403908653093932820}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &2971374058812848001
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 5147547757252893056}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &3338934634795654935
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0431aedf53e70a94a89a40d5291271da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGDensityRemapNode
+  id: 39c334ce-9ae4-4832-8342-137ce90f20c9
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 920
+    y: 440
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: 1375130427616898157}
+  outputPins:
+  - {fileID: 919851834005757114}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  InMin: 0.1
+  InMax: 0.6
+  OutMin: 0
+  OutMax: 1
+--- !u!114 &3401058621700978303
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffdf792eafe19c646ae88ffe3f5651ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGSampleSurfaceNode
+  id: d6266644-3c08-4d31-897c-762faa303743
   caption: 
   bounds:
     serializedVersion: 2
@@ -2283,15 +2265,16 @@ MonoBehaviour:
   zIndex: 0
   inputPins: []
   outputPins:
-  - {fileID: -4974282637812039566}
-  graph: {fileID: 4329347771479587910}
+  - {fileID: 1353619282130057403}
+  graph: {fileID: 3900646809023489370}
   Level: 3
   ReadMargin: 4
+  SameLevelMargin: 0
   DebugDraw: 0
   DebugDensity: 0
   PointsPerSquareUnit: 0.05
   Seed: 1
---- !u!114 &2623061793163057492
+--- !u!114 &3433360981473243253
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2300,14 +2283,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_13
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 13
-  input: {fileID: -5764492910785075052}
-  output: {fileID: 6690387404395663471}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &2938230328429218659
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 6594089279605365598}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &3475235561453662156
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2316,346 +2307,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_8
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 8
-  input: {fileID: 3219458360274023035}
-  output: {fileID: 3196629272350246250}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &3022292277539259501
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 37dd669a805e63c4184ee98ccb4d259f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGRandomRotationNode
-  id: 137b074a-3962-470a-a1f5-d03ec3bc014b
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGInstanceNode
+  id: a85d0b94-70b2-4cb9-add2-2eab8dfc4f06
   caption: 
   bounds:
     serializedVersion: 2
-    x: 1150
-    y: 220
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: 1503229804915267763}
-  outputPins:
-  - {fileID: 316032117072336808}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  RandomYaw: 1
-  MaxTilt: 0
---- !u!114 &3054997268472144408
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: -4146424428181639393}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &3097500958647293081
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: -4658078620466146223}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &3196629272350246250
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: -6440151696394400954}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &3219458360274023035
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: -7260213468869947089}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &3244806050858905985
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: 9046930309210262381}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &3398292218415013453
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: 1413392021090754048}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: B
---- !u!114 &3414866949268177933
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: 805640860341305687}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &3431593243809963492
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: 805640860341305687}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &3459945985542860782
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: -238012062650884459}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &3527406287846032303
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: -2428534226435705290}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &3559676086092759445
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: -4146424428181639393}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &3639171418190042743
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_33
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 33
-  input: {fileID: 6169037943079743133}
-  output: {fileID: -211192812004280676}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &3641110744671530588
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGRandomScaleNode
-  id: b159b6b4-8cbc-4145-bc0b-153ea8a17819
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 2530
+    x: 3220
     y: 440
     width: 120
     height: 120
@@ -2665,17 +2324,24 @@ MonoBehaviour:
   selected: 0
   zIndex: 0
   inputPins:
-  - {fileID: -5824979777318257718}
+  - {fileID: 7018264644357561133}
   outputPins:
-  - {fileID: 4424545596473184346}
-  graph: {fileID: 4329347771479587910}
+  - {fileID: 4471812062585112222}
+  graph: {fileID: 3900646809023489370}
   Level: -1
   ReadMargin: 4
+  SameLevelMargin: 0
   DebugDraw: 0
   DebugDensity: 0
-  Min: 0.8
-  Max: 1.5
---- !u!114 &3710883070915917369
+  Prefabs:
+  - {fileID: 919132149155446097, guid: cbd5405ba9bb58a449cc52cfa7f47ed4, type: 3}
+  - {fileID: 919132149155446097, guid: a34b6727b1252bb4ea7181f7b0cf30b7, type: 3}
+  - {fileID: 919132149155446097, guid: f1f2015dbddac234199b4583adfe6ad2, type: 3}
+  - {fileID: 919132149155446097, guid: f1f2015dbddac234199b4583adfe6ad2, type: 3}
+  Weights: []
+  CastShadows: 0
+  CullDistance: 120
+--- !u!114 &3491878825288525124
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2685,13 +2351,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_15
+  m_Name: Link_1
   m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 15
-  input: {fileID: 1503229804915267763}
-  output: {fileID: -3277294726904738285}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &4076250867025701074
+  id: 1
+  input: {fileID: 4054821898367102378}
+  output: {fileID: 1353619282130057403}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &3526752641669567599
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2700,33 +2366,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGAlignToNormalNode
-  id: 0ffc2fa8-4c0c-4b5f-a8b5-dfbaa1e6d82b
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 920
-    y: 0
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: -5285676667253853396}
-  outputPins:
-  - {fileID: 5674907365043417233}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  Amount: 0.7
---- !u!114 &4087102325802326346
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_18
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 18
+  input: {fileID: -84681934685976192}
+  output: {fileID: 2197813466538080891}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &3873104936214799841
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2739,10 +2386,10 @@ MonoBehaviour:
   m_Name: Link_22
   m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
   id: 22
-  input: {fileID: 3431593243809963492}
-  output: {fileID: -5245774870291696740}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &4329347771479587910
+  input: {fileID: 1375130427616898157}
+  output: {fileID: 8574290945470638643}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &3900646809023489370
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2759,76 +2406,76 @@ MonoBehaviour:
   topZIndex:
     index: 0
   nodes:
-  - {fileID: 2457219630116948141}
-  - {fileID: -872214448873648732}
-  - {fileID: -8961023730637672170}
-  - {fileID: -1391297733734212585}
-  - {fileID: 4076250867025701074}
-  - {fileID: -2428534226435705290}
-  - {fileID: -759509665803160975}
-  - {fileID: -6440151696394400954}
-  - {fileID: -7260213468869947089}
-  - {fileID: -1271884451806898195}
-  - {fileID: -8143454433864706168}
-  - {fileID: -4146424428181639393}
-  - {fileID: 5023325404336313332}
-  - {fileID: 5174981821201855492}
-  - {fileID: 6894032075401103526}
-  - {fileID: 3022292277539259501}
-  - {fileID: -238012062650884459}
-  - {fileID: 8869404163184084921}
-  - {fileID: 7090768542057380873}
-  - {fileID: 8305751521732186188}
-  - {fileID: 105109721170691414}
-  - {fileID: -5213656883985758260}
-  - {fileID: 4999379983481070141}
-  - {fileID: 805640860341305687}
-  - {fileID: 8450967417662936805}
-  - {fileID: -4159586226855099257}
-  - {fileID: 1413392021090754048}
-  - {fileID: 355988316474050059}
-  - {fileID: -3789940313688701221}
-  - {fileID: -4529609511168500202}
-  - {fileID: 3641110744671530588}
-  - {fileID: 2115788783690386684}
-  - {fileID: -4658078620466146223}
-  - {fileID: 9046930309210262381}
+  - {fileID: 3401058621700978303}
+  - {fileID: -2279292864360214191}
+  - {fileID: -3576560716453761322}
+  - {fileID: 7178817664856399218}
+  - {fileID: 139426278486995302}
+  - {fileID: -4292008877918246020}
+  - {fileID: 1056679913665881054}
+  - {fileID: 6594089279605365598}
+  - {fileID: 5147547757252893056}
+  - {fileID: 403908653093932820}
+  - {fileID: 7497582775975705084}
+  - {fileID: -1771274050082951740}
+  - {fileID: 2249270774732462082}
+  - {fileID: 7305984863205020412}
+  - {fileID: -1456116050142555559}
+  - {fileID: 2630961017879833827}
+  - {fileID: -6718796590199888578}
+  - {fileID: -7265038591142194597}
+  - {fileID: -3824964470905818979}
+  - {fileID: 5717007499809156504}
+  - {fileID: 9101919329886424748}
+  - {fileID: -8430296301611528525}
+  - {fileID: -9172070587026789089}
+  - {fileID: 3338934634795654935}
+  - {fileID: -3944313102459047497}
+  - {fileID: 1182808383144569002}
+  - {fileID: 4596337987777729703}
+  - {fileID: -181310805977021212}
+  - {fileID: -2902154042158574443}
+  - {fileID: 7980041779077782491}
+  - {fileID: 17785843329106188}
+  - {fileID: -4479383420481883514}
+  - {fileID: -7330033765340747924}
+  - {fileID: 3475235561453662156}
   links:
-  - {fileID: -928948268374813736}
-  - {fileID: -81596538853828617}
-  - {fileID: -7461142698380537732}
-  - {fileID: -2058261444816582290}
-  - {fileID: 544809410257741992}
-  - {fileID: 9187267443447350553}
-  - {fileID: 1965005549191145206}
-  - {fileID: 2938230328429218659}
-  - {fileID: 298916292569552375}
-  - {fileID: 6907951101715523546}
-  - {fileID: 4630544150528428809}
-  - {fileID: -5221610063388815278}
-  - {fileID: 2623061793163057492}
-  - {fileID: 1563939738148457583}
-  - {fileID: 3710883070915917369}
-  - {fileID: -9108474961547132568}
-  - {fileID: 4938784592049661296}
-  - {fileID: -1921316212200549308}
-  - {fileID: 6234434914169267239}
-  - {fileID: -7705478683962508778}
-  - {fileID: -1953699550518107826}
-  - {fileID: 4087102325802326346}
-  - {fileID: 6518101879398898221}
-  - {fileID: -5155551612691871}
-  - {fileID: 2238232682690634880}
-  - {fileID: 8130437643575876309}
-  - {fileID: 494755817917980751}
-  - {fileID: -4234296291134065026}
-  - {fileID: 6612389524638765028}
-  - {fileID: -5260932244097047552}
-  - {fileID: 690386117930622952}
-  - {fileID: 6408747661438128283}
-  - {fileID: 3639171418190042743}
-  - {fileID: 2339784385401208841}
---- !u!114 &4424545596473184346
+  - {fileID: 3491878825288525124}
+  - {fileID: -4059388643411922132}
+  - {fileID: 6756358684258783602}
+  - {fileID: 5522927843267211263}
+  - {fileID: -3454356491235363404}
+  - {fileID: -1853553429201380111}
+  - {fileID: -2443200199136018091}
+  - {fileID: -3516644516464960915}
+  - {fileID: 971577807628046954}
+  - {fileID: 8386476857429811982}
+  - {fileID: -7818749929775165925}
+  - {fileID: 1927241323096619005}
+  - {fileID: -6213494766164565264}
+  - {fileID: -7703208870571070354}
+  - {fileID: 961212798194271809}
+  - {fileID: -5045741233888679805}
+  - {fileID: 547477850804682976}
+  - {fileID: 3526752641669567599}
+  - {fileID: 1991388763888128741}
+  - {fileID: -3045899934797765573}
+  - {fileID: 8580126800138204581}
+  - {fileID: 3873104936214799841}
+  - {fileID: -1274254259223977665}
+  - {fileID: 4998677331239393420}
+  - {fileID: 5892070711074292376}
+  - {fileID: -1271570318102389142}
+  - {fileID: 5037321706290875387}
+  - {fileID: 6367776048612723488}
+  - {fileID: -7869356190293747931}
+  - {fileID: 6280679856558538158}
+  - {fileID: -442035146984377747}
+  - {fileID: -212911554880492293}
+  - {fileID: 878502569515807846}
+  - {fileID: -3547083675285104686}
+--- !u!114 &3941627549284125636
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2837,11 +2484,59 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 2249270774732462082}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: B
+--- !u!114 &4054821898367102378
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: -2279292864360214191}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &4176527693481880123
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
   m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
-  node: {fileID: 3641110744671530588}
+  node: {fileID: 403908653093932820}
   position: {x: 0, y: 0}
   boundsOffset:
     serializedVersion: 2
@@ -2852,7 +2547,7 @@ MonoBehaviour:
   tangent: {x: 0, y: 0}
   tangentStrength: 50
   text: Out
---- !u!114 &4630544150528428809
+--- !u!114 &4183511857067998884
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2861,27 +2556,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_11
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 11
-  input: {fileID: -8556483068544001133}
-  output: {fileID: 3054997268472144408}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &4814127282742939976
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
   m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
-  node: {fileID: -4159586226855099257}
+  node: {fileID: 1182808383144569002}
   position: {x: 0, y: 0}
   boundsOffset:
     serializedVersion: 2
@@ -2891,8 +2570,8 @@ MonoBehaviour:
     height: 0
   tangent: {x: 0, y: 0}
   tangentStrength: 50
-  text: A
---- !u!114 &4938784592049661296
+  text: B
+--- !u!114 &4330820379928250786
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2901,14 +2580,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_17
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 17
-  input: {fileID: 2098109481920459517}
-  output: {fileID: -3885860042051986547}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &4999379983481070141
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 1056679913665881054}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &4471812062585112222
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2917,14 +2604,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 3475235561453662156}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &4596337987777729703
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b8f1f49a2b4244fb462c834dacccb6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGNoiseDensityNode
-  id: e5471bbd-73d0-4948-af1a-abfb7032313e
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGDifferenceNode
+  id: 08c9cfd1-3fe0-40e3-85f0-9953119216fa
   caption: 
   bounds:
     serializedVersion: 2
-    x: 690
+    x: 1610
     y: 440
     width: 120
     height: 120
@@ -2934,18 +2645,18 @@ MonoBehaviour:
   selected: 0
   zIndex: 0
   inputPins:
-  - {fileID: -600966686501554163}
+  - {fileID: -6165066870560925115}
+  - {fileID: 8941523980988699864}
   outputPins:
-  - {fileID: -5245774870291696740}
-  graph: {fileID: 4329347771479587910}
+  - {fileID: -6803544465982934935}
+  graph: {fileID: 3900646809023489370}
   Level: -1
-  ReadMargin: 4
+  ReadMargin: 1
+  SameLevelMargin: 0
   DebugDraw: 0
   DebugDensity: 0
-  Scale: 0.03
-  Mode: 1
-  Seed: 0
---- !u!114 &5023325404336313332
+  Radius: 0.5
+--- !u!114 &4657822642613595518
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2954,83 +2665,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGDifferenceNode
-  id: 61fdbaca-0786-4674-92e1-c045b07cb62b
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 460
-    y: 220
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: -8556483068544001133}
-  - {fileID: -8369870429068071170}
-  outputPins:
-  - {fileID: 6690387404395663471}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  Radius: 3
---- !u!114 &5174981821201855492
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGPruneNode
-  id: fa91a928-be3d-4f78-b555-6039af030efd
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 690
-    y: 220
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: -5764492910785075052}
-  outputPins:
-  - {fileID: -6328740796601831862}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  Radius: 1.5
-  ByDensity: 0
---- !u!114 &5234150345474190929
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
   m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
-  node: {fileID: -1271884451806898195}
+  node: {fileID: 7305984863205020412}
   position: {x: 0, y: 0}
   boundsOffset:
     serializedVersion: 2
@@ -3041,7 +2680,7 @@ MonoBehaviour:
   tangent: {x: 0, y: 0}
   tangentStrength: 50
   text: In
---- !u!114 &5565055087877624474
+--- !u!114 &4998677331239393420
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3050,11 +2689,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_24
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 24
+  input: {fileID: -7501175654952498212}
+  output: {fileID: -8972800398484500823}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &5037321706290875387
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_27
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 27
+  input: {fileID: 8941523980988699864}
+  output: {fileID: -4321616912498425588}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &5081308006420418508
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
   m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
-  node: {fileID: -6440151696394400954}
+  node: {fileID: -4479383420481883514}
   position: {x: 0, y: 0}
   boundsOffset:
     serializedVersion: 2
@@ -3065,7 +2736,7 @@ MonoBehaviour:
   tangent: {x: 0, y: 0}
   tangentStrength: 50
   text: In
---- !u!114 &5674907365043417233
+--- !u!114 &5147547757252893056
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3074,226 +2745,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: 4076250867025701074}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &5956732396062891097
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: -759509665803160975}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &6169037943079743133
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 0
-  node: {fileID: -4658078620466146223}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: In
---- !u!114 &6234434914169267239
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_19
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 19
-  input: {fileID: 1331341346704889479}
-  output: {fileID: 2361541973744965965}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &6408747661438128283
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_32
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 32
-  input: {fileID: -5526812346450590929}
-  output: {fileID: 4424545596473184346}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &6518101879398898221
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_23
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 23
-  input: {fileID: -294153207615676165}
-  output: {fileID: 3414866949268177933}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &6612389524638765028
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_29
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 29
-  input: {fileID: -5261924440006475584}
-  output: {fileID: -757722907638091204}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &6690387404395663471
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: _OutputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
-  pinType: 1
-  node: {fileID: 5023325404336313332}
-  position: {x: 0, y: 0}
-  boundsOffset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
-  tangentStrength: 50
-  text: Out
---- !u!114 &6894032075401103526
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 8d12f4312714c0b439ed2383f295539d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGAlignToNormalNode
-  id: 3a5e6d27-4644-437c-95e7-ce5bf6b61eda
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 920
-    y: 220
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: 8471554682018768510}
-  outputPins:
-  - {fileID: -3277294726904738285}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  Amount: 0.8
---- !u!114 &6907951101715523546
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_10
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 10
-  input: {fileID: 3559676086092759445}
-  output: {fileID: -5337519414420263446}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &7090768542057380873
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGInstanceNode
-  id: 2d0bfdeb-b099-45e7-926f-482c2f5e24c6
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGTransformPointsNode
+  id: 59172b4a-a4af-43ea-9601-b7f68a0ad0fa
   caption: 
   bounds:
     serializedVersion: 2
     x: 1840
-    y: 220
+    y: 0
     width: 120
     height: 120
   canBeDeleted: 1
@@ -3302,23 +2762,72 @@ MonoBehaviour:
   selected: 0
   zIndex: 0
   inputPins:
-  - {fileID: -347323102687977380}
+  - {fileID: 2971374058812848001}
   outputPins:
-  - {fileID: -1091006477812187604}
-  graph: {fileID: 4329347771479587910}
+  - {fileID: -3068883178928873700}
+  graph: {fileID: 3900646809023489370}
   Level: -1
   ReadMargin: 4
+  SameLevelMargin: 0
   DebugDraw: 0
   DebugDensity: 0
-  Prefabs:
-  - {fileID: 8012459010696510826, guid: be8ff3af3f24a9d48add1d14050afff0, type: 3}
-  - {fileID: 4948255667786883780, guid: 64a2bbf51cc72a74cbb8a44547446257, type: 3}
-  - {fileID: 3051258880918777885, guid: 6faf2fdb8525b7341978e1a45595ef96, type: 3}
-  - {fileID: 3693517648748088166, guid: 24ab4069ddae3bd448738f7a2670e99b, type: 3}
-  Weights: []
-  CastShadows: 1
-  CullDistance: 0
---- !u!114 &8130437643575876309
+  Settings:
+    OffsetMin: {x: 0, y: 0, z: 0}
+    OffsetMax: {x: 0, y: 0, z: 0}
+    RotationMin: {x: 0, y: 0, z: 0}
+    RotationMax: {x: 0, y: 0, z: 0}
+    ScaleMin: 1
+    ScaleMax: 1
+    ScaleAxis: {x: 1, y: 1, z: 1}
+--- !u!114 &5360288330271945644
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: -8430296301611528525}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &5519329827425399686
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: -1771274050082951740}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &5522927843267211263
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3328,13 +2837,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_26
+  m_Name: Link_4
   m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 26
-  input: {fileID: -7527570866006869189}
-  output: {fileID: -3712446393792562579}
-  graph: {fileID: 4329347771479587910}
---- !u!114 &8305751521732186188
+  id: 4
+  input: {fileID: 109332595392988967}
+  output: {fileID: -1272980410813242843}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &5548855397977928244
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3343,10 +2852,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: -181310805977021212}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &5717007499809156504
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffdf792eafe19c646ae88ffe3f5651ca, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGSampleSurfaceNode
-  id: 557a9d56-9dca-449e-bc06-9332c20ad0ae
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGSampleSurfaceNode
+  id: f614144c-891a-465a-8481-2d9626718ce9
   caption: 
   bounds:
     serializedVersion: 2
@@ -3361,15 +2894,16 @@ MonoBehaviour:
   zIndex: 0
   inputPins: []
   outputPins:
-  - {fileID: 2361541973744965965}
-  graph: {fileID: 4329347771479587910}
+  - {fileID: -3757292191847674706}
+  graph: {fileID: 3900646809023489370}
   Level: 0
   ReadMargin: 4
+  SameLevelMargin: 0
   DebugDraw: 0
   DebugDensity: 0
   PointsPerSquareUnit: 20
   Seed: 3
---- !u!114 &8450967417662936805
+--- !u!114 &5725637051411469970
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3378,46 +2912,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGRandomByDensityNode
-  id: cb493cd7-7168-484e-b195-86aa4a0478d9
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 1150
-    y: 440
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: -294153207615676165}
-  outputPins:
-  - {fileID: 1704458890178227846}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  Salt: 0
---- !u!114 &8471554682018768510
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
   m_Name: _InputPin
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGGraphPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
-  node: {fileID: 6894032075401103526}
+  node: {fileID: -7330033765340747924}
   position: {x: 0, y: 0}
   boundsOffset:
     serializedVersion: 2
@@ -3428,85 +2927,7 @@ MonoBehaviour:
   tangent: {x: 0, y: 0}
   tangentStrength: 50
   text: In
---- !u!114 &8869404163184084921
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGOffsetNode
-  id: c9fab02d-2f03-4a30-bf71-d61d0db9ca7e
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 1610
-    y: 220
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: 2098109481920459517}
-  outputPins:
-  - {fileID: -2214725417342137388}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  AlongNormal: -0.05
-  World: {x: 0, y: 0, z: 0}
---- !u!114 &9046930309210262381
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG:DungeonArchitect.PCG.Graph:PCGInstanceNode
-  id: 17fafdfe-1baf-40b4-a126-e596c8473b32
-  caption: 
-  bounds:
-    serializedVersion: 2
-    x: 3220
-    y: 440
-    width: 120
-    height: 120
-  canBeDeleted: 1
-  canBeSelected: 1
-  canBeMoved: 1
-  selected: 0
-  zIndex: 0
-  inputPins:
-  - {fileID: -1465077356282954913}
-  outputPins:
-  - {fileID: 3244806050858905985}
-  graph: {fileID: 4329347771479587910}
-  Level: -1
-  ReadMargin: 4
-  DebugDraw: 0
-  DebugDensity: 0
-  Prefabs:
-  - {fileID: 919132149155446097, guid: cbd5405ba9bb58a449cc52cfa7f47ed4, type: 3}
-  - {fileID: 919132149155446097, guid: a34b6727b1252bb4ea7181f7b0cf30b7, type: 3}
-  - {fileID: 919132149155446097, guid: f1f2015dbddac234199b4583adfe6ad2, type: 3}
-  - {fileID: 919132149155446097, guid: f1f2015dbddac234199b4583adfe6ad2, type: 3}
-  Weights: []
-  CastShadows: 0
-  CullDistance: 120
---- !u!114 &9187267443447350553
+--- !u!114 &5892070711074292376
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3516,9 +2937,622 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_6
+  m_Name: Link_25
   m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 6
-  input: {fileID: 5956732396062891097}
-  output: {fileID: 3527406287846032303}
-  graph: {fileID: 4329347771479587910}
+  id: 25
+  input: {fileID: 4183511857067998884}
+  output: {fileID: 4176527693481880123}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &6280679856558538158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_30
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 30
+  input: {fileID: -8040747717982202971}
+  output: {fileID: -7783573597869440453}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &6367776048612723488
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_28
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 28
+  input: {fileID: 5548855397977928244}
+  output: {fileID: -6803544465982934935}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &6549124969123002671
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: -3576560716453761322}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &6566229210577721517
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 9101919329886424748}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &6594089279605365598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f94af82101382468f57a8c01fd9044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGOffsetNode
+  id: 34f62fd5-88b4-4327-9089-623b08d70b86
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 1610
+    y: 0
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: 3433360981473243253}
+  outputPins:
+  - {fileID: -3132012186805428974}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  AlongNormal: -0.3
+  World: {x: 0, y: 0, z: 0}
+--- !u!114 &6667665658763426522
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: -3944313102459047497}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &6756358684258783602
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_3
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 3
+  input: {fileID: -2874944009097950534}
+  output: {fileID: 6549124969123002671}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &6818086153049360838
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 7980041779077782491}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &7018264644357561133
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 3475235561453662156}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &7022144869217574626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 2249270774732462082}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &7178817664856399218
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec1cbead1bb75443a765c4cd506f38c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGPruneNode
+  id: 9544f0da-e915-4db8-acd9-7e950f614ad6
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 690
+    y: 0
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -2874944009097950534}
+  outputPins:
+  - {fileID: -1272980410813242843}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  Radius: 6
+  ByDensity: 0
+--- !u!114 &7305984863205020412
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec1cbead1bb75443a765c4cd506f38c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGPruneNode
+  id: af20484b-55ed-4c25-a4a4-fa8ec3db8e6d
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 690
+    y: 220
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: 4657822642613595518}
+  outputPins:
+  - {fileID: 1640545023750651636}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  Radius: 1.5
+  ByDensity: 0
+--- !u!114 &7338432562446570106
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: -1456116050142555559}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &7497582775975705084
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffdf792eafe19c646ae88ffe3f5651ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGSampleSurfaceNode
+  id: 2b4549e5-8e99-4d97-905f-8c639b999888
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 0
+    y: 220
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins: []
+  outputPins:
+  - {fileID: -5169205879585629687}
+  graph: {fileID: 3900646809023489370}
+  Level: 1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  PointsPerSquareUnit: 0.3
+  Seed: 2
+--- !u!114 &7620237623634099702
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: -9172070587026789089}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &7851492445945362856
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 1182808383144569002}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &7980041779077782491
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d5db1cbe675944bb0c59b1bf85d2f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGRandomRotationNode
+  id: 5cc7c8d1-e350-4b95-86bc-b9ae166909bd
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 2300
+    y: 440
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -8040747717982202971}
+  outputPins:
+  - {fileID: 6818086153049360838}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  RandomYaw: 1
+  MaxTilt: 10
+--- !u!114 &8231038344574657384
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: -6718796590199888578}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &8386476857429811982
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_10
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 10
+  input: {fileID: 5519329827425399686}
+  output: {fileID: -5169205879585629687}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &8574290945470638643
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: -9172070587026789089}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+--- !u!114 &8580126800138204581
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_21
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 21
+  input: {fileID: 7620237623634099702}
+  output: {fileID: 436914657388752716}
+  graph: {fileID: 3900646809023489370}
+--- !u!114 &8726069247519232565
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: -3576560716453761322}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+--- !u!114 &8941523980988699864
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 4596337987777729703}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: B
+--- !u!114 &9101919329886424748
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49786c110483cf41bf226191dea5557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGSlopeFilterNode
+  id: 8b2b6e34-8695-4304-a932-d338726183f6
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 230
+    y: 440
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -4534550031887887816}
+  outputPins:
+  - {fileID: 6566229210577721517}
+  graph: {fileID: 3900646809023489370}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  MinDegrees: 0
+  MaxDegrees: 30
