@@ -1,5 +1,5 @@
 //$ Copyright 2015-26, Code Respawn Technologies Pvt Ltd - All Rights Reserved $//
-using DungeonArchitect.Scatter;
+using DungeonArchitect.PCG;
 using UnityEngine;
 
 namespace DungeonArchitect.Samples.Voxel
@@ -8,8 +8,8 @@ namespace DungeonArchitect.Samples.Voxel
     /// Scatters boulders, stalactites, stalagmites, mushrooms, moss and grass through a voxel cave.
     /// The big pieces are spawned as game objects (they have colliders), the small ones are GPU instanced
     /// </summary>
-    [CreateAssetMenu(menuName = "Dungeon Architect/Scatter/Samples/Cave Scatter")]
-    public class DAScatterCave : DungeonScatterScript
+    [CreateAssetMenu(menuName = "Dungeon Architect/PCG/Samples/Cave")]
+    public class DAPCGCave : PCGScript
     {
         [Tooltip("Rocks with the pivot at the ground, about 1 unit across")]
         public GameObject[] boulders;
@@ -31,15 +31,15 @@ namespace DungeonArchitect.Samples.Voxel
         public float grassSpacing = 0.3f;
 
         [Header("Extra offset, rotation and scale per layer, on top of the script's own randomness")]
-        public DungeonScatterTransform grassTransform = new DungeonScatterTransform();
-        public DungeonScatterTransform bigRockTransform = new DungeonScatterTransform();
-        public DungeonScatterTransform wallRockTransform = new DungeonScatterTransform();
-        public DungeonScatterTransform stalactiteTransform = new DungeonScatterTransform();
-        public DungeonScatterTransform stalagmiteTransform = new DungeonScatterTransform();
-        public DungeonScatterTransform mushroomTransform = new DungeonScatterTransform();
-        public DungeonScatterTransform mossTransform = new DungeonScatterTransform();
+        public PCGTransform grassTransform = new PCGTransform();
+        public PCGTransform bigRockTransform = new PCGTransform();
+        public PCGTransform wallRockTransform = new PCGTransform();
+        public PCGTransform stalactiteTransform = new PCGTransform();
+        public PCGTransform stalagmiteTransform = new PCGTransform();
+        public PCGTransform mushroomTransform = new PCGTransform();
+        public PCGTransform mossTransform = new PCGTransform();
 
-        public override void Execute(DungeonScatterContext ctx)
+        public override void Execute(PCGContext ctx)
         {
             var floor = ctx.SampleSurface(3).WhereFloor(0.75f);
 
@@ -119,7 +119,7 @@ namespace DungeonArchitect.Samples.Voxel
             // Density instead of a hard mask: patches from noise, thinning out into the dark corners,
             // so the grass fades out at the edges instead of stopping on a line
             var grassDensity = floor
-                .NoiseDensity(0.05f, DungeonPointSet.DensityMode.Set, 7)
+                .NoiseDensity(0.05f, PCGPointSet.DensityMode.Set, 7)
                 .DensityRemap(0.25f, 0.6f)
                 .DensityFromAO(0.25f, 0.6f);
             ctx.DebugDensity(grassDensity, "grass density");
