@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 1586568850573726844}
-  position: {x: 0, y: 0}
+  position: {x: 2, y: 40.973953}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    y: -10
+    width: 31.0625
+    height: 20
+  tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: In
   dataType: Points
@@ -57,14 +57,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 5264126874346046764}
-  position: {x: 0, y: 0}
+  position: {x: 2, y: 40.973953}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    y: -10
+    width: 31.0625
+    height: 20
+  tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: In
   dataType: Points
@@ -86,20 +86,21 @@ MonoBehaviour:
   caption: 
   bounds:
     serializedVersion: 2
-    x: 0
-    y: 520
-    width: 120
-    height: 120
+    x: 340.34973
+    y: 398.14792
+    width: 150.80208
+    height: 81.23958
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 0
+  zIndex: 35
   inputPins:
   - {fileID: -1351589820515044770}
   outputPins:
   - {fileID: -4037082618579784541}
   graph: {fileID: -5797713115998923337}
+  Label: Glowing Mushrooms
   Level: -1
   ReadMargin: 4
   SameLevelMargin: 0
@@ -110,6 +111,7 @@ MonoBehaviour:
   Overrides:
   - Name: Level
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 0
     BoolValue: 1
@@ -119,6 +121,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density
     Type: 0
+    Category: 
     FloatValue: 3
     IntValue: 1
     BoolValue: 1
@@ -128,6 +131,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Seed
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 0
     BoolValue: 1
@@ -137,6 +141,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Slope Min
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -146,6 +151,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Slope Max
     Type: 0
+    Category: 
     FloatValue: 41.41
     IntValue: 1
     BoolValue: 1
@@ -155,6 +161,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Min
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -164,6 +171,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Max
     Type: 0
+    Category: 
     FloatValue: 0.3
     IntValue: 1
     BoolValue: 1
@@ -173,6 +181,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Scale
     Type: 0
+    Category: 
     FloatValue: 0.07
     IntValue: 1
     BoolValue: 1
@@ -182,6 +191,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Seed
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 3
     BoolValue: 1
@@ -191,6 +201,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Low
     Type: 0
+    Category: 
     FloatValue: 0.55
     IntValue: 1
     BoolValue: 1
@@ -200,6 +211,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch High
     Type: 0
+    Category: 
     FloatValue: 0.56
     IntValue: 1
     BoolValue: 1
@@ -209,6 +221,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Fade Low
     Type: 0
+    Category: 
     FloatValue: -1
     IntValue: 1
     BoolValue: 1
@@ -218,6 +231,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Fade High
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -227,6 +241,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Path Distance
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -236,6 +251,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Avoid Radius
     Type: 0
+    Category: 
     FloatValue: 0.6
     IntValue: 1
     BoolValue: 1
@@ -245,6 +261,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Spacing
     Type: 0
+    Category: 
     FloatValue: 0.9
     IntValue: 1
     BoolValue: 1
@@ -254,6 +271,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Clearance
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -263,6 +281,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Align
     Type: 0
+    Category: 
     FloatValue: 0.5
     IntValue: 1
     BoolValue: 1
@@ -272,6 +291,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Tilt
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -281,6 +301,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Scale Min
     Type: 0
+    Category: 
     FloatValue: 0.8
     IntValue: 1
     BoolValue: 1
@@ -290,6 +311,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Scale Max
     Type: 0
+    Category: 
     FloatValue: 1.8
     IntValue: 1
     BoolValue: 1
@@ -299,6 +321,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density Scale Min
     Type: 0
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -308,6 +331,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density Scale Max
     Type: 0
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -317,6 +341,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Sink
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -326,6 +351,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Prefabs
     Type: 5
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -340,6 +366,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Instanced
     Type: 2
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -349,6 +376,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Cast Shadows
     Type: 2
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 0
@@ -358,6 +386,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Cull Distance
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -383,18 +412,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 130
-    width: 120
-    height: 120
+    width: 150.80208
+    height: 81.23958
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 0
+  zIndex: 37
   inputPins:
   - {fileID: -3019743053524212844}
   outputPins:
   - {fileID: -7367102799793909136}
   graph: {fileID: -5797713115998923337}
+  Label: Stalactites
   Level: -1
   ReadMargin: 4
   SameLevelMargin: 0
@@ -405,6 +435,7 @@ MonoBehaviour:
   Overrides:
   - Name: Level
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 2
     BoolValue: 1
@@ -414,6 +445,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density
     Type: 0
+    Category: 
     FloatValue: 0.3
     IntValue: 1
     BoolValue: 1
@@ -423,6 +455,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Seed
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -432,6 +465,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Slope Min
     Type: 0
+    Category: 
     FloatValue: 148.21
     IntValue: 1
     BoolValue: 1
@@ -441,6 +475,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Slope Max
     Type: 0
+    Category: 
     FloatValue: 180
     IntValue: 1
     BoolValue: 1
@@ -450,6 +485,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Min
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -459,6 +495,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Max
     Type: 0
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -468,6 +505,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Scale
     Type: 0
+    Category: 
     FloatValue: 0.05
     IntValue: 1
     BoolValue: 1
@@ -477,6 +515,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Seed
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 0
     BoolValue: 1
@@ -486,6 +525,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Low
     Type: 0
+    Category: 
     FloatValue: -1
     IntValue: 1
     BoolValue: 1
@@ -495,6 +535,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch High
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -504,6 +545,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Fade Low
     Type: 0
+    Category: 
     FloatValue: -1
     IntValue: 1
     BoolValue: 1
@@ -513,6 +555,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Fade High
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -522,6 +565,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Path Distance
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -531,6 +575,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Avoid Radius
     Type: 0
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -540,6 +585,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Spacing
     Type: 0
+    Category: 
     FloatValue: 4
     IntValue: 1
     BoolValue: 1
@@ -549,6 +595,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Clearance
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -558,6 +605,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Align
     Type: 0
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -567,6 +615,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Tilt
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -576,6 +625,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Scale Min
     Type: 0
+    Category: 
     FloatValue: 1.2
     IntValue: 1
     BoolValue: 1
@@ -585,6 +635,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Scale Max
     Type: 0
+    Category: 
     FloatValue: 3
     IntValue: 1
     BoolValue: 1
@@ -594,6 +645,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density Scale Min
     Type: 0
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -603,6 +655,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density Scale Max
     Type: 0
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -612,6 +665,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Sink
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -621,6 +675,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Prefabs
     Type: 5
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -633,6 +688,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Instanced
     Type: 2
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 0
@@ -642,6 +698,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Cast Shadows
     Type: 2
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -651,6 +708,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Cull Distance
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -672,14 +730,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: -7443193266090352408}
-  position: {x: 0, y: 0}
+  position: {x: 148.80206, y: 53.880203}
   boundsOffset:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    x: -40.197906
+    y: -10
+    width: 40.197906
+    height: 20
+  tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
   dataType: Points
@@ -699,14 +757,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 7611769862700516465}
-  position: {x: 0, y: 0}
+  position: {x: 2.000061, y: 40.973953}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    y: -10
+    width: 31.0625
+    height: 20
+  tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: In
   dataType: Points
@@ -746,19 +804,20 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1000
     y: 208
-    width: 120
-    height: 120
+    width: 122
+    height: 85.23958
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 0
+  zIndex: 20
   inputPins:
   - {fileID: -1998288028855428680}
   - {fileID: -6389909754715401412}
   outputPins:
   - {fileID: -5142104784291277774}
   graph: {fileID: -5797713115998923337}
+  Label: 
   Level: -1
   ReadMargin: 4
   SameLevelMargin: 0
@@ -780,14 +839,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: -6445901166843469109}
-  position: {x: 0, y: 0}
+  position: {x: 2.000061, y: 57.880203}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    y: -10
+    width: 28.9375
+    height: 20
+  tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: B
   dataType: Points
@@ -823,14 +882,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 2185013741046651026}
-  position: {x: 0, y: 0}
+  position: {x: 148.8021, y: 53.880188}
   boundsOffset:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    x: -40.197937
+    y: -10
+    width: 40.197937
+    height: 20
+  tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
   dataType: Points
@@ -850,14 +909,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 5224305826140962632}
-  position: {x: 0, y: 0}
+  position: {x: 2, y: 53.880188}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    y: -10
+    width: 49.729126
+    height: 20
+  tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: Avoid
   dataType: Points
@@ -878,7 +937,7 @@ MonoBehaviour:
   indexCounter:
     index: 16
   topZIndex:
-    index: 0
+    index: 42
   nodes:
   - {fileID: 5994372013010870560}
   - {fileID: -7443193266090352408}
@@ -942,14 +1001,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: -6445901166843469109}
-  position: {x: 0, y: 0}
+  position: {x: 120, y: 40.973953}
   boundsOffset:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    x: -40.197754
+    y: -10
+    width: 40.197876
+    height: 20
+  tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
   dataType: Points
@@ -969,14 +1028,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: -2697889781518730166}
-  position: {x: 0, y: 0}
+  position: {x: 148.80206, y: 53.880188}
   boundsOffset:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    x: -40.197906
+    y: -10
+    width: 40.197906
+    height: 20
+  tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
   dataType: Points
@@ -1012,14 +1071,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 2185013741046651026}
-  position: {x: 0, y: 0}
+  position: {x: 2.0000305, y: 53.880188}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    y: -10
+    width: 49.729187
+    height: 20
+  tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: Avoid
   dataType: Points
@@ -1043,8 +1102,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1250
     y: 208
-    width: 120
-    height: 120
+    width: 131.1354
+    height: 68.33333
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -1055,6 +1114,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 5467128491883012968}
   graph: {fileID: -5797713115998923337}
+  Label: 
   Level: -1
   ReadMargin: 4
   SameLevelMargin: 0
@@ -1077,14 +1137,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: -7548037506479330082}
-  position: {x: 0, y: 0}
+  position: {x: 148.80206, y: 53.88022}
   boundsOffset:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    x: -40.197937
+    y: -10
+    width: 40.197937
+    height: 20
+  tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
   dataType: Points
@@ -1104,14 +1164,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 7611769862700516465}
-  position: {x: 0, y: 0}
+  position: {x: 134.43756, y: 40.973953}
   boundsOffset:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    x: -40.197876
+    y: -10
+    width: 40.197876
+    height: 20
+  tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
   dataType: Points
@@ -1147,14 +1207,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 6669718947451215640}
-  position: {x: 0, y: 0}
+  position: {x: 2, y: 40.973953}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    y: -10
+    width: 31.0625
+    height: 20
+  tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: In
   dataType: Points
@@ -1190,14 +1250,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: -7443193266090352408}
-  position: {x: 0, y: 0}
+  position: {x: 2, y: 53.880203}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    y: -10
+    width: 49.729156
+    height: 20
+  tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: Avoid
   dataType: Points
@@ -1233,14 +1293,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 1586568850573726844}
-  position: {x: 0, y: 0}
+  position: {x: 144.70837, y: 40.973953}
   boundsOffset:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    x: -40.197876
+    y: -10
+    width: 40.197876
+    height: 20
+  tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
   dataType: Points
@@ -1262,20 +1322,21 @@ MonoBehaviour:
   caption: 
   bounds:
     serializedVersion: 2
-    x: 0
-    y: 780
-    width: 120
-    height: 120
+    x: -249.04291
+    y: 868.1849
+    width: 150.80208
+    height: 81.23958
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 0
+  zIndex: 42
   inputPins:
   - {fileID: 8264311079174303744}
   outputPins:
   - {fileID: -4750935303287151278}
   graph: {fileID: -5797713115998923337}
+  Label: Moss
   Level: -1
   ReadMargin: 4
   SameLevelMargin: 0
@@ -1286,6 +1347,7 @@ MonoBehaviour:
   Overrides:
   - Name: Level
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 0
     BoolValue: 1
@@ -1295,6 +1357,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density
     Type: 0
+    Category: 
     FloatValue: 0.6
     IntValue: 1
     BoolValue: 1
@@ -1304,6 +1367,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Seed
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 3
     BoolValue: 1
@@ -1313,6 +1377,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Slope Min
     Type: 0
+    Category: 
     FloatValue: 126.87
     IntValue: 1
     BoolValue: 1
@@ -1322,6 +1387,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Slope Max
     Type: 0
+    Category: 
     FloatValue: 180
     IntValue: 1
     BoolValue: 1
@@ -1331,6 +1397,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Min
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -1340,6 +1407,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Max
     Type: 0
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -1349,6 +1417,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Scale
     Type: 0
+    Category: 
     FloatValue: 0.1
     IntValue: 1
     BoolValue: 1
@@ -1358,6 +1427,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Seed
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 0
     BoolValue: 1
@@ -1367,6 +1437,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Low
     Type: 0
+    Category: 
     FloatValue: 0.5
     IntValue: 1
     BoolValue: 1
@@ -1376,6 +1447,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch High
     Type: 0
+    Category: 
     FloatValue: 0.51
     IntValue: 1
     BoolValue: 1
@@ -1385,6 +1457,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Fade Low
     Type: 0
+    Category: 
     FloatValue: -1
     IntValue: 1
     BoolValue: 1
@@ -1394,6 +1467,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Fade High
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -1403,6 +1477,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Path Distance
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -1412,6 +1487,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Avoid Radius
     Type: 0
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -1421,6 +1497,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Spacing
     Type: 0
+    Category: 
     FloatValue: 0.8
     IntValue: 1
     BoolValue: 1
@@ -1430,6 +1507,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Clearance
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -1439,6 +1517,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Align
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -1448,6 +1527,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Tilt
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -1457,6 +1537,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Scale Min
     Type: 0
+    Category: 
     FloatValue: 0.8
     IntValue: 1
     BoolValue: 1
@@ -1466,6 +1547,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Scale Max
     Type: 0
+    Category: 
     FloatValue: 1.6
     IntValue: 1
     BoolValue: 1
@@ -1475,6 +1557,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density Scale Min
     Type: 0
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -1484,6 +1567,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density Scale Max
     Type: 0
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -1493,6 +1577,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Sink
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -1502,6 +1587,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Prefabs
     Type: 5
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -1513,6 +1599,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Instanced
     Type: 2
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -1522,6 +1609,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Cast Shadows
     Type: 2
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 0
@@ -1531,6 +1619,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Cull Distance
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -1552,14 +1641,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 5264126874346046764}
-  position: {x: 0, y: 0}
+  position: {x: 120, y: 40.973953}
   boundsOffset:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    x: -40.197937
+    y: -10
+    width: 40.197937
+    height: 20
+  tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
   dataType: Points
@@ -1627,14 +1716,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: -6445901166843469109}
-  position: {x: 0, y: 0}
+  position: {x: 2.000061, y: 40.973953}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    y: -10
+    width: 29.208374
+    height: 20
+  tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: A
   dataType: Points
@@ -1654,14 +1743,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: -7548037506479330082}
-  position: {x: 0, y: 0}
+  position: {x: 2, y: 53.88022}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    y: -10
+    width: 49.729187
+    height: 20
+  tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: Avoid
   dataType: Points
@@ -1713,14 +1802,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 5067821927034640239}
-  position: {x: 0, y: 0}
+  position: {x: 1.3508301, y: 40.619102}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    y: -10.649284
+    width: 32.18787
+    height: 21.29857
+  tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: In
   dataType: Points
@@ -1754,14 +1843,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 6669718947451215640}
-  position: {x: 0, y: 0}
+  position: {x: 120, y: 40.973953}
   boundsOffset:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    x: -40.197937
+    y: -10
+    width: 40.197937
+    height: 20
+  tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
   dataType: Points
@@ -1783,20 +1872,21 @@ MonoBehaviour:
   caption: 
   bounds:
     serializedVersion: 2
-    x: 0
+    x: 0.66667175
     y: 390
-    width: 120
-    height: 120
+    width: 150.80208
+    height: 81.23958
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 0
+  zIndex: 39
   inputPins:
   - {fileID: 4990290220999066918}
   outputPins:
   - {fileID: 7525650091045197386}
   graph: {fileID: -5797713115998923337}
+  Label: Wall Rocks
   Level: -1
   ReadMargin: 4
   SameLevelMargin: 0
@@ -1807,6 +1897,7 @@ MonoBehaviour:
   Overrides:
   - Name: Level
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -1816,6 +1907,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density
     Type: 0
+    Category: 
     FloatValue: 0.8
     IntValue: 1
     BoolValue: 1
@@ -1825,6 +1917,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Seed
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 2
     BoolValue: 1
@@ -1834,6 +1927,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Slope Min
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -1843,6 +1937,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Slope Max
     Type: 0
+    Category: 
     FloatValue: 45
     IntValue: 1
     BoolValue: 1
@@ -1852,6 +1947,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Min
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -1861,6 +1957,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Max
     Type: 0
+    Category: 
     FloatValue: 0.55
     IntValue: 1
     BoolValue: 1
@@ -1870,6 +1967,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Scale
     Type: 0
+    Category: 
     FloatValue: 0.05
     IntValue: 1
     BoolValue: 1
@@ -1879,6 +1977,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Seed
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 0
     BoolValue: 1
@@ -1888,6 +1987,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Low
     Type: 0
+    Category: 
     FloatValue: -1
     IntValue: 1
     BoolValue: 1
@@ -1897,6 +1997,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch High
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -1906,6 +2007,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Fade Low
     Type: 0
+    Category: 
     FloatValue: -1
     IntValue: 1
     BoolValue: 1
@@ -1915,6 +2017,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Fade High
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -1924,6 +2027,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Path Distance
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -1933,6 +2037,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Avoid Radius
     Type: 0
+    Category: 
     FloatValue: 2.5
     IntValue: 1
     BoolValue: 1
@@ -1942,6 +2047,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Spacing
     Type: 0
+    Category: 
     FloatValue: 1.8
     IntValue: 1
     BoolValue: 1
@@ -1951,6 +2057,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Clearance
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -1960,6 +2067,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Align
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -1969,6 +2077,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Tilt
     Type: 0
+    Category: 
     FloatValue: 20
     IntValue: 1
     BoolValue: 1
@@ -1978,6 +2087,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Scale Min
     Type: 0
+    Category: 
     FloatValue: 0.3
     IntValue: 1
     BoolValue: 1
@@ -1987,6 +2097,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Scale Max
     Type: 0
+    Category: 
     FloatValue: 0.9
     IntValue: 1
     BoolValue: 1
@@ -1996,6 +2107,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density Scale Min
     Type: 0
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -2005,6 +2117,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density Scale Max
     Type: 0
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -2014,6 +2127,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Sink
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -2023,6 +2137,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Prefabs
     Type: 5
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -2036,6 +2151,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Instanced
     Type: 2
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -2045,6 +2161,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Cast Shadows
     Type: 2
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -2054,6 +2171,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Cull Distance
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -2075,14 +2193,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 5224305826140962632}
-  position: {x: 0, y: 0}
+  position: {x: 148.80212, y: 53.880188}
   boundsOffset:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    x: -40.197876
+    y: -10
+    width: 40.197876
+    height: 20
+  tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
   dataType: Points
@@ -2106,8 +2224,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1500
     y: 208
-    width: 120
-    height: 120
+    width: 146.70834
+    height: 68.33333
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -2118,6 +2236,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: -2844670572855980947}
   graph: {fileID: -5797713115998923337}
+  Label: 
   Level: -1
   ReadMargin: 4
   SameLevelMargin: 0
@@ -2140,14 +2259,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: -4245549548087416864}
-  position: {x: 0, y: 0}
+  position: {x: 2, y: 40.973953}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    y: -10
+    width: 31.0625
+    height: 20
+  tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: In
   dataType: Points
@@ -2169,20 +2288,21 @@ MonoBehaviour:
   caption: 
   bounds:
     serializedVersion: 2
-    x: 0
-    y: 650
-    width: 120
-    height: 120
+    x: 284.52652
+    y: 606.1355
+    width: 150.80208
+    height: 81.23958
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 0
+  zIndex: 18
   inputPins:
   - {fileID: -4566592191271839065}
   outputPins:
   - {fileID: -5907199218561012535}
   graph: {fileID: -5797713115998923337}
+  Label: Mushrooms
   Level: -1
   ReadMargin: 4
   SameLevelMargin: 0
@@ -2193,6 +2313,7 @@ MonoBehaviour:
   Overrides:
   - Name: Level
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 0
     BoolValue: 1
@@ -2202,6 +2323,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density
     Type: 0
+    Category: 
     FloatValue: 3
     IntValue: 1
     BoolValue: 1
@@ -2211,6 +2333,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Seed
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 0
     BoolValue: 1
@@ -2220,6 +2343,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Slope Min
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -2229,6 +2353,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Slope Max
     Type: 0
+    Category: 
     FloatValue: 41.41
     IntValue: 1
     BoolValue: 1
@@ -2238,6 +2363,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Min
     Type: 0
+    Category: 
     FloatValue: 0.25
     IntValue: 1
     BoolValue: 1
@@ -2247,6 +2373,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Max
     Type: 0
+    Category: 
     FloatValue: 0.6
     IntValue: 1
     BoolValue: 1
@@ -2256,6 +2383,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Scale
     Type: 0
+    Category: 
     FloatValue: 0.09
     IntValue: 1
     BoolValue: 1
@@ -2265,6 +2393,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Seed
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 4
     BoolValue: 1
@@ -2274,6 +2403,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Low
     Type: 0
+    Category: 
     FloatValue: 0.7
     IntValue: 1
     BoolValue: 1
@@ -2283,6 +2413,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch High
     Type: 0
+    Category: 
     FloatValue: 0.71
     IntValue: 1
     BoolValue: 1
@@ -2292,6 +2423,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Fade Low
     Type: 0
+    Category: 
     FloatValue: -1
     IntValue: 1
     BoolValue: 1
@@ -2301,6 +2433,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Fade High
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -2310,6 +2443,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Path Distance
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -2319,6 +2453,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Avoid Radius
     Type: 0
+    Category: 
     FloatValue: 0.6
     IntValue: 1
     BoolValue: 1
@@ -2328,6 +2463,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Spacing
     Type: 0
+    Category: 
     FloatValue: 1.8
     IntValue: 1
     BoolValue: 1
@@ -2337,6 +2473,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Clearance
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -2346,6 +2483,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Align
     Type: 0
+    Category: 
     FloatValue: 0.5
     IntValue: 1
     BoolValue: 1
@@ -2355,6 +2493,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Tilt
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -2364,6 +2503,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Scale Min
     Type: 0
+    Category: 
     FloatValue: 0.8
     IntValue: 1
     BoolValue: 1
@@ -2373,6 +2513,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Scale Max
     Type: 0
+    Category: 
     FloatValue: 1.6
     IntValue: 1
     BoolValue: 1
@@ -2382,6 +2523,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density Scale Min
     Type: 0
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -2391,6 +2533,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density Scale Max
     Type: 0
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -2400,6 +2543,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Sink
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -2409,6 +2553,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Prefabs
     Type: 5
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -2420,6 +2565,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Instanced
     Type: 2
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -2429,6 +2575,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Cast Shadows
     Type: 2
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 0
@@ -2438,6 +2585,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Cull Distance
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -2459,14 +2607,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 5067821927034640239}
-  position: {x: 0, y: 0}
+  position: {x: 120.649155, y: 40.619102}
   boundsOffset:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    x: -41.486313
+    y: -10.649284
+    width: 41.48644
+    height: 21.29857
+  tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
   dataType: Points
@@ -2486,14 +2634,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 566336318583688581}
-  position: {x: 0, y: 0}
+  position: {x: 2.0000153, y: 53.88022}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    y: -10
+    width: 49.729156
+    height: 20
+  tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: Avoid
   dataType: Points
@@ -2517,8 +2665,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1750
     y: 208
-    width: 120
-    height: 120
+    width: 122
+    height: 68.30591
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -2529,6 +2677,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 4145304863452313919}
   graph: {fileID: -5797713115998923337}
+  Label: Stalagmites
   Level: -1
   ReadMargin: 4
   SameLevelMargin: 0
@@ -2557,14 +2706,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 5994372013010870560}
-  position: {x: 0, y: 0}
+  position: {x: 2, y: 53.880188}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    y: -10
+    width: 49.729164
+    height: 20
+  tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: Avoid
   dataType: Points
@@ -2586,20 +2735,21 @@ MonoBehaviour:
   caption: 
   bounds:
     serializedVersion: 2
-    x: 0
-    y: 910
-    width: 120
-    height: 120
+    x: 502.6679
+    y: 851.595
+    width: 150.80208
+    height: 81.23958
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 0
+  zIndex: 41
   inputPins:
   - {fileID: -5846675188470248497}
   outputPins:
   - {fileID: 1242798135218313696}
   graph: {fileID: -5797713115998923337}
+  Label: Grass
   Level: -1
   ReadMargin: 4
   SameLevelMargin: 0
@@ -2610,6 +2760,7 @@ MonoBehaviour:
   Overrides:
   - Name: Level
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 0
     BoolValue: 1
@@ -2619,6 +2770,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density
     Type: 0
+    Category: 
     FloatValue: 3
     IntValue: 1
     BoolValue: 1
@@ -2628,6 +2780,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Seed
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 0
     BoolValue: 1
@@ -2637,6 +2790,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Slope Min
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -2646,6 +2800,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Slope Max
     Type: 0
+    Category: 
     FloatValue: 41.41
     IntValue: 1
     BoolValue: 1
@@ -2655,6 +2810,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Min
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -2664,6 +2820,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Max
     Type: 0
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -2673,6 +2830,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Scale
     Type: 0
+    Category: 
     FloatValue: 0.05
     IntValue: 1
     BoolValue: 1
@@ -2682,6 +2840,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Seed
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 7
     BoolValue: 1
@@ -2691,6 +2850,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Low
     Type: 0
+    Category: 
     FloatValue: 0.25
     IntValue: 1
     BoolValue: 1
@@ -2700,6 +2860,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch High
     Type: 0
+    Category: 
     FloatValue: 0.6
     IntValue: 1
     BoolValue: 1
@@ -2709,6 +2870,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Fade Low
     Type: 0
+    Category: 
     FloatValue: 0.25
     IntValue: 1
     BoolValue: 1
@@ -2718,6 +2880,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Fade High
     Type: 0
+    Category: 
     FloatValue: 0.6
     IntValue: 1
     BoolValue: 1
@@ -2727,6 +2890,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Path Distance
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -2736,6 +2900,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Avoid Radius
     Type: 0
+    Category: 
     FloatValue: 0.6
     IntValue: 1
     BoolValue: 1
@@ -2745,6 +2910,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Spacing
     Type: 0
+    Category: 
     FloatValue: 0.15
     IntValue: 1
     BoolValue: 1
@@ -2754,6 +2920,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Clearance
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -2763,6 +2930,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Align
     Type: 0
+    Category: 
     FloatValue: 0.6
     IntValue: 1
     BoolValue: 1
@@ -2772,6 +2940,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Tilt
     Type: 0
+    Category: 
     FloatValue: 10
     IntValue: 1
     BoolValue: 1
@@ -2781,6 +2950,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Scale Min
     Type: 0
+    Category: 
     FloatValue: 0.6
     IntValue: 1
     BoolValue: 1
@@ -2790,6 +2960,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Scale Max
     Type: 0
+    Category: 
     FloatValue: 1.4
     IntValue: 1
     BoolValue: 1
@@ -2799,6 +2970,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density Scale Min
     Type: 0
+    Category: 
     FloatValue: 0.7
     IntValue: 1
     BoolValue: 1
@@ -2808,6 +2980,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density Scale Max
     Type: 0
+    Category: 
     FloatValue: 1.1
     IntValue: 1
     BoolValue: 1
@@ -2817,6 +2990,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Sink
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -2826,6 +3000,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Prefabs
     Type: 5
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -2839,6 +3014,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Instanced
     Type: 2
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -2848,6 +3024,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Cast Shadows
     Type: 2
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 0
@@ -2857,6 +3034,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Cull Distance
     Type: 0
+    Category: 
     FloatValue: 60
     IntValue: 1
     BoolValue: 1
@@ -2882,18 +3060,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 500
     y: 208
-    width: 120
-    height: 120
+    width: 122
+    height: 68.33333
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 0
+  zIndex: 32
   inputPins:
   - {fileID: -7696529387148038748}
   outputPins:
   - {fileID: -2616658971042812988}
   graph: {fileID: -5797713115998923337}
+  Label: 
   Level: -1
   ReadMargin: 4
   SameLevelMargin: 0
@@ -2915,14 +3094,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: -4245549548087416864}
-  position: {x: 0, y: 0}
+  position: {x: 129.1355, y: 40.973953}
   boundsOffset:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    x: -40.197998
+    y: -10
+    width: 40.197876
+    height: 20
+  tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
   dataType: Points
@@ -2942,14 +3121,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 5994372013010870560}
-  position: {x: 0, y: 0}
+  position: {x: 148.80208, y: 53.880188}
   boundsOffset:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    x: -40.19792
+    y: -10
+    width: 40.19792
+    height: 20
+  tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
   dataType: Points
@@ -2987,20 +3166,21 @@ MonoBehaviour:
   caption: 
   bounds:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 120
-    height: 120
+    x: -279.38483
+    y: 623.1669
+    width: 150.80208
+    height: 81.23958
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 0
+  zIndex: 21
   inputPins:
   - {fileID: 5219999978609197616}
   outputPins:
   - {fileID: 5471170404627422413}
   graph: {fileID: -5797713115998923337}
+  Label: Big Rocks
   Level: -1
   ReadMargin: 4
   SameLevelMargin: 0
@@ -3011,6 +3191,7 @@ MonoBehaviour:
   Overrides:
   - Name: Level
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 2
     BoolValue: 1
@@ -3020,6 +3201,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density
     Type: 0
+    Category: 
     FloatValue: 0.5
     IntValue: 1
     BoolValue: 1
@@ -3029,6 +3211,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Seed
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 0
     BoolValue: 1
@@ -3038,6 +3221,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Slope Min
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -3047,6 +3231,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Slope Max
     Type: 0
+    Category: 
     FloatValue: 41.41
     IntValue: 1
     BoolValue: 1
@@ -3056,6 +3241,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Min
     Type: 0
+    Category: 
     FloatValue: 0.5
     IntValue: 1
     BoolValue: 1
@@ -3065,6 +3251,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Max
     Type: 0
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -3074,6 +3261,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Scale
     Type: 0
+    Category: 
     FloatValue: 0.05
     IntValue: 1
     BoolValue: 1
@@ -3083,6 +3271,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Seed
     Type: 1
+    Category: 
     FloatValue: 1
     IntValue: 0
     BoolValue: 1
@@ -3092,6 +3281,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch Low
     Type: 0
+    Category: 
     FloatValue: -1
     IntValue: 1
     BoolValue: 1
@@ -3101,6 +3291,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Patch High
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -3110,6 +3301,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Fade Low
     Type: 0
+    Category: 
     FloatValue: -1
     IntValue: 1
     BoolValue: 1
@@ -3119,6 +3311,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: AO Fade High
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -3128,6 +3321,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Path Distance
     Type: 0
+    Category: 
     FloatValue: 3
     IntValue: 1
     BoolValue: 1
@@ -3137,6 +3331,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Avoid Radius
     Type: 0
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -3146,6 +3341,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Spacing
     Type: 0
+    Category: 
     FloatValue: 7
     IntValue: 1
     BoolValue: 1
@@ -3155,6 +3351,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Clearance
     Type: 0
+    Category: 
     FloatValue: 3
     IntValue: 1
     BoolValue: 1
@@ -3164,6 +3361,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Align
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -3173,6 +3371,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Tilt
     Type: 0
+    Category: 
     FloatValue: 10
     IntValue: 1
     BoolValue: 1
@@ -3182,6 +3381,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Scale Min
     Type: 0
+    Category: 
     FloatValue: 1.5
     IntValue: 1
     BoolValue: 1
@@ -3191,6 +3391,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Scale Max
     Type: 0
+    Category: 
     FloatValue: 3
     IntValue: 1
     BoolValue: 1
@@ -3200,6 +3401,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density Scale Min
     Type: 0
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -3209,6 +3411,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Density Scale Max
     Type: 0
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -3218,6 +3421,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Sink
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -3227,6 +3431,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Prefabs
     Type: 5
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -3240,6 +3445,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Instanced
     Type: 2
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 0
@@ -3249,6 +3455,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Cast Shadows
     Type: 2
+    Category: 
     FloatValue: 1
     IntValue: 1
     BoolValue: 1
@@ -3258,6 +3465,7 @@ MonoBehaviour:
     ObjectValue: {fileID: 0}
   - Name: Cull Distance
     Type: 0
+    Category: 
     FloatValue: 0
     IntValue: 1
     BoolValue: 1
@@ -3283,8 +3491,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 250
     y: 208
-    width: 120
-    height: 120
+    width: 122
+    height: 68.33333
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -3295,6 +3503,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: 34810715711856361}
   graph: {fileID: -5797713115998923337}
+  Label: 
   Level: -1
   ReadMargin: 4
   SameLevelMargin: 16
@@ -3333,14 +3542,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 566336318583688581}
-  position: {x: 0, y: 0}
+  position: {x: 148.80208, y: 53.88022}
   boundsOffset:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    x: -40.197906
+    y: -10
+    width: 40.197906
+    height: 20
+  tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
   dataType: Points
@@ -3380,8 +3589,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 750
     y: 208
-    width: 120
-    height: 120
+    width: 136.4375
+    height: 68.33333
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -3392,6 +3601,7 @@ MonoBehaviour:
   outputPins:
   - {fileID: -3941936686647573684}
   graph: {fileID: -5797713115998923337}
+  Label: 
   Level: -1
   ReadMargin: 4
   SameLevelMargin: 0
@@ -3414,14 +3624,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: -2697889781518730166}
-  position: {x: 0, y: 0}
+  position: {x: 2, y: 53.880188}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 0
-    height: 0
-  tangent: {x: 0, y: 0}
+    y: -10
+    width: 49.729156
+    height: 20
+  tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: Avoid
   dataType: Points
