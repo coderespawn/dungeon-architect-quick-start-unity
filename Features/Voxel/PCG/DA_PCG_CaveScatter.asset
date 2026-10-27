@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 21580147327483379}
-  position: {x: -1.9118652, y: 41.541702}
+  position: {x: 0.729187, y: 41.254524}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: -13.911942
-    width: 37.943176
-    height: 27.823881
+    y: -11.27076
+    width: 32.855392
+    height: 22.541521
   tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: In
@@ -95,10 +95,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: -2148403683143598988}
-  position: {x: 82.82292, y: 11}
+  position: {x: 82.82294, y: 11}
   boundsOffset:
     serializedVersion: 2
-    x: -8
+    x: -8.000015
     y: -11
     width: 22
     height: 22
@@ -122,13 +122,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 1586568850573726844}
-  position: {x: 1.6875, y: 40.433563}
+  position: {x: 2, y: 40.97397}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: -10.312439
-    width: 31.632635
-    height: 20.62488
+    y: -10
+    width: 31.0625
+    height: 20
   tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: In
@@ -203,13 +203,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: -1542146050007345130}
-  position: {x: 185.50235, y: 55.902542}
+  position: {x: 173.48384, y: 54.00599}
   boundsOffset:
     serializedVersion: 2
-    x: -48.121735
-    y: -13.911942
-    width: 48.12164
-    height: 27.823881
+    x: -41.8871
+    y: -11.27076
+    width: 41.88701
+    height: 22.541521
   tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
@@ -246,13 +246,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: -1542146050007345130}
-  position: {x: -1.9119873, y: 55.902542}
+  position: {x: 0.729187, y: 54.00599}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: -13.911942
-    width: 37.943295
-    height: 27.823881
+    y: -11.27076
+    width: 32.855556
+    height: 22.541521
   tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: In
@@ -300,7 +300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 5264126874346046764}
-  position: {x: 2, y: 40.973938}
+  position: {x: 2, y: 40.97397}
   boundsOffset:
     serializedVersion: 2
     x: 0
@@ -563,6 +563,21 @@ MonoBehaviour:
     StringValue: 
     PrefabsValue: []
     ObjectValue: {fileID: 0}
+  - Name: Prune
+    Type: 2
+    Category: Avoid & Spacing
+    Tooltip: 'Keep the points apart (Spacing). Off for dense cover like grass: faster,
+      and the spacing doesn''t matter'
+    UseRange: 0
+    RangeMin: 0
+    RangeMax: 1
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
   - Name: Clearance
     Type: 0
     Category: 
@@ -754,8 +769,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2
     y: 205.33331
-    width: 151.25589
-    height: 81.66981
+    width: 150.80208
+    height: 81.23958
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -986,6 +1001,21 @@ MonoBehaviour:
     StringValue: 
     PrefabsValue: []
     ObjectValue: {fileID: 0}
+  - Name: Prune
+    Type: 2
+    Category: Avoid & Spacing
+    Tooltip: 'Keep the points apart (Spacing). Off for dense cover like grass: faster,
+      and the spacing doesn''t matter'
+    UseRange: 0
+    RangeMin: 0
+    RangeMax: 1
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
   - Name: Clearance
     Type: 0
     Category: 
@@ -1171,13 +1201,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: -7443193266090352408}
-  position: {x: 150.57988, y: 54.349514}
+  position: {x: 148.80206, y: 53.880203}
   boundsOffset:
     serializedVersion: 2
-    x: -42.148575
-    y: -11.324001
-    width: 42.148605
-    height: 22.648
+    x: -40.197937
+    y: -10
+    width: 40.197937
+    height: 20
   tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
@@ -1208,7 +1238,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 281
+  zIndex: 369
   inputPins: []
   outputPins:
   - {fileID: -7135374499951939773}
@@ -1236,7 +1266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 7611769862700516465}
-  position: {x: 2, y: 40.973938}
+  position: {x: 2, y: 40.97397}
   boundsOffset:
     serializedVersion: 2
     x: 0
@@ -1279,10 +1309,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: -7348559963811797905}
-  position: {x: 82.82294, y: 11}
+  position: {x: 82.822876, y: 11}
   boundsOffset:
     serializedVersion: 2
-    x: -8.000015
+    x: -7.999954
     y: -11
     width: 22
     height: 22
@@ -1310,8 +1340,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 300
     y: -181.33334
-    width: 122
-    height: 85.44399
+    width: 187.58083
+    height: 84.10615
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -1350,10 +1380,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: -8340076207860663530}
-  position: {x: 88.86458, y: 11}
+  position: {x: 88.86459, y: 11}
   boundsOffset:
     serializedVersion: 2
-    x: -8
+    x: -8.000015
     y: -11
     width: 22
     height: 22
@@ -1417,7 +1447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: -6445901166843469109}
-  position: {x: 2.000061, y: 57.880188}
+  position: {x: 2, y: 57.88022}
   boundsOffset:
     serializedVersion: 2
     x: 0
@@ -1446,22 +1476,6 @@ MonoBehaviour:
   input: {fileID: 5127725237142490247}
   output: {fileID: 5471170404627422413}
   graph: {fileID: -5797713115998923337}
---- !u!114 &-6097265811964006598
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_33
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 33
-  input: {fileID: -5846675188470248497}
-  output: {fileID: -7135374499951939773}
-  graph: {fileID: -5797713115998923337}
 --- !u!114 &-5907199218561012535
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1479,9 +1493,9 @@ MonoBehaviour:
   position: {x: 148.80208, y: 53.880188}
   boundsOffset:
     serializedVersion: 2
-    x: -40.197906
+    x: -40.197937
     y: -10
-    width: 40.197906
+    width: 40.197937
     height: 20
   tangent: {x: 1, y: 0}
   tangentStrength: 50
@@ -1503,7 +1517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 5224305826140962632}
-  position: {x: 2, y: 53.880188}
+  position: {x: 1.999939, y: 53.880188}
   boundsOffset:
     serializedVersion: 2
     x: 0
@@ -1529,9 +1543,9 @@ MonoBehaviour:
   m_Name: PCGGraph
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraph
   indexCounter:
-    index: 50
+    index: 53
   topZIndex:
-    index: 355
+    index: 371
   nodes:
   - {fileID: 5994372013010870560}
   - {fileID: -7443193266090352408}
@@ -1593,9 +1607,6 @@ MonoBehaviour:
   - {fileID: 7802640953675938146}
   - {fileID: 5393634487515123665}
   - {fileID: 8107772089381232666}
-  - {fileID: -6097265811964006598}
-  - {fileID: 1380043160353914523}
-  - {fileID: -4970508151778137076}
   - {fileID: 975498931912109503}
   - {fileID: -2424941279127541992}
   - {fileID: 5230995166034756534}
@@ -1608,6 +1619,9 @@ MonoBehaviour:
   - {fileID: -407083663496809892}
   - {fileID: 4033233414898704744}
   - {fileID: -372187542625180847}
+  - {fileID: 6666080917173179385}
+  - {fileID: 340959579292366359}
+  - {fileID: -364890485602386906}
   owner: {fileID: 11400000}
 --- !u!114 &-5785257874255686361
 MonoBehaviour:
@@ -1655,7 +1669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: -6445901166843469109}
-  position: {x: 120.00006, y: 40.973938}
+  position: {x: 120, y: 40.97397}
   boundsOffset:
     serializedVersion: 2
     x: -40.197876
@@ -1668,22 +1682,6 @@ MonoBehaviour:
   dataType: Points
   propertyPath: 
   valueType: 
---- !u!114 &-4970508151778137076
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_35
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 35
-  input: {fileID: -5846675188470248497}
-  output: {fileID: 801708764394891830}
-  graph: {fileID: -5797713115998923337}
 --- !u!114 &-4750935303287151278
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1698,13 +1696,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: -2697889781518730166}
-  position: {x: 148.8021, y: 53.88025}
+  position: {x: 165.0379, y: 55.42061}
   boundsOffset:
     serializedVersion: 2
-    x: -40.197937
-    y: -10
-    width: 40.197937
-    height: 20
+    x: -44.76346
+    y: -11.8564
+    width: 44.76345
+    height: 23.7128
   tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
@@ -1741,13 +1739,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 611482520699773064}
-  position: {x: 185.5021, y: 41.54158}
+  position: {x: 173.19557, y: 41.254524}
   boundsOffset:
     serializedVersion: 2
-    x: -48.121613
-    y: -13.911942
-    width: 48.12164
-    height: 27.823881
+    x: -41.8871
+    y: -11.27076
+    width: 41.88717
+    height: 22.541521
   tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
@@ -1795,13 +1793,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 8560546502815207495}
-  position: {x: -1.9119568, y: 55.90242}
+  position: {x: 0.7292175, y: 54.00599}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: -13.911942
-    width: 37.943295
-    height: 27.823881
+    y: -11.27076
+    width: 32.855556
+    height: 22.541521
   tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: In
@@ -1866,7 +1864,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 203.33331
     y: 248.66666
-    width: 104.92435
+    width: 102.07292
     height: 22
   canBeDeleted: 1
   canBeSelected: 1
@@ -1901,12 +1899,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: -7548037506479330082}
-  position: {x: 148.80208, y: 53.88025}
+  position: {x: 148.80208, y: 53.880188}
   boundsOffset:
     serializedVersion: 2
-    x: -40.197906
+    x: -40.197937
     y: -10
-    width: 40.197906
+    width: 40.197937
     height: 20
   tangent: {x: 1, y: 0}
   tangentStrength: 50
@@ -1928,12 +1926,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 7611769862700516465}
-  position: {x: 134.4375, y: 40.973938}
+  position: {x: 134.4375, y: 40.97397}
   boundsOffset:
     serializedVersion: 2
-    x: -40.197937
+    x: -40.197876
     y: -10
-    width: 40.197937
+    width: 40.197876
     height: 20
   tangent: {x: 1, y: 0}
   tangentStrength: 50
@@ -1955,10 +1953,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: -1883211658679899454}
-  position: {x: 94.854164, y: 11}
+  position: {x: 94.85416, y: 11}
   boundsOffset:
     serializedVersion: 2
-    x: -8
+    x: -7.9999924
     y: -11
     width: 22
     height: 22
@@ -2029,7 +2027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 6669718947451215640}
-  position: {x: 2, y: 40.973938}
+  position: {x: 2, y: 40.97397}
   boundsOffset:
     serializedVersion: 2
     x: 0
@@ -2056,13 +2054,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: -7443193266090352408}
-  position: {x: 0.6759949, y: 54.349514}
+  position: {x: 2, y: 53.880203}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: -11.324001
-    width: 51.673595
-    height: 22.648
+    y: -10
+    width: 49.729187
+    height: 20
   tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: Avoid
@@ -2099,13 +2097,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 6903328498645156517}
-  position: {x: 193.26984, y: 41.541336}
+  position: {x: 188.88438, y: 41.254524}
   boundsOffset:
     serializedVersion: 2
-    x: -48.121613
-    y: -13.911942
-    width: 48.12164
-    height: 27.823881
+    x: -41.88713
+    y: -11.27076
+    width: 41.887127
+    height: 22.541521
   tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
@@ -2126,13 +2124,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 1586568850573726844}
-  position: {x: 156.47485, y: 40.433563}
+  position: {x: 144.70837, y: 40.97397}
   boundsOffset:
     serializedVersion: 2
-    x: -40.86389
-    y: -10.312439
-    width: 40.863953
-    height: 20.62488
+    x: -40.197876
+    y: -10
+    width: 40.197876
+    height: 20
   tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
@@ -2153,13 +2151,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 5763669521506553696}
-  position: {x: 185.50235, y: 41.541336}
+  position: {x: 168.36415, y: 41.254524}
   boundsOffset:
     serializedVersion: 2
-    x: -48.121735
-    y: -13.911942
-    width: 48.12164
-    height: 27.823881
+    x: -41.88698
+    y: -11.27076
+    width: 41.88701
+    height: 22.541521
   tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
@@ -2184,8 +2182,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2.0000305
     y: 1201.3334
-    width: 150.80208
-    height: 81.23958
+    width: 165.18147
+    height: 84.672874
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -2416,6 +2414,21 @@ MonoBehaviour:
     StringValue: 
     PrefabsValue: []
     ObjectValue: {fileID: 0}
+  - Name: Prune
+    Type: 2
+    Category: Avoid & Spacing
+    Tooltip: 'Keep the points apart (Spacing). Off for dense cover like grass: faster,
+      and the spacing doesn''t matter'
+    UseRange: 0
+    RangeMin: 0
+    RangeMax: 1
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
   - Name: Clearance
     Type: 0
     Category: 
@@ -2600,7 +2613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 5264126874346046764}
-  position: {x: 120, y: 40.973938}
+  position: {x: 120, y: 40.97397}
   boundsOffset:
     serializedVersion: 2
     x: -40.197937
@@ -2627,10 +2640,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 3986949325436988178}
-  position: {x: 82.82294, y: 11}
+  position: {x: 82.822876, y: 11}
   boundsOffset:
     serializedVersion: 2
-    x: -8.000015
+    x: -7.999954
     y: -11
     width: 22
     height: 22
@@ -2670,13 +2683,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 5763669521506553696}
-  position: {x: -1.9118652, y: 41.541336}
+  position: {x: 0.7293701, y: 41.254524}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: -13.911942
-    width: 37.943176
-    height: 27.823881
+    y: -11.27076
+    width: 32.855392
+    height: 22.541521
   tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: In
@@ -2767,7 +2780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: -6445901166843469109}
-  position: {x: 2.000061, y: 40.973938}
+  position: {x: 2, y: 40.97397}
   boundsOffset:
     serializedVersion: 2
     x: 0
@@ -2804,7 +2817,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 152
+  zIndex: 366
   inputPins: []
   outputPins:
   - {fileID: -3826180838577698812}
@@ -2836,7 +2849,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -280.22058
     y: 1086.5925
-    width: 158.8125
+    width: 161.18138
     height: 22
   canBeDeleted: 1
   canBeSelected: 1
@@ -2870,10 +2883,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 8471439925438928468}
-  position: {x: 88.07292, y: 11}
+  position: {x: 88.07294, y: 11}
   boundsOffset:
     serializedVersion: 2
-    x: -8
+    x: -8.000015
     y: -11
     width: 22
     height: 22
@@ -2901,8 +2914,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 637.9735
     y: 1436.6049
-    width: 183.59023
-    height: 85.44399
+    width: 174.21315
+    height: 81.13311
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -2962,13 +2975,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 8560546502815207495}
-  position: {x: 188.86066, y: 55.90242}
+  position: {x: 176.66826, y: 54.00599}
   boundsOffset:
     serializedVersion: 2
-    x: -48.121613
-    y: -13.911942
-    width: 48.12164
-    height: 27.823881
+    x: -41.88716
+    y: -11.27076
+    width: 41.88717
+    height: 22.541521
   tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
@@ -2989,12 +3002,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: -7548037506479330082}
-  position: {x: 2.000001, y: 53.88025}
+  position: {x: 1.9999857, y: 53.880188}
   boundsOffset:
     serializedVersion: 2
     x: 0
     y: -10
-    width: 49.72917
+    width: 49.729156
     height: 20
   tangent: {x: -1, y: 0}
   tangentStrength: 50
@@ -3016,13 +3029,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 7161625899498994865}
-  position: {x: 156.86258, y: 55.90251}
+  position: {x: 181.24875, y: 55.066345}
   boundsOffset:
     serializedVersion: 2
-    x: -48.121735
-    y: -13.911942
-    width: 48.12164
-    height: 27.823881
+    x: -44.4758
+    y: -11.797836
+    width: 44.475765
+    height: 23.59567
   tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
@@ -3043,13 +3056,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 611482520699773064}
-  position: {x: -1.9119873, y: 41.54158}
+  position: {x: 0.72924805, y: 41.254524}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: -13.911942
-    width: 37.943295
-    height: 27.823881
+    y: -11.27076
+    width: 32.855556
+    height: 22.541521
   tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: In
@@ -3070,10 +3083,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: -4163996621142548073}
-  position: {x: 13.999994, y: 11}
+  position: {x: 14, y: 11}
   boundsOffset:
     serializedVersion: 2
-    x: -13.999994
+    x: -14
     y: -11
     width: 22
     height: 22
@@ -3115,6 +3128,22 @@ MonoBehaviour:
   input: {fileID: 6076838510725393634}
   output: {fileID: 4453497401466251203}
   graph: {fileID: -5797713115998923337}
+--- !u!114 &-364890485602386906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_53
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 53
+  input: {fileID: -5846675188470248497}
+  output: {fileID: -7135374499951939773}
+  graph: {fileID: -5797713115998923337}
 --- !u!114 &-342287481030704387
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3129,13 +3158,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 5067821927034640239}
-  position: {x: 0.67614746, y: 54.349514}
+  position: {x: 2, y: 53.88022}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: -11.324001
-    width: 33.0256
-    height: 22.648
+    y: -10
+    width: 31.0625
+    height: 20
   tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: In
@@ -3177,8 +3206,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 887.9735
     y: 1436.6049
-    width: 183.59023
-    height: 71.08299
+    width: 169.53261
+    height: 68.381714
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -3213,12 +3242,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 6669718947451215640}
-  position: {x: 120, y: 40.973938}
+  position: {x: 120, y: 40.97397}
   boundsOffset:
     serializedVersion: 2
-    x: -40.197906
+    x: -40.197937
     y: -10
-    width: 40.197906
+    width: 40.197937
     height: 20
   tangent: {x: 1, y: 0}
   tangentStrength: 50
@@ -3226,6 +3255,22 @@ MonoBehaviour:
   dataType: Points
   propertyPath: 
   valueType: 
+--- !u!114 &340959579292366359
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_52
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 52
+  input: {fileID: -5846675188470248497}
+  output: {fileID: 8444102806094907742}
+  graph: {fileID: -5797713115998923337}
 --- !u!114 &392957658684807804
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3531,6 +3576,21 @@ MonoBehaviour:
     StringValue: 
     PrefabsValue: []
     ObjectValue: {fileID: 0}
+  - Name: Prune
+    Type: 2
+    Category: Avoid & Spacing
+    Tooltip: 'Keep the points apart (Spacing). Off for dense cover like grass: faster,
+      and the spacing doesn''t matter'
+    UseRange: 0
+    RangeMin: 0
+    RangeMax: 1
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
   - Name: Clearance
     Type: 0
     Category: 
@@ -3721,8 +3781,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 377.48682
     y: 1451.7915
-    width: 183.59023
-    height: 71.08299
+    width: 173.9249
+    height: 68.381714
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -3784,10 +3844,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 3441356999227566847}
-  position: {x: 88.86456, y: 11}
+  position: {x: 88.864624, y: 11}
   boundsOffset:
     serializedVersion: 2
-    x: -7.9999847
+    x: -8.000046
     y: -11
     width: 22
     height: 22
@@ -3827,7 +3887,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 5224305826140962632}
-  position: {x: 148.80212, y: 53.880188}
+  position: {x: 148.80206, y: 53.880188}
   boundsOffset:
     serializedVersion: 2
     x: -40.197876
@@ -3840,22 +3900,6 @@ MonoBehaviour:
   dataType: Points
   propertyPath: 
   valueType: 
---- !u!114 &1380043160353914523
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
-  m_Name: Link_34
-  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
-  id: 34
-  input: {fileID: -5846675188470248497}
-  output: {fileID: 8444102806094907742}
-  graph: {fileID: -5797713115998923337}
 --- !u!114 &1586568850573726844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3874,8 +3918,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1300
     y: 380
-    width: 158.16254
-    height: 67.99115
+    width: 146.70834
+    height: 68.33333
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -3910,7 +3954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: -4245549548087416864}
-  position: {x: 2, y: 40.973938}
+  position: {x: 2, y: 40.97397}
   boundsOffset:
     serializedVersion: 2
     x: 0
@@ -4173,6 +4217,21 @@ MonoBehaviour:
     StringValue: 
     PrefabsValue: []
     ObjectValue: {fileID: 0}
+  - Name: Prune
+    Type: 2
+    Category: Avoid & Spacing
+    Tooltip: 'Keep the points apart (Spacing). Off for dense cover like grass: faster,
+      and the spacing doesn''t matter'
+    UseRange: 0
+    RangeMin: 0
+    RangeMax: 1
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
   - Name: Clearance
     Type: 0
     Category: 
@@ -4357,13 +4416,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 8383020603132081335}
-  position: {x: 193.26984, y: 78.263504}
+  position: {x: 188.95299, y: 74.75733}
   boundsOffset:
     serializedVersion: 2
-    x: -66.04715
-    y: -13.911942
-    width: 66.04713
-    height: 27.823881
+    x: -57.795547
+    y: -11.27076
+    width: 57.79556
+    height: 22.541521
   tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Ceiling
@@ -4384,13 +4443,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 21580147327483379}
-  position: {x: 185.50235, y: 41.541702}
+  position: {x: 168.80336, y: 41.254524}
   boundsOffset:
     serializedVersion: 2
-    x: -48.121735
-    y: -13.911942
-    width: 48.12164
-    height: 27.823881
+    x: -41.88704
+    y: -11.27076
+    width: 41.88701
+    height: 22.541521
   tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
@@ -4466,7 +4525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 5224305826140962632}
-  position: {x: 2, y: 70.78644}
+  position: {x: 1.999939, y: 70.78644}
   boundsOffset:
     serializedVersion: 2
     x: 0
@@ -4493,13 +4552,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 8383020603132081335}
-  position: {x: 193.26984, y: 59.90242}
+  position: {x: 188.95299, y: 58.005867}
   boundsOffset:
     serializedVersion: 2
-    x: -50.882477
-    y: -13.911942
-    width: 50.882538
-    height: 27.823881
+    x: -44.316666
+    y: -11.27076
+    width: 44.31666
+    height: 22.541521
   tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Wall
@@ -4520,13 +4579,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 8383020603132081335}
-  position: {x: -1.9119568, y: 41.54158}
+  position: {x: 0.7292175, y: 41.254524}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: -13.911942
-    width: 37.943295
-    height: 27.823881
+    y: -11.27076
+    width: 32.855434
+    height: 22.541521
   tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: In
@@ -4557,7 +4616,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 283
+  zIndex: 367
   inputPins: []
   outputPins:
   - {fileID: 801708764394891830}
@@ -4595,7 +4654,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 1
-  zIndex: 355
+  zIndex: 371
   inputPins: []
   outputPins:
   - {fileID: 5085721681904421554}
@@ -4650,13 +4709,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: -6875479174372861209}
-  position: {x: 123.911896, y: 55.90251}
+  position: {x: 187.3787, y: 55.066345}
   boundsOffset:
     serializedVersion: 2
-    x: -48.121613
-    y: -13.911942
-    width: 48.12164
-    height: 27.823881
+    x: -44.475677
+    y: -11.797836
+    width: 44.475765
+    height: 23.59567
   tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
@@ -4735,7 +4794,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1757.345
     y: 396.6833
-    width: 111.95369
+    width: 110.48202
     height: 22
   canBeDeleted: 1
   canBeSelected: 1
@@ -4786,13 +4845,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 5067821927034640239}
-  position: {x: 156.19524, y: 54.349514}
+  position: {x: 161.59375, y: 53.88022}
   boundsOffset:
     serializedVersion: 2
-    x: -42.148727
-    y: -11.324001
-    width: 42.148605
-    height: 22.648
+    x: -40.197998
+    y: -10
+    width: 40.197876
+    height: 20
   tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
@@ -4813,13 +4872,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 4807405359594726362}
-  position: {x: 180.43362, y: 55.90242}
+  position: {x: 193.26736, y: 55.42061}
   boundsOffset:
     serializedVersion: 2
-    x: -48.121735
-    y: -13.911942
-    width: 48.12164
-    height: 27.823881
+    x: -44.76358
+    y: -11.8564
+    width: 44.76354
+    height: 23.7128
   tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
@@ -4844,8 +4903,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1387.3071
     y: 1437.2715
-    width: 178.52164
-    height: 85.44399
+    width: 193.41116
+    height: 84.672874
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -4882,12 +4941,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 566336318583688581}
-  position: {x: 1.9999928, y: 53.880188}
+  position: {x: 2.000008, y: 53.88025}
   boundsOffset:
     serializedVersion: 2
     x: 0
     y: -10
-    width: 49.72914
+    width: 49.729156
     height: 20
   tangent: {x: -1, y: 0}
   tangentStrength: 50
@@ -4913,8 +4972,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1519.4031
     y: 367.2918
-    width: 156.87105
-    height: 81.66981
+    width: 163.59375
+    height: 81.23958
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -4956,7 +5015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 3502888002245128377}
-  position: {x: 120.00003, y: 53.880188}
+  position: {x: 119.99997, y: 53.880188}
   boundsOffset:
     serializedVersion: 2
     x: -49.614563
@@ -4983,11 +5042,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 7213888972199113434}
-  position: {x: 13.999944, y: 11.000008}
+  position: {x: 14.000029, y: 11.000003}
   boundsOffset:
     serializedVersion: 2
-    x: -13.999944
-    y: -11.000008
+    x: -14.000029
+    y: -11.000003
     width: 22
     height: 22
   tangent: {x: -1, y: 0}
@@ -5010,13 +5069,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 5994372013010870560}
-  position: {x: -1.9119568, y: 55.90248}
+  position: {x: 1.3037415, y: 54.084484}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: -13.911942
-    width: 58.75331
-    height: 27.823881
+    y: -10.696247
+    width: 51.53984
+    height: 21.392496
   tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: Avoid
@@ -5047,7 +5106,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 287
+  zIndex: 370
   inputPins:
   - {fileID: -5846675188470248497}
   - {fileID: 2981614224030132705}
@@ -5271,6 +5330,21 @@ MonoBehaviour:
     FloatValue: 0.15
     IntValue: 1
     BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Prune
+    Type: 2
+    Category: Avoid & Spacing
+    Tooltip: 'Keep the points apart (Spacing). Off for dense cover like grass: faster,
+      and the spacing doesn''t matter'
+    UseRange: 0
+    RangeMin: 0
+    RangeMax: 1
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 0
     VectorValue: {x: 0, y: 0, z: 0}
     StringValue: 
     PrefabsValue: []
@@ -5548,10 +5622,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: -4245549548087416864}
-  position: {x: 129.1355, y: 40.973938}
+  position: {x: 129.13538, y: 40.97397}
   boundsOffset:
     serializedVersion: 2
-    x: -40.197998
+    x: -40.197876
     y: -10
     width: 40.197876
     height: 20
@@ -5575,13 +5649,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 5994372013010870560}
-  position: {x: 170.0697, y: 55.90248}
+  position: {x: 153.58937, y: 54.084484}
   boundsOffset:
     serializedVersion: 2
-    x: -48.121613
-    y: -13.911942
-    width: 48.12164
-    height: 27.823881
+    x: -41.74376
+    y: -10.696247
+    width: 41.743763
+    height: 21.392496
   tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
@@ -5602,13 +5676,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 8383020603132081335}
-  position: {x: 193.26984, y: 41.54158}
+  position: {x: 188.95299, y: 41.254524}
   boundsOffset:
     serializedVersion: 2
-    x: -56.239655
-    y: -13.911942
-    width: 56.23966
-    height: 27.823881
+    x: -49.093277
+    y: -11.27076
+    width: 49.09329
+    height: 22.541521
   tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Floor
@@ -5639,7 +5713,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 282
+  zIndex: 368
   inputPins: []
   outputPins:
   - {fileID: 8444102806094907742}
@@ -5671,8 +5745,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1137.9738
     y: 1437.2715
-    width: 183.59023
-    height: 71.08299
+    width: 169.09337
+    height: 68.381714
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -5710,8 +5784,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: -263.33334
     y: -39.333344
-    width: 168.1578
-    height: 85.44399
+    width: 154.89311
+    height: 81.97016
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -5942,6 +6016,21 @@ MonoBehaviour:
     StringValue: 
     PrefabsValue: []
     ObjectValue: {fileID: 0}
+  - Name: Prune
+    Type: 2
+    Category: Avoid & Spacing
+    Tooltip: 'Keep the points apart (Spacing). Off for dense cover like grass: faster,
+      and the spacing doesn''t matter'
+    UseRange: 0
+    RangeMin: 0
+    RangeMax: 1
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
   - Name: Clearance
     Type: 0
     Category: 
@@ -6124,13 +6213,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 6448286646292995401}
-  position: {x: -1.9116211, y: 55.90242}
+  position: {x: 0.14355469, y: 55.42061}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: -13.911942
-    width: 37.943176
-    height: 27.823881
+    y: -11.8564
+    width: 34.72832
+    height: 23.7128
   tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: In
@@ -6155,8 +6244,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1637.9738
     y: 1437.2715
-    width: 178.52164
-    height: 85.44399
+    width: 184.30627
+    height: 84.672874
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -6181,6 +6270,22 @@ MonoBehaviour:
   Instanced: 1
   CastShadows: 1
   CullDistance: 0
+--- !u!114 &6666080917173179385
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_51
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 51
+  input: {fileID: -5846675188470248497}
+  output: {fileID: 801708764394891830}
+  graph: {fileID: -5797713115998923337}
 --- !u!114 &6669718947451215640
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6235,13 +6340,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 7161625899498994865}
-  position: {x: -1.9119873, y: 55.90251}
+  position: {x: 0.20214844, y: 55.066345}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: -13.911942
-    width: 37.943295
-    height: 27.823881
+    y: -11.797836
+    width: 34.54103
+    height: 23.59567
   tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: In
@@ -6266,8 +6371,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: -362.02664
     y: 1437.2715
-    width: 191.35794
-    height: 71.08299
+    width: 189.61365
+    height: 68.381714
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -6287,6 +6392,8 @@ MonoBehaviour:
   ExposedProperties: []
   PointsPerSquareUnit: 0.8
   Seed: 11
+  MinSlope: 0
+  MaxSlope: 180
 --- !u!114 &7161625899498994865
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6305,8 +6412,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: -181.33334
-    width: 154.95065
-    height: 85.44399
+    width: 181.45084
+    height: 84.10615
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -6370,7 +6477,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -13.333252
     y: 53.333344
-    width: 98.204926
+    width: 95.96931
     height: 22
   canBeDeleted: 1
   canBeSelected: 1
@@ -6421,12 +6528,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 566336318583688581}
-  position: {x: 148.80208, y: 53.880188}
+  position: {x: 148.80211, y: 53.88025}
   boundsOffset:
     serializedVersion: 2
-    x: -40.197914
+    x: -40.197945
     y: -10
-    width: 40.197906
+    width: 40.197937
     height: 20
   tangent: {x: 1, y: 0}
   tangentStrength: 50
@@ -6488,13 +6595,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: -6875479174372861209}
-  position: {x: -1.9119873, y: 55.90251}
+  position: {x: 0.20220947, y: 55.066345}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: -13.911942
-    width: 37.943295
-    height: 27.823881
+    y: -11.797836
+    width: 34.54099
+    height: 23.59567
   tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: In
@@ -6515,13 +6622,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 6448286646292995401}
-  position: {x: 180.43375, y: 55.90242}
+  position: {x: 184.16263, y: 55.42061}
   boundsOffset:
     serializedVersion: 2
-    x: -48.12149
-    y: -13.911942
-    width: 48.12164
-    height: 27.823881
+    x: -44.76346
+    y: -11.8564
+    width: 44.76354
+    height: 23.7128
   tangent: {x: 1, y: 0}
   tangentStrength: 50
   text: Out
@@ -6542,11 +6649,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 4032696968970604362}
-  position: {x: 14.000034, y: 11.000004}
+  position: {x: 13.999949, y: 10.999983}
   boundsOffset:
     serializedVersion: 2
-    x: -14.000034
-    y: -11.000004
+    x: -13.999949
+    y: -10.999983
     width: 22
     height: 22
   tangent: {x: -1, y: 0}
@@ -6617,13 +6724,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: 4807405359594726362}
-  position: {x: -1.9119873, y: 55.90242}
+  position: {x: 0.14343262, y: 55.42061}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: -13.911942
-    width: 37.943176
-    height: 27.823881
+    y: -11.8564
+    width: 34.728233
+    height: 23.7128
   tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: In
@@ -6660,13 +6767,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 0
   node: {fileID: -2697889781518730166}
-  position: {x: 2, y: 53.88025}
+  position: {x: 0.14364624, y: 55.42061}
   boundsOffset:
     serializedVersion: 2
     x: 0
-    y: -10
-    width: 49.729218
-    height: 20
+    y: -11.8564
+    width: 55.240917
+    height: 23.7128
   tangent: {x: -1, y: 0}
   tangentStrength: 50
   text: Avoid
@@ -6707,8 +6814,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: -121.360016
     y: 1434.6047
-    width: 191.35794
-    height: 107.80498
+    width: 189.68228
+    height: 101.88451
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -6745,10 +6852,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: 5576127903796015141}
-  position: {x: 94.85419, y: 11}
+  position: {x: 94.854126, y: 11}
   boundsOffset:
     serializedVersion: 2
-    x: -8.000023
+    x: -7.999962
     y: -11
     width: 22
     height: 22
@@ -6814,8 +6921,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 137.97336
     y: 1437.2715
-    width: 186.94867
-    height: 85.44399
+    width: 177.39757
+    height: 81.13311
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
@@ -6851,11 +6958,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
   pinType: 1
   node: {fileID: -1876123242231409272}
-  position: {x: 144.8125, y: 11}
+  position: {x: 147.1814, y: 10.999983}
   boundsOffset:
     serializedVersion: 2
-    x: -8
-    y: -11
+    x: -8.000015
+    y: -10.999983
     width: 22
     height: 22
   tangent: {x: 1, y: 0}
