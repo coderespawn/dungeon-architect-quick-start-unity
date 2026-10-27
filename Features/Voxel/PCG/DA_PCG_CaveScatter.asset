@@ -1,0 +1,3429 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8527370660521792162
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 1586568850573726844}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &-8330031969347707220
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_1
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 1
+  input: {fileID: -3165937187603425474}
+  output: {fileID: -7367102799793909136}
+  graph: {fileID: -5797713115998923337}
+--- !u!114 &-7696529387148038748
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 5264126874346046764}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &-7548037506479330082
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a01e395dda10fb4f85d62be7c3bb7dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGSubgraphNode
+  id: 9d5cb7e9-e73f-46b3-b11d-75164e2af99d
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 0
+    y: 520
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -1351589820515044770}
+  outputPins:
+  - {fileID: -4037082618579784541}
+  graph: {fileID: -5797713115998923337}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  ExposedProperties: []
+  Subgraph: {fileID: 11400000, guid: 016c9235f4d29f54fa04f7e0413974d8, type: 2}
+  Overrides:
+  - Name: Level
+    Type: 1
+    FloatValue: 1
+    IntValue: 0
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density
+    Type: 0
+    FloatValue: 3
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Seed
+    Type: 1
+    FloatValue: 1
+    IntValue: 0
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Slope Min
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Slope Max
+    Type: 0
+    FloatValue: 41.41
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Min
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Max
+    Type: 0
+    FloatValue: 0.3
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Scale
+    Type: 0
+    FloatValue: 0.07
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Seed
+    Type: 1
+    FloatValue: 1
+    IntValue: 3
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Low
+    Type: 0
+    FloatValue: 0.55
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch High
+    Type: 0
+    FloatValue: 0.56
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Fade Low
+    Type: 0
+    FloatValue: -1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Fade High
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Path Distance
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Avoid Radius
+    Type: 0
+    FloatValue: 0.6
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Spacing
+    Type: 0
+    FloatValue: 0.9
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Clearance
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Align
+    Type: 0
+    FloatValue: 0.5
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Tilt
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Scale Min
+    Type: 0
+    FloatValue: 0.8
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Scale Max
+    Type: 0
+    FloatValue: 1.8
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density Scale Min
+    Type: 0
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density Scale Max
+    Type: 0
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Sink
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Prefabs
+    Type: 5
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue:
+    - {fileID: 337639384696087908, guid: bce48c80c75a4e0468f66ccc13550ca0, type: 3}
+    - {fileID: 3972586501897962113, guid: 64a0f0cbb25e9a645aad5ea3e6fc1fb7, type: 3}
+    - {fileID: 1311045208280686539, guid: af9b76ef2254c0844bcdfb97d488011f, type: 3}
+    - {fileID: 919132149155446097, guid: ff15b176844d4a14eb2b24f7bc37097b, type: 3}
+    - {fileID: 919132149155446097, guid: a5bde51f4aaaadf45966baa67ab504fb, type: 3}
+    ObjectValue: {fileID: 0}
+  - Name: Instanced
+    Type: 2
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Cast Shadows
+    Type: 2
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 0
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Cull Distance
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+--- !u!114 &-7443193266090352408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a01e395dda10fb4f85d62be7c3bb7dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGSubgraphNode
+  id: 860e8bdc-ab28-4dff-a677-fe3e19c8426f
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 0
+    y: 130
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -3019743053524212844}
+  outputPins:
+  - {fileID: -7367102799793909136}
+  graph: {fileID: -5797713115998923337}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  ExposedProperties: []
+  Subgraph: {fileID: 11400000, guid: 016c9235f4d29f54fa04f7e0413974d8, type: 2}
+  Overrides:
+  - Name: Level
+    Type: 1
+    FloatValue: 1
+    IntValue: 2
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density
+    Type: 0
+    FloatValue: 0.3
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Seed
+    Type: 1
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Slope Min
+    Type: 0
+    FloatValue: 148.21
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Slope Max
+    Type: 0
+    FloatValue: 180
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Min
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Max
+    Type: 0
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Scale
+    Type: 0
+    FloatValue: 0.05
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Seed
+    Type: 1
+    FloatValue: 1
+    IntValue: 0
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Low
+    Type: 0
+    FloatValue: -1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch High
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Fade Low
+    Type: 0
+    FloatValue: -1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Fade High
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Path Distance
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Avoid Radius
+    Type: 0
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Spacing
+    Type: 0
+    FloatValue: 4
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Clearance
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Align
+    Type: 0
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Tilt
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Scale Min
+    Type: 0
+    FloatValue: 1.2
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Scale Max
+    Type: 0
+    FloatValue: 3
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density Scale Min
+    Type: 0
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density Scale Max
+    Type: 0
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Sink
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Prefabs
+    Type: 5
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue:
+    - {fileID: 6004297445579152723, guid: 0261f26f77f2bf443a69df763f50c1c1, type: 3}
+    - {fileID: 230227738013920356, guid: 78202f815bf82914bb54bf72a49ce72a, type: 3}
+    - {fileID: 6235109998572629902, guid: 35dd16f376323da418da4e903df253db, type: 3}
+    ObjectValue: {fileID: 0}
+  - Name: Instanced
+    Type: 2
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 0
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Cast Shadows
+    Type: 2
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Cull Distance
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+--- !u!114 &-7367102799793909136
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: -7443193266090352408}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &-7336060562270576873
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 7611769862700516465}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &-6504532944342899685
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_5
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 5
+  input: {fileID: -6389909754715401412}
+  output: {fileID: 5471170404627422413}
+  graph: {fileID: -5797713115998923337}
+--- !u!114 &-6445901166843469109
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b8f1f49a2b4244fb462c834dacccb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGDifferenceNode
+  id: 585b49fe-0ffd-4abc-b5c0-a09d21352b78
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 1000
+    y: 208
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -1998288028855428680}
+  - {fileID: -6389909754715401412}
+  outputPins:
+  - {fileID: -5142104784291277774}
+  graph: {fileID: -5797713115998923337}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  ExposedProperties: []
+  Radius: 3
+--- !u!114 &-6389909754715401412
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: -6445901166843469109}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: B
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &-6155733610169706522
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_11
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 11
+  input: {fileID: -1351589820515044770}
+  output: {fileID: 7525650091045197386}
+  graph: {fileID: -5797713115998923337}
+--- !u!114 &-5907199218561012535
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 2185013741046651026}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &-5846675188470248497
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 5224305826140962632}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Avoid
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &-5797713115998923337
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bcf76e8f970dda4fba40ffec0a2a5e0, type: 3}
+  m_Name: PCGGraph
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraph
+  indexCounter:
+    index: 16
+  topZIndex:
+    index: 0
+  nodes:
+  - {fileID: 5994372013010870560}
+  - {fileID: -7443193266090352408}
+  - {fileID: 6669718947451215640}
+  - {fileID: 5264126874346046764}
+  - {fileID: 7611769862700516465}
+  - {fileID: -6445901166843469109}
+  - {fileID: -4245549548087416864}
+  - {fileID: 1586568850573726844}
+  - {fileID: 5067821927034640239}
+  - {fileID: 566336318583688581}
+  - {fileID: -7548037506479330082}
+  - {fileID: 2185013741046651026}
+  - {fileID: -2697889781518730166}
+  - {fileID: 5224305826140962632}
+  links:
+  - {fileID: -8330031969347707220}
+  - {fileID: 5802539128921806618}
+  - {fileID: -2293381509467666423}
+  - {fileID: -4688446757057726067}
+  - {fileID: -6504532944342899685}
+  - {fileID: -5318345143345958578}
+  - {fileID: 7226222355483642598}
+  - {fileID: -2998144194608502348}
+  - {fileID: -2401802093011792516}
+  - {fileID: -864674061782323855}
+  - {fileID: -6155733610169706522}
+  - {fileID: -363508785547712525}
+  - {fileID: 7582131004984107082}
+  - {fileID: -2433512731804597035}
+  - {fileID: -3255970497606393188}
+  - {fileID: -3077452903191025833}
+  owner: {fileID: 11400000}
+--- !u!114 &-5318345143345958578
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_6
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 6
+  input: {fileID: 2098328220871685535}
+  output: {fileID: -5142104784291277774}
+  graph: {fileID: -5797713115998923337}
+--- !u!114 &-5142104784291277774
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: -6445901166843469109}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &-4750935303287151278
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: -2697889781518730166}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &-4688446757057726067
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_4
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 4
+  input: {fileID: -1998288028855428680}
+  output: {fileID: -3941936686647573684}
+  graph: {fileID: -5797713115998923337}
+--- !u!114 &-4566592191271839065
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 2185013741046651026}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Avoid
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &-4245549548087416864
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d5db1cbe675944bb0c59b1bf85d2f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGRandomRotationNode
+  id: b245e279-1cf0-4035-b802-190105e1d5b8
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 1250
+    y: 208
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: 2098328220871685535}
+  outputPins:
+  - {fileID: 5467128491883012968}
+  graph: {fileID: -5797713115998923337}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  ExposedProperties: []
+  RandomYaw: 1
+  MaxTilt: 6
+--- !u!114 &-4037082618579784541
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: -7548037506479330082}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &-3941936686647573684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 7611769862700516465}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &-3255970497606393188
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_15
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 15
+  input: {fileID: -5846675188470248497}
+  output: {fileID: 4145304863452313919}
+  graph: {fileID: -5797713115998923337}
+--- !u!114 &-3165937187603425474
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 6669718947451215640}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &-3077452903191025833
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_16
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 16
+  input: {fileID: -5846675188470248497}
+  output: {fileID: 7525650091045197386}
+  graph: {fileID: -5797713115998923337}
+--- !u!114 &-3019743053524212844
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: -7443193266090352408}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Avoid
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &-2998144194608502348
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_8
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 8
+  input: {fileID: -342287481030704387}
+  output: {fileID: -2844670572855980947}
+  graph: {fileID: -5797713115998923337}
+--- !u!114 &-2844670572855980947
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 1586568850573726844}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &-2697889781518730166
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a01e395dda10fb4f85d62be7c3bb7dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGSubgraphNode
+  id: 812cb518-0839-484d-ad6e-242e083bda1a
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 0
+    y: 780
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: 8264311079174303744}
+  outputPins:
+  - {fileID: -4750935303287151278}
+  graph: {fileID: -5797713115998923337}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  ExposedProperties: []
+  Subgraph: {fileID: 11400000, guid: 016c9235f4d29f54fa04f7e0413974d8, type: 2}
+  Overrides:
+  - Name: Level
+    Type: 1
+    FloatValue: 1
+    IntValue: 0
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density
+    Type: 0
+    FloatValue: 0.6
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Seed
+    Type: 1
+    FloatValue: 1
+    IntValue: 3
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Slope Min
+    Type: 0
+    FloatValue: 126.87
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Slope Max
+    Type: 0
+    FloatValue: 180
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Min
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Max
+    Type: 0
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Scale
+    Type: 0
+    FloatValue: 0.1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Seed
+    Type: 1
+    FloatValue: 1
+    IntValue: 0
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Low
+    Type: 0
+    FloatValue: 0.5
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch High
+    Type: 0
+    FloatValue: 0.51
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Fade Low
+    Type: 0
+    FloatValue: -1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Fade High
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Path Distance
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Avoid Radius
+    Type: 0
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Spacing
+    Type: 0
+    FloatValue: 0.8
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Clearance
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Align
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Tilt
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Scale Min
+    Type: 0
+    FloatValue: 0.8
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Scale Max
+    Type: 0
+    FloatValue: 1.6
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density Scale Min
+    Type: 0
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density Scale Max
+    Type: 0
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Sink
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Prefabs
+    Type: 5
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue:
+    - {fileID: 598672116640085724, guid: 87cfddac3b999ae40a8b3bb155df271a, type: 3}
+    - {fileID: 2829826261843931966, guid: 01c5d489d3f65d744a7b1246d24a6e8f, type: 3}
+    ObjectValue: {fileID: 0}
+  - Name: Instanced
+    Type: 2
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Cast Shadows
+    Type: 2
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 0
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Cull Distance
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+--- !u!114 &-2616658971042812988
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 5264126874346046764}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &-2433512731804597035
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_14
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 14
+  input: {fileID: -5846675188470248497}
+  output: {fileID: 5471170404627422413}
+  graph: {fileID: -5797713115998923337}
+--- !u!114 &-2401802093011792516
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_9
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 9
+  input: {fileID: 4990290220999066918}
+  output: {fileID: 5471170404627422413}
+  graph: {fileID: -5797713115998923337}
+--- !u!114 &-2293381509467666423
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_3
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 3
+  input: {fileID: -7336060562270576873}
+  output: {fileID: -2616658971042812988}
+  graph: {fileID: -5797713115998923337}
+--- !u!114 &-1998288028855428680
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: -6445901166843469109}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: A
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &-1351589820515044770
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: -7548037506479330082}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Avoid
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &-864674061782323855
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_10
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 10
+  input: {fileID: 4990290220999066918}
+  output: {fileID: 4145304863452313919}
+  graph: {fileID: -5797713115998923337}
+--- !u!114 &-363508785547712525
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_12
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 12
+  input: {fileID: -4566592191271839065}
+  output: {fileID: 7525650091045197386}
+  graph: {fileID: -5797713115998923337}
+--- !u!114 &-342287481030704387
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 5067821927034640239}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334c902b82d688e428cfa7f54b76ff65, type: 3}
+  m_Name: DA_PCG_CaveScatter
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphAsset
+  graph: {fileID: -5797713115998923337}
+  Parameters: []
+--- !u!114 &34810715711856361
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 6669718947451215640}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &566336318583688581
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a01e395dda10fb4f85d62be7c3bb7dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGSubgraphNode
+  id: 7eb989e1-bd5d-4c4c-9e88-0b8c51b441c2
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 0
+    y: 390
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: 4990290220999066918}
+  outputPins:
+  - {fileID: 7525650091045197386}
+  graph: {fileID: -5797713115998923337}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  ExposedProperties: []
+  Subgraph: {fileID: 11400000, guid: 016c9235f4d29f54fa04f7e0413974d8, type: 2}
+  Overrides:
+  - Name: Level
+    Type: 1
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density
+    Type: 0
+    FloatValue: 0.8
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Seed
+    Type: 1
+    FloatValue: 1
+    IntValue: 2
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Slope Min
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Slope Max
+    Type: 0
+    FloatValue: 45
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Min
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Max
+    Type: 0
+    FloatValue: 0.55
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Scale
+    Type: 0
+    FloatValue: 0.05
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Seed
+    Type: 1
+    FloatValue: 1
+    IntValue: 0
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Low
+    Type: 0
+    FloatValue: -1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch High
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Fade Low
+    Type: 0
+    FloatValue: -1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Fade High
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Path Distance
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Avoid Radius
+    Type: 0
+    FloatValue: 2.5
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Spacing
+    Type: 0
+    FloatValue: 1.8
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Clearance
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Align
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Tilt
+    Type: 0
+    FloatValue: 20
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Scale Min
+    Type: 0
+    FloatValue: 0.3
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Scale Max
+    Type: 0
+    FloatValue: 0.9
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density Scale Min
+    Type: 0
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density Scale Max
+    Type: 0
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Sink
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Prefabs
+    Type: 5
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue:
+    - {fileID: 8012459010696510826, guid: be8ff3af3f24a9d48add1d14050afff0, type: 3}
+    - {fileID: 4948255667786883780, guid: 64a2bbf51cc72a74cbb8a44547446257, type: 3}
+    - {fileID: 3051258880918777885, guid: 6faf2fdb8525b7341978e1a45595ef96, type: 3}
+    - {fileID: 3693517648748088166, guid: 24ab4069ddae3bd448738f7a2670e99b, type: 3}
+    ObjectValue: {fileID: 0}
+  - Name: Instanced
+    Type: 2
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Cast Shadows
+    Type: 2
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Cull Distance
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+--- !u!114 &1242798135218313696
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 5224305826140962632}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &1586568850573726844
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48739db933f0ac141befc9abdd1bef1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGRandomScaleNode
+  id: 841eb775-97dc-42e0-b510-a470cb2d2de9
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 1500
+    y: 208
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -8527370660521792162}
+  outputPins:
+  - {fileID: -2844670572855980947}
+  graph: {fileID: -5797713115998923337}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  ExposedProperties: []
+  Min: 1
+  Max: 2.2
+--- !u!114 &2098328220871685535
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: -4245549548087416864}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: In
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &2185013741046651026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a01e395dda10fb4f85d62be7c3bb7dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGSubgraphNode
+  id: e889ce13-88ef-481c-89ac-8f7d62d02ce4
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 0
+    y: 650
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -4566592191271839065}
+  outputPins:
+  - {fileID: -5907199218561012535}
+  graph: {fileID: -5797713115998923337}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  ExposedProperties: []
+  Subgraph: {fileID: 11400000, guid: 016c9235f4d29f54fa04f7e0413974d8, type: 2}
+  Overrides:
+  - Name: Level
+    Type: 1
+    FloatValue: 1
+    IntValue: 0
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density
+    Type: 0
+    FloatValue: 3
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Seed
+    Type: 1
+    FloatValue: 1
+    IntValue: 0
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Slope Min
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Slope Max
+    Type: 0
+    FloatValue: 41.41
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Min
+    Type: 0
+    FloatValue: 0.25
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Max
+    Type: 0
+    FloatValue: 0.6
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Scale
+    Type: 0
+    FloatValue: 0.09
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Seed
+    Type: 1
+    FloatValue: 1
+    IntValue: 4
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Low
+    Type: 0
+    FloatValue: 0.7
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch High
+    Type: 0
+    FloatValue: 0.71
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Fade Low
+    Type: 0
+    FloatValue: -1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Fade High
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Path Distance
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Avoid Radius
+    Type: 0
+    FloatValue: 0.6
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Spacing
+    Type: 0
+    FloatValue: 1.8
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Clearance
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Align
+    Type: 0
+    FloatValue: 0.5
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Tilt
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Scale Min
+    Type: 0
+    FloatValue: 0.8
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Scale Max
+    Type: 0
+    FloatValue: 1.6
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density Scale Min
+    Type: 0
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density Scale Max
+    Type: 0
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Sink
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Prefabs
+    Type: 5
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue:
+    - {fileID: 1416436898426217003, guid: 6efac9acddd94054cbe1c9a428e8a302, type: 3}
+    - {fileID: 7920606044580942828, guid: b3b269a8acadfc84f90ba19227d5d9d1, type: 3}
+    ObjectValue: {fileID: 0}
+  - Name: Instanced
+    Type: 2
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Cast Shadows
+    Type: 2
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 0
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Cull Distance
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+--- !u!114 &4145304863452313919
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 5067821927034640239}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &4990290220999066918
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 566336318583688581}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Avoid
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &5067821927034640239
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25b5203cf0f71444a87297a4bf8734fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGPlaceNode
+  id: 3381088d-0c5b-4434-ba2a-d06573398383
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 1750
+    y: 208
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -342287481030704387}
+  outputPins:
+  - {fileID: 4145304863452313919}
+  graph: {fileID: -5797713115998923337}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  ExposedProperties: []
+  Prefabs:
+  - {fileID: 6004297445579152723, guid: 0261f26f77f2bf443a69df763f50c1c1, type: 3}
+  - {fileID: 230227738013920356, guid: 78202f815bf82914bb54bf72a49ce72a, type: 3}
+  - {fileID: 6235109998572629902, guid: 35dd16f376323da418da4e903df253db, type: 3}
+  Weights: []
+  Instanced: 0
+  CastShadows: 1
+  CullDistance: 0
+--- !u!114 &5219999978609197616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: 5994372013010870560}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Avoid
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &5224305826140962632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a01e395dda10fb4f85d62be7c3bb7dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGSubgraphNode
+  id: a0e3151d-cb7c-4469-bfb9-d78ea39a9b61
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 0
+    y: 910
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -5846675188470248497}
+  outputPins:
+  - {fileID: 1242798135218313696}
+  graph: {fileID: -5797713115998923337}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  ExposedProperties: []
+  Subgraph: {fileID: 11400000, guid: 016c9235f4d29f54fa04f7e0413974d8, type: 2}
+  Overrides:
+  - Name: Level
+    Type: 1
+    FloatValue: 1
+    IntValue: 0
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density
+    Type: 0
+    FloatValue: 3
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Seed
+    Type: 1
+    FloatValue: 1
+    IntValue: 0
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Slope Min
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Slope Max
+    Type: 0
+    FloatValue: 41.41
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Min
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Max
+    Type: 0
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Scale
+    Type: 0
+    FloatValue: 0.05
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Seed
+    Type: 1
+    FloatValue: 1
+    IntValue: 7
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Low
+    Type: 0
+    FloatValue: 0.25
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch High
+    Type: 0
+    FloatValue: 0.6
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Fade Low
+    Type: 0
+    FloatValue: 0.25
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Fade High
+    Type: 0
+    FloatValue: 0.6
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Path Distance
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Avoid Radius
+    Type: 0
+    FloatValue: 0.6
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Spacing
+    Type: 0
+    FloatValue: 0.15
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Clearance
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Align
+    Type: 0
+    FloatValue: 0.6
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Tilt
+    Type: 0
+    FloatValue: 10
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Scale Min
+    Type: 0
+    FloatValue: 0.6
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Scale Max
+    Type: 0
+    FloatValue: 1.4
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density Scale Min
+    Type: 0
+    FloatValue: 0.7
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density Scale Max
+    Type: 0
+    FloatValue: 1.1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Sink
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Prefabs
+    Type: 5
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue:
+    - {fileID: 919132149155446097, guid: cbd5405ba9bb58a449cc52cfa7f47ed4, type: 3}
+    - {fileID: 919132149155446097, guid: a34b6727b1252bb4ea7181f7b0cf30b7, type: 3}
+    - {fileID: 919132149155446097, guid: f1f2015dbddac234199b4583adfe6ad2, type: 3}
+    - {fileID: 919132149155446097, guid: f1f2015dbddac234199b4583adfe6ad2, type: 3}
+    ObjectValue: {fileID: 0}
+  - Name: Instanced
+    Type: 2
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Cast Shadows
+    Type: 2
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 0
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Cull Distance
+    Type: 0
+    FloatValue: 60
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+--- !u!114 &5264126874346046764
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 884ea4ebef1d6c645876eaa0f88957ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGProjectDownNode
+  id: 29552473-f1d0-4dd5-92ba-b7366ff7b4cb
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 500
+    y: 208
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -7696529387148038748}
+  outputPins:
+  - {fileID: -2616658971042812988}
+  graph: {fileID: -5797713115998923337}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  ExposedProperties: []
+  MaxDistance: 15
+--- !u!114 &5467128491883012968
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: -4245549548087416864}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &5471170404627422413
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 5994372013010870560}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &5802539128921806618
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_2
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 2
+  input: {fileID: -7696529387148038748}
+  output: {fileID: 34810715711856361}
+  graph: {fileID: -5797713115998923337}
+--- !u!114 &5994372013010870560
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a01e395dda10fb4f85d62be7c3bb7dd, type: 3}
+  m_Name: Big Rocks
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGSubgraphNode
+  id: 8d14cfc7-7a32-425e-806f-9cadac2cf204
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: 5219999978609197616}
+  outputPins:
+  - {fileID: 5471170404627422413}
+  graph: {fileID: -5797713115998923337}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  ExposedProperties: []
+  Subgraph: {fileID: 11400000, guid: 016c9235f4d29f54fa04f7e0413974d8, type: 2}
+  Overrides:
+  - Name: Level
+    Type: 1
+    FloatValue: 1
+    IntValue: 2
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density
+    Type: 0
+    FloatValue: 0.5
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Seed
+    Type: 1
+    FloatValue: 1
+    IntValue: 0
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Slope Min
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Slope Max
+    Type: 0
+    FloatValue: 41.41
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Min
+    Type: 0
+    FloatValue: 0.5
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Max
+    Type: 0
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Scale
+    Type: 0
+    FloatValue: 0.05
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Seed
+    Type: 1
+    FloatValue: 1
+    IntValue: 0
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch Low
+    Type: 0
+    FloatValue: -1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Patch High
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Fade Low
+    Type: 0
+    FloatValue: -1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: AO Fade High
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Path Distance
+    Type: 0
+    FloatValue: 3
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Avoid Radius
+    Type: 0
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Spacing
+    Type: 0
+    FloatValue: 7
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Clearance
+    Type: 0
+    FloatValue: 3
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Align
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Tilt
+    Type: 0
+    FloatValue: 10
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Scale Min
+    Type: 0
+    FloatValue: 1.5
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Scale Max
+    Type: 0
+    FloatValue: 3
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density Scale Min
+    Type: 0
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Density Scale Max
+    Type: 0
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Sink
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Prefabs
+    Type: 5
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue:
+    - {fileID: 8012459010696510826, guid: be8ff3af3f24a9d48add1d14050afff0, type: 3}
+    - {fileID: 4948255667786883780, guid: 64a2bbf51cc72a74cbb8a44547446257, type: 3}
+    - {fileID: 3051258880918777885, guid: 6faf2fdb8525b7341978e1a45595ef96, type: 3}
+    - {fileID: 3693517648748088166, guid: 24ab4069ddae3bd448738f7a2670e99b, type: 3}
+    ObjectValue: {fileID: 0}
+  - Name: Instanced
+    Type: 2
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 0
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Cast Shadows
+    Type: 2
+    FloatValue: 1
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+  - Name: Cull Distance
+    Type: 0
+    FloatValue: 0
+    IntValue: 1
+    BoolValue: 1
+    VectorValue: {x: 0, y: 0, z: 0}
+    StringValue: 
+    PrefabsValue: []
+    ObjectValue: {fileID: 0}
+--- !u!114 &6669718947451215640
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 487dc1343455e834fad73f85a02ca193, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGRandomFilterNode
+  id: 1ce2f627-62a7-476e-a24e-42f870df0245
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 250
+    y: 208
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -3165937187603425474}
+  outputPins:
+  - {fileID: 34810715711856361}
+  graph: {fileID: -5797713115998923337}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 16
+  DebugDraw: 0
+  DebugDensity: 0
+  ExposedProperties: []
+  Probability: 0.5
+  Salt: 0
+--- !u!114 &7226222355483642598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_7
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 7
+  input: {fileID: -8527370660521792162}
+  output: {fileID: 5467128491883012968}
+  graph: {fileID: -5797713115998923337}
+--- !u!114 &7525650091045197386
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _OutputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 1
+  node: {fileID: 566336318583688581}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Out
+  dataType: Points
+  propertyPath: 
+  valueType: 
+--- !u!114 &7582131004984107082
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1574844e380142bb9f5e4a8003b85a1, type: 3}
+  m_Name: Link_13
+  m_EditorClassIdentifier: DungeonArchitect.Modules.Graph::DungeonArchitect.Graphs.GraphLink
+  id: 13
+  input: {fileID: -4566592191271839065}
+  output: {fileID: -4037082618579784541}
+  graph: {fileID: -5797713115998923337}
+--- !u!114 &7611769862700516465
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e2e3ce6c40ef744cada3fe3f8276ec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGPathDistanceNode
+  id: 01f92318-6bfd-44b3-a66d-e7f2c14e99c2
+  caption: 
+  bounds:
+    serializedVersion: 2
+    x: 750
+    y: 208
+    width: 120
+    height: 120
+  canBeDeleted: 1
+  canBeSelected: 1
+  canBeMoved: 1
+  selected: 0
+  zIndex: 0
+  inputPins:
+  - {fileID: -7336060562270576873}
+  outputPins:
+  - {fileID: -3941936686647573684}
+  graph: {fileID: -5797713115998923337}
+  Level: -1
+  ReadMargin: 4
+  SameLevelMargin: 0
+  DebugDraw: 0
+  DebugDensity: 0
+  ExposedProperties: []
+  Away: 1
+  Distance: 2
+--- !u!114 &8264311079174303744
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532592aafe2ebdf45bbf1c4bae6c91f8, type: 3}
+  m_Name: _InputPin
+  m_EditorClassIdentifier: DungeonArchitect.Modules.PCG::DungeonArchitect.PCG.Graph.PCGGraphPin
+  pinType: 0
+  node: {fileID: -2697889781518730166}
+  position: {x: 0, y: 0}
+  boundsOffset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  tangent: {x: 0, y: 0}
+  tangentStrength: 50
+  text: Avoid
+  dataType: Points
+  propertyPath: 
+  valueType: 
