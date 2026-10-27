@@ -82,7 +82,11 @@ MonoBehaviour:
   pathName: branch
   nodeColor: {r: 1, g: 0.5, b: 0, a: 1}
   startFromPath: main
+  emitWindowMin: 0
+  emitWindowMax: 100
   endOnPath: 
+  mergeWindowMin: 0
+  mergeWindowMax: 100
   startNodePathNameOverride: 
   endNodePathNameOverride: 
   numParallelSearches: 1
@@ -354,6 +358,7 @@ MonoBehaviour:
   description: 
   debugDraw: 0
   oneWayDoorPromotionWeight: 0
+  reachabilityContracts: []
 --- !u!114 &-1542546295629180918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -419,6 +424,8 @@ MonoBehaviour:
   lockBranch: treasure
   keyMarkerName: KeyYellow
   lockMarkerName: LockYellow
+  validateFromPath: 
+  validateToPath: 
 --- !u!114 &-193441820613130397
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -437,7 +444,11 @@ MonoBehaviour:
   pathName: treasure
   nodeColor: {r: 1, g: 0.90821296, b: 0, a: 1}
   startFromPath: main
+  emitWindowMin: 0
+  emitWindowMax: 100
   endOnPath: 
+  mergeWindowMin: 0
+  mergeWindowMax: 100
   startNodePathNameOverride: 
   endNodePathNameOverride: 
   numParallelSearches: 1
@@ -535,7 +546,11 @@ MonoBehaviour:
   pathName: alt
   nodeColor: {r: 1, g: 0.5, b: 0, a: 1}
   startFromPath: main
+  emitWindowMin: 0
+  emitWindowMax: 100
   endOnPath: main
+  mergeWindowMin: 0
+  mergeWindowMax: 100
   startNodePathNameOverride: 
   endNodePathNameOverride: 
   numParallelSearches: 1
@@ -722,6 +737,8 @@ MonoBehaviour:
   lockBranch: main
   keyMarkerName: KeyRed
   lockMarkerName: LockRed
+  validateFromPath: 
+  validateToPath: 
 --- !u!114 &3809258602201311574
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -851,7 +868,11 @@ MonoBehaviour:
   pathName: alt2
   nodeColor: {r: 1, g: 0, b: 0.84357405, a: 1}
   startFromPath: alt
+  emitWindowMin: 0
+  emitWindowMax: 100
   endOnPath: main
+  mergeWindowMin: 0
+  mergeWindowMax: 100
   startNodePathNameOverride: 
   endNodePathNameOverride: 
   numParallelSearches: 1
@@ -878,6 +899,7 @@ MonoBehaviour:
   description: 
   debugDraw: 0
   oneWayDoorPromotionWeight: 0
+  reachabilityContracts: []
 --- !u!114 &5421328263654365577
 MonoBehaviour:
   m_ObjectHideFlags: 1

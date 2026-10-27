@@ -34,7 +34,11 @@ MonoBehaviour:
   pathName: main_key
   nodeColor: {r: 1, g: 0.6933962, b: 0.9777912, a: 1}
   startFromPath: main
+  emitWindowMin: 0
+  emitWindowMax: 100
   endOnPath: 
+  mergeWindowMin: 0
+  mergeWindowMax: 100
   startNodePathNameOverride: 
   endNodePathNameOverride: 
   numParallelSearches: 1
@@ -108,7 +112,11 @@ MonoBehaviour:
   pathName: shop
   nodeColor: {r: 1, g: 0.5330188, b: 0.88468874, a: 1}
   startFromPath: main_start
+  emitWindowMin: 0
+  emitWindowMax: 100
   endOnPath: 
+  mergeWindowMin: 0
+  mergeWindowMax: 100
   startNodePathNameOverride: 
   endNodePathNameOverride: 
   numParallelSearches: 1
@@ -414,7 +422,11 @@ MonoBehaviour:
   pathName: main_key
   nodeColor: {r: 0.13725491, g: 0.94509804, b: 0.74509805, a: 1}
   startFromPath: main
+  emitWindowMin: 0
+  emitWindowMax: 100
   endOnPath: 
+  mergeWindowMin: 0
+  mergeWindowMax: 100
   startNodePathNameOverride: 
   endNodePathNameOverride: 
   numParallelSearches: 1
@@ -574,6 +586,8 @@ MonoBehaviour:
   lockBranch: bonus_alt
   keyMarkerName: KeyAltTreasure
   lockMarkerName: LockAltTreasure
+  validateFromPath: 
+  validateToPath: 
   placementSettings:
     placementMethod: 0
     avoidPlacingNextToDoors: 1
@@ -798,6 +812,8 @@ MonoBehaviour:
   lockBranch: bonus_main
   keyMarkerName: KeyTreasure
   lockMarkerName: LockTreasure
+  validateFromPath: 
+  validateToPath: 
   placementSettings:
     placementMethod: 0
     avoidPlacingNextToDoors: 1
@@ -1163,6 +1179,8 @@ MonoBehaviour:
   lockBranch: main
   keyMarkerName: KeyMain
   lockMarkerName: LockMain
+  validateFromPath: 
+  validateToPath: 
   placementSettings:
     placementMethod: 0
     avoidPlacingNextToDoors: 1
@@ -1349,6 +1367,8 @@ MonoBehaviour:
   lockBranch: alt
   keyMarkerName: KeyAltPath
   lockMarkerName: LockAltPath
+  validateFromPath: 
+  validateToPath: 
   placementSettings:
     placementMethod: 0
     avoidPlacingNextToDoors: 1
@@ -1465,6 +1485,7 @@ MonoBehaviour:
   description: 
   debugDraw: 0
   oneWayDoorPromotionWeight: 0
+  reachabilityContracts: []
   generateCaves: 1
   generateCorridors: 1
   maxEnemiesPerCaveNode: 3
@@ -2392,7 +2413,11 @@ MonoBehaviour:
   pathName: bonus_main
   nodeColor: {r: 1, g: 1, b: 0, a: 1}
   startFromPath: main
+  emitWindowMin: 0
+  emitWindowMax: 100
   endOnPath: main
+  mergeWindowMin: 0
+  mergeWindowMax: 100
   startNodePathNameOverride: 
   endNodePathNameOverride: 
   numParallelSearches: 1
@@ -2589,7 +2614,11 @@ MonoBehaviour:
   pathName: branch
   nodeColor: {r: 1, g: 0.5, b: 0, a: 1}
   startFromPath: main
+  emitWindowMin: 0
+  emitWindowMax: 100
   endOnPath: 
+  mergeWindowMin: 0
+  mergeWindowMax: 100
   startNodePathNameOverride: 
   endNodePathNameOverride: 
   numParallelSearches: 1
@@ -2809,7 +2838,11 @@ MonoBehaviour:
   pathName: alt
   nodeColor: {r: 1, g: 0.5, b: 0, a: 1}
   startFromPath: main
+  emitWindowMin: 0
+  emitWindowMax: 100
   endOnPath: main
+  mergeWindowMin: 0
+  mergeWindowMax: 100
   startNodePathNameOverride: 
   endNodePathNameOverride: 
   numParallelSearches: 1
@@ -2906,7 +2939,11 @@ MonoBehaviour:
   pathName: bonus_alt
   nodeColor: {r: 1, g: 0.9899542, b: 0, a: 1}
   startFromPath: alt
+  emitWindowMin: 0
+  emitWindowMax: 100
   endOnPath: 
+  mergeWindowMin: 0
+  mergeWindowMax: 100
   startNodePathNameOverride: 
   endNodePathNameOverride: 
   numParallelSearches: 1
@@ -3139,6 +3176,8 @@ MonoBehaviour:
   lockBranch: main
   keyMarkerName: Key
   lockMarkerName: Lock
+  validateFromPath: 
+  validateToPath: 
   placementSettings:
     placementMethod: 0
     avoidPlacingNextToDoors: 1
@@ -3259,7 +3298,11 @@ MonoBehaviour:
   pathName: alt2
   nodeColor: {r: 0.3820755, g: 0.5912391, b: 1, a: 1}
   startFromPath: main
+  emitWindowMin: 0
+  emitWindowMax: 100
   endOnPath: main
+  mergeWindowMin: 0
+  mergeWindowMax: 100
   startNodePathNameOverride: 
   endNodePathNameOverride: 
   numParallelSearches: 1
