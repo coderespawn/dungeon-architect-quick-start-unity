@@ -357,12 +357,6 @@ public static class DAScatterArtGenerator
         if (!AssetDatabase.IsValidFolder(parent + "/" + name)) AssetDatabase.CreateFolder(parent, name);
     }
 
-    [MenuItem("Tools/Dungeon Architect/Samples/Generate Voxel Scatter Art")]
-    public static void Generate()
-    {
-        Debug.Log(Run());
-    }
-
     public static string Run()
     {
         var sb = new StringBuilder();
